@@ -31,4 +31,4 @@ E por fim, escrevemos o resultado na tela utilizando a função printf:
 %d será substituido pelo valor contido em X.
 
 
-##### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
