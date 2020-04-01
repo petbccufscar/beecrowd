@@ -6,6 +6,6 @@
 
 (Resolução sem tag com alguns trechos de código e explicações precisas sobre a lógica do problema).
 
-##### **[H4]** Para aprender mais sobre X: [abc](link)
+###### **[H5]** Para aprender mais sobre X: [abc](link)
 
-###### **[H5]** Comentários importantes que fogem da resolução
+###### **[H6]** Comentários importantes que fogem da resolução
