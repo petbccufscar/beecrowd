@@ -22,21 +22,21 @@ No enunciado do problema, está escrito para ler três valores A, B, e C e para 
 
 Para ler as três variáveis, usa-se scanf:
 ```c
-        scanf("%lf %lf %lf", &a, &b, &c);
+        scanf("%lf%lf%lf", &a, &b, &c);
 ```
-É possível inserir mais de um dado dentro de um mesmo scanf separando os %lf, que é utilizado para ler uma variável do tipo double. Durante a execução do programa, usamos . para separar o valor decimal do inteiro.
+É possível inserir mais de um dado dentro do mesmo scanf usando vários %lf, que é utilizado para ler uma variável do tipo double. Durante a execução do programa, usamos . para separar o valor decimal do inteiro.
 
 Em seguida, atribuímos o valor da média. O enunciado diz que a nota A tem peso 2, a B tem peso 3 e a C tem peso 5, sendo assim:
 ```c
         media = (2*a + 3*b + 5*c)/10;
 ```
-Como a nota vai de 0 a 10, dividimos a soma das notas por 10 para obter a média. O uso dos parênteses é necessário para indicar que a soma de A, B e C deve ser feita antes da divisão.
+Como a soma dos pesos resulta em 10, dividimos a soma das notas por 10 para obter a média ponderada.
 
 E por fim, escrevemos o resultado na tela utilizando a função printf:
 ```c
-        printf("MEDIA = %0.1lf", media);
+        printf("MEDIA = %0.1lf/n", media);
 ```
-%0.1lf será substituido pelo valor contido em media. O 0.1 indica quantas casas decimais serão mostradas na tela, que no caso é uma.
+%0.1lf será substituido pelo valor contido em media. O 0.1 indica quantas casas decimais serão mostradas na tela, que no caso é uma. O /n no fim serve para pular uma linha na tela depois de mostrar o dado.
 ##### Para aprender um pouco mais sobre tipos de variáveis: [Tipos de Variáveis](http://linguagemc.com.br/tipos-de-dados-em-c/)
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
