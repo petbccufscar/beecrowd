@@ -8,7 +8,7 @@ Primeiro, devemos declarar as variáveis que usaremos, conforme o exercício nom
 
 ###### Modelo: tipodavariavel nomedavariavel;
 
-int NOME;
+	int NOME;
 
 ##### Mais sobre variáveis neste link (http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
