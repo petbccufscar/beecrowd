@@ -34,9 +34,9 @@ Como a soma dos pesos resulta em 10, dividimos a soma das notas por 10 para obte
 
 E por fim, escrevemos o resultado na tela utilizando a função printf:
 ```c
-        printf("MEDIA = %0.1lf/n", media);
+        printf("MEDIA = %0.1lf\n", media);
 ```
-%0.1lf será substituido pelo valor contido em media. O 0.1 indica quantas casas decimais serão mostradas na tela, que no caso é uma. O /n no fim serve para pular uma linha na tela depois de mostrar o dado.
+%0.1lf será substituido pelo valor contido em media. O 0.1 indica quantas casas decimais serão mostradas na tela, que no caso é uma. O \n no fim serve para pular uma linha na tela depois de mostrar o dado.
 ##### Para aprender um pouco mais sobre tipos de variáveis: [Tipos de Variáveis](http://linguagemc.com.br/tipos-de-dados-em-c/)
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
