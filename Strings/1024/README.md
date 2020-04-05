@@ -1,4 +1,4 @@
-# Problema
+# Problema 1024
 Solicitaram para que você construisse um programa simples de criptografia. Este
 programa deve possibilitar enviar mensagens codificadas sem que alguém consiga
 lê-las. O processo é muito simples. São feitas três passadas em todo o texto.
@@ -59,3 +59,4 @@ Finalmente, juntamos a palavra, imprimos e incrementamos o contador:
 print("".join(a+b))
 i += 1
 ```
+#### Requer a importação de ascii_letters do módulo string
