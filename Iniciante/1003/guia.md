@@ -2,6 +2,8 @@
 
 Leia dois valores inteiros, no caso para variáveis A e B. A seguir, calcule a soma entre elas e atribua à variável SOMA. A seguir escrever o valor desta variável.
 
+###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1003
+
 # Resolução
 
 Primeiro, devemos declarar as variáveis que usaremos, conforme o exercício nomeia.
