@@ -5,7 +5,7 @@ Leia 2 valores de ponto flutuante de dupla precisão A e B, que correspondem a 2
 
 # Resolução
 
-Sempre lembrar de inserir as bibliotecas que serão nescessárias para resolução do exercício, no caso as duas apontadas abaixos são tratadas como as padrões para qualquer código. 
+Sempre lembrar de inserir as bibliotecas que serão nescessárias para resolução do exercício, no caso as duas apontadas abaixo são tratadas como as padrões para qualquer código. 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
