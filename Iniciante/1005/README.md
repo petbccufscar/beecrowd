@@ -18,6 +18,7 @@ Primeiro temos que ler dois números reais que são chamados de float em c:
 Float é lido no scanf com a letra "f".
 
 Temos que calcular a média considerando os pesos, podemos fazer de duas formas:
+
 Primeira: criar uma nova variável, exemplo: 
 ```c
 		float media;
@@ -26,7 +27,7 @@ E realizar o cálculo atribuindo o valor a essa variável:
 ```c
 		media = ((a*3.5)+(b*7.5))/11; //Obs: Lembre de respeitar a ordem das chaves é importante para o resultado final.
 ```
-Segundo: fazer o mesmo cálculo, porém na função printf sem usar uma terceira variável.
+Segunda: fazer o mesmo cálculo, porém na função printf sem usar uma terceira variável.
 ```c
 		printf("f\n", ((a*3.5)+(b*7.5))/11);
 ```
@@ -40,6 +41,7 @@ Para designar o número de casas após a vírgula de um float usamos **%.nf** on
 
 ##### Para aprender mais sobre manipular um float: 
 [Limitar casas decimais de um float](https://pt.stackoverflow.com/questions/94564/como-limitar-casas-decimais)
+
 [Float](https://www.cprogressivo.net/2012/12/Os-tipos-float-e-double-numeros-decimais-reais-em-C.html)
 
 
