@@ -24,7 +24,7 @@ Primeira: criar uma nova variável, exemplo:
 ```
 E realizar o cálculo atribuindo o valor a essa variável:
 ```c
-		media = ((a*3.5)+(b*7.5))/11; //Obs: Lembre de respeitar a ordem das chaves é 												 importante para o resultado final.
+		media = ((a*3.5)+(b*7.5))/11; //Obs: Lembre de respeitar a ordem das chaves é importante para o resultado final.
 ```
 Segundo: fazer o mesmo cálculo, porém na função printf sem usar uma terceira variável.
 ```c
