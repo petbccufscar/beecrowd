@@ -45,6 +45,6 @@ Por fim, exibiremos na tela os resultados com a estrutura printf:
 
 ###### Modelo: printf(" Texto a ser exibido / %tipodavariavel", nomedavariavel);
 
-	printf("%d\n", valor);
+	printf ("%d:%d:%d\n", h, m, s);
 
 ##### Mais sobre escrita de dados e a estrutura printf neste link (http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
