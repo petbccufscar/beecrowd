@@ -6,7 +6,7 @@
 
 # Resolução
 
-Começamos nomeando nossas variáveis que serão lidas no exercício. Devemos salvar o valor inteiro em uma variável, assim como a quantidade de cada célula que será apresentado no fim do exercício. 
+Começamos nomeando nossas variáveis que serão lidas no exercício. Devemos salvar o valor inteiro em uma variável, assim como a duração do evento, que será apresentado no fim do exercício. 
 Para nomear as variáveis, usaremos o tipo inteiro:
 
 ###### Modelo: tipodavariavel nomedavariavel;
