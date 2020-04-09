@@ -10,9 +10,9 @@ int main()
         meses = (idade - anos*365)/30;
         dias = (idade - anos*365 - meses*30); 
         
-        printf ("%d ano(s)\n", anos);
-        printf ("%d mes(es)\n", meses);
-        printf ("%d dia(s)\n", dias);
+    printf ("%d ano(s)\n", anos);
+    printf ("%d mes(es)\n", meses);
+    printf ("%d dia(s)\n", dias);
 
     return 0;
 }
