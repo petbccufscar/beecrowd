@@ -54,7 +54,7 @@ Caso for igual a algum valor, realiza-se as operaçoes contidas dentro do "case"
 
 ###### Para uma explicação mais detalhada sobre Switch Case: http://linguagemc.com.br/o-comando-switch-case-em-c/
 
-No nosso caso, assim que entra em alguma condição do case, ja é realizado o Print indicando o mês que corresponde a aquele valor:
+No nosso caso, assim que entra em alguma condição do case, ja é realizado o Print indicando a cidade que corresponde a aquele valor:
 ```c
 	switch (ddd){
 		case 61:
@@ -65,6 +65,6 @@ No nosso caso, assim que entra em alguma condição do case, ja é realizado o P
 
 ```
 
-Dessa forma, para quaiquer valor atribuido à variavel "ddd" caso esteja dentro de alguma das opções de nosso Switch Caso, será realizado a exibição do mês relacionado.
+Dessa forma, para quaiquer valor atribuido à variavel "ddd" caso esteja dentro de alguma das opções de nosso Switch Caso, será realizado a exibição da cidade relacionado. Caso não esteja dentro das opções, será exibido "DDD não cadastrado".
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
