@@ -26,14 +26,14 @@ Para leitura do salario, usamos a função scanf:
         scanf("%f", &salario);
 ```
 
-No primeiro caso iremos tratar dos salários que estão entre R$0.00 e R$2000.01
+No primeiro caso iremos tratar dos salários que estão entre R$0.00 e R$2000.01\
 Nesse caso basta que, caso o salário esteja dentro dessa margem, apenas iremos dar um print com "Isento"
 ```c
     if (salario >= 0 && salario <= 2000.01)
 		printf("Isento\n");
 ```
 
-No segundo caso iremos tratar dos salários que estão entre R$2000.01 e R$3000.00
+No segundo caso iremos tratar dos salários que estão entre R$2000.01 e R$3000.00\
 Nesse caso iremos desconsiderar os 2000 que são isentos e calcula 8% apenas sobre o valor que sobrou
 ```c
 	if (salario > 2000 && salario <= 3000){
@@ -42,8 +42,8 @@ Nesse caso iremos desconsiderar os 2000 que são isentos e calcula 8% apenas sob
 	}
 ```
 
-No terceiro caso iremos tratar dos salários que estão entre R$3000.01 e R$4500.00
-Alem dos 2000 que são isentos iremos calcular 8% sobre 1000.00 dentro da condição anterior (R$2000.01 ~~ R$3000.00)
+No terceiro caso iremos tratar dos salários que estão entre R$3000.01 e R$4500.00\
+Alem dos 2000 que são isentos iremos calcular 8% sobre 1000.00 dentro da condição anterior (R$2000.01 ~~ R$3000.00)\
 E mais ainda calcularemos 18% do que sobrou, que está entre R$3000.01 e R$4500.00
 ```c
 	if ( salario > 3000 && salario <= 4500){
@@ -51,10 +51,10 @@ E mais ainda calcularemos 18% do que sobrou, que está entre R$3000.01 e R$4500.
 	    printf("R$ %.2f\n", imposto);
 	}
 ```
-
-No ultimo caso iremos tratar dos salários que são maiores que R$4500.00.
-Nesse caso, assim como os anteriores, calcularemos 8% sobre R$1000.00. (R$2000.01 ~~ R$3000.00)
-Calcularemos agora 18% sobre R$1500.00 (R$3000.01 ~~ R$4500.00)
+\
+No ultimo caso iremos tratar dos salários que são maiores que R$4500.00.\
+Nesse caso, assim como os anteriores, calcularemos 8% sobre R$1000.00. (R$2000.01 ~~ R$3000.00)\
+Calcularemos agora 18% sobre R$1500.00 (R$3000.01 ~~ R$4500.00)\
 E por final calcularemos 28% do que sobrou, sobre a parte que é maior que R$4500.00
 ```c
     if ( salario > 4500){

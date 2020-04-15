@@ -1,6 +1,6 @@
 # Problema:
 
-Leia um valor inteiro entre 1 e 12, inclusive. Correspondente a este valor, deve ser apresentado como resposta o mês do ano por extenso, em inglês, com a primeira letra maiúscula.
+Leia um valor inteiro entre 1 e 12, inclusive. Correspondente a este valor, deve ser apresentado como resposta o mês do ano por extenso, em inglês, com a primeira letra maiúscula.\
 Obs: Meses em Inglês.
 
 Exemplo: 
@@ -22,7 +22,7 @@ Para leitura, usamos a função scanf:
 ```
 Dessa forma realizamos a leitura e atribuimos o valor inserido à variavel "mes". 
 
-Agora usaremos uma estrutura comum dentro da linguagem que substitui a utilização de varios "if".
+Agora usaremos uma estrutura comum dentro da linguagem que substitui a utilização de varios "if".\
 Usaremos a estrutura Switch Case
 
 ```c
@@ -40,8 +40,8 @@ Usaremos a estrutura Switch Case
 	}
 ```
 
-A estrutura Switch atua em cima da variavel passada entre os parenteses.
-É pre-defenido alguns valores os quais se esperam que o valor contido na variavel seja igual.
+A estrutura Switch atua em cima da variavel passada entre os parenteses.\
+É pre-defenido alguns valores os quais se esperam que o valor contido na variavel seja igual.\
 Caso for igual a algum valor, realiza-se as operaçoes contidas dentro do "case"
 
 ###### Para uma explicação mais detalhada sobre Switch Case: http://linguagemc.com.br/o-comando-switch-case-em-c/
