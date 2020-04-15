@@ -35,7 +35,7 @@ Usaremos a estrutura Switch Case
 			Instruções;
 		break;
 
-		default
+		default:
 			Instruções;
 	}
 ```
