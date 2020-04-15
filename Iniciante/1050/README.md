@@ -68,5 +68,3 @@ No nosso caso, assim que entra em alguma condição do case, ja é realizado o P
 Dessa forma, para quaiquer valor atribuido à variavel "ddd" caso esteja dentro de alguma das opções de nosso Switch Caso, será realizado a exibição do mês relacionado.
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
-
-
