@@ -3,8 +3,8 @@
 Leia um valor inteiro entre 1 e 12, inclusive. Correspondente a este valor, deve ser apresentado como resposta o mês do ano por extenso, em inglês, com a primeira letra maiúscula.\
 Obs: Meses em Inglês.
 
-Exemplo: 
-	Entrada: 4 
+Exemplo:\
+	Entrada: 4\
 	Saida: April
 
 ###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1052
