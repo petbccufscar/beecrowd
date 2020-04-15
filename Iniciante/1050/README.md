@@ -28,7 +28,7 @@ Para leitura, usamos a função scanf:
 ```c
         scanf("%d", &ddd);
 ```
-Dessa forma realizamos a leitura e atribuimos o valor inserido à variavel"ddd". 
+Dessa forma realizamos a leitura e atribuimos o valor inserido à variavel "ddd". 
 
 Agora usaremos uma estrutura comum dentro da linguagem que substitui a utilização de varios "if".
 Usaremos a estrutura Switch Case
@@ -52,7 +52,7 @@ A estrutura Switch atua em cima da variavel passada entre os parenteses.
 É pre-defenido alguns valores os quais se esperam que o valor contido na variavel seja igual.
 Caso for igual a algum valor, realiza-se as operaçoes contidas dentro do "case"
 
-###### Para uma explicaçã mais detalhada sobre Switch Case: http://linguagemc.com.br/o-comando-switch-case-em-c/
+###### Para uma explicação mais detalhada sobre Switch Case: http://linguagemc.com.br/o-comando-switch-case-em-c/
 
 No nosso caso, assim que entra em alguma condição do case, ja é realizado o Print indicando o mês que corresponde a aquele valor:
 ```c
@@ -64,6 +64,8 @@ No nosso caso, assim que entra em alguma condição do case, ja é realizado o P
 		(continua)
 
 ```
+
+Dessa forma, para quaiquer valor atribuido à variavel "ddd" caso esteja dentro de alguma das opções de nosso Switch Caso, será realizado a exibição do mês relacionado.
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
 
