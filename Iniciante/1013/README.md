@@ -4,7 +4,7 @@ Faça um programa que leia três valores e apresente o maior dos três valores l
 
 MaiorAB = (a+b+abs(a-b)) / 2
 
-Obs.: a fórmula apenas calcula o maior entre os dois primeiros (a e b). Um segundo passo, portanto é necessário para chegar no resultado esperado.
+Obs: a fórmula apenas calcula o maior entre os dois primeiros (a e b). Um segundo passo, portanto é necessário para chegar no resultado esperado.
 
 ###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1013
 
@@ -29,6 +29,8 @@ Para leitura da entrada, utiliza-se a função scanf(), que lerá os 3 valores j
 ##### Mais sobre leitura de dados e a estrutura scanf neste link (http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
 
 Para resolver esse problema de comparação, devemos utilizar a formula que o exercício nos passou e assim comparar dois números **a** e **b**. Obtendo o maior deles e salvando na variável **maior** e depois disso aplicamos a mesma fórmula em **maior** e **c** e guardamos novamente na variável maior, reutilizando a variável maior.
+
+Lembre-se que a função abs utilizada na fórmula dada pelo exercício, pertence a biblioteca stdlib, importada na segunda linha do nosso código.
 
 ## Saída
 

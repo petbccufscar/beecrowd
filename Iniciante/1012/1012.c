@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 int main() {
     double a, b, c, pi,triangulo, circulo, trapezio, quadrado, retangulo;
     pi = 3.14159;
