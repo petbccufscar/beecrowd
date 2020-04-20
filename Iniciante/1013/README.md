@@ -10,7 +10,7 @@ Obs: a fórmula apenas calcula o maior entre os dois primeiros (a e b). Um segun
 
 # Resolução
 
-Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste exercício, todas as variáveis serão inteiras. declararemos uma variável maior para guardar o maior de dois números. 
+Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste exercício, todas as variáveis serão inteiras. declararemos uma variável &**maior** para guardar o maior de dois números. 
 
 ###### Modelo: TipoDaVariavel NomeDaVariavel;
 

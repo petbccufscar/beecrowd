@@ -11,7 +11,7 @@ e) a área do retângulo que tem lados A e B.
 
 # Resolução
 
-Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste exercício, todas as variáveis serão de ponto flutuante de bupla precisão, ou seja "double". declararemos váriaveis auxiliares para armazenar o resultado dos cálculos das áreas. 
+Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste exercício, todas as variáveis serão de ponto flutuante de dupla precisão, ou seja "double". declararemos váriaveis auxiliares para armazenar o resultado dos cálculos das áreas. 
 
 ###### Modelo: TipoDaVariavel NomeDaVariavel;
 
