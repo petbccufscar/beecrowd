@@ -64,7 +64,7 @@ No nosso caso, assim que entra em alguma condição do case, ja é realizado o P
 
 ```
 
-Dessa forma, para quaiquer valor atribuido à variavel "ddd" caso esteja dentro de alguma das opções de nosso Switch Caso, será realizado a exibição da cidade relacionado.\
+Dessa forma, para quaiquer valor atribuido à variavel "ddd" caso esteja dentro de alguma das opções de nosso Switch Case, será realizado a exibição da cidade relacionado.\
 Caso não esteja dentro das opções, será exibido "DDD não cadastrado".
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
