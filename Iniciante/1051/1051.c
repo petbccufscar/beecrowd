@@ -7,7 +7,7 @@ f por ser Float e .2 para printar 2 casas após a virgula
 
 int main(){
 	float salario, imposto;
-    scanf("%f", &salario);
+    	scanf("%f", &salario);
 
 	if (salario >= 0 && salario <= 2000.01)
 		printf("Isento\n");
