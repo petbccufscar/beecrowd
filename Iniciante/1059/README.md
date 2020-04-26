@@ -28,6 +28,6 @@ Dentro do **for()** iremos imprimir os pares utilizando a própria variável do 
 ```
 Obs: Como vamos imprimir um par por linha temos que colocar o '\n' para trocarmos de linha.
 
-##### Para aprender um pouco mais sobre tipos de variáveis: [Tipos de Variáveis](http://linguagemc.com.br/tipos-de-dados-em-c/)
+##### Para aprender um pouco mais sobre o laço de repetição for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
