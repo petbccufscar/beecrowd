@@ -18,7 +18,7 @@ Para ler as duas variáveis, usa-se scanf:
 ```c
     scanf("%d %d", &cod, &quant);
 ```
-É possível inserir mais de um dado dentro do mesmo scanf usando vários **%d**, que é utilizado para ler uma variável do tipo inteiro.
+É possível ler mais de um dado dentro do mesmo scanf, como fazemos nesta linha com vários %d (de valores inteiros).
 
 ##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
