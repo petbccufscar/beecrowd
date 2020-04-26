@@ -26,7 +26,7 @@ Para lermos o um valor do tipo **float** usamos a função **scanf()** e e usamo
 
 Em seguida faremos uma série de comparações para descobrir o valor esta em algum intervalo valido e se estiver em qual está. Para isso iremos utilizar as funções **if()** e **else** (respectivamente **se** e **senão**) somadas aos operadores relacionais (exemplos **>,>=,=<,<**) e logicos (exemplos **&&, ||**).
 
-Obs: Quando a função **if()** receber o verdadeiro seu trecho que codigo referente será executado e o do **else** não e vice-versa.
+Obs: Quando a condição dentro da funçao if() for verdadeira seu trecho que codigo referente será executado e o do **else** não e vice-versa.
 
 Os operadore relacionais retornam se a respectivas comparações são verdadeiras(1) ou falsas(0). Os operadores lógicos faz a correlação dos termos logicos, ou seja, faz a correlação de verdadeiro e falso.
 
@@ -48,5 +48,7 @@ else if (valor > 75 && valor <= 100)
 else
   printf("Fora de intervalo\n");
 ```
+
+##### Para aprender um pouco mais sobre Bibliotecas: [Bibliotecas](http://guialinux.uniriotec.br/biblioteca-c/)
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
