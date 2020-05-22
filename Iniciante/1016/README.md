@@ -10,7 +10,7 @@ Leia a distância (em Km) e calcule quanto tempo leva (em minutos) para o carro 
 
 # Resolução:
 
-Como o carro leva 2 minutos para se afastar 1 km do outro, por conta da velocidade de distanciação(30km/h = 30km/60min = 1km/2min), lemos a distância e a multiplicamos por 2, para calcular o tempo necessário.   
+Como o carro leva 2 minutos para se afastar 1 km do outro, lemos a distância e a multiplicamos por 2, para calcular o tempo necessário.  
 
 Para representar isto em nosso programa, fazemos: 
 
