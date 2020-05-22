@@ -14,7 +14,6 @@ Primeiro, deve-se declarar as variáveis a serem utilizadas. O exercício não e
 
 ##### Mais sobre variáveis neste link (http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
-## Entrada
 
 Para leitura da entrada, utiliza-se a função scanf(). Visto que serão inseridas duas entradas, armazenadas em variáveis diferentes, a função ocorrerá duas vezes, uma logo abaixo da outra. Desse modo, após a inserção da primeira entrada, é necessário apertar a tecla enter para que, só assim, seja inserida a próxima entrada.
 
@@ -28,7 +27,6 @@ Após a leitura, os respectivos valores encontram-se nas variáveis A e B. Entã
 
 	PROD = A * B;
     
-## Saída
 
 Para imprimir uma saída, exibindo-a na tela, é utilizada a função printf(). Então, por fim, o resultado inserido na variável PROD deve ser impresso através da seguinte estrutura:
 
