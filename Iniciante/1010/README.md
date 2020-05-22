@@ -6,9 +6,11 @@ Neste problema, deve-se ler o código de uma peça 1, o número de peças 1, o v
 
 # Resolução:
 
-Uma forma de resolver o problema é quebrá-los em etapas menores. Com base no enunciado, podemos dividir o problema da seguinte maneira: dividir o valor total em subvalores de cada peça e somá-los.
+Uma forma de resolver o problema é quebrá-lo em etapas menores. Com base no enunciado, podemos dividir o problema da seguinte maneira: dividir o valor total a ser pago em subtotais de cada peça e somá-los.
 
-Para isso, é preciso ler os dados da peça 1: código, número de peças, valor unitário, calcular o subvalor total da peça 1 e adicioná-lo ao total. Em seguida, faz-se o mesmo com os dados da peça 2.
+dividir o valor total em subvalores de cada peça e somá-los.
+
+Para isso, é preciso ler os dados da peça 1: o código, a quantidade, o número de peças e o valor unitário, calcular o subtotal da peça 1 e adicioná-lo ao total. Em seguida, faz-se o mesmo com os dados da peça 2.
 
 Para representar esses valores em nosso programa, fazemos: 
 
@@ -18,7 +20,7 @@ Para representar esses valores em nosso programa, fazemos:
         valorTotal = 0;
 ```
 
-Note que, para não se perder o subvalor obtido da peça 1, ao calcular o subvalor da peça 2, é necessário armazená-lo em uma outra variável antes de calcular o subvalor da peça 2, neste caso a variável utilizada para tal é valorTotal.
+Note que, para não se perder o subvalor obtido da peça 1, ao calcular o subtotal da peça 2, é necessário armazená-lo em uma outra variável antes de calcular o subtotal da peça 2, neste caso a variável utilizada para tal é valorTotal.
 
 Ao declarar uma variável, uma posição da memória será escolhida para tal e esta posicao pode conter um valor desconhecido(lixo) já utilizado por outra aplicação. Por isso, valorTotal precisa ser iniciado com zero, pois será incrementádo mais a frente. Caso não seja inicializado, essa variável terá um valor aleatório e provavelmente irá levar a um resultado errado.
 
@@ -30,7 +32,7 @@ Para ler as variáveis, usa-se scanf:
         scanf("%d %d %f", &codigo, &numeroPecas, &valorPeca);
 ```
 
-É possível inserir mais de um dado dentro de um mesmo scanf separando os %(variavel), lembrando que a ordem da variaveis inseridas no "" deve corresponder com a ordem dos endereços de memoria indicados na função. Durante a execução do programa, usamos . para separar o valor decimal do inteiro.
+É possível inserir mais de um dado dentro de um mesmo scanf separando os %(variavel), lembrando que a ordem da variaveis inseridas entre as aspas deve corresponder com a ordem dos endereços de memoria indicados na função. Durante a execução do programa, usamos . para separar o valor decimal do inteiro.
 
 Após a leitura das variáveis, calcula-se o subvalor da peça em questão e incrementa-o no valor total. O subvalor da peça a multiplicação do número de peças pelo valor unitário, sendo assim:
 
@@ -52,7 +54,7 @@ O '%0.2lf' será substituido pelo valor contido em valorTotal. O '.2' indica qua
 
 ###### Adento 1:
 		
-Como não se utiliza o valor de código em momento algum, uma solução que utilizaria uma variável a menos seria da seguinte forma:
+Como não se utiliza a informação valor de código em momento algum, uma solução que utilizaria uma variável a menos seria da seguinte forma:
 ```c
         int numeroPecas;
         float valorPeca, valorTotal;
