@@ -18,7 +18,9 @@ Para representar esses valores em nosso programa, fazemos:
         valorTotal = 0;
 ```
 
-Note que, para não se perder o subvalor obtido da peça 1, ao calcular o subvalor da peça 2, é necessário armazená-lo em uma outra variável antes de calcular o subvalor da peça 2, neste caso a variável utilizada para tal é valorTotal, que precisa ser iniciado com zero, pois será incrementádo mais a frente.
+Note que, para não se perder o subvalor obtido da peça 1, ao calcular o subvalor da peça 2, é necessário armazená-lo em uma outra variável antes de calcular o subvalor da peça 2, neste caso a variável utilizada para tal é valorTotal.
+
+Ao declarar uma variável, uma posição da memória será escolhida para tal e esta posicao pode conter um valor desconhecido(lixo) já utilizado por outra aplicação. Por isso, valorTotal precisa ser iniciado com zero, pois será incrementádo mais a frente. Caso não seja inicializado, essa variável terá um valor aleatório e provavelmente irá levar a um resultado errado.
 
 ##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
