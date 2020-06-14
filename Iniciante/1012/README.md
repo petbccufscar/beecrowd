@@ -54,7 +54,6 @@ Para imprimir as saídas, é utilizada a função `printf()`. Utilizamos `%.3lf`
 ```c	
     printf("TRIANGULO: %.3f\n", triangulo);
 ```
-
 Para imprimir as saídas, é utilizada a função printf(). Utilizamos %.3lf ao invés de apenas %lf(que representa um valor double) para delimitarmos o número de casas exibidas após a virgula (precisão), como mostrado no exemplo de saída do problema.
 
 ```c	
