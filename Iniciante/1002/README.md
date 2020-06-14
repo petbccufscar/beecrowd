@@ -3,39 +3,48 @@
 A fórmula para calcular a área de uma circunferência é: area = π . raio2. Considerando para este problema que π = 3.14159.
 Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando por π.
 
-###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1002
+**Problema completo**: https://www.urionlinejudge.com.br/judge/pt/problems/view/1002
 
 # Resolução:
 
-Para ler o valor de dupla precisão antes precisamos declará-los como variáveis, para isso fazemos:
-```c
-        int var_name;
-```
-No nosso caso, "var_name" é substituido por raio.
-Já iremos declarar todas as outras variáveis necessárias, pi e raio.
+O problema pede o cálculo da área de uma circuferência, para obtê-la, devemos declarar e ler os valores para assim calcular á área com a formula informada.
 
-##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
+Declaramos então, variáveis do tipo double (ponto flutuante de dupla precisão) como requerido pelo enunciado:
+
+```c
+        double area, raio, pi;
+```
+
+Iremos receber do usuário apenas o _raio_, porém como nosso resultado será salvo em _area_ a mesma também deve ser do tipo _double_, para não perdermos informações.
+
+Temos que o valor de _pi_ já foi definido pelo problema 
+"Considerando para este problema que π = 3.14159" podemos então atribuir esse valor a nossa váriavel _pi_.
+
+```c
+        pi = 3.14159;
+```
+
 
 Para leitura, usamos a função scanf:
 ```c
-        scanf("%lf",&var_name);
+        scanf("%lf",&raio);
 ```
+
 Utilizamos %lf porque estamos recebendo um valor double do usuário. 
 
-##### Aprenda sobre as variações possíveis em: [Entrada e Saida](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
-
-Agora fazemos uma atribuição a variável "area".
+Agora fazemos uma atribuição a variável _area_ seguindo a fórmula de área de uma circunferência.
 ```c
-        area = raio*raio * pi;
+        area = (raio*raio)*pi;
 ```
-E por fim, escrevemos o resultado na tela utilizando a função printf:
+E por fim, escrevemos o resultado na tela utilizando a função _printf_:
 ```c
         printf("A= %.4lf\n",area);
 ```
 
-Utilizamos .4 para a saída ficar com 4 casas de precisão.
+Utilizamos .4 para a saída ficar com 4 casas de precisão (como mostra nos exemplos de saída do problema).
+%lf será substituido pelo valor contido em _area_.
 
-%lf será substituido pelo valor contido em area.
 
+##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
-###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+##### Para entender sobre entradas e saídas: [Entrada e Saida](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
