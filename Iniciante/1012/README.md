@@ -16,9 +16,9 @@ e) a área do retângulo que tem lados A e B.
 
 # Resolução
 
-Iremos neste problema, declarar todas variáveis que precisaremos e calcular todas as áreas pedidas para depois exibi-las na tela.
+Neste problema, iremos declarar todas variáveis necessárias, calcular todas as áreas e, por último, exibi-las na tela.
 
-Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste problema, todas as variáveis serão de ponto flutuante de dupla precisão, ou seja _double_. 
+Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste problema, todas as variáveis serão de ponto flutuante de dupla precisão, ou seja `double`. 
 
 ```c
 	double a, b, c, pi;
@@ -27,19 +27,19 @@ Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste problema, tod
 
 Definimos as variáveis da segunda linha para armazenar o resultado das áreas que calcularmos para cada forma geométrica, como informado no enunciado.
 
-No enunciado do problema, temos que pi já é definido com um valor fixo (3.14159). Podemos então, já atribuir esse valor a nossa variável _pi_
+No enunciado do problema, temos que `pi` já é definido com um valor fixo (3.14159). Podemos, então, já atribuir esse valor a nossa variável `pi`
 
 ```c
 	pi = 3.14159;
 ```
 
-Para leitura da entrada, utiliza-se a função scanf(), que lerá os 3 valores juntos, podendo ser diferenciados por um espaço ou a tecla enter (quebra de linha) durante a inserção.
+Para leitura da entrada, utiliza-se a função `scanf()`, que lerá os 3 valores juntos, podendo ser diferenciados por um espaço ou a tecla enter (quebra de linha) durante a inserção.
 
 ```c
 	scanf("%lf %lf %lf",&a,&b,&c);
 ```
 
-Após a leitura, os respectivos valores encontram-se nas variáveis _a, b, c_ e serão utilizados para os cálculos de área pedidos no problema.
+Após a leitura, os respectivos valores encontram-se nas variáveis `a`, `b`, `c` e serão utilizados para os cálculos de área pedidos no problema.
     
 ```c
  	triangulo = (a*c)/2;
@@ -49,7 +49,7 @@ Após a leitura, os respectivos valores encontram-se nas variáveis _a, b, c_ e 
     retangulo = a*b;
 ```
 
-Para imprimir as saídas, é utilizada a função printf(). Utilizamos %.3lf ao invés de apenas %lf(que representa um valor double) para delimitarmos o número de casas exibidas após a virgula (precisão), como mostrado no exemplo de saída do problema.
+Para imprimir as saídas, é utilizada a função `printf()`. Utilizamos `%.3lf` ao invés de apenas `%lf`(que representa um valor `double`) para delimitarmos o número de casas exibidas após a virgula (precisão), como mostrado no exemplo de saída do problema.
 
 ```c	
 	printf("TRIANGULO: %.3f\n", triangulo);
