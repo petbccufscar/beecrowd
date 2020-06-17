@@ -12,7 +12,7 @@ Para ler três variáveis e inserir o resultado em uma quarta variável, é nece
 ```c
         double a, b, c, media;
 ```
-No enunciado do problema, está escrito para ler três valores _a_, _b_, e _c_ e para imprimir a variável _media_.
+No enunciado do problema, está escrito para ler três valores _a_, _b_, _c_ e para imprimir a variável _media_.
 
 Para ler as três variáveis, usa-se _scanf_:
 ```c
