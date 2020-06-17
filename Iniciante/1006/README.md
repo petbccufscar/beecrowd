@@ -18,7 +18,7 @@ Para ler as três variáveis, usa-se _scanf_:
 ```c
         scanf("%lf%lf%lf", &a, &b, &c);
 ```
-É possível inserir mais de um dado dentro do mesmo scanf usando vários %lf, que é utilizado para ler uma variável do tipo _double_. Durante a execução do programa, usamos . para separar o valor decimal do inteiro.
+É possível inserir mais de um dado dentro do mesmo _scanf_ usando vários %lf, que é utilizado para ler uma variável do tipo _double_. Durante a execução do programa, usamos . para separar o valor decimal do inteiro.
 
 Em seguida, atribuímos o valor da média. O enunciado diz que a nota A tem peso 2, a B tem peso 3 e a C tem peso 5, sendo assim:
 ```c
