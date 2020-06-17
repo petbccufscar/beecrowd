@@ -7,42 +7,42 @@ Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando
 
 # Resolução:
 
-O problema pede o cálculo da área de uma circuferência, para obtê-la, devemos declarar e ler os valores para assim calcular á área com a formula informada.
+O problema pede o cálculo da área de uma circuferência, para obtê-la, devemos declarar e ler os valores para assim calcular a área com a formula informada.
 
-Declaramos então, variáveis do tipo double (ponto flutuante de dupla precisão) como requerido pelo enunciado:
+Declaramos então, variaveis do tipo ```c double```  (ponto flutuante de dupla precisão) como requerido pelo enunciado:
 
 ```c
         double area, raio, pi;
 ```
 
-Iremos receber do usuário apenas o _raio_, porém como nosso resultado será salvo em _area_ a mesma também deve ser do tipo _double_, para não perdermos informações.
+Iremos receber do usuário o valor do ```c raio``` e salvar o resultado em ```c area```. Como os valores podem ser decimais, declaramos com o tipo ```c double``` , para não perdermos informações.
 
-Temos que o valor de _pi_ já foi definido pelo problema 
-"Considerando para este problema que π = 3.14159" podemos então atribuir esse valor a nossa váriavel _pi_.
+Temos que o valor de ```c pi```  já foi definido pelo problema 
+"Considerando para este problema que π = 3.14159" podemos então atribuir esse valor a nossa váriavel ```c pi``` .
 
 ```c
         pi = 3.14159;
 ```
 
 
-Para leitura, usamos a função scanf:
+Para leitura, usamos a função ```c scanf``` :
 ```c
         scanf("%lf",&raio);
 ```
 
-Utilizamos %lf porque estamos recebendo um valor double do usuário. 
+Utilizamos ```c %lf```  porque estamos recebendo um valor ```c double```  do usuário. 
 
-Agora fazemos uma atribuição a variável _area_ seguindo a fórmula de área de uma circunferência.
+Agora fazemos uma atribuição a variável ```c area```  seguindo a fórmula de área de uma circunferência.
 ```c
         area = (raio*raio)*pi;
 ```
-E por fim, escrevemos o resultado na tela utilizando a função _printf_:
+E por fim, escrevemos o resultado na tela utilizando a função ```c printf``` :
 ```c
         printf("A= %.4lf\n",area);
 ```
 
-Utilizamos .4 para a saída ficar com 4 casas de precisão (como mostra nos exemplos de saída do problema).
-%lf será substituido pelo valor contido em _area_.
+Utilizamos ```c .4```  para a saída ficar com 4 casas de precisão (como mostra nos exemplos de saída do problema).
+```c %lf```  será substituido pelo valor contido em ```c area``` .
 
 
 ##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
