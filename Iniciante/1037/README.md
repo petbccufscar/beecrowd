@@ -18,7 +18,7 @@ Para lermos o um valor do tipo `float` usamos a função `scanf()` e e usamos `%
     scanf("%f", &valor);
 ```
  
-Em seguida faremos uma série de comparações para descobrir se o valor está em algum intervalo válido e, se estiver, em qual está. Para isso iremos utilizar as funções `if()` e `else` (respectivamente **se** e **senão**) somadas aos operadores relacionais (exemplos `>,>=,=<,<`) e lógicos (exemplos `&&, ||`).
+Em seguida faremos uma série de comparações para descobrir se o valor está em algum intervalo válido e, se estiver, em qual está. Para isso iremos utilizar as funções `if` e `else` (respectivamente **se** e **senão**) somadas aos operadores relacionais (exemplos `>,>=,=<,<`) e lógicos (exemplos `&&, ||`).
  
 Obs: Quando a condição dentro da função `if()` for verdadeira seu trecho que código referente será executado e o do `else` não e vice-versa.
  
