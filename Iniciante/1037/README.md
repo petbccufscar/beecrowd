@@ -12,7 +12,7 @@ Sabemos que o programa somente irá receber uma informação (valor) do tipo `po
     float valor;
 ```
  
-Para lermos o um valor do tipo `float` usamos a função `scanf()` e e usamos `%f` para indicar que será lido um valor tipo `float`:
+Para lermos um valor do tipo `float` usamos a função `scanf()` e usamos `%f` para indicar que será lido um valor tipo `float`:
  
 ```c
     scanf("%f", &valor);
@@ -20,9 +20,9 @@ Para lermos o um valor do tipo `float` usamos a função `scanf()` e e usamos `%
  
 Em seguida faremos uma série de comparações para descobrir se o valor está em algum intervalo válido e, se estiver, em qual está. Para isso iremos utilizar as funções `if` e `else` (respectivamente **se** e **senão**) somadas aos operadores relacionais (exemplos `>,>=,=<,<`) e lógicos (exemplos `&&, ||`).
  
-Obs: Quando a condição dentro da função `if()` for verdadeira seu trecho que código referente será executado e o do `else` não e vice-versa.
+Obs: Quando a condição dentro da função `if()` for verdadeira seu trecho de código referente será executado e o do `else` não e vice-versa.
  
-Os operador relacionais retornam se a respectivas comparações são verdadeiras(1) ou falsas(0). Os operadores lógicos faz a correlação dos termos lógicos, ou seja, faz a correlação de verdadeiro e falso.
+Os operador relacionais retornam se a respectivas comparações são verdadeiras(1) ou falsas(0). Os operadores lógicos fazem a correlação dos termos lógicos, ou seja, faz a correlação de verdadeiro e falso.
  
 Caso não esteja em nenhum intervalo temos que imprimir que o valor está fora do intervalo, mas caso esteja devemos imprimir qual o intervalo:
  
@@ -39,7 +39,7 @@ else
   printf("Fora de intervalo\n");
 ```
  
-##### Para aprender um pouco mais operacoes sobre entrada e saida de dados: [Entrada e saída](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### Para aprender um pouco mais operações sobre entrada e saída de dados: [Entrada e saída](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
  
 ##### Para revisar sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
  
