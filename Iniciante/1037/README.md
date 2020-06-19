@@ -5,6 +5,8 @@ Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem
 ##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/1037
  
 # Resolução:
+
+Em suma o problema é identificar em qual intervalo está o número a ser lido, ou seja, após ter lido o número será feito uma série de comparações (uma para cada intervalo), caso o número esteja em algum intervalo será impresso qual o intervalo, caso contrário será impresso “Fora de intervalo”.
  
 Sabemos que o programa somente irá receber uma informação (valor) do tipo `ponto flutuante`, portanto devemos reservar somente uma variável do mesmo tipo:
  
