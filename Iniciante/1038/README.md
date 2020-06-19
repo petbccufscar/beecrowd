@@ -13,6 +13,8 @@ Codigo      Especificacao       Preço
 ##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/1038
  
 # Resolução:
+
+O problema consiste em ler o código de um determinado produto e sua quantidade, feito isso será calculado o valor total a ser pago, sendo que o preço do produto será identificado usando seu código.
  
 Primeiro vamos instanciar as variáveis necessárias, dois inteiros (código do pedido e sua quantidade) e um double (para o valor `total`):
  
