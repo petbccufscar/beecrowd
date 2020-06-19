@@ -1,6 +1,6 @@
 # Problema:
  
-Faça um programa que mostre os números pares entre 1 e 100, inclusive.
+Faça um programa que mostre os números pares entre 1 e 100, incluindo o 100.
  
 ##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/1059
  
@@ -14,11 +14,7 @@ Como não é necessário nenhuma leitura de entrada só precisamos instanciar a 
 ```
  
 Para imprimir os pares utilizaremos um looping com a função `for()`.
- 
-Lembrando a estrutura do `for`:
- 
-        for( VARIAVEL = num_inicial ; condicao_parada ; incremento_da_variavel_após_a_repetição)
- 
+  
 Dentro do `for()` iremos imprimir os pares utilizando a própria variável do looping e seu incremento será de adicionar 2 e o valor inicial será 2, então ela sempre será par, sendo assim, iremos imprimir todos os pares de 1 a 100.
  
 ```c
