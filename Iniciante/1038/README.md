@@ -21,7 +21,7 @@ Primeiro vamos instanciar as variáveis necessárias, dois inteiros (código do 
     double total;
 ```
  
-Para ler as duas variáveis, usa-se scanf:
+Para ler as duas variáveis, usa-se `scanf`:
  
 ```c
     scanf("%d %d", &cod, &quant);
@@ -60,7 +60,7 @@ Agora o que resta é imprimir o resultado utilizando `printf()`, pois o resultad
     printf("Total: R$ %.2f\n", total);      
 ```
  
-O `%0.2f` será substituído pelo valor contido em salariofinal. O `.2` indica quantas casas decimais serão mostradas na tela, que no caso são duas.
+O `%0.2f` será substituído pelo valor contido em `total`. O `.2` indica quantas casas decimais serão mostradas na tela, que no caso são duas.
  
 ##### Para revisar sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
  
