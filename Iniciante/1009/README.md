@@ -8,7 +8,7 @@ Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total 
  
 No enunciado do problema, está escrito para ler três valores: nome, salário e vendas. Após isso imprimir o total final.
  
-Como a primeira variável é um nome devemos instância-la como um vetor de `char`:
+Como a primeira variável é um nome devemos instanciá-la como um vetor de `char`:
  
 ```c
         char nome[]="";
@@ -30,13 +30,13 @@ Para ler as variáveis, usa-se `scanf`:
  
 Obs: Como `nome` é um vetor seu nome já é seu endereço de memória, assim não se utiliza o `&` no `scanf`.
  
-Em seguida, atribuímos o valor final. O enunciado diz que o salário final é a soma do salário do vendedor somado com 15% de comissão sobre suas vendas efetuadas, sendo assim:
+Em seguida, atribuímos o valor final. O enunciado diz que o salário final é a soma do salário do vendedor com 15% de comissão sobre suas vendas efetuadas, sendo assim:
  
 ```c
         salariofinal = salario + (vendas * 0.15f);
 ```
  
-Para que a multiplicação fique computacionalmente correta devemos inserir o `f` ao final do `0.15` para que a constante seja declarado como float (32 bits), ao invés de double.
+Para que a multiplicação fique computacionalmente correta devemos inserir o `f` ao final do `0.15` para que a constante seja declarada como float (32 bits), ao invés de double.
  
  
 Assim, terminamos escrevemos o resultado na tela utilizando a função `printf`:
@@ -45,7 +45,7 @@ Assim, terminamos escrevemos o resultado na tela utilizando a função `printf`:
         printf("TOTAL = R$ %.2f\n", salariofinal);
 ```
  
-O `%0.2lf` será substituído pelo valor contido em salariofinal. O `.2` indica quantas casas decimais serão mostradas na tela, que no caso são duas.
+O `%0.2lf` será substituído pelo valor contido em `salariofinal`. O `.2` indica quantas casas decimais serão mostradas na tela, que no caso são duas.
  
 ##### Para revisar sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
  
