@@ -6,7 +6,7 @@ Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total 
  
 # Resolução:
  
-No enunciado do problema, está escrito para ler três valores: nome, salário e vendas. Após isso imprimir o total final.
+No enunciado do problema, está escrito para ler três valores: nome, salário e vendas. Com essas devidas informacoes devemos calcular quanto o funcionário irá receber, ou seja, seu `salariofinal` será o salario fixo mais o seu percentual nas vendas (que nesse problema é 15%). Após isso imprimir o total final.
  
 Como a primeira variável é um nome devemos instanciá-la como um vetor de `char`:
  
