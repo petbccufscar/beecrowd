@@ -5,6 +5,8 @@ Faça um programa que mostre os números pares entre 1 e 100, incluindo o 100.
 ##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/1059
  
 # Resolução:
+
+O problema não necessita de dados de entrada, portando ele consiste de um único loop que imprima os valores pares e como é possível indicar como o loop vai se comportar podemos cria-lo de forma que cada ciclo seja um número par.
  
 Como não é necessário nenhuma leitura de entrada só precisamos instanciar a variável utilizada para fazer as impressões.
  
