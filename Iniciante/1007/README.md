@@ -5,37 +5,34 @@ Leia quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferenç
 
 
 # Resolução:
-O exercício pede para que seja feita a leitura de 4 valores inteiros e em seguida seja calculado o valor utilizando a formula passada, e em seguida .
+O exercício pede para que seja feita a leitura de 4 valores inteiros, calculado o valor através da formula passada, e apresentado na tela.
 
-Iniciamos o código com a utilização da biblioteca `stdio.h` que será util para a utilização de funções de leitura e escrita, para isso faremos:
+Iniciaremos o código com a utilização da biblioteca `stdio.h` que será util para a utilização de algumas funções como exemplo as de leitura e escrita, sendo elas `scanf` e `printf`, respectivamente, para isso faremos:
 ```c
 #include <stdio.h>
 ```
 
-Com a biblioteca inserida podemos utilizar algumas funções como exemplo as de leitura e escrita, sendo elas `scanf` e `printf`, respectivamente.
-Para realizar a leitura dos 4 valores inteiros antes é preciso declarar algumas variaveis, onde serão armazenados os valores, para isso:
+Com a biblioteca inserida podemos realizar a leitura dos 4 valores inteiros, mas antes é preciso declarar algumas variaveis, "A, B, C e D" onde serão armazenados os valores informados e uma variavel adicional "X" para armazenar o resultado final, o qual será apresentado na tela, para isso:
 ```c
 int A, B, C, D, X;
 ```
-No nosso caso, em "X" será armazenado o resultado que ao final será exibido na tela.
 
-Em seguida realizaremos a leitura dos valores que serão passados, para isso usaremos a função `scanf`:
+Em seguida realizaremos a leitura dos valores que serão passados, utilizando a função `scanf` e colocando os termos em sequencia é possivel realizar a leitura de todos os valores:
 ```c
 scanf("%d %d %d %d",&A, &B, &C, &D);
-```
-Dessa forma realizamos a leitura de todos os valores. 
+``` 
 
 Após isso faremos uma atribuição a variável "X" com o valor resultante da diferença entre os produtos de AB e CD.
 ```c
 X = (A * B - C * D);
 ```
+
 E por fim, escrevemos o resultado na tela utilizando a função `printf`:
 ```c
 printf("DIFERENCA = %d\n",X);
 ```
-em `%d` será substituido pelo valor contido em X.
 
 
-##### Para mais informações a respeito de [tipos de variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
+##### Para mais informações sobre [variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
     
 “Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC (facebook, twitter, etc)”
