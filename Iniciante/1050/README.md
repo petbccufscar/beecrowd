@@ -1,5 +1,4 @@
-# Problema:
-
+# Problema: 1050  
 Leia um número inteiro que representa um código de DDD para discagem interurbana. Em seguida, informe à qual cidade o DDD pertence, considerando a tabela abaixo:
 
 	61 - Brasilia
@@ -15,56 +14,59 @@ Leia um número inteiro que representa um código de DDD para discagem interurba
 Se a entrada for qualquer outro DDD que não esteja presente na tabela acima, o programa deverá informar:
 DDD nao cadastrado
 
-###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1050
+##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/1050
+
 
 # Resolução:
+Para essa resolução temos que inicialmente será passado um valor e com este, iremos verificar dentro de uma tabela, a qual cidade esse valor está atribuido ou caso não esteja deveremos informar a ausência. Para essas verificaçõs usaremos uma estrutura chamada Switch Case. \
 
-Para ler o valor inteiro que será passado, antes precisamos declará-los como variáveis, para isso fazemos:
+Mas antes devemos declarar as variaveis que serão usadas, no caso apenas a que será responsavel de armazenar o valor passado no começo da execução, então faremos:
 ```c
-        int ddd;
+int ddd;
 ```
 
-Para leitura, usamos a função scanf:
+Realizamos também a leitura do valor passado através da função `scanf`:
 ```c
-        scanf("%d", &ddd);
+scanf("%d", &ddd);		
 ```
+
 Dessa forma realizamos a leitura e atribuimos o valor inserido à variavel "ddd".\
-Agora usaremos uma estrutura comum dentro da linguagem que substitui a utilização de varios "if".
-Usaremos a estrutura Switch Case
-
+Agora usaremos a estrutura Switch Case, que será util na verificação de diversos valores, substituindo a necessidade de utilizar diversas estruturas do tipo `IF Else`\
+A estrutura consiste de diversos "cases" em que podem ser definidos o que será feito caso a entrada coincida com algum dos existentes ou caso não coincida, existe a possibilidade de uma saida padrão, exemplo:
 ```c
-	switch (variável){
-		case constante1:
-			Instruções;
-		break;
+switch (variável){
+	case constante1:
+		Instruções;
+	break;
 
-		case constante2:
-			Instruções;
-		break;
+	case constante2:
+		Instruções;
+	break;
 
-		default:
-			Instruções;
-	}
+	default:
+		Instruções;
+}
 ```
 
-A estrutura Switch atua em cima da variavel passada entre os parenteses.\
-É pre-defenido alguns valores os quais se esperam que o valor contido na variavel seja igual.\
-Caso for igual a algum valor, realiza-se as operaçoes contidas dentro do "case"
-
-###### Para uma explicação mais detalhada sobre Switch Case: http://linguagemc.com.br/o-comando-switch-case-em-c/
-
-No nosso caso, assim que entra em alguma condição do case, ja é realizado o Print indicando a cidade que corresponde a aquele valor:
+Aplicando isso para o caso do nosso exercicio, receberemos como variavel o ddd que foi passado, após isso é feito a verificação dentro de cada "case" para ver se coincide, caso positivo é utilizada a função `printf` indicando a qual cidade corresponde aquele valor, exemplo:
 ```c
-	switch (ddd){
-		case 61:
-			printf("Brasilia\n");
-		break;
+switch (ddd){
+	case 61:
+		printf("Brasilia\n");
+	break;
 
-		(continua)
+	...
 
+	default:
+		printf("DDD nao cadastrado\n");
+}
 ```
 
-Dessa forma, para quaiquer valor atribuido à variavel "ddd" caso esteja dentro de alguma das opções de nosso Switch Case, será realizado a exibição da cidade relacionado.\
+Dessa forma, para quaisquer valor atribuido à variavel "ddd" caso esteja dentro de alguma das opções de nosso `Switch Case`, será realizado a exibição da cidade relacionada.\
 Caso não esteja dentro das opções, será exibido "DDD não cadastrado".
 
-###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+
+##### Para mais informações sobre [Switch Case](http://linguagemc.com.br/o-comando-switch-case-em-c/)
+
+    
+“Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC (facebook, twitter, etc)”
