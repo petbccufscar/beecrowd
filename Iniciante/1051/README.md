@@ -1,5 +1,4 @@
-# Problema:
-
+# Problema: 1051
 Em um país imaginário denominado Lisarb, todos os habitantes ficam felizes em pagar seus impostos, pois sabem que nele não existem políticos corruptos e os recursos arrecadados são utilizados em benefício da população, sem qualquer desvio. A moeda deste país é o Rombus, cujo símbolo é o R$.
 
 Leia um valor com duas casas decimais, equivalente ao salário de uma pessoa de Lisarb. Em seguida, calcule e mostre o valor que esta pessoa deve pagar de Imposto de Renda, segundo a tabela abaixo.
@@ -12,16 +11,19 @@ Leia um valor com duas casas decimais, equivalente ao salário de uma pessoa de 
 
 Lembre que, se o salário for R$ 3002.00, a taxa que incide é de 8% apenas sobre R$ 1000.00, pois a faixa de salário que fica de R$ 0.00 até R$ 2000.00 é isenta de Imposto de Renda. No exemplo fornecido (abaixo), a taxa é de 8% sobre R$ 1000.00 + 18% sobre R$ 2.00, o que resulta em R$ 80.36 no total. O valor deve ser impresso com duas casas decimais.
 
-###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1051
+##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/1051
+
 
 # Resolução:
+Neste problema, teremos como objetivo o calculo do valor a ser pago de imposto de rende dependendo do valor total referente a renda, para isso é calculado o montante resultante de cada categoria antes de chegar ao resultado final.\
+Como informações adicionais temos que a saida deve ser o texto "R$" seguido de um espaço e do valor total devido de Imposto de Renda, com duas casas após o ponto. Se o valor de entrada for menor ou igual a 2000, deverá ser impressa a mensagem "Isento".
 
 Iniciaremos declarando as variaveis que serão utilizadas, dessa vez usaremos a variavel "salario" para armazenar o valor que será inserido e a variavel "imposto" onde sera, após os calculos, armazenado o valor final que será exibido. Para isso faremos:
 ```c
         float salario, imposto;
 ```
 
-Para leitura do salario, usamos a função scanf:
+Para leitura do salario, usamos a função `scanf`:
 ```c
         scanf("%f", &salario);
 ```
@@ -34,7 +36,8 @@ Nesse caso basta que, caso o salário esteja dentro dessa margem, apenas iremos 
 ```
 
 No segundo caso iremos tratar dos salários que estão entre R$2000.01 e R$3000.00\
-Nesse caso iremos desconsiderar os 2000 que são isentos e calcula 8% apenas sobre o valor que sobrou
+Nesse caso iremos desconsiderar os 2000 que são isentos e calcula 8% apenas sobre o valor que sobrou\
+Para realizar o print do valor de forma correta aparecendo apenas duas casas: `%.2f` f indicando que é do tipo `float` e .2 para limitar o número de casas após a virgula.
 ```c
 	if (salario > 2000 && salario <= 3000){
 	    imposto = ((salario-2000) * 0.08);
@@ -63,4 +66,6 @@ E por final calcularemos 28% do que sobrou, sobre a parte que é maior que R$450
 	}
 ```
 
-###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+##### Para revisar sobre [variáveis](https://www.programiz.com/c-programming/c-data-types)
+    
+“Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC (facebook, twitter, etc)”
