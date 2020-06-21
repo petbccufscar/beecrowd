@@ -12,12 +12,12 @@ Exemplo:\
 
 Iniciaremos declarando a variável que irá armazenar valor correspondente ao mes, para isso fazemos:
 ```c
-        int mes;
+int mes;
 ```
 
 Para leitura, usamos a função `scanf`:
 ```c
-        scanf("%d", &mes);
+scanf("%d", &mes);
 ```
 
 Agora usaremos a estrutura `Switch Case` que substitui a utilização de varios `if`.\
