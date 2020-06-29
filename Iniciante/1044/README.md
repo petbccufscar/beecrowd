@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Problema: 1044
+=======
+# Problema:
+>>>>>>> 753b16d... Alterado os README - 1005, 1044, 1045, 1046
 
 Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou "Nao sao Multiplos", indicando se os valores lidos são múltiplos entre si.
 
@@ -39,7 +43,11 @@ Se não(else). Caso esse resto for diferente de 0 eles não são múltiplos
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
+<<<<<<< HEAD
 ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
+=======
+ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
+>>>>>>> 753b16d... Alterado os README - 1005, 1044, 1045, 1046
 
 
 

@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 # Problema: 1045
 
+=======
+# Problema:
+>>>>>>> 753b16d... Alterado os README - 1005, 1044, 1045, 1046
 Leia 3 valores de ponto flutuante A, B e C e ordene-os em ordem decrescente, de modo que o lado A representa o maior dos 3 lados. A seguir, determine o tipo de triângulo que estes três lados formam, com base nos seguintes casos, sempre escrevendo uma mensagem adequada:
     - se A ≥ B+C, apresente a mensagem: NAO FORMA TRIANGULO
     - se A2 = B2 + C2, apresente a mensagem: TRIANGULO RETANGULO
@@ -87,7 +91,11 @@ O mesmo irá valer para o Acutângulo que poder ser Isósceles ou equilátero.
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
+<<<<<<< HEAD
 ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
+=======
+ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
+>>>>>>> 753b16d... Alterado os README - 1005, 1044, 1045, 1046
 
 ##### Para aprender um pouco mais sobre Operadores Lógicos em C:
 [Operadores Lógicos em C](http://linguagemc.com.br/operadores-logicos-em-c/#:~:text=Os%20operadores%20lógicos%20são%20utilizados,condições%20simples%20em%20expressões%20lógicas.)

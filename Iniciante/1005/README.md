@@ -36,6 +36,7 @@ Portanto ele espera um float com 5 casas após a vírgula e para isso fazemos:
 		printf("MEDIA = %.5f\n", ((A*3.5)+(B*7.5))/11);
 ```
 Para designar o número de casas após a vírgula de um float usamos [%.nf*](https://pt.stackoverflow.com/questions/94564/como-limitar-casas-decimais) onde n é o número de casas que se quer colocar após a vírgula.  	
+<<<<<<< HEAD
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
@@ -45,6 +46,10 @@ ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
 ##### Para aprender um pouco mais sobre:
 [Bibliotecas em c](http://linguagemc.com.br/bibliotecas/)
 
+=======
+##### Para aprender um pouco mais sobre:
+[Bibliotecas em c](http://linguagemc.com.br/bibliotecas/)
+>>>>>>> 753b16d... Alterado os README - 1005, 1044, 1045, 1046
 
 
 
