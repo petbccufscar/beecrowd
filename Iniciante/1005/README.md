@@ -12,7 +12,11 @@ Primeiro temos que ler dois números reais que são chamados de [Float](https://
 		float A, B;               
 		scanf("%f%f", &A, &B);
 ```
+<<<<<<< HEAD
 Float é lido no `scanf` com a letra "f".
+=======
+Float é lido no 'scanf' com a letra "f".
+>>>>>>> c496103... Alterado com as correções apontadas
 
 Temos que calcular a média considerando os pesos, podemos fazer de duas formas:
 
@@ -25,7 +29,11 @@ E realizar o cálculo atribuindo o valor a essa variável:
 		media = ((A*3.5)+(B*7.5))/11;
 ```
 Obs: Lembre de respeitar a ordem das chaves é importante para o resultado final.
+<<<<<<< HEAD
 Segunda: fazer o mesmo cálculo, porém na função `printf` sem usar uma terceira variável.
+=======
+Segunda: fazer o mesmo cálculo, porém na função printf sem usar uma terceira variável.
+>>>>>>> c496103... Alterado com as correções apontadas
 ```c
 		printf("f\n", ((A*3.5)+(B*7.5))/11);
 ```
@@ -37,19 +45,26 @@ Portanto ele espera um float com 5 casas após a vírgula e para isso fazemos:
 ```
 Para designar o número de casas após a vírgula de um float usamos [%.nf*](https://pt.stackoverflow.com/questions/94564/como-limitar-casas-decimais) onde n é o número de casas que se quer colocar após a vírgula.  	
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c496103... Alterado com as correções apontadas
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
 
+<<<<<<< HEAD
 ##### Para aprender um pouco mais sobre:
 [Bibliotecas em c](http://linguagemc.com.br/bibliotecas/)
 
 =======
+=======
+>>>>>>> c496103... Alterado com as correções apontadas
 ##### Para aprender um pouco mais sobre:
 [Bibliotecas em c](http://linguagemc.com.br/bibliotecas/)
 >>>>>>> 753b16d... Alterado os README - 1005, 1044, 1045, 1046
+
 
 
 
