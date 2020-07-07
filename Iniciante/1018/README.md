@@ -8,7 +8,7 @@ Leia um valor inteiro. A seguir, calcule o menor número de notas possíveis (c�
 
 Para resolver o exercício, receberemos o valor inteiro e começaremos a contar da nota de maior valor para a de menor, sempre subtraindo a quantidade de notas que utilizarmos, para que possamos conseguir a menor quantidade de notas possível.
 
-Começamos nomeando nossas variáveis que serão lidas no exercício. Devemos salvar o valor inteiro em uma variável, assim como a quantidade de cada célula que será apresentado no fim do exercício. 
+Começamos declarando nossas variáveis que serão utilizadas no exercício. Devemos salvar o valor inteiro em uma variável, assim como a quantidade de cada célula que será mostrado no fim do exercício. 
 Visto que não existe '1 nota e meia', sempre números inteiros, usaremos o tipo inteiro tanto para receber o valor quanto para a quantidade de cada nota:
 
 
@@ -26,7 +26,7 @@ Começamos dividindo o valor inserido pela maior cédula, a de 100.
 	c100 = valor/100;
 
 Porém, como sabemos que o valor salvo não será 'quebrado'?
-Por isso a importância em inicializar a variável como inteira. Visto que ela é inteira, ela salvará apenas a parte inteira da divisão, descartando a parte fracionária.
+Por isso a importância em declarar a variável como inteira. Visto que ela é inteira, ela salvará apenas a parte inteira da divisão, descartando a parte fracionária.
 
 
 Para os próximos, precisameros subtrair o número de cédulas do anterior para descartar a possibilidade que o valor inserido seja múltiplo, visto que o exercício pede a menor quantidade de cédulas. 
@@ -42,13 +42,13 @@ Por fim, exibiremos na tela os resultados com a estrutura printf. Importante lem
 
 	printf("%d\n", valor);
 
-##### Mais sobre variáveis [aqui](http://linguagemc.com.br/variaveis-em-linguagem-c/)
+##### * Mais sobre variáveis [aqui](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
-##### Mais sobre leitura de dados e a estrutura scanf [aqui](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### * Mais sobre leitura de dados e a estrutura scanf [aqui](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
 
-##### Mais sobre o resto de uma divisão inteira [aqui](http://linguagemc.com.br/resto-de-uma-divisao-inteira-em-c/)
+##### * Mais sobre o resto de uma divisão inteira [aqui](http://linguagemc.com.br/resto-de-uma-divisao-inteira-em-c/)
 
-##### Mais sobre escrita de dados e a estrutura printf [aqui](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### * Mais sobre escrita de dados e a estrutura printf [aqui](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o [PET-BCC UFSCar](https://www.facebook.com/petbcc)
 
