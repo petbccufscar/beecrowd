@@ -4,7 +4,9 @@ int main() {
 
     scanf("%f %f %f", &A, &B, &C);
 
-    if ((A < (B + C)) && (B < (A + C)) && (C < (B + A))) {
+    if ((A < (B + C)) &&
+        (B < (A + C)) &&
+        (C < (B + A))) {
         resultado = A + B + C;
         printf("Perimetro = %.1f\n", resultado);
     }
