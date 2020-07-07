@@ -4,10 +4,10 @@
 
 int main(int argc, char *argv[]) 
 {
-	float a,b;
-	scanf("%f%f", &a, &b);
+	float A, B;
+	scanf("%f%f", &A, &B);
 	
-	printf("MEDIA = %.5f\n", ((a*3.5)+(b*7.5))/11);
+	printf("MEDIA = %.5f\n", ((A*3.5)+(B*7.5))/11);
 	
 	
 	return 0;

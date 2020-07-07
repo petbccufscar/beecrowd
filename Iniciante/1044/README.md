@@ -1,4 +1,4 @@
-# Problema:
+# Problema: 1044
 
 Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou "Nao sao Multiplos", indicando se os valores lidos são múltiplos entre si.
 
@@ -39,7 +39,7 @@ Se não(else). Caso esse resto for diferente de 0 eles não são múltiplos
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
-ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
+ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
 
 
 
