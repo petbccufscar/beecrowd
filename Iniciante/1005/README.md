@@ -12,7 +12,7 @@ Primeiro temos que ler dois números reais que são chamados de [Float](https://
 		float A, B;               
 		scanf("%f%f", &A, &B);
 ```
-Float é lido no 'scanf' com a letra "f".
+Float é lido no `scanf` com a letra "f".
 
 Temos que calcular a média considerando os pesos, podemos fazer de duas formas:
 
@@ -25,7 +25,7 @@ E realizar o cálculo atribuindo o valor a essa variável:
 		media = ((A*3.5)+(B*7.5))/11;
 ```
 Obs: Lembre de respeitar a ordem das chaves é importante para o resultado final.
-Segunda: fazer o mesmo cálculo, porém na função printf sem usar uma terceira variável.
+Segunda: fazer o mesmo cálculo, porém na função `printf` sem usar uma terceira variável.
 ```c
 		printf("f\n", ((A*3.5)+(B*7.5))/11);
 ```
