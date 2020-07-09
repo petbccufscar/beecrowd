@@ -13,7 +13,7 @@ Para ler os 4 valores inteiros antes precisamos declará-los como variáveis, pa
 
 No nosso caso, em "X" será armazenado o resultado que ao final será exibido na tela.
 
-Para leitura, usamos a função scanf:
+Para leitura, usamos a função `scanf`:
 ```c
         scanf("%d %d %d %d",&A, &B, &C, &D);
 ```
@@ -23,7 +23,7 @@ Agora fazemos uma atribuição a variável "X" realizando a diferença entre os 
 ```c
         X = (A * B - C * D);
 ```
-E por fim, escrevemos o resultado na tela utilizando a função printf:
+E por fim, escrevemos o resultado na tela utilizando a função `printf`:
 ```c
         printf("DIFERENCA = %d\n",X);
 ```

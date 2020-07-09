@@ -21,13 +21,13 @@ Iniciaremos declarando as variaveis que serão utilizadas, dessa vez usaremos a 
         float salario, imposto;
 ```
 
-Para leitura do salario, usamos a função scanf:
+Para leitura do salario, usamos a função `scanf`:
 ```c
         scanf("%f", &salario);
 ```
 
 No primeiro caso iremos tratar dos salários que estão entre R$0.00 e R$2000.01\
-Nesse caso basta que, caso o salário esteja dentro dessa margem, apenas iremos dar um print com "Isento"
+Nesse caso basta que, caso o salário esteja dentro dessa margem, apenas iremos dar um `print` com "Isento"
 ```c
     if (salario >= 0 && salario <= 2000.01)
 		printf("Isento\n");
