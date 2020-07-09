@@ -5,7 +5,7 @@ Cópia da parte lógica do problema do site do URI, que descreve o problema em l
 
 Caso a entrada/saída seja vital na explicação do problema, pode-se citá-la como “conforme a entrada/saída exemplificada no exercício [exemplo da entrada/saída] (...)”. Caso contrário, deve ser omitida.
 
-##### Link do problema:
+**Problema completo**: link_do_problema
 
 
 # Resolução:
@@ -32,7 +32,8 @@ Para conceitos-chave da lógica do problema, inserir um link de explicação no 
 Exemplo: “(...) calcularemos a [área do triângulo](link)”
 
 Para conceitos base e anteriores ao problema, deixar links de explicação no final da resolução. Evitar conceitos que já sejam presumíveis para o nível do exercício, como declaração de variáveis em exercícios de nível médio/avançado.
-Exemplo: ##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
+Exemplo: 
+##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
     
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
