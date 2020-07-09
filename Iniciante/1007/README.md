@@ -1,4 +1,4 @@
-# Problema:
+# Problema: 1007
 
 Leia quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferença do produto de A e B pelo produto de C e D segundo a fórmula: DIFERENCA = (A * B - C * D).
 
@@ -30,6 +30,7 @@ E por fim, escrevemos o resultado na tela utilizando a função printf:
 %d será substituido pelo valor contido em X.
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),

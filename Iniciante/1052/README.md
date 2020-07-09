@@ -1,4 +1,4 @@
-# Problema:
+# Problema: 1052
 
 Leia um valor inteiro entre 1 e 12, inclusive. Correspondente a este valor, deve ser apresentado como resposta o mês do ano por extenso, em inglês, com a primeira letra maiúscula.\
 Obs: Meses em Inglês.
@@ -62,3 +62,7 @@ Dessa forma, para quaiquer valor atribuido à variavel "mes" caso esteja dentro 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
 
 
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com

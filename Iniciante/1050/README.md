@@ -1,4 +1,4 @@
-# Problema:
+# Problema: 1050
 
 Leia um número inteiro que representa um código de DDD para discagem interurbana. Em seguida, informe à qual cidade o DDD pertence, considerando a tabela abaixo:
 
@@ -68,6 +68,7 @@ Dessa forma, para quaiquer valor atribuido à variavel "ddd" caso esteja dentro 
 Caso não esteja dentro das opções, será exibido "DDD não cadastrado".
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
