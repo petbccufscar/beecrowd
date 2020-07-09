@@ -1,4 +1,5 @@
-# Problema: 1051
+# Problema:
+
 Em um país imaginário denominado Lisarb, todos os habitantes ficam felizes em pagar seus impostos, pois sabem que nele não existem políticos corruptos e os recursos arrecadados são utilizados em benefício da população, sem qualquer desvio. A moeda deste país é o Rombus, cujo símbolo é o R$.
 
 Leia um valor com duas casas decimais, equivalente ao salário de uma pessoa de Lisarb. Em seguida, calcule e mostre o valor que esta pessoa deve pagar de Imposto de Renda, segundo a tabela abaixo.
@@ -11,48 +12,44 @@ Leia um valor com duas casas decimais, equivalente ao salário de uma pessoa de 
 
 Lembre que, se o salário for R$ 3002.00, a taxa que incide é de 8% apenas sobre R$ 1000.00, pois a faixa de salário que fica de R$ 0.00 até R$ 2000.00 é isenta de Imposto de Renda. No exemplo fornecido (abaixo), a taxa é de 8% sobre R$ 1000.00 + 18% sobre R$ 2.00, o que resulta em R$ 80.36 no total. O valor deve ser impresso com duas casas decimais.
 
-##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/1051
-
+###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1051
 
 # Resolução:
-Neste problema, teremos como objetivo o calculo do valor a ser pago de imposto de rende dependendo do valor total referente a renda, para isso é calculado o montante resultante de cada categoria antes de chegar ao resultado final.\
-Como informações adicionais temos que a saida deve ser o texto "R$" seguido de um espaço e do valor total devido de Imposto de Renda, com duas casas após o ponto. Se o valor de entrada for menor ou igual a 2000, deverá ser impressa a mensagem "Isento".
 
 Iniciaremos declarando as variaveis que serão utilizadas, dessa vez usaremos a variavel "salario" para armazenar o valor que será inserido e a variavel "imposto" onde sera, após os calculos, armazenado o valor final que será exibido. Para isso faremos:
 ```c
-float salario, imposto;
+        float salario, imposto;
 ```
 
-Para leitura do salario, usamos a função `scanf`:
+Para leitura do salario, usamos a função scanf:
 ```c
-scanf("%f", &salario);
+        scanf("%f", &salario);
 ```
 
 No primeiro caso iremos tratar dos salários que estão entre R$0.00 e R$2000.01\
 Nesse caso basta que, caso o salário esteja dentro dessa margem, apenas iremos dar um print com "Isento"
 ```c
-if (salario >= 0 && salario <= 2000.01)
-	printf("Isento\n");
+    if (salario >= 0 && salario <= 2000.01)
+		printf("Isento\n");
 ```
 
 No segundo caso iremos tratar dos salários que estão entre R$2000.01 e R$3000.00\
-Nesse caso iremos desconsiderar os 2000 que são isentos e calcula 8% apenas sobre o valor que sobrou\
-Para realizar o print do valor de forma correta aparecendo apenas duas casas: `%.2f` f indicando que é do tipo `float` e .2 para limitar o número de casas após a virgula.
+Nesse caso iremos desconsiderar os 2000 que são isentos e calcula 8% apenas sobre o valor que sobrou
 ```c
-if (salario > 2000 && salario <= 3000){
-    imposto = ((salario-2000) * 0.08);
-    printf("R$ %.2f\n", imposto); 
-}
+	if (salario > 2000 && salario <= 3000){
+	    imposto = ((salario-2000) * 0.08);
+	    printf("R$ %.2f\n", imposto); 
+	}
 ```
 
 No terceiro caso iremos tratar dos salários que estão entre R$3000.01 e R$4500.00\
 Alem dos 2000 que são isentos iremos calcular 8% sobre 1000.00 dentro da condição anterior (R$2000.01 ~~ R$3000.00)\
 E mais ainda calcularemos 18% do que sobrou, que está entre R$3000.01 e R$4500.00
 ```c
-if ( salario > 3000 && salario <= 4500){
-    imposto =( (1000*0.08) + ((salario-3000)*0.18) );
-    printf("R$ %.2f\n", imposto);
-}
+	if ( salario > 3000 && salario <= 4500){
+	    imposto =( (1000*0.08) + ((salario-3000)*0.18) );
+	    printf("R$ %.2f\n", imposto);
+	}
 ```
 \
 No ultimo caso iremos tratar dos salários que são maiores que R$4500.00.\
@@ -60,12 +57,15 @@ Nesse caso, assim como os anteriores, calcularemos 8% sobre R$1000.00. (R$2000.0
 Calcularemos agora 18% sobre R$1500.00 (R$3000.01 ~~ R$4500.00)\
 E por final calcularemos 28% do que sobrou, sobre a parte que é maior que R$4500.00
 ```c
-if ( salario > 4500){
-    imposto = ( (1000*0.08) + (1500*0.18) + ((salario-4500)*0.28) );
-    printf("R$ %.2f\n", imposto);
-}
+    if ( salario > 4500){
+	    imposto = ( (1000*0.08) + (1500*0.18) + ((salario-4500)*0.28) );
+	    printf("R$ %.2f\n", imposto);
+	}
 ```
 
-##### Para revisar sobre [variáveis](https://www.programiz.com/c-programming/c-data-types)
-    
-“Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC (facebook, twitter, etc)”
+###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
