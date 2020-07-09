@@ -15,8 +15,6 @@ Para representar isto em nosso programa, fazemos:
         float dist;
 ```
 
-##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
-
 Para ler as variáveis, usa-se scanf:
 
 ```c
@@ -31,8 +29,11 @@ Em seguida, calcula-se a distância e escrevemos o resultado na tela utilizando 
         printf("%.3f \n", dist/12);
 ```
 
-O '%0.3f' será substituido pelo valor contido em valorTotal. O '.3' indica quantas casas decimais serão mostradas na tela, que no caso são duas.
+O '%0.3f' será substituido pelo valor contido em valorTotal. O '.3' indica quantas casas decimais serão mostradas na tela, que no caso são três.
 
-##### Para aprender um pouco mais sobre tipos de variáveis: [Tipos de Variáveis](http://linguagemc.com.br/tipos-de-dados-em-c/)
 
-###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou envie um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
+

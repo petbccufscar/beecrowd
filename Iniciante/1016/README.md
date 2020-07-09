@@ -10,15 +10,13 @@ Leia a distância (em Km) e calcule quanto tempo leva (em minutos) para o carro 
 
 # Resolução:
 
-Como o carro leva 2 minutos para se afastar 1 km do outro, lemos a distância e a multiplicamos por 2, para calcular o tempo necessário.  
+Como o carro leva 2 minutos para se afastar 1 km do outro, por conta da velocidade de distanciação(30km/h = 30km/60min = 1km/2min), lemos a distância e a multiplicamos por 2, para calcular o tempo necessário. 
 
 Para representar isto em nosso programa, fazemos: 
 
 ```c
         int dist;
 ```
-
-##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
 Para ler a variável, usa-se scanf:
 
@@ -32,8 +30,8 @@ Em seguida, escrevemos o resultado na tela utilizando a função printf:
         printf("%d minutos\n", dist*2);
 ```
 
-##### Para aprender um pouco mais sobre tipos de variáveis: [Tipos de Variáveis](http://linguagemc.com.br/tipos-de-dados-em-c/)
-
-###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
-
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou envie um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
 
