@@ -5,7 +5,7 @@ Cópia da parte lógica do problema do site do URI, que descreve o problema em l
 
 Caso a entrada/saída seja vital na explicação do problema, pode-se citá-la como “conforme a entrada/saída exemplificada no exercício [exemplo da entrada/saída] (...)”. Caso contrário, deve ser omitida.
 
-##### Link do problema:
+**Problema Completo**: link_do_problema
 
 
 # Resolução:
