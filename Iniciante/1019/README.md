@@ -29,7 +29,7 @@ Por isso a importância em declarar a variável como inteira. Visto que ela é i
 
 Para os próximos, precisameros subtrair o número de horas do anterior para descartar a possibilidade que o valor inserido seja múltiplo, visto que o exercício pede a exibição de um relógio.
 
-#### Exemplo:
+####Exemplo:
 	Caso o valor inserido fosse 7200, podemos ter 2 horas ou 120 minutos. Visto que um relógio só mostra até 60 minutos, devemos sempre trabalhar com horas quando minutos > 60.
 
 Com isso, devemos continuar com a divisão porém sempre subtraindo o número de horas já contabilizadas.
