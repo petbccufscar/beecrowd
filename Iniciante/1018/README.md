@@ -31,7 +31,7 @@ Por isso a importância em declarar a variável como inteira. Visto que ela é i
 
 Para os próximos, precisameros subtrair o número de cédulas do anterior para descartar a possibilidade que o valor inserido seja múltiplo, visto que o exercício pede a menor quantidade de cédulas. 
 
-####Exemplo:
+#### Exemplo:
 	Caso o valor inserido fosse 200, podemos ter 2 cédulas de 100 ou 4 cédulas de 50. Porém, 2 de 100 são menos cédulas do que 4 de 50. 
 
 Com isso, devemos continuar com a divisão, sempre subtraindo o número de cédulas já utilizadas.
