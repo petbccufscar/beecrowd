@@ -6,7 +6,7 @@ Joaozinho quer calcular e mostrar a quantidade de litros de combustível gastos 
 
 # Resolução:
 
-Uma forma de resolver o problema é calcular a distância e depois dividí-la por 12.
+Uma forma de resolver o problema é calcular a distância, multiplicando a velocidade média pelo tempo, e depois dividí-la por 12.
 
 Para representar isto em nosso programa, fazemos: 
 
@@ -15,7 +15,7 @@ Para representar isto em nosso programa, fazemos:
         float dist;
 ```
 
-Para ler as variáveis, usa-se scanf:
+Para ler a entrada, usa-se `scanf`:
 
 ```c
         scanf("%d", &tempo);
@@ -23,13 +23,15 @@ Para ler as variáveis, usa-se scanf:
         scanf("%d", &velocidade);
 ```
 
-Em seguida, calcula-se a distância e escrevemos o resultado na tela utilizando a função printf:
+Em seguida, calcula-se a distância e, já que o automóvel faz 12 KM/L, divide-a por 12 e escreve-se o resultado na tela utilizando a função `printf`:
 
 ```c
+		dist = tempo*velocidade;
+
         printf("%.3f \n", dist/12);
 ```
 
-O '%0.3f' será substituido pelo valor contido em valorTotal. O '.3' indica quantas casas decimais serão mostradas na tela, que no caso são três.
+O '%.3f' será substituido pelo resultado da divisão de `dist` por 12. O '.3' indica quantas casas decimais serão mostradas na tela, que no caso são três.
 
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso

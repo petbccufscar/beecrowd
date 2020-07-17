@@ -2,7 +2,7 @@
 
 Dois carros (X e Y) partem em uma mesma direção. O carro X sai com velocidade constante de 60 Km/h e o carro Y sai com velocidade constante de 90 Km/h.
 
-Em uma hora (60 minutos) o carro Y consegue se distanciar 30 quilômetros do carro X, ou seja, consegue se afastar um quilômetro a cada 2 minutos.
+**Em uma hora (60 minutos) o carro Y consegue se distanciar 30 quilômetros do carro X, ou seja, consegue se afastar um quilômetro a cada 2 minutos.**
 
 Leia a distância (em Km) e calcule quanto tempo leva (em minutos) para o carro Y tomar essa distância do outro carro.
 
@@ -10,7 +10,7 @@ Leia a distância (em Km) e calcule quanto tempo leva (em minutos) para o carro 
 
 # Resolução:
 
-Como o carro leva 2 minutos para se afastar 1 km do outro, por conta da velocidade de distanciação(30km/h = 30km/60min = 1km/2min), lemos a distância e a multiplicamos por 2, para calcular o tempo necessário. 
+Como o carro Y leva 2 minutos para se afastar 1 km do outro, por conta da velocidade de distanciação, já que **30km/h = 30km/60min = 1km/2min** , conforme o enunciado, lê-se a distância e a multiplica por 2, para calcular o tempo necessário. 
 
 Para representar isto em nosso programa, fazemos: 
 
@@ -18,13 +18,13 @@ Para representar isto em nosso programa, fazemos:
         int dist;
 ```
 
-Para ler a variável, usa-se scanf:
+Para ler a entrada, usa-se `scanf`:
 
 ```c
         scanf("%d", &dist);
 ```
 
-Em seguida, escrevemos o resultado na tela utilizando a função printf:
+Em seguida, escrevemos o resultado na tela utilizando a função `printf`:
 
 ```c
         printf("%d minutos\n", dist*2);

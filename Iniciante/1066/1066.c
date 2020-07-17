@@ -15,14 +15,14 @@ int main()
                 contPares++; 
                         if( valor > 0){
                                 contPositivos++;
-                        }else if( valor != 0){
+                        }else if( valor < 0){
                                 contNegativos++;
                         }
             }else{
                         contImpares++;
                         if( valor > 0){
                                 contPositivos++;
-                        }else if( valor != 0){
+                        }else if( valor < 0){
                                 contNegativos++;
                         }
                 }
