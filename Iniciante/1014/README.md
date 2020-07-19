@@ -12,7 +12,7 @@ Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste exercício, t
 uma para armazenar o combustível gasto e outra para armazenar o resultado da divisão entre essas duas.
 
 ```c
-	int km;
+	int km
     float combustivel, km_l;
 ```
 
