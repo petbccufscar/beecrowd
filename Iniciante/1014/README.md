@@ -22,7 +22,7 @@ Para leitura da entrada, utiliza-se a função `scanf`, que lerá os 2 valores j
 	scanf("%d %f", &km, &combustivel);
 ```
 
-Para resolver esse problema, devemos apenas efetuar uma simples divisão entre `km` e `combustivel` e armazena-la em `km_l` para obter a media de km/l da viagem.
+Para resolver esse problema, devemos apenas efetuar uma simples divisão entre `km` e `combustivel` e armazená-la em `km_l` para obter a média de km/l da viagem.
 
 ```c
 	km_l = km / combustivel;
@@ -39,7 +39,7 @@ Aqui usamos o `%.3f` para imprimir apenas 3 casas após a vírgula de uma variá
 
 ##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
-##### Para entender sobre entradas e saídas: [Entrada e Saida](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### Para entender melhor sobre entradas e saídas: [Entrada e Saida](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),

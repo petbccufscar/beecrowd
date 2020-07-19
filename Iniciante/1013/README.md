@@ -25,7 +25,7 @@ Para leitura da entrada, utiliza-se a função `scanf`, que lerá os 3 valores j
 	scanf("%d %d %d", &a,&b,&c);
 ```
 
-Para resolver esse problema de comparação, devemos utilizar a formula que o exercício nos passou e assim comparar dois números `a` e `b`. Obtendo o maior deles e salvando na variável `maior` e depois disso aplicamos a mesma fórmula comparando `maior` e `c` e guardamos novamente na variável maior. Assim, obtemos o maior dos 3 valores na variável `maior`.
+Para resolver esse problema de comparação, vamos utilizar a fórmula do exercício para comparar os números `a` e `b`.Salvamos o maior na variável `maior` e comparamos `maior` e `c` com a mesma fórmula. O resultado será salvo novamente na variável `maior`, que irá conter o maior número entre os três.
 
 ```c
 	maior = (a+b+abs(a-b))/2;
@@ -42,7 +42,7 @@ Para imprimir uma saída, utilizamos a função `printf`.
 
 ##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
-##### Para entender sobre entradas e saídas: [Entrada e Saida](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### Para entender melhor sobre entradas e saídas: [Entrada e Saida](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),

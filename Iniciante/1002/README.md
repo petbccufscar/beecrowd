@@ -9,7 +9,7 @@ Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando
 
 O problema pede o cálculo da área de uma circuferência, para obtê-la, devemos declarar e ler os valores para assim calcular a área com a formula informada.
 
-Declaramos então, variaveis do tipo `double`  (ponto flutuante de dupla precisão) como requerido pelo enunciado:
+Declaramos então, variáveis do tipo `double`  (ponto flutuante de dupla precisão) como requerido pelo enunciado:
 
 ```c
         double area, raio, pi;

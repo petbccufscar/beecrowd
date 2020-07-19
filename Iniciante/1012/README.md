@@ -52,7 +52,7 @@ Após a leitura, os respectivos valores encontram-se nas variáveis `a`, `b`, `c
 Para imprimir as saídas, é utilizada a função `printf()`. Utilizamos `%.3lf` ao invés de apenas `%lf`(que representa um valor `double`) para delimitarmos o número de casas exibidas após a virgula (precisão), como mostrado no exemplo de saída do problema.
 
 ```c	
-	printf("TRIANGULO: %.3f\n", triangulo);
+    printf("TRIANGULO: %.3f\n", triangulo);
     printf("CIRCULO: %.3f\n", circulo);
     printf("TRAPEZIO: %.3f\n", trapezio);
     printf("QUADRADO: %.3f\n", quadrado);
@@ -62,7 +62,7 @@ Para imprimir as saídas, é utilizada a função `printf()`. Utilizamos `%.3lf`
 
 ##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
-##### Para entender sobre entradas e saídas: [Entrada e Saida](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### Para entender melhor sobre entradas e saídas: [Entrada e Saida](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
