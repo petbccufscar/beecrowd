@@ -8,7 +8,7 @@ Leia 6 valores. Em seguida, mostre quantos destes valores digitados foram positi
 
 Vale lembrar que a média de um conjunto de N números, é a soma de todos os N números, dividido por N.
 
-Uma forma de resolver o problema é, conforme se realiza a leitura da entrada, caso o valor lido seja positivo, somá-lo em uma variável(`soma`) para armazenar a soma de todos os números positivos e incrementar um contador(`contPositivos`) em 1, para ao fim da leitura, calcular a média dividindo a soma pelo contador. Como sabemos a condição de término da leitura, iremos utilizar a estrutura de repetição for, para ler os 6 valores.
+Uma forma de resolver o problema é, conforme se realiza a leitura da entrada, caso o valor lido seja positivo, somá-lo em uma variável(`soma`) para armazenar a soma de todos os números positivos e incrementar um contador(`contPositivos`) em 1, para ao fim da leitura, calcular a média dividindo a soma pelo contador. Como sabemos a condição de término da leitura, iremos utilizar a estrutura de repetição `for`, para ler os 6 valores.
 
 Para representar estes valores no programa, fazemos: 
 
@@ -33,14 +33,14 @@ Para ler a entrada, usa-se `scanf` dentro da estrutura de repetição. Caso o va
         }
 ```
 
-Em seguida, escreve-se o contador de positivos, calcula-se a media a escreve na tela utilizando a função `printf`:
+Em seguida, exibe-se o resultado: escreve-se o contador de positivos, calcula-se a media e a escreve na tela utilizando a função `printf`:
 
 ```c
         printf("%d valores positivos\n", contPositivos);
         printf("%.1f\n", soma/contPositivos);
 ```
 
-O '%.1f' será substituido pelo valor contido em valorTotal. O '.1' indica quantas casas decimais serão mostradas na tela, que no caso é uma.
+O `%.1f` será substituido pelo resultado da divisão de `soma` pelo `contPositivos`. O '.1' indica quantas casas decimais serão mostradas na tela, que no caso é uma.
 
 ##### Para revisar a estrutura de repetição FOR: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
 ##### Para revisar sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)

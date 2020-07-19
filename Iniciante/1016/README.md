@@ -24,7 +24,7 @@ Para ler a entrada, usa-se `scanf`:
         scanf("%d", &dist);
 ```
 
-Em seguida, escrevemos o resultado na tela utilizando a função `printf`:
+Em seguida, calculamos e escrevemos o resultado, `dist*2` na tela utilizando a função `printf`:
 
 ```c
         printf("%d minutos\n", dist*2);

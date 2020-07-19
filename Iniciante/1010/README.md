@@ -42,21 +42,8 @@ Em seguida, repete-se este método para a peça 2 e com isso, obtemos o valor to
         printf("VALOR A PAGAR: R$ %.2f\n", valorTotal);
 ```
 
-O `%.2f` será substituido pelo valor contido em valorTotal. O '.2' indica quantas casas decimais serão mostradas na tela, que no caso são duas.
+O `%.2f` será substituido pelo valor contido em `valorTotal`. O '.2' indica quantas casas decimais serão mostradas na tela, que no caso são duas.
 
-###### Adendo 1:
-		
-Como não se utiliza a informação valor de código em momento algum, uma solução que utilizaria uma variável a menos seria da seguinte forma:
-
-```c
-        int numeroPecas;
-        float valorPeca, valorTotal;
-        valorTotal = 0;
-
-        scanf("%d %d %f", &numeroPecas, &numeroPecas, &valorPeca);
-        ...
-```
-Para a leitura de dados utilizando o `scanf` com uma variável a menos funcionar corretamente, lê-se o valor de código e armazena-o na variável `numeroPecas`, o que não é um problema, pois logo em seguida este valor é sobrescrito com o numero de peças correto. 
 
 ##### Para revisar sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 

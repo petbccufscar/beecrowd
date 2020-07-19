@@ -23,7 +23,7 @@ Para ler a entrada, usa-se `scanf`:
         scanf("%d", &velocidade);
 ```
 
-Em seguida, calcula-se a distância e, já que o automóvel faz 12 KM/L, divide-a por 12 e escreve-se o resultado na tela utilizando a função `printf`:
+Em seguida, calcula-se a distância e, já que o automóvel faz 12 KM/L, divide-a por 12 e escreve-se este resultado na tela utilizando a função `printf`:
 
 ```c
 		dist = tempo*velocidade;
@@ -31,7 +31,7 @@ Em seguida, calcula-se a distância e, já que o automóvel faz 12 KM/L, divide-
         printf("%.3f \n", dist/12);
 ```
 
-O '%.3f' será substituido pelo resultado da divisão de `dist` por 12. O '.3' indica quantas casas decimais serão mostradas na tela, que no caso são três.
+O `%.3f` será substituido pelo resultado da divisão de `dist` por 12. O '.3' indica quantas casas decimais serão mostradas na tela, que no caso são três.
 
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso

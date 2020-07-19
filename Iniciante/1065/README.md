@@ -18,7 +18,7 @@ Para representar estes valores no programa, fazemos:
 
 Ao declarar uma variável, uma posição da memória será escolhida para tal e esta posição pode conter um valor desconhecido(lixo) já utilizado por outra aplicação. Por isso, `contPares` precisa ser iniciado com zero, pois será incrementado mais a frente no decorrer do código. Caso não seja inicializado, essa variável terá um valor aleatório e provavelmente irá levar a um resultado errado.
 
-Para ler as variáveis, usa-se `scanf` dentro da estrutura de repetição `for`. Caso o valor lido seja positivo, incrementa-se `contPares` em 1.
+Para ler as variáveis, usa-se `scanf` dentro da estrutura de repetição `for`. Em seguida, utiliza-se a estrutura condicional `if` para verificar se o número é par: se o resto da divisão deste número por 2 for zero, ou seja, é par, incrementa-se `contPares` em 1.
 
 ```c
         int i ; // controlador da estrutura de repetição 
@@ -30,7 +30,7 @@ Para ler as variáveis, usa-se `scanf` dentro da estrutura de repetição `for`.
         }
 ```
 
-Em seguida, escreve-se o contador de positivos na tela utilizando a função `printf`:
+Em seguida, escreve-se o contador de pares na tela utilizando a função `printf`:
 
 ```c
     printf("%d valores pares\n", contPares);
