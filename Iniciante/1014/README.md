@@ -13,7 +13,7 @@ uma para armazenar o combustível gasto e outra para armazenar o resultado da di
 
 ```c
 	int km
-    float combustivel, km_l;
+	float combustivel, km_l;
 ```
 
 Para leitura da entrada, utiliza-se a função `scanf`, que lerá os 2 valores juntos, podendo ser diferenciados na entrada por um espaço ou a tecla enter (quebra de linha)
