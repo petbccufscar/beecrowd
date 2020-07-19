@@ -6,34 +6,42 @@ O arquivo de entrada contém dois valores: um valor inteiro X representando a di
 
 # Resolução
 
-Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste exercício, teremos uma variável inteira (km) e duas do tipo ponto flutuante
+Neste problema, iremos receber dois valores reais e dividiremos o primeiro (distância) pelo segundo (gasto de combustível) para obtermos a média de consumo que esse automóvel fez nessa distância.
+
+Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste exercício, teremos uma variável inteira para armazenar os quilômetros e duas do tipo ponto flutuante,
 uma para armazenar o combustível gasto e outra para armazenar o resultado da divisão entre essas duas.
 
-###### Modelo: TipoDaVariavel NomeDaVariavel;
+```c
+	int km
+	float combustivel, km_l;
+```
 
-	int km;
-    float combustivel, km_l;
+Para leitura da entrada, utiliza-se a função `scanf`, que lerá os 2 valores juntos, podendo ser diferenciados na entrada por um espaço ou a tecla enter (quebra de linha)
 
-##### Mais sobre variáveis neste link (http://linguagemc.com.br/variaveis-em-linguagem-c/)
-
-## Entrada
-
-Para leitura da entrada, utiliza-se a função scanf(), que lerá os 2 valores juntos, podendo ser diferenciados na entrada por um espaço ou a tecla enter (quebra de linha)
-
-###### Modelo: scanf("%TipoDaVariavel", &NomeDaVariavel);
-
+```c
 	scanf("%d %f", &km, &combustivel);
+```
 
-##### Mais sobre leitura de dados e a estrutura scanf neste link (http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+Para resolver esse problema, devemos apenas efetuar uma simples divisão entre `km` e `combustivel` e armazená-la em `km_l` para obter a média de km/l da viagem.
 
-Para resolver esse problema, devemos apenas efetuar uma simples divisão entre as duas variaveis para obter a media de km/l da viagem.
-## Saída
+```c
+	km_l = km / combustivel;
+```
 
-Para imprimir uma saída, exibindo-a na tela, é utilizada a função printf().
-###### Modelo: printf("Texto a ser exibido e/ou %TipoDaVariavel", NomeDaVariavel);
-	
+Para imprimir uma saída, exibindo-a na tela, é utilizada a função `printf`.
+
+```c
 	printf("%.3f km/l\n",km_l);
+```
 
-Aqui usamos o %.3f para imprimir apenas 3 casas após a vírgula de uma variável de ponto flutuante.
+Aqui usamos o `%.3f` para imprimir apenas 3 casas após a vírgula de uma variável de ponto flutuante.
 
-##### Mais sobre escrita de dados e a estrutura printf neste link (http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+
+##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
+
+##### Para entender melhor sobre entradas e saídas: [Entrada e Saida](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com

@@ -22,13 +22,23 @@ float valor;
 
 Lógica do problema com trechos do código. Buscar explicar todos os trechos do código completo com passo a passo, incluindo a saída do problema formatada para o URI.
 
+Para trechos de explicação que refereciam variáveis, funções, bibliotecas e tipos deve-se usar `variável`, como nos exemplos:
+" Para leitura da entrada, utiliza-se a função `scanf`..."
+
+"Utilizamos `%.3lf` ao invés de apenas `%lf`(que representa um valor `double`) para delimitarmos..."
+
+
 Para conceitos-chave da lógica do problema, inserir um link de explicação no texto, dando preferência para explicações em português.
 Exemplo: “(...) calcularemos a [área do triângulo](link)”
 
 Para conceitos base e anteriores ao problema, deixar links de explicação no final da resolução. Evitar conceitos que já sejam presumíveis para o nível do exercício, como declaração de variáveis em exercícios de nível médio/avançado.
-Exemplo: ##### Para revisar sobre [variáveis de ponto flutuante](link)
+Exemplo: 
+##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
     
-“Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC (facebook, twitter, etc)”
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
 
 **Guia do código**
 
