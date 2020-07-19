@@ -1,4 +1,4 @@
-# Problema:
+# Problema: 1051
 
 Em um país imaginário denominado Lisarb, todos os habitantes ficam felizes em pagar seus impostos, pois sabem que nele não existem políticos corruptos e os recursos arrecadados são utilizados em benefício da população, sem qualquer desvio. A moeda deste país é o Rombus, cujo símbolo é o R$.
 
@@ -21,13 +21,13 @@ Iniciaremos declarando as variaveis que serão utilizadas, dessa vez usaremos a 
         float salario, imposto;
 ```
 
-Para leitura do salario, usamos a função scanf:
+Para leitura do salario, usamos a função `scanf`:
 ```c
         scanf("%f", &salario);
 ```
 
 No primeiro caso iremos tratar dos salários que estão entre R$0.00 e R$2000.01\
-Nesse caso basta que, caso o salário esteja dentro dessa margem, apenas iremos dar um print com "Isento"
+Nesse caso basta que, caso o salário esteja dentro dessa margem, apenas iremos dar um `print` com "Isento"
 ```c
     if (salario >= 0 && salario <= 2000.01)
 		printf("Isento\n");
@@ -64,3 +64,9 @@ E por final calcularemos 28% do que sobrou, sobre a parte que é maior que R$450
 ```
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+
+
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
