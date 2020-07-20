@@ -4,7 +4,7 @@ Leia um valor inteiro correspondente à idade de uma pessoa em dias e informe-a 
 
 Obs.: apenas para facilitar o cálculo, considere todo ano com 365 dias e todo mês com 30 dias. Nos casos de teste nunca haverá uma situação que permite 12 meses e alguns dias, como 360, 363 ou 364. Este é apenas um exercício com objetivo de testar raciocínio matemático simples.
 
-###### [Link do problema](https://www.urionlinejudge.com.br/judge/pt/problems/view/1020)
+###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1020
 
 # Resolução
 
@@ -42,7 +42,10 @@ Por fim, exibiremos na tela os resultados com a estrutura printf, para anos, mes
 	printf ("%d ano(s)\n", anos);
 
 
-##### Mais sobre [variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/), [leitura de dados e a estrutura scanf](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/), [resto de uma divisão inteira](http://linguagemc.com.br/resto-de-uma-divisao-inteira-em-c/), [escrita de dados e a estrutura printf](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### Mais sobre variáveis [aqui](http://linguagemc.com.br/variaveis-em-linguagem-c/)
+##### Mais sobre leitura de dados e a estrutura scanf [aqui](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### Mais sobre resto de uma divisão inteira [aqui](http://linguagemc.com.br/resto-de-uma-divisao-inteira-em-c/)
+##### Mais sobre escrita de dados e a estrutura printf [aqui](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 * [Facebook](https://www.facebook.com/petbcc/),
