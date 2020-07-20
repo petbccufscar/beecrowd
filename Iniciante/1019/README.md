@@ -43,7 +43,7 @@ Por fim, exibiremos na tela os resultados com a estrutura printf. Importante lem
 	printf("%d:%d:%d\n", duracao);
 
 
-##### Mais sobre variáveis [aqui] (http://linguagemc.com.br/variaveis-em-linguagem-c/)
+##### Mais sobre variáveis [aqui](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 ##### Mais sobre leitura de dados e a estrutura scanf [aqui](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
 ##### Mais sobre resto de uma divisão inteira [aqui](http://linguagemc.com.br/resto-de-uma-divisao-inteira-em-c/)
 ##### Mais sobre escrita de dados e a estrutura printf [aqui](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
