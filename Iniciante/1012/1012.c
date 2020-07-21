@@ -2,8 +2,10 @@
 
 int main() {
     double a, b, c, pi,triangulo, circulo, trapezio, quadrado, retangulo;
-    pi = 3.14159;
+
     scanf("%lf %lf %lf", &a, &b, &c);
+
+    pi = 3.14159
 
     triangulo = (a*c)/2;
     circulo = pi*c*c;
