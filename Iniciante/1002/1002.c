@@ -2,7 +2,10 @@
 
 
 int main(){
-    double area, raio, pi = 3.14159;
+    
+    double area, raio, pi;
+    
+    pi = 3.14159;
 
     scanf("%lf",&raio);
     area = raio*raio * pi;
