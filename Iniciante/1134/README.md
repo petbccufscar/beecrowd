@@ -9,7 +9,7 @@ Para resolver o exercício, devemos ler os valores digitados até que seja lido 
 Na primeira execução, precisamos ler o valor antes de poder verificá-lo. Logo, a primeira instrução deve ser um `scanf()`. Se isso fosse feito com um `while()` comum, precisaríamos ler o valor fora do laço, verificar, e ler de novo ao final do laço para a próxima iteração - o que funciona, mas gera repetição de código.  
 
 
-Começamos declarando as variáveis que vamos precisar. Três para guardar os tipos de combustíveis do exercício, e uma pra ler a `entrada` do programa.
+Começamos declarando as variáveis que vamos precisar. Três para guardar os tipos de combustíveis do exercício e uma pra ler a `entrada` do programa.
 ```c
 int alcool, gasolina, diesel, entrada;
 ```
@@ -21,14 +21,10 @@ gasolina = 0;
 diesel = 0;
 ```
 
-A estrutura de repetição `do{} while()` roda primeiro o código dentro de `do{}` e depois faz a verificação, ao contrário do `while()` comum.  
 O código abaixo lê a `entrada` e verifica se ela corresponde a `1`, `2` ou `3`. Se sim, aumenta uma quantidade do combustível correspondente.  
-
 Por último, verifica se o valor era um `4`:
 - Se sim, termina o laço de repetição
 - Se não, volta a ler a entrada
-
-
 ```c
 do {
     scanf("%d", &entrada);
