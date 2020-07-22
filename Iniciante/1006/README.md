@@ -34,4 +34,7 @@ E por fim, escrevemos o resultado na tela utilizando a função `printf`:
 ##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 ##### Para aprender um pouco mais sobre tipos de variáveis: [Tipos de Variáveis](http://linguagemc.com.br/tipos-de-dados-em-c/)
 
-Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso Facebook, Instagram ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
