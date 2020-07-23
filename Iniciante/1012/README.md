@@ -42,7 +42,7 @@ Para leitura da entrada, utiliza-se a função `scanf()`, que lerá os 3 valores
 Após a leitura, os respectivos valores encontram-se nas variáveis `a`, `b`, `c` e serão utilizados para os cálculos de área pedidos no problema.
     
 ```c
- 	triangulo = (a*c)/2;
+    triangulo = (a*c)/2;
     circulo = pi*c*c;
     trapezio = ((a + b)*c)/2;
     quadrado = b*b;
@@ -54,6 +54,7 @@ Para imprimir as saídas, é utilizada a função `printf()`. Utilizamos `%.3lf`
 ```c	
     printf("TRIANGULO: %.3f\n", triangulo);
 ```
+
 Para imprimir as saídas, é utilizada a função printf(). Utilizamos %.3lf ao invés de apenas %lf(que representa um valor double) para delimitarmos o número de casas exibidas após a virgula (precisão), como mostrado no exemplo de saída do problema.
 
 ```c	
