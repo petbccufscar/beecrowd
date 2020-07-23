@@ -32,7 +32,7 @@ A primeira coisa a ser feita no ciclo é ler um valor usando a função `scanf`:
 ```c
       scanf("%lf", &nota);
 ```
-Depois de ler a variável `nota`, vamos verificar se o valor é válido. Verificamos se o valor é menor que 0 ou maior que 10 usando a função `if`. Se a verificação for verdadeira, ele mostrará na tela a mensagem `nota invalida`:
+Depois de ler a variável `nota`, vamos verificar se o valor é válido. Verificamos se o valor é menor que 0 (`nota < 0`) ou maior que 10 (`nota > 10`) usando a função `if`. Se a verificação for verdadeira, ele mostrará na tela a mensagem `nota invalida`:
 ```c
       if(nota < 0 || nota > 10)
          printf("nota invalida\n");
@@ -43,13 +43,13 @@ Caso a verificação for falsa, seguiremos no `else` e adicionaremos esse valor 
          media = media + nota;
          nro_notas++;
 ```
-Nesse ponto, vemos o motivo de ter igualado essas duas variáveis a 0 no começo do código. Sem esse passo, não teríamos controle do valor dessas variáveis, já que toda vez que uma variável é criada, seu valor é aleatório.
+Nesse ponto, vemos o motivo de ter igualado essas duas variáveis a 0 no começo do código. Sem esse passo, não teríamos controle do valor dessas variáveis, já que toda vez que uma variável é criada, ela não possui valor e não conseguimos fazer qualquer operação com uma variável sem valor.
 
 Em seguida, vamos verificar se temos as duas notas para calcular a média do aluno:
 ```c
         if(nro_notas == 2) {
 ```
-Se `nro_notas` for igual a 2, quer dizer que já temos as 2 notas do aluno para calcular a média. Para isso faremos a operação a seguir:
+Se `nro_notas` for igual a 2 (`nro_notas == 2`), quer dizer que já temos as 2 notas do aluno para calcular a média. Para isso faremos a operação a seguir:
 ```c
           media = media/2;
 ```
@@ -60,28 +60,31 @@ Para apresentar o valor obtido, escrevemos o resultado na tela utilizando a fun�
           printf("media = %0.2lf\n", media);
           printf("novo calculo (1-sim 2-nao)\n");
 ```
-Além da resposta, também mostramos na tela a opção de fazer um novo cálculo e dar continuidade ao programa.
+`%0.2lf` será substituido pelo valor contido em media. O `0.2` indica quantas casas decimais serão mostradas na tela, que no caso é uma. O `\n` no fim serve para pular uma linha na tela depois de mostrar o dado. Além da resposta, também mostramos na tela a opção de fazer um novo cálculo e dar continuidade ao programa.
 
 Para saber se teremos um novo cálculo ou não, vamos criar outro `while(1)`, pois também precisamos verificar se a resposta para um novo cálculo é válida ou não. Dentro do laço vamos ler a variável `x`: 
 ```c
           while(1) {
             scanf("%d",&x);
 ```
-Aqui as únicas respostas que podem ser aceitas são 1 ou 2. Qualquer outra deve resultar na repetição da pergunta. Temos que usar novamente a função `if` e `else` para verificar a resposta dada e seguir com o código:
+Aqui as únicas respostas que podem ser aceitas são 1 ou 2. Qualquer outra deve resultar na repetição da pergunta. Temos que usar novamente a função `if` e `else` para verificar a resposta dada. No `if`, se `x` for igual a 1 (`x == 1`), significa que um novo cálculo vai ser feito. Para iniciar um novo cálculo, temos que igualar as variáveis `media` e `nro_notas` a 0 de novo e o código descrito acima irá se repetir. O `break` é um comando de parada que faz o código voltar ao começo do primeiro `while(1)` mais rápido:
 ```c
             if(x == 1) {
               media = 0;
               nro_notas = 0;
               break;
             }
+```
+Se a resposta obtida for 2 (`x == 2`), significa que um novo cálculo não será feito e o programa será encerrado. Para encerrar o programa usamos a função `return 0;`:
+```c
             else if(x == 2)
               return 0;
+```
+Se a resposta presente em `x` não for válida, a pergunta vai aparecer novamente na tela e a variável será lida de novo:
+```c
             else
               printf("novo calculo (1-sim 2-nao)\n");
 ```
-No primeiro `if`, se `x` for igual a 1, significa que um novo cálculo vai ser feito. Para iniciar um novo cálculo, temos que igualar as variáveis `media` e `nro_notas` a 0 de novo e o código descrito acima irá se repetir. O `break` é um comando de parada que faz o código voltar ao começo do primeiro `while(1)` mais rápido.
-
-Se a resposta obtida for 2, significa que um novo cálculo não será feito e o programa será encerrado. Para encerrar o programa usamos a função `return 0;`. Se a resposta presente em `x` não for válida, a pergunta vai aparecer novamente na tela e a variável será lida de novo.
 
 ##### Para aprender um pouco mais sobre tipos de variáveis: [Tipos de Variáveis](http://linguagemc.com.br/tipos-de-dados-em-c/)
 ##### Para aprender um pouco mais sobre if e else: [Estruturas de decisão](http://linguagemc.com.br/estrutura-de-decisao-if-em-linguagem-c/)
