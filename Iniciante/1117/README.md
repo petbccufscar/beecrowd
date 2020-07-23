@@ -12,18 +12,20 @@ Para começar o exercício, primeiro instanciamos três variáveis do tipo `doub
 ```c
     double nota1, nota2, media;
 ```
-Como está escrito no enunciado, iremos ler a primeira nota do aluno e verificar se é uma nota válida:
+Como está escrito no enunciado, iremos ler a primeira nota do aluno e verificar se é uma nota válida. Para que seja possível escrever um novo valor caso o anterior seja inválido, fizemos um `do... while()` para criar um laço de repetição:
 ```c
     do {
+```
+Dentro da repetição estamos lendo a variável `nota1` usando a função `scanf` e, em seguida, verificamos se o valor é menor que 0 (`nota1 < 0`) ou maior que 10 (`nota1 > 10`) usando a função `if`. Se a verificação for verdadeira, ele mostrará na tela a mensagem `nota invalida`:
+```c
         scanf("%lf", &nota1);
         if (nota1 < 0 || nota1 > 10)
             printf("nota invalida\n");
-    } while (nota1 < 0 || nota1 > 10);
 ```
-Para que seja possível escrever um novo valor caso o anterior seja inválido, fizemos um `do... while()` para criar um laço de repetição e dentro dos parênteses está a condição para que o processo se repita. No caso, está escrito `nota1 < 0 || nota1 > 10`, que significa que será preciso ler e verificar o dado de novo se a nota for menor que 0 ou maior que 10.
-
-Dentro da repetição estamos lendo a variável `nota1` usando a função `scanf` e, em seguida, verificamos se o valor é menor que 0 ou maior que 10 usando a função `if`. Se a verificação for verdadeira, ele mostrará na tela a mensagem `nota invalida`.
-
+Dentro dos parênteses está a condição para que o processo se repita. No caso, está escrito `nota1 < 0 || nota1 > 10`, que significa que será preciso ler e verificar o dado de novo se a nota for menor que 0 ou maior que 10:
+ ```c
+     } while (nota1 < 0 || nota1 > 10);
+ ```
 A variável `nota2` passará pelo mesmo processo:
 ```c
     do {
