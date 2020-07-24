@@ -22,7 +22,10 @@ O exercício avisa que as entradas não necessariamente estão em ordem crescent
 
 No caso `X > Y`, iniciamos o loop do menor para o maior, indo de `i = Y+1` até `i < X`.  
 Para cada número nesse intervalo, verificamos se o resto da divisão por 5 é igual a 2 ou 3.  
-O código que faz essa verificação é `i % 5 == 2 || i % 5 == 3`, usando o operador `%` para calcular o resto da divisão.  
+O código que faz essa verificação é `i % 5 == 2 || i % 5 == 3`.
+- O operador `%` faz o cálculo do resto da divisão;
+- O operador `||` representa a operação lógica "ou".  
+
 Caso o valor atenda ao requisito, imprimimos `i` na tela com a função `printf()`.
 
 ```c
@@ -45,6 +48,7 @@ else if(Y > X)
 ###### Note que, como as diretivas possuem apenas uma linha dentro de cada, podemos omitir as chaves `{}`. Em códigos maiores, esta sintaxe não é recomendada.
 
 ##### Para revisar o operador %: [Resto de uma divisão inteira](http://linguagemc.com.br/resto-de-uma-divisao-inteira-em-c/)
+##### Para ler mais sobre operadores lógicos: [Operadores lógicos em C](http://linguagemc.com.br/operadores-logicos-em-c/)
 ##### Para relembrar sobre o laço for: [O comando for](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
     
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
