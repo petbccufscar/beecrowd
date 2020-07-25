@@ -23,7 +23,7 @@ float percentual;
 char Tipo;
 ```
 
-Para receber a primeira entrada, utilizamos a função `scanf()` para armazená-la em `N`. Após já termos esse valor em mãos, é possível realizar o loop `for` que itere de acordo com a quantia de casos de teste. Assim, a estrutura condicional conterá, primeiramente, a leitura dos 2 valores informados em cada caso. Como trata-se de um inteiro e uma cadeia de caractere (nesta ordem), a função `scanf()` possui como argumentos `%d` e `%c`.
+Para receber a primeira entrada, utilizamos a função `scanf()` para armazená-la em `N`. Após já termos esse valor em mãos, é possível realizar o loop `for` que itere de acordo com a quantia de casos de teste. Assim, a estrutura de repetição conterá, primeiramente, a leitura dos 2 valores informados em cada caso. Como trata-se de um inteiro e uma cadeia de caractere (nesta ordem), a função `scanf()` possui como argumentos `%d` e `%c`.
 
 ```c
 for(i=0; i<N; i++){
