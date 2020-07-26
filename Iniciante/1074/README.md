@@ -6,7 +6,7 @@ Leia um valor inteiro N. Este valor será a quantidade de valores que serão lid
  
 # Resolução:
  
-Inicialmente instanciamos as variaveis necessarias, tres inteiros, sendo eles `N`(quantidade de valores lidos),`X`(valor a ser lido) e `cont`(contador do `for()`).
+Inicialmente instanciamos as variáveis necessárias, três inteiros, sendo eles `N`(quantidade de valores lidos), `X`(valor a ser lido) e `cont`(contador do `for()`).
  
 ```c
     int N, X, cont;
@@ -45,5 +45,4 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
  
-
 
