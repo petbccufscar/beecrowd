@@ -19,7 +19,7 @@ Lemos o valor de *N*.
 ```c
 scanf("%d", &n);
 ```
-Agora iremos utilizar o `for()` para analisar cada `valor` de *X* separadamente.Dentro dele iremos ler um valor de *X* e verificar se ele está dentro do intervalo ou não utilizando `if` e `else`, caso seja verdadeiro adicionamos 1 a variável dentro, caso contrário adicionamos na variável fora.
+Agora iremos utilizar o `for()` para analisar cada `valor` de *X* separadamente. Dentro dele iremos ler um valor de *X* e verificar se ele está dentro do intervalo ou não utilizando `if` e `else`, caso seja verdadeiro adicionamos 1 a variável *dentro*, caso contrário adicionamos na variável *fora*.
  
 ```c
 for(cont=1; cont<=n; cont++){
