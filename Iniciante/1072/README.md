@@ -7,7 +7,7 @@ Mostre quantos destes valores *X* estão dentro do intervalo [10,20] e quantos e
  
 # Resolução:
  
-Primeiro vamos instanciar as variaveis necessarias, vamos precisar de um cinco valores inteiros, sendo eles para contar os valores dentro e fora do intervalo, contador do `for()`, o valor *N* a ser lido e o valores de *X*.
+Primeiro vamos instanciar as variáveis necessárias, vamos precisar de um cinco valores inteiros, sendo eles para contar os valores dentro e fora do intervalo, contador do `for()`, o valor *N* a ser lido e o valores de *X*.
  
  
 ```c
@@ -44,5 +44,4 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
  
-
 
