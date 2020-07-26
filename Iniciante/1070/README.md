@@ -1,5 +1,5 @@
 # Problema: 1070    
-Leia um valor inteiro X. Em seguida apresente os 6 valores ímpares consecutivos a partir de X, um valor por linha, inclusive o X ser for o caso.
+Leia um valor inteiro X. Em seguida apresente os 6 valores ímpares consecutivos a partir de X, um valor por linha, inclusive o X se for o caso.
 
 **Problema Completo**: https://www.urionlinejudge.com.br/judge/pt/problems/view/1070
 
@@ -7,7 +7,7 @@ Leia um valor inteiro X. Em seguida apresente os 6 valores ímpares consecutivos
 # Resolução:
 Para a resolução deste problema, receberemos um valor inteiro e a partir deste iremos percorrer seus sucessores procurando pelos próximos valores ímpares
 
-Utilizamos uma variável inteira para armazenar o valor que será passado e uma variável inteira que sérá utilizada como contador.
+Utilizamos uma variável inteira para armazenar o valor que será passado e uma variável inteira que será utilizada como contador.
 ```c
 int contador, X;
 ```
@@ -17,7 +17,7 @@ Realizamos a leitura do valor inicial que será passado, isso é feito através 
 scanf("%d",&X);
 ```
 
-Para resolver o problema será necessário um loop de operações, para isso utilizaremos a estrutura `while`, esta será responsavel de verificar se o valor em questão é ímpar, através da comparação `(X%2!=0)`, durante o loop iremos reutilizar a variavel `X`, que possuia inicialmente o valor passado pelo usuário, este ira armazenar a cada iteração do loop, um valor da iteração passado adicionado de 1, como é possivel ver ao final a utilização de `X++`. Para que os números impares sejam impressos um em cada linha, utilizamos o `\n` dentro da função `printf`.
+Para resolver o problema será necessário um loop de operações, para isso utilizaremos a estrutura `while`, esta será responsável de verificar se o valor em questão é ímpar, através da comparação `(X%2!=0)`, durante o loop iremos reutilizar a variável `X`, que possuía inicialmente o valor passado pelo usuário, este ira armazenar a cada iteração do loop, um valor da iteração passado adicionado de 1, como é possível ver ao final a utilização de `X++`. Para que os números impares sejam impressos um em cada linha, utilizamos o `\n` dentro da função `printf`.
 
 ```c
 contador = 0;

@@ -5,9 +5,9 @@ Leia 2 valores inteiros X e Y. A seguir, calcule e mostre a soma dos números im
 
 
 # Resolução:
-Para a resolução destre problema iremos receber 2 valores e teremos que percorrer os valores que estão entre estes e realizar a soma, apenas dos ímpares, e ao final imprimir o valor total.
+Para a resolução deste problema iremos receber 2 valores e teremos que percorrer os valores que estão entre estes e realizar a soma, apenas dos ímpares, e ao final imprimir o valor total.
 
-Utilizamos uma variável para utilizar como contador, duas variaveis que irão armazenar os valores que serão passados, uma variavel auxiliar a qual usaremos para realizar a inversão entre os valores, e uma variavel que irá armazenar a soma final dos valores que são ímpares.
+Utilizamos uma variável para utilizar como contador, duas variáveis que irão armazenar os valores que serão passados, uma variável auxiliar a qual usaremos para realizar a inversão entre os valores, e uma variável que irá armazenar a soma final dos valores que são ímpares.
 ```c
 int contador, X, Y, aux, soma;
 ```

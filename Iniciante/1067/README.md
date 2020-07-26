@@ -6,10 +6,10 @@ Leia um valor inteiro X (1 <= X <= 1000). Em seguida mostre os ímpares de 1 at�
 
 
 # Resolução:
-Para a resolução deste problema, receberemos um valor o qual usaremos como limite superior para mostrar quais são os números impares indo de 1 até esse limite.
+Para a resolução deste problema, receberemos um valor o qual usaremos como limite superior para mostrar quais são os números ímpares indo de 1 até esse limite.
 
 
-Utilizamos uma variável inteira para armazenar o valor passado e uma variável inteira para utilizar como contador esta ira passar por todos os elementos até chegar ao valor passado
+Utilizamos uma variável inteira para armazenar o valor passado e uma variável inteira para utilizar como contador, esta irá passar por todos os elementos até chegar ao valor passado
 ```c
 int X, contador;
 ```
@@ -20,7 +20,7 @@ scanf("%d",&X);
 ```
 
 Para a realização do loop, iremos percorrer de 1 até o valor armazenado em `X`, para isso utilizamos um `for`, dentro deste é realizado a operação MOD, a qual verifica o valor do resto, ao verificar o resto de uma divisão de um número qualquer por 2, podemos inferir se este é ímpar ou par, caso diferente de 0 o número é ímpar. Ao entrar na condição do `if` realizamos a impressão do valor através da função `printf`
-Como é requisitado que os valores impares sejam impressos um em cada linha, utilizamos o `\n` para realizar a quebra de linha
+Como é requisitado que os valores ímpares sejam impressos um em cada linha, utilizamos o `\n` para realizar a quebra de linha
 ```c
 for(contador = 1; contador<=X; contador++)
 	if(contador%2!=0)
