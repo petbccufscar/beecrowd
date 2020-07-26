@@ -19,7 +19,7 @@ Lemos o valor de `N`.
     scanf ("%d", &N);
 ```
  
-Agora nos iremos utilizar o `for()` para analizar numero por numero. No começo do `for()` vamos ler `X`, depois iremos fazer uma série de comparações para identificar a qual grupo esse `X` esta. Após identificarmos imprimimos na tela sua classificação (par ou ímpar; positivo, negativo ou nulo) com base no que foi pedido.
+Agora nós iremos utilizar o `for()` para analisar número por número. No começo do `for()` vamos ler `X`, depois iremos fazer uma série de comparações para identificar a qual grupo esse `X` está. Após identificarmos imprimimos na tela sua classificação (par ou ímpar; positivo, negativo ou nulo) com base no que foi pedido.
  
 ```c
     for (cont = 1; cont <= N; cont++)
@@ -45,4 +45,3 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
  
-
