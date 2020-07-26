@@ -6,7 +6,7 @@ Leia um valor inteiro *N*. Apresente o quadrado de cada um dos valores pares, de
  
 # Resolução:
  
-Primeiro instanciamos as variaveis necessarias, dois inteiros (um para o *N* e um para ser o contador do `for()`)
+Primeiro instanciamos as variáveis necessárias, dois inteiros (um para o *N* e um para ser o contador do `for()`)
  
 ```c
     int num, cont;
@@ -35,5 +35,4 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
  
-
 
