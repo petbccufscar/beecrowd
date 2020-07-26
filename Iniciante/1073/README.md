@@ -19,7 +19,7 @@ Lemos o valor de *N*.
 ```
  
 Agora no `for()`, nós iniciaremos ele com `cont=2`, utilizaremos um `<=` para comparar *N* com o `cont` e por fim iremos incrementar o contador de 2 em 2 (`cont+=2`) para que ele sempre seja par.
-Dentro do `for()` iremos imprimir o quadrado de cada par (sendo q o nosso par é o contador), assim, finalizando a lógica.
+Dentro do `for()` iremos imprimir o quadrado de cada par (sendo que o nosso par é o contador), finalizando a lógica.
  
 ```c
     for ( cont = 2; cont <= num; cont+=2)
@@ -35,4 +35,3 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
  
-
