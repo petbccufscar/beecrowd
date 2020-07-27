@@ -6,9 +6,9 @@ Joaozinho quer calcular e mostrar a quantidade de litros de combustível gastos 
 
 # Resolução:
 
-Uma forma de resolver o problema é calcular a distância, multiplicando a velocidade média pelo tempo, e depois dividí-la por 12.
+Uma forma de resolver o problema é calcular a distância, multiplicando a velocidade média pelo tempo, e depois dividí-la por 12, pois o automóvel faz 12 KM/L, para obter-se quantos litros são necessários.
 
-Para representar isto em nosso programa, fazemos: 
+Para representar estes valores em nosso programa, declaramos tempo e velocidade como inteiros, conforme a entrada, e a distância como float, para o resultado do cálculo da quantidade de litros (dist/12) imprimir as casas decimais. 
 
 ```c
         int tempo, velocidade;

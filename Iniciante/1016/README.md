@@ -10,9 +10,9 @@ Leia a distância (em Km) e calcule quanto tempo leva (em minutos) para o carro 
 
 # Resolução:
 
-Como o carro Y leva 2 minutos para se afastar 1 km do outro, por conta da velocidade de distanciação, já que **30km/h = 30km/60min = 1km/2min** , conforme o enunciado, lê-se a distância e a multiplica por 2, para calcular o tempo necessário. 
+Como o carro Y leva 2 minutos para se afastar 1 km do outro, conforme o enunciado, por conta da velocidade de distanciação, já que **30km/h = 30km/60min = 1km/2min** , lê-se a distância e a multiplica por 2, para calcular o tempo necessário. 
 
-Para representar isto em nosso programa, fazemos: 
+Para representar o valor da distância em nosso programa, fazemos: 
 
 ```c
         int dist;

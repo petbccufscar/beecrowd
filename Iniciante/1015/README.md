@@ -9,7 +9,9 @@ Distancia = raiz((x2 − x1)<sup>2</sup> + (y2 − y1)<sup>2</sup>)
 
 # Resolução:
 
-Para resolver o problema, realiza-se a leitura dos dados e aplicá-os diretamente na fórmula dada. Além disso, iremos importar a biblioteca math.h, para utilizarmos a função de raiz quadrada`sqrt()` e a função de potência`pow()` .
+Para resolver o problema, realiza-se a leitura dos dados e aplicá-os diretamente na fórmula dada. Além disso, iremos importar a biblioteca `math.h`, para utilizarmos a função de raiz quadrada`sqrt()` e a função de potência`pow()` .
+
+Vale pontuar que a distância entre dois pontos é a medida do seguimento de reta que os une(`dist`). 
 
 Primeiramente, para representar os valores em nosso programa, fazemos: 
 
