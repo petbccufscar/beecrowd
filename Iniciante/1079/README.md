@@ -9,41 +9,41 @@
 Para resolver o problema, vamos receber todas as notas, somar e realizar a expressão da média ponderada seguindo os pesos especificados no exercício.
 
 Começamos declarando as variáveis que serão utilizadas no exercício.
-Para declarar, usaremos o tipo 'float' (número flutuante), pois o problema pede que sejam valores reais:
+Para declarar, usaremos o tipo `float` (número flutuante), pois o problema pede que sejam valores reais:
 
 	float nota1, nota2, nota3, total, media;
 
-Para declarar o número de casos e o contador da estrutura de repetição que utilizaremos a seguir, usaremos o tipo 'int'
+Para declarar o número de casos e o contador da estrutura de repetição que utilizaremos a seguir, usaremos o tipo `int`
 
 	int cont, casos;
 
-Para ler o número de casos de teste, utilizamos a estrutura 'scanf'
+Para ler o número de casos de teste, utilizamos a estrutura `scanf`
 
 	scanf("%d", &casos);
 
-Para ler cada um dos casos e calcular as médias, utilizaremos a estrutura de repetição 'for'.
-A variável 'cont' será nosso contador da estrutura, para contabilizar cada caso. 
-Primeiro, ela começa com o valor = 1. Os valores que ela poderá obter são menores ou igual ao valor de casos. Para que mude de valor, 'cont' será incrementada toda vez que uma repetição ocorrer, que faremos com 'cont++' (que funciona de forma similar a 'cont = cont + 1'. Cada uma dessas condições é representada dentro da estrutura 'for'.
+Para ler cada um dos casos e calcular as médias, utilizaremos a estrutura de repetição `for`.
+A variável `cont` será nosso contador da estrutura, para contabilizar cada caso. 
+Primeiro, ela começa com o valor = 1. Os valores que ela poderá obter são menores ou igual ao valor de casos. Para que mude de valor, `cont` será incrementada toda vez que uma repetição ocorrer, que faremos com `cont++` (que funciona de forma similar a `cont = cont + 1`. Cada uma dessas condições é representada dentro da estrutura `for`.
 
 	for(cont=1; cont<=casos; cont++)
 
-Lemos cada uma das notas com a estrutura 'scanf', desta vez com '%f' que representa uma variável 'float'.
+Lemos cada uma das notas com a estrutura `scanf`, desta vez com `%f` que representa uma variável `float`.
 
 	scanf("%f%f%f", &nota1, &nota2, &nota3);
 
-Calculamos qual será o valor da primeira soma com cada nota lida e seus respectivos pesos e salvamos na variavel 'total'
+Calculamos qual será o valor da primeira soma com cada nota lida e seus respectivos pesos e salvamos na variável `total`
 
 	total = nota1*2.0 + nota2*3.0 + nota3*5.0;
 
-Por fim, dividimos a soma em 'total' por 10.0 para obter a média ponderada final
+Por fim, dividimos a soma em `total` por 10.0 para obter a média ponderada final
 
 	media = total/10.0;
 
-Exibimos a média ponderada final com a estrutura 'printf'. Lembre-se de utilizar o '\n' no final, pois o URI costuma ser bem exigente com a saída da resolução do problema.
+Exibimos a média ponderada final com a estrutura `printf`. Lembre-se de utilizar o `\n` no final, pois o URI costuma ser bem exigente com a saída da resolução do problema.
 
 	printf("%.1f\n", media);
 
-Essa repetição termina, 'cont' é incrementado e o 'for' executa esses passos novamente, até que 'cont' chegue em 1000, e termina a execução.
+Essa repetição termina, `cont` é incrementado e o `for` executa esses passos novamente, até que `cont` chegue em 1000, e termina a execução.
 
 ##### Mais sobre a média ponderada: [Média ponderada](https://brasilescola.uol.com.br/matematica/media-ponderada.html)
 ##### Mais sobre a estrutura de repetição for: [for](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
