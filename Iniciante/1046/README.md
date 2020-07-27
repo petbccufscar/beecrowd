@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Problema: 1046
-=======
-# Problema 
->>>>>>> 753b16d... Alterado os README - 1005, 1044, 1045, 1046
-=======
-# Problema: 1046
->>>>>>> c496103... Alterado com as correções apontadas
-=======
-# Problema: 1046
->>>>>>> eb6c8813059476a7b9fd23c3b9747085a74f3c79
+# Problema
 
 Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo pode começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
 
@@ -54,19 +42,8 @@ E para finalizar pode ocorrer do jogo durar 24h e para isso fazemos:
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
-=======
-ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
->>>>>>> 753b16d... Alterado os README - 1005, 1044, 1045, 1046
-=======
-ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
->>>>>>> c496103... Alterado com as correções apontadas
-=======
-ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
->>>>>>> eb6c8813059476a7b9fd23c3b9747085a74f3c79
+
 
 ##### Para aprender um pouco mais sobre:
 [Operadores Lógicos em C](http://linguagemc.com.br/operadores-logicos-em-c/#:~:text=Os%20operadores%20lógicos%20são%20utilizados,condições%20simples%20em%20expressões%20lógicas.)

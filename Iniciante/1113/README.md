@@ -1,4 +1,4 @@
-# Problema: 1113
+# Problema
 
 Leia uma quantidade indeterminada de duplas de valores inteiros X e Y. Escreva para cada X e Y uma mensagem que indique se estes valores foram digitados em ordem crescente ou decrescente.
 
@@ -6,45 +6,24 @@ Leia uma quantidade indeterminada de duplas de valores inteiros X e Y. Escreva p
 
 # Resolução
 
-O problema pede a utilização de 2 valores inteiros X e Y:
+O problema pede a utilização de 2 valores inteiros `X` e `Y`:
 ```c
         float X, Y;
 ```
-O exercício pede vários casos de teste sendo cada um deles divididos em valores para X e Y, para fazer esse tipo de exercício é recomendado usar um `while` em conjunto à um `scanf`:
+O exercício pede vários casos de teste sendo cada um deles divididos em valores para `X` e `Y`, para fazer esse tipo de exercício é recomendado usar um `while` em conjunto à um `scanf`.
+Temos que iniciar lendo as variáveis `X` e `Y` utilizando o `scanf`, isso se dá pela necessidade de iniciar o `while`.
+Como o exercício pede para ser vários casos de teste, iremos ao fim do loop ler novas entradas:
 
 ```c
-        while(X!=Y){
-            scanf("%d %d", &X, &Y);
-        }
-```
-Porém adotando essa estratégia é nescessário iniciar um `scanf` antes se não o `while` não irá iniciar, sendo assim a primeira parte do exercício é reservada para fazer apenas uma verificação de cada nos `if` e `else if`, resaltando o último `else if` que é a condição de parada, ela é testada para contemplar o caso onde se inicia com o caso de parada (X igual Y):
-
-```c
-        int X, Y;
-        
         scanf("%d %d", &X, &Y);
-        if(X>Y){
-            printf("Decrescente\n");
-        }
-        else if(X<Y){
-            printf("Crescente\n");
-        }
-        else if(X==Y){
-            return 0;
-        }
-```
-Como o exercício pede para ser vários casos de teste, então iremos expandir o que foi mostrado ateriormente e junta-los:
-
-```c
-
         while(X!=Y){
-            scanf("%d %d", &X, &Y);
             if(X>Y){
                 printf("Decrescente\n");
             }
             else if(X<Y){
                 printf("Crescente\n");
             }
+            scanf("%d %d", &X, &Y);
         }
 ```
 
