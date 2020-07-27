@@ -3,15 +3,25 @@
 Você deve fazer um programa que apresente a sequencia conforme o exemplo abaixo.
 
 I=1 J=7
+
 I=1 J=6
+
 I=1 J=5
+
 I=3 J=9
+
 I=3 J=8
+
 I=3 J=7
+
 ...
+
 I=9 J=15
+
 I=9 J=14
+
 I=9 J=13
+
 
 **Problema completo**: https://www.urionlinejudge.com.br/judge/pt/problems/view/1097
 
@@ -43,6 +53,8 @@ Analisando a saída do exercício, podemos ver que nosso ponto de parada pode fi
        i += 2;
     }
 ```
+
+Note que usamos uma forma "[abreviada]"(https://pt.wikibooks.org/wiki/Programar_em_C/Opera%C3%A7%C3%B5es_matem%C3%A1ticas_(B%C3%A1sico)) da soma, i += 2 é o mesmo que i = i + 2.
 
 Dentro desse loop `while` iremos fazer a variação de `j`. Para isso, precisaremos de mais um loop que repita 3 vezes um `printf`, usaremos para isso o loop `for`.
 

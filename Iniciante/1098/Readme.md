@@ -3,15 +3,25 @@
 Você deve fazer um programa que apresente a sequencia conforme o exemplo abaixo.
 
 I=0 J=1
+
 I=0 J=2
+
 I=0 J=3
+
 I=0.2 J=1.2
+
 I=0.2 J=2.2
+
 I=0.2 J=3.2
+
 .....
+
 I=2 J=?
+
 I=2 J=?
+
 I=2 J=?
+
 
 **Problema completo**: https://www.urionlinejudge.com.br/judge/pt/problems/view/1098
 
@@ -45,6 +55,8 @@ Analisando a saída do exercício, podemos ver que nosso ponto de parada pode fi
        i += 0.2;
     }
 ```
+
+Note que usamos uma forma "[abreviada]"(https://pt.wikibooks.org/wiki/Programar_em_C/Opera%C3%A7%C3%B5es_matem%C3%A1ticas_(B%C3%A1sico)) da soma, i += 0.2 é o mesmo que i = i + 0.2
 
 Dentro desse loop `while` iremos fazer a variação do valor J. Para isso, precisaremos de mais um loop que repita 3 vezes para cada valor de `i`, usaremos para isso o loop `for`.
 
