@@ -42,13 +42,13 @@ Por fim, exibiremos na tela os resultados com a estrutura printf. Importante lem
 
 	printf("%d\n", valor);
 
-##### * Mais sobre variáveis [aqui](http://linguagemc.com.br/variaveis-em-linguagem-c/)
+##### * Mais sobre variáveis: [variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
 
-##### * Mais sobre leitura de dados e a estrutura scanf [aqui](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### * Mais sobre leitura de dados e a estrutura scanf: [scanf](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
 
-##### * Mais sobre o resto de uma divisão inteira [aqui](http://linguagemc.com.br/resto-de-uma-divisao-inteira-em-c/)
+##### * Mais sobre o resto de uma divisão inteira: [Resto divisão inteira](http://linguagemc.com.br/resto-de-uma-divisao-inteira-em-c/)
 
-##### * Mais sobre escrita de dados e a estrutura printf [aqui](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### * Mais sobre escrita de dados e a estrutura printf: [printf](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 * [Facebook](https://www.facebook.com/petbcc/),
