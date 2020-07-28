@@ -9,34 +9,42 @@ Obs: a fórmula apenas calcula o maior entre os dois primeiros (a e b). Um segun
 ###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1013
 
 # Resolução
+Neste problemas, iremos receber 3 valores do usuário e apontaremos qual é o maior, utilizando a fórmula dada no enunciado.
 
-Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste exercício, todas as variáveis serão inteiras. declararemos uma variável &**maior** para guardar o maior de dois números. 
+Utilizamos para esse problema a biblioteca `stdlib.h`, para usarmos a função [abs](http://www.w3big.com/pt/cprogramming/c-function-abs.html) que recebe um valor inteiro e retorna seu valor absoluto (positivo)
 
-###### Modelo: TipoDaVariavel NomeDaVariavel;
+Primeiro, deve-se declarar as variáveis a serem utilizadas. Neste exercício, todas as variáveis serão inteiras. declararemos uma variável `maior` para guardar o maior de dois números. 
 
-	int a,b,c,maior;
+```c
+	int a, b, c, maior;
+```
 
-##### Mais sobre variáveis neste link (http://linguagemc.com.br/variaveis-em-linguagem-c/)
+Para leitura da entrada, utiliza-se a função `scanf`, que lerá os 3 valores juntos, podendo ser diferenciados por um espaço ou a tecla enter (quebra de linha)
 
-## Entrada
-
-Para leitura da entrada, utiliza-se a função scanf(), que lerá os 3 valores juntos, podendo ser diferenciados por um espaço ou a tecla enter (quebra de linha)
-
-###### Modelo: scanf("%TipoDaVariavel", &NomeDaVariavel);
-
+```c
 	scanf("%d %d %d", &a,&b,&c);
+```
 
-##### Mais sobre leitura de dados e a estrutura scanf neste link (http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+Para resolver esse problema de comparação, vamos utilizar a fórmula do exercício para comparar os números `a` e `b`.Salvamos o maior na variável `maior` e comparamos `maior` e `c` com a mesma fórmula. O resultado será salvo novamente na variável `maior`, que irá conter o maior número entre os três.
 
-Para resolver esse problema de comparação, devemos utilizar a formula que o exercício nos passou e assim comparar dois números **a** e **b**. Obtendo o maior deles e salvando na variável **maior** e depois disso aplicamos a mesma fórmula em **maior** e **c** e guardamos novamente na variável maior, reutilizando a variável maior.
+```c
+	maior = (a+b+abs(a-b))/2;
+    maior = (maior+c+abs(maior-c))/2;
+```
 
-Lembre-se que a função abs utilizada na fórmula dada pelo exercício, pertence a biblioteca stdlib, importada na segunda linha do nosso código.
+Lembre-se que a função `abs` utilizada na fórmula dada pelo exercício, pertence a biblioteca `stdlib.h`, importada na segunda linha do nosso código.
 
-## Saída
+Para imprimir uma saída, utilizamos a função `printf`.
 
-Para imprimir uma saída, exibindo-a na tela, é utilizada a função printf().
-###### Modelo: printf("Texto a ser exibido e/ou %TipoDaVariavel", NomeDaVariavel);
-	
+```c
 	printf("%d eh o maior",maior);
+```
 
-##### Mais sobre escrita de dados e a estrutura printf neste link (http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
+
+##### Para entender melhor sobre entradas e saídas: [Entrada e Saida](http://linguagemc.com.br/operacoes-de-entrada-e-saida-de-dados-em-linguagem-c/)
+
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
