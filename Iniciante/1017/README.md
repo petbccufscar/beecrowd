@@ -6,18 +6,16 @@ Joaozinho quer calcular e mostrar a quantidade de litros de combustível gastos 
 
 # Resolução:
 
-Uma forma de resolver o problema é calcular a distância e depois dividí-la por 12.
+Uma forma de resolver o problema é calcular a distância, multiplicando a velocidade média pelo tempo, e depois dividí-la por 12, pois o automóvel faz 12 KM/L, para obter-se quantos litros são necessários.
 
-Para representar isto em nosso programa, fazemos: 
+Para representar estes valores em nosso programa, declaramos tempo e velocidade como inteiros, conforme a entrada, e a distância como float, para o resultado do cálculo da quantidade de litros (dist/12) imprimir as casas decimais. 
 
 ```c
         int tempo, velocidade;
         float dist;
 ```
 
-##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
-
-Para ler as variáveis, usa-se scanf:
+Para ler a entrada, usa-se `scanf`:
 
 ```c
         scanf("%d", &tempo);
@@ -25,14 +23,19 @@ Para ler as variáveis, usa-se scanf:
         scanf("%d", &velocidade);
 ```
 
-Em seguida, calcula-se a distância e escrevemos o resultado na tela utilizando a função printf:
+Em seguida, calcula-se a distância e, já que o automóvel faz 12 KM/L, divide-a por 12 e escreve-se este resultado na tela utilizando a função `printf`:
 
 ```c
+		dist = tempo*velocidade;
+
         printf("%.3f \n", dist/12);
 ```
 
-O '%0.3f' será substituido pelo valor contido em valorTotal. O '.3' indica quantas casas decimais serão mostradas na tela, que no caso são duas.
+O `%.3f` será substituido pelo resultado da divisão de `dist` por 12. O '.3' indica quantas casas decimais serão mostradas na tela, que no caso são três.
 
-##### Para aprender um pouco mais sobre tipos de variáveis: [Tipos de Variáveis](http://linguagemc.com.br/tipos-de-dados-em-c/)
 
-###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou envie um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
+

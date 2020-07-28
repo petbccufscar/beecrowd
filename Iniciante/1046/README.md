@@ -1,4 +1,4 @@
-# Problema: 1046
+# Problema
 
 Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo pode começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
 
@@ -43,6 +43,7 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
+
 
 ##### Para aprender um pouco mais sobre:
 [Operadores Lógicos em C](http://linguagemc.com.br/operadores-logicos-em-c/#:~:text=Os%20operadores%20lógicos%20são%20utilizados,condições%20simples%20em%20expressões%20lógicas.)
