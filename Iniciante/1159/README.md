@@ -37,7 +37,7 @@ Como não temos o número de casos de teste que faremos e sim uma condição de 
 
 Focando no processo de soma agora, temos um loop `for` interno que faz uma contagem de 0 a 5 pois precisamos somar os 5 próximos números a partir de `X` que sejam pares. 
 
-Para a verificação de paridade, utilizamos o condicional `if(X%2 == 0)`, ou seja, se `X` for par.
+Para a verificação de paridade, utilizamos o condicional `if(X%2 == 0)`, ou seja, se o resto da divisão de `X` por 2 for igual a 0 significa que `X` é par. 
 
 * Caso `X` seja par, somamos `X` na variável `soma` (`soma += X` é o mesmo que `soma = soma + X`) e pulamos para o próximo par (`X += 2`)  
 * Caso `X` seja impar (`else`), somamos `X`+1 na variável `soma`, ou seja, o próximo par, e então pulamos para o próximo impar, pra sempre cair no `else`
@@ -78,6 +78,8 @@ Dessa forma, somaremos apenas os números pares e armazenamos na variável `soma
 ```
 
 Ao escrever o valor da variável `soma` na tela, também recebemos o próximo valor de `X` e recomeçamos o processo, passando pela verificação se chegamos à nossa condição de parada (`X == 0`) verificada pelo trecho `while(X != 0)`.
+
+#### Aprenda um pouco mais sobre operadores e expressões: [Operadores](https://pt.wikibooks.org/wiki/Programar_em_C/Operadores)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),

@@ -24,7 +24,7 @@ Tendo a variável declarada, podemos recebe-la do usuário utilizando o `%d` par
 ```
 
 Agora, com um loop `for` iremos percorrer todos os números inteiros anteriores a `N` (incluindo N) com a variável `i` (Ponto 1 levantado no começo dessa explicação).
-Com o trecho `if(N%i == 0)` fazemos a verificação se o número é divisor de N, e caso positivo, o escrevemos na tela com a função `printf`.
+Com o trecho `if(N%i == 0)` fazemos a verificação se o resto da divisão de `N`por `i ` é 0, caso positivo, o escrevemos na tela com a função `printf`.
 
 ```c
     for(i = 1; i <= N; i++){
@@ -34,7 +34,7 @@ Com o trecho `if(N%i == 0)` fazemos a verificação se o número é divisor de N
     }
 ```
 
-
+#### Aprenda um pouco mais sobre operadores e expressões: [Operadores](https://pt.wikibooks.org/wiki/Programar_em_C/Operadores)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
