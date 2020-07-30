@@ -54,6 +54,7 @@ Analisando a saída do exercício, podemos ver que nosso ponto de parada pode fi
     }
 ```
 
+
 Note que usamos uma forma [abreviada](https://pt.wikibooks.org/wiki/Programar_em_C/Opera%C3%A7%C3%B5es_matem%C3%A1ticas_(B%C3%A1sico)) da soma, `i += 2` é o mesmo que `i = i + 2`.
 
 Dentro desse loop `while` iremos fazer a variação de `j`. Para isso, precisaremos de mais um loop que repita 3 vezes um `printf`, usaremos para isso o loop `for`.

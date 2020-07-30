@@ -1,4 +1,4 @@
-# Problema: 1045
+# Problema
 
 Leia 3 valores de ponto flutuante A, B e C e ordene-os em ordem decrescente, de modo que o lado A representa o maior dos 3 lados. A seguir, determine o tipo de triângulo que estes três lados formam, com base nos seguintes casos, sempre escrevendo uma mensagem adequada:
     - se A ≥ B+C, apresente a mensagem: NAO FORMA TRIANGULO
@@ -65,8 +65,7 @@ Depois de assegurar que a entrada está correta passamos para etapa dos teste pa
 
                 if((A==B||B==C||C==A)&&(A!=B||B!=C||C!=A)){  
                     printf("TRIANGULO ISOSCELES\n");      
-                }
-                
+                }       
         }
 
         else if((A*A) < ((B*B) + (C*C))){
@@ -78,7 +77,6 @@ Depois de assegurar que a entrada está correta passamos para etapa dos teste pa
                 if(A==B && B==C){
                     printf("TRIANGULO EQUILATERO\n");
                 }
-
         }
 ```
 Quando fazemos o teste para confimar se o triângulo é obtusângulo temos que lembrar que um triângulo Obtusângulo pode ser também um triângulo Isósceles por isso temos que fazer essa verificação.
@@ -88,6 +86,7 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
+
 
 ##### Para aprender um pouco mais sobre Operadores Lógicos em C:
 [Operadores Lógicos em C](http://linguagemc.com.br/operadores-logicos-em-c/#:~:text=Os%20operadores%20lógicos%20são%20utilizados,condições%20simples%20em%20expressões%20lógicas.)

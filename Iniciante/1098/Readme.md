@@ -64,6 +64,7 @@ Analisando melhor a variação de J, podemos reescrevê-la como: (i+1), (i+2) e 
 
 O problema define que temos que escrever o número como inteiro quando ele atingir valores inteiros (0 na primeira casa decimal), e com 1 casa decimal quando tiver casas decimais diferentes de 0. 
 
+
 Para isso, usaremos a variável `contador` que nos auxiliará nisso. Para cada acréscimo +0.2 em `i`, teremos também +1 no `contador`, portanto, a cada 5 vezes que o loop interno é realizado (`i` chega ao próximo número inteiro [5*0.2]), devemos escrever sem casas decimais, o que pode ser verificado se `contador%5 == 0`. Veja que no primeiro caso temos (0%5 == 0) e para quando o `i` está em 1, o `contador` estará em 5, assim, (5%5 == 0).
 
 ```c
