@@ -56,7 +56,7 @@ Analisando a saída do exercício, podemos ver que nosso ponto de parada pode fi
     }
 ```
 
-Note que usamos uma forma "[abreviada]"(https://pt.wikibooks.org/wiki/Programar_em_C/Opera%C3%A7%C3%B5es_matem%C3%A1ticas_(B%C3%A1sico)) da soma, i += 0.2 é o mesmo que i = i + 0.2
+Note que usamos uma forma [abreviada](https://pt.wikibooks.org/wiki/Programar_em_C/Opera%C3%A7%C3%B5es_matem%C3%A1ticas_(B%C3%A1sico)) da soma, `i += 0.2` é o mesmo que `i = i + 0.2`
 
 Dentro desse loop `while` iremos fazer a variação do valor J. Para isso, precisaremos de mais um loop que repita 3 vezes para cada valor de `i`, usaremos para isso o loop `for`.
 
@@ -64,7 +64,8 @@ Analisando melhor a variação de J, podemos reescrevê-la como: (i+1), (i+2) e 
 
 O problema define que temos que escrever o número como inteiro quando ele atingir valores inteiros (0 na primeira casa decimal), e com 1 casa decimal quando tiver casas decimais diferentes de 0. 
 
-Para isso, usaremos a variável `contador` que nos auxiliará nisso. Para cada acréscimo +0.2 em `i`, teremos também +1 no `contador`, portanto, a cada 5 vezes que o loop interno é realizado (`i` chega ao próximo número inteiro [5*0.2]), devemos escrever sem casas decimais, o que pode ser verificado se `contador%5 == 0`. Veja que no primeiro caso temos (0%5 == 0) e para quando o `i` está em 1, o `contador` estará em 5, assim, (5%5 == 0).   
+Para isso, usaremos a variável `contador` que nos auxiliará nisso. Para cada acréscimo +0.2 em `i`, teremos também +1 no `contador`, portanto, a cada 5 vezes que o loop interno é realizado (`i` chega ao próximo número inteiro [5*0.2]), devemos escrever sem casas decimais, o que pode ser verificado se `contador%5 == 0`. Veja que no primeiro caso temos (0%5 == 0) e para quando o `i` está em 1, o `contador` estará em 5, assim, (5%5 == 0).
+
 ```c
      while(i<2){
         for(k=1;k<=3;k++){ 
