@@ -32,7 +32,7 @@ G1 = (G1 / 100.0) + 1.0;
 G2 = (G2 / 100.0) + 1.0;
 ```
 
-Dentro da estrutura `while` definimos que enquanto `PA <= PB` será realizada a multiplicação entre a cidade e sua respectiva taxa de crescimento, armazenando o valor final na propria variavel, o que faz com que na próxima iteração do laço `while` a multiplicação seja realizada com o valor atualizado. A cada repetição incrementamos a variavel `anos` para ter um controle sobre o tempo que irá demorar
+Dentro da estrutura `while` definimos que enquanto `PA <= PB` será realizada a multiplicação entre a cidade e sua respectiva taxa de crescimento, armazenando o valor final na própria variável, o que faz com que na próxima iteração do laço `while` a multiplicação seja realizada com o valor atualizado. A cada repetição incrementamos a variável `anos` para ter um controle sobre o tempo que irá demorar
 ```c
 while(PA <= PB){
   PA *= G1;
