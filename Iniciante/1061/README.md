@@ -8,24 +8,20 @@ Sabendo que o evento pode durar de poucos segundos a vários dias, você deverá
 
 # Resolução:
 
-Primeiro, precisamos declarar as variáveis que representam as entradas: Dia, horas, minutos e segundos do início e final do evento.
+Primeiro, precisamos declarar as variáveis que representam as entradas: Dia, horas, minutos e segundos do início e final do evento. Também faremos as variáveis que terminam com Resposta, que representarão a saída.
+
 ```c
         int diaInicial, horasInicial, minutosInicial, segundosInicial;
         int diaFinal, horasFinal, minutosFinal, segundosFinal;
         int diaResposta, horasResposta, minutosResposta, segundosResposta;
 ```
-Note que também foi criado as variáveis que terminam com Resposta, que representarão a saída.
 
-##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
-
-Para leitura das notas, utilizamos a função **scanf**:
+Para leitura das notas, utilizamos a função `scanf`. Precisamos colocar o formato exato dos dados que serão recebidos de entrada para que nosso programa saiba o que esperar:
+:
 ```c
         scanf("Dia %d %d : %d : %d ", &diaInicial, &horasInicial, &minutosInicial, &segundosInicial);
         scanf("Dia %d %d : %d : %d", &diaFinal, &horasFinal, &minutosFinal, &segundosFinal);
 ```
-Note que precisamos colocar o formato exato dos dados que serão recebidos de entrada para que nosso programa saiba o que esperar.
-
-##### Para entender melhor a função scanf e o porquê ela precisa receber o formato exato dos dados: [scanf](https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm)
 
 Agora precisamos calcular a diferença de tempo entre o começo e o final do evento, para saber sua duração:
 ```c
@@ -41,7 +37,6 @@ Note que somente isso não resolve o problema, no casos do segundosResposta, min
 Ou seja, os segundos afetam os minutos, que afetam as horas, que afetam os dias.
 
 Para fazer essa correção e propagação, fazemos:
-
 ```c
         if(segundosResposta < 0){
             segundosResposta += 60;
@@ -71,3 +66,12 @@ Com os valores agora devidamente corrigidos, basta apresentar na tela a duraçã
 ```
 
 ###### Todas as funções utlizadas estão contidas na biblioteca stdio.h, incluída na primeira linha do nosso programa.
+
+##### Para aprender um pouco mais sobre variáveis: [Variáveis](http://linguagemc.com.br/variaveis-em-linguagem-c/)
+##### Para entender melhor a função scanf e o porquê ela precisa receber o formato exato dos dados: [scanf](https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm)
+
+
+Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+* [Facebook](https://www.facebook.com/petbcc/),
+* [Instagram](https://www.instagram.com/petbcc.ufscar/)
+* ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
