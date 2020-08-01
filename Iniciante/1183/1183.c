@@ -2,9 +2,9 @@
 int main()
 {
     double soma = 0.0, M[12][12];
-    char T[2];
+    char O[2];
     int coluna, x, y, z, contagem = 1;
-    scanf("%s", &T);
+    scanf("%s", &O);
     for (x = 0; x <= 11; x++)
     {
         for (y = 0; y <= 11; y++)
@@ -16,7 +16,7 @@ int main()
             soma += M[z][coluna];
         contagem++;
     }
-    if (T[0] == 'S')
+    if (O[0] == 'S')
         printf("%.1lf\n", soma);
     else
     {

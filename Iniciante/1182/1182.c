@@ -3,15 +3,15 @@ int main()
 {
     double soma = 0.0, M[12][12];
     char T[2];
-    int coluna, x, y;
-    scanf("%d", &coluna);
+    int C, x, y;
+    scanf("%d", &C);
     scanf("%s", &T);
     for (x = 0; x <= 11; x++)
     {
         for (y = 0; y <= 11; y++)
         {
             scanf("%lf", &M[x][y]);
-            if (y == coluna)
+            if (y == C)
                 soma += M[x][y];
         }
     }

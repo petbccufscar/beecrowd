@@ -1,35 +1,24 @@
 # Problema:
-Leia um caractere maiúsculo, que indica uma operação que deve ser realizada e uma matriz M[12][12]. Em seguida, calcule e mostre a soma ou a média considerando somente aqueles elementos que estão acima da diagonal principal da matriz, representados por `#`:
+Leia um caractere maiúsculo, que indica uma operação que deve ser realizada e uma matriz M[12][12]. Em seguida, calcule e mostre a soma ou a média considerando somente aqueles elementos que estão acima da diagonal principal da matriz, conforme ilustrado abaixo (área verde).
  
-[ ] [#] [#] [#] [#] [#] [#] [#] [#] [#] [#] [#]
-[ ] [ ] [#] [#] [#] [#] [#] [#] [#] [#] [#] [#]
-[ ] [ ] [ ] [#] [#] [#] [#] [#] [#] [#] [#] [#]
-[ ] [ ] [ ] [ ] [#] [#] [#] [#] [#] [#] [#] [#]
-[ ] [ ] [ ] [ ] [ ] [#] [#] [#] [#] [#] [#] [#]
-[ ] [ ] [ ] [ ] [ ] [ ] [#] [#] [#] [#] [#] [#]
-[ ] [ ] [ ] [ ] [ ] [ ] [ ] [#] [#] [#] [#] [#]
-[ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [#] [#] [#] [#]
-[ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [#] [#] [#]
-[ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [#] [#]
-[ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [#]
-[ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
+![Matriz](https://resources.urionlinejudge.com.br/gallery/images/problems/UOJ_1183.png)
  
 ##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/1183
  
  
 # Resolução:
  
-Começamos instanciando as variáveis necessárias, sendo elas 2 do tipo `double` (um para a soma e outro para a matriz), um vetor de `char`(definido como `T[2]` pois o último espaço de memória dele é obrigatoriamente definido como `\0`), e 5 inteiros(`coluna` para fazer as contagem por coluna, `x` e `y` para percorrer a matriz e adicionam valores, `z` para ser o valor de linha no momento da soma, e `contagem` vai ser o número de valores por coluna lidos, que será referente ao número da coluna, no caso, a coluna 0 terá 0 valores, a coluna 1 terá 1 valor e assim por diante). O valor de `contagem` começa em 1 pois não será somado valores da coluna 0.
-Após definir as variáveis, podemos ler a operação (`T`).
+Começamos instanciando as variáveis necessárias, sendo elas: 2 do tipo `double` (uma para armazenar a soma e outra, a matriz), um vetor de `char` (definido como `O[2]`, este vetor de char tem capacidade de armazenar 2 caracteres, contudo, o último caracter de uma string, deve ser sempre o caracter nulo “\0” que serve para indicar o final da string, ou seja, só modificaremos o `O[0]` pois o `O[1]` será o caracter nulo), e 5 inteiros (`coluna` para representar qual coluna está sendo acessada naquele momento; `x` e `y` para percorrer a matriz adicionando seus valores; `linha` que corresponde à linha percorrida no momento da soma; e `contagem` que garante um caminho na diagonal, pois indica em qual coluna está o 1º número dentre todos que devem ser somados na linha em questão). O valor de `contagem` começa em 1 pois não será somado valores da coluna 0.
+Após definir as variáveis, podemos ler o caractere que indica a operação (ou seja, `O`).
  
 ```c
     double soma = 0.0, M[12][12];
-    char T[2];
-    int coluna, x, y, z, contagem = 1;
-    scanf("%s", &T);
+    char O[2];
+    int coluna, x, y, linha, contagem = 1;
+    scanf("%s", &O);
 ```
  
-Vamos utilizar 2 `for()` aninhados para ler os valores de cada elemento.
+Vamos utilizar 2 `for()` aninhados para ler os valores de cada elemento da matriz.
  
 ```c
     for (x = 0; x <= 11; x++)
@@ -39,20 +28,20 @@ Vamos utilizar 2 `for()` aninhados para ler os valores de cada elemento.
     }
 ```
  
-Agora utilizaremos 2 `for()` aninhados para fazer a soma dos elementos. Ao final do `for()` externo incrementamos a `contagem` para diminuir a quantidade de valores somados por linhas, como mostrado no exemplo.
+Agora utilizaremos 2 `for()` aninhados para fazer a soma dos elementos. Ao final do `for()` externo incrementamos a `contagem` para diminuir a quantidade de valores somados por linhas, ou seja, para cada linha iremos somar todos os elementos das colunas com índice maior do que o da linha referente, por exemplo, na linha 5 iremos somar todas as colunas com indice de 6 até 11
  
 ```c
-    for (z = 0; z <= 11; z++)
+    for (linha = 0; linha <= 11; linha++)
     {
         for (coluna = contagem; coluna <= 11; coluna++)
-            soma += M[z][coluna];
+            soma += M[linha][coluna];
         contagem++;
     }
 ```
-Levando em conta que o caractere maiúsculo pode somente ser 'S' ou 'M', comparamos `T[0]` à 'S', se for verdadeiro imprimimos `soma` na tela, caso contrário imprimimos `soma/66.0`.
+Levando em conta que o caractere maiúsculo pode somente ser 'S' ou 'M', comparamos `O[0]` à 'S'. Se a igualdade for verdadeira, imprimimos `soma` na tela; caso contrário imprimimos o cálculo `soma/66.0` referente à média (66 indica a quantidade de valores considerados na soma).
  
 ```c
-    if (T[0] == 'S')
+    if (O[0] == 'S')
         printf("%.1lf\n", soma);
     else
     {
