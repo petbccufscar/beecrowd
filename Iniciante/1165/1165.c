@@ -7,7 +7,8 @@ int main(){
 	for(i=0; i<nCasos; i++){
 		scanf("%d", &valor);
 		primo = 1;
-
+if(valor == 1)
+    primo = 0;
 		for(j=2; j<valor; j++)
 			if(valor % j == 0)
 				primo = 0;

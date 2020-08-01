@@ -8,7 +8,7 @@ Porém, em alguns casos o tempo pode ser muito grande, e Mariazinha não se inte
 
 # Resolução:
 
-Declaramos algumas variaveis que serão importantes durante a resolução do problema, respectivamente, `contador` utilizado dentro `for`, `T` que irá armazenar o número de casos de teste, `PA` e `PB` que receberão as populações das cidades A e B, e `anos` para armazenar a o tempo final necessário para que `PA` se torne maior que `PB`. Em seguida declaramos duas variaveis `G1` e `G2` do tipo `double` que irão receber os valores da taxa de crescimentos das cidades A e B respectivamente.
+Declaramos algumas variáveis que serão importantes durante a resolução do problema, respectivamente, `contador` utilizado dentro do `for`, `T` que irá armazenar o número de casos de teste, `PA` e `PB` que receberão as populações das cidades A e B, e `anos` para armazenar a o tempo final necessário para que `PA` se torne maior que `PB`. Em seguida declaramos duas variáveis `G1` e `G2` do tipo `double` que irão receber os valores da taxa de crescimentos das cidades A e B respectivamente.
 ```c
 int contador, T, PA, PB, anos;
 double G1, G2;
@@ -40,7 +40,7 @@ while(PA <= PB){
   anos++;
 ```
 
-Durante o `while` é feito a verificação para garantir que não demore muito tempo, assim como é proposto pelo problema, dessa forma, quando anos atinge um valor maior que "100", saimos do laço e imprimimos que o tempo necessário para que a população da cidade A seja maior que a população da cidade B será mais que 1 século.
+Durante o `while` é feito a verificação para garantir que não demore muito tempo, assim como é proposto pelo problema, dessa forma, quando `anos` atinge um valor maior que 100, saímos do laço e imprimimos que o tempo necessário para que a população da cidade A seja maior que a população da cidade B será mais que 1 século.
 ```c
 if (anos > 100){
   printf("Mais de 1 seculo.\n");

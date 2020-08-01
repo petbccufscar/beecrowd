@@ -6,20 +6,20 @@ Na matemática, um número perfeito é um número inteiro para o qual a soma de 
 
 # Resolução:
 
-Iniciamos realizando a declaração das variaveis que iremos utilizar, dentre essas a `nCasos` irá armazenar a quantidade de casos de teste que iremos realizar, este valor será passado no começo, portanto logo em seguida utilizamos a função `scanf` para receber o valor. Teremos também uma variavel `valor` que a cada iteração de nosso laço `for` irá receber um novo valor, duas variaveis `i` e `j` que serão usadas como contadores dentro de laços de repetição `for` e um ultima variavel `soma` para armazenar o valor que será somado e será usado ao final na verificação do número perfeito 
+Iniciamos realizando a declaração das variáveis que iremos utilizar, dentre essas a `nCasos` irá armazenar a quantidade de casos de teste que iremos realizar, este valor será passado no começo, portanto logo em seguida utilizamos a função `scanf` para receber o valor. Teremos também uma variável `valor` que a cada iteração do nosso laço `for` irá receber um novo valor, duas variáveis `i` e `j` que serão usadas como contadores dentro de laços de repetição `for` e uma ultima variável `soma` para armazenar o valor que será somado e será usado ao final na verificação do número perfeito 
 ```c
 int nCasos, valor, i, j, soma;
 scanf("%d", &nCasos);
 ```
 
-No nosso laço `for` principal iremos receber o valor cujo deve ser verificado sob a condição de número perfeito, realizamos então a leitura do valor para ser utilizado durante a iteração corrente. Importante a cada iteração definir o valor da variavel `soma` como 0 pois será utilizada individualmente em cada iteração
+No nosso laço `for` principal iremos receber o valor que deve ser verificado sob a condição de número perfeito. Realizamos então a leitura do valor para ser utilizado durante a iteração corrente. Importante a cada iteração definir o valor da variável `soma` como 0 pois será utilizada individualmente em cada iteração e assim, o resultado da iteração anterior não interfere na atual
 ```c
 for(i=0; i<nCasos; i++){
 	scanf("%d", &valor);
 	soma = 0;
 ```
 
-Neste laço mais interno é realizado uma comparação, utilizando a variavel `j` indo de 1 até o valor passado, não incluindo este, verificando todos os possiveis divisores, caso encontre algum divisor durante esse trajeto, é realizado o incremento à variavel soma com o valor presente na variavel `j`
+Neste laço mais interno é realizado uma comparação, utilizando a variável `j` indo de 1 até a entrada armazenada em `valor`, não incluindo este, verificando todos os possíveis divisores, caso encontre algum divisor durante esse trajeto, é realizado o incremento à variável soma com o valor presente na variável `j`
 ```c
 for(j=1; j<valor; j++)
 	if(valor % j == 0)
