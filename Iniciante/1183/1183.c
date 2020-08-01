@@ -3,17 +3,17 @@ int main()
 {
     double soma = 0.0, M[12][12];
     char O[2];
-    int coluna, x, y, z, contagem = 1;
+    int coluna, x, y, linha, contagem = 1;
     scanf("%s", &O);
     for (x = 0; x <= 11; x++)
     {
         for (y = 0; y <= 11; y++)
             scanf("%lf", &M[x][y]);
     }
-    for (z = 0; z <= 11; z++)
+    for (linha = 0; linha <= 11; linha++)
     {
         for (coluna = contagem; coluna <= 11; coluna++)
-            soma += M[z][coluna];
+            soma += M[linha][coluna];
         contagem++;
     }
     if (O[0] == 'S')
