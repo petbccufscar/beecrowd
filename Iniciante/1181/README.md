@@ -35,14 +35,14 @@ Dentro do `for()` interno iremos fazer uma comparação para saber se estamos na
 ```
 Levando em conta que o caractere maiúsculo pode somente ser 'S' ou 'M', comparamos `T[0]` à 'S', se for verdadeiro imprimimos `soma` na tela, caso contrário imprimimos o cálculo `soma/12.0` correspondente à média.
 
-'''c
+```c
     if(T[0]=='S')
         printf("%.1lf\n",soma);
     else
     {
         printf("%.1lf\n",soma/12.0);
     }
-'''
+```
  
 ##### Para aprender um pouco mais sobre o laço de repetição for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
  
