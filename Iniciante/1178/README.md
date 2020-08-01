@@ -7,7 +7,7 @@ Leia um valor X. Coloque este valor na primeira posição de um vetor N[100]. Em
 # Resolução:
 É importante armazenarmos o valor da entrada a fim de, posteriormente, utilizá-lo para gerar os demais 99 valores e, então, exibi-los na saída.
 
-Como a nomenclatura já foi determinada pelo enunciado, declararemos a variável `X` (para armazenar o valor inicial fornecido) e o vetor `N` (de tamanho 100), que conterá cada um dos valores da saída. Ambos devem ser do tipo `double`, conforme a entrada exemplificada no exercício ["(...) contem um valor de **dupla precisão** com 4 casas decimais."]. Já a variável `i`, do tipo `int`, servirá de auxilio posteriormente.
+Como a nomenclatura já foi determinada pelo enunciado, declararemos a variável `X` (para armazenar o valor inicial fornecido) e o vetor `N` (de tamanho 100), que conterá cada um dos valores da saída. Ambos devem ser do tipo `double`, conforme a entrada exemplificada no exercício ["(...) contém um valor de **dupla precisão** com 4 casas decimais."]. Já a variável `i`, do tipo `int`, servirá de auxilio posteriormente.
 
 ```c
 double X, N[100];

@@ -1,11 +1,11 @@
 # Problema:
-Neste problema você deverá ler 15 valores colocá-los em 2 vetores conforme estes valores forem pares ou ímpares. Só que o tamanho de cada um dos dois vetores é de 5 posições. Então, cada vez que um dos dois vetores encher, você deverá imprimir todo o vetor e utilizá-lo novamente para os próximos números que forem lidos. Terminada a leitura, deve-se imprimir o conteúdo que restou em cada um dos dois vetores, imprimindo primeiro os valores do vetor impar. Cada vetor pode ser preenchido tantas vezes quantas for necessário.
+Neste problema você deverá ler 15 valores colocá-los em 2 vetores conforme estes valores forem pares ou ímpares. Só que o tamanho de cada um dos dois vetores é de 5 posições. Então, cada vez que um dos dois vetores encher, você deverá imprimir todo o vetor e utilizá-lo novamente para os próximos números que forem lidos. Terminada a leitura, deve-se imprimir o conteúdo que restou em cada um dos dois vetores, imprimindo primeiro os valores do vetor ímpar. Cada vetor pode ser preenchido tantas vezes quantas for necessário.
 
 **Problema Completo**: https://www.urionlinejudge.com.br/judge/pt/problems/view/1179
 
 
 # Resolução:
-A base deste exercício encontra-se na análise de cada uma das entradas conforme são fornecidas, de modo a inseri-la no vetor correspondente (par ou impar) até que esteja completo e, nesse caso, será exibido por completo. Ao final da leitura, é possível que os últimos valores armazenados não tenham preenchido todo o vetor, porém também devem ser impressos.  
+A base deste exercício encontra-se na análise de cada uma das entradas conforme são fornecidas, de modo a inseri-la no vetor correspondente (par ou ímpar) até que esteja completo e, nesse caso, será exibido por completo. Ao final da leitura, é possível que os últimos valores armazenados não tenham preenchido todo o vetor, porém também devem ser impressos.  
 
 Com o intuito de modularizar corretamente o código, utilizaremos 3 funções com funcionalidades específicas: `ehPar()`, `ehImpar()` e `imprimeRestante()`. Estas devem ser declaradas e definidas anteriormente à função `main()`, porém serão explicadas conforme são requisitadas no código.  
 
@@ -58,7 +58,7 @@ void ehImpar(int *entradas, int *impar, int qtdeValores, int *posicaoImpar){
 
 No escopo da função `ehPar()`, a única variável declarada corresponde a `tamanhoVetor`, que auxiliará no controle de iterações em momento futuro.
 Objetivando iniciar a inserção de valores no vetor `par`, precisamos ter conhecimento se este possui condições de adicioná-lo. Para isto, a estrutura condicional `if` verifica se `posicaoPar` (variável correspondente a posição atual que pode ser preenchida) é menor que 5 (tamanho máximo do vetor). Em caso afirmativo, o vetor de pares irá armazenar, na devida posição, a entrada que está sendo verificada nesta iteração e, em seguida, incrementar a posição.
-Em circunstância negativa, significa que o vetor está cheio e não consegue guardar mais nenhum valor. Desse forma, no interior da estrutura `else`, precisaremos usufruir do loop `for` para exibir todos os valores ali contidos (seguindo o formato de saída estipulado pelo exercício) e, somente após todas as iterações serem feitas, zeramos a variável `posicaoPar`. Com isto garantimos que a entrada será inserida na primeira posição do vetor e, após tal feito, a incrementamos em 1.
+Em circunstância negativa, significa que o vetor está cheio e não consegue guardar mais nenhum valor. Dessa forma, no interior da estrutura `else`, precisaremos usufruir do loop `for` para exibir todos os valores ali contidos (seguindo o formato de saída estipulado pelo exercício) e, somente após todas as iterações serem feitas, zeramos a variável `posicaoPar`. Com isto garantimos que a entrada será inserida na primeira posição do vetor e, após tal feito, a incrementamos em 1.
 
 ```c
 void ehPar(int *entradas, int *par, int qtdeValores, int *posicaoPar){
@@ -81,7 +81,7 @@ void ehPar(int *entradas, int *par, int qtdeValores, int *posicaoPar){
 }
 ```
 
-Esta mesma lógica ocorre na função `ehImpar`, apenas realizando substituição pela variávei e vetor correspondentes: `posicaoImpar`, `impar`.  
+Esta mesma lógica ocorre na função `ehImpar`, apenas realizando substituição pela variável e vetor correspondentes: `posicaoImpar`, `impar`.  
 
 ```c
 void ehImpar(int *entradas, int *impar, int qtdeValores, int *posicaoImpar){
@@ -109,6 +109,6 @@ Contido em seu escopo, temos a declaração de uma variável `i` para auxílio e
 
 ##### Para aprender um pouco mais sobre ponteiros: [Programar em C/Ponteiros](https://pt.wikibooks.org/wiki/Programar_em_C/Ponteiros)
 
-##### Para aprender um pouco mais sobre declação de funções: [Funções em C](http://linguagemc.com.br/funcoes-em-c/)
+##### Para aprender um pouco mais sobre declaração de funções: [Funções em C](http://linguagemc.com.br/funcoes-em-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso [Facebook](https://www.facebook.com/petbcc/), [Instagram](https://www.instagram.com/petbcc.ufscar/) ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
