@@ -35,24 +35,15 @@ Pra descobrir quando a soma vai ultrapassar `Z`, igualamos `soma` à variável `
 ```c
     soma = X;
 ```
-Agora temos que somar a variável `soma` até que o valor dela seja maior que `Z`. Como não sabemos quantas somas serão necessárias, faremos um laço de repetição com `while`:
+Agora temos que somar a variável `soma` até que o valor dela seja maior que `Z`. Como não sabemos quantas somas serão necessárias, faremos um laço de repetição com `while`. Dentro dessa repetição, a primeira coisa a se fazer é incrementar o valor `X`, pois o valor original dessa variável já foi somada à variável `soma`, em seguida, devemos somar o novo `X` e incrementar o valor de `res`:
 ```c
     while (soma <= Z) {
-```
-Dentro dessa repetição, a primeira coisa a se fazer é incrementar o valor `X`, pois o valor original dessa variável já foi somada à variável `soma`:
-```c
-      X++;
-```
-Em seguida, devemos somar o novo `X` na soma:
-```c
-      soma = soma + X;
-```
-Sempre que a mesma variável aparece em ambos os lados de uma operação matemática, a variável da esquerda será atualizada com base no valor antigo dessa variável. Como um número foi adicionado na `soma`, atualizamos o valor de `res`:
-```c
-      res++;
+        X++;
+        soma = soma + X;
+        res++;
     }
-```
-A cada número somado, aumentamos em 1 o valor da variável. As mudanças em `X`, `soma` e `res` vão se repetir enquanto o valor da `soma` for menor ou igual a `Z`. Quando for maior, a repetição acaba e escrevemos na tela quantos números foram necessários para ultrapassar o valor de `Z`. Para isso usamos `printf`:
+```    
+Sempre que a mesma variável aparece em ambos os lados de uma operação matemática, a variável da esquerda será atualizada com base no valor antigo dessa variável. Como um número foi adicionado na `soma`. As mudanças em `X`, `soma` e `res` vão se repetir enquanto o valor da `soma` for menor ou igual a `Z`. Quando for maior, a repetição acaba e escrevemos na tela quantos números foram necessários para ultrapassar o valor de `Z`. Para isso usamos `printf`:
 ```c
     printf("%d\n", res);
 ```
