@@ -8,12 +8,16 @@ Escreva um programa que leia o número de um funcionário, seu número de horas 
 
 No problema está descrito para ler 3 valores: 2 valores inteiros, número que identifica o funcionário e horas trabalhadas, respectivamente; e 1 valor com duas casas decimais que representa o valor que o funcionário recebe por hora. Para representar esses valores em nosso programa, fazemos: 
 
+```c
     int numero, horasTrabalhadas;
     float valorPorHora;
+````
 
 Para leitura dos valores, usamos a função `scanf`:
 
+````c
     scanf("%d %d %f", &numero, &horasTrabalhadas, &valorPorHora);
+````
 
 Utilizamos `%d` para os valores inteiros e `%f` para o valor que tem casas decimais. 
 
@@ -21,11 +25,15 @@ Com o `scanf` é possível ler mais de um valor, cada `%`(tipodavariavel) repres
 
 Agora apresentamos na tela o numero da forma que foi especificada no enunciado do problema com a função printf:
 
+```c
     printf("NUMBER = %d\n", numero);
+```
 
 E por fim, apresentamos também o salário, que é calculado através do produto das horas trabalhadas e o valor recebido por hora. 
 
+```c
     printf("SALARY = U$ %.2f\n", horasTrabalhadas*valorPorHora);
+```
 
 Usamos `%.2f` pois queremos apresentar o valor com duas casas decimais, caso fossem três casas decimais seria `%.3f` e assim por diante. Note que é possível realizar o cálculo dentro do `printf`.
 
