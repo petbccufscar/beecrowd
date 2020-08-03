@@ -29,7 +29,7 @@ Temos que ler o valor de `T` que para o exercício é a sequência que será rep
 ```c
         scanf("%d", &T);
 ```
-Seguimos agora para a lógica do exercício onde iremos iniciar a variável `aux` com 0, pois o exercício pede que a sequência sempre se inicie do 0, e em seguida criamos o `for` que será o responsável por rodar o `printf` que irá printar o vetor, note que não estamos preenchendo o vetor e sim printando ele apenas na ordem pedida:
+Seguimos agora para a lógica do exercício onde iremos iniciar a variável `aux` com 0, pois o exercício pede que a sequência sempre se inicie do 0, e em seguida criamos o `for` que será o responsável por rodar o `printf` que irá printar o vetor. Note que não estamos preenchendo o vetor e sim printando ele apenas na ordem pedida:
 
 ```c
         aux = 0;

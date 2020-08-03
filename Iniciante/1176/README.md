@@ -31,7 +31,7 @@ Seguimos para o preenchimento do vetor `Fib[61]` com os números da Sequência d
       for(i = 2; i <= 60; i++)
         Fib[i] = Fib[i-1] + Fib[i-2];  
 ```
-E finalizamos com o que foi pedido pelo exercício que é printar um número T de casos e para isso temos que ler a variável `T` utilizando um `scanf`. Dentro do `for` será lido a posição `N` desejada para printar no `printf` abaixo:
+E finalizamos com o que foi pedido pelo exercício, que é printar um número T de casos. Para isso temos que ler a variável `T` utilizando um `scanf`. Dentro do `for` será lido a posição `N` desejada, para printar no `printf` abaixo:
 
 ```c
         scanf("%d", &T);

@@ -32,7 +32,7 @@ Faremos a leitura dos valores que o vetor `N[20]` irá receber:
         for(i=0; i<20; i++)
                 scanf("%d",&N[i]);
 ```
-Damos sequência para onde a lógica do exercício se estabelece, iniciamos fazendo a atribuição `j=19` e isso é com intuito de podermos acessar a última posição do vetor `N` e depois seguimos para o `for`:
+Damos sequência para onde a lógica do exercício se estabelece. Iniciamos fazendo a atribuição `j=19` , com intuito de podermos acessar a última posição do vetor `N`, e depois seguimos para o `for`:
 
 ```c
         j=19;
@@ -46,9 +46,9 @@ Damos sequência para onde a lógica do exercício se estabelece, iniciamos faze
 
     
 ```
-No `for` será feita uma troca de variável padrão utilizando uma variável `aux` como auxiliar, a única diferança de uma troca padrão de variável é que estamos trabalhando com vetor e precisamos ficar atentos à posição do mesmo e para isso utilizamos ambas as variáveis `i` e `j`, sendo `i` a que irá percorrer o vetor do inicio `N[0]` e `j` como explicado anteriormente do final `N[19]`. Repare que o `for` só percorre metade do vetor `N[20]` e isso é devido à condição de parada explicada no início do exercício, ponto médio.
+No `for` será feita uma troca de variável padrão utilizando uma variável `aux` como auxiliar. A única diferença de uma troca padrão de variável é que estamos trabalhando com vetor, então precisamos ficar atentos à posição do mesmo. Para isso utilizamos ambas as variáveis `i` e `j`, sendo `i` a que irá percorrer o vetor do inicio `N[0]` e `j` como explicado anteriormente do final `N[19]`. Repare que o `for` só percorre metade do vetor `N[20]`, devido à condição de parada explicada no início do exercício: ponto médio.
 
-E para finalizar precisamos mostrar a saída e para isso devemos utilizar um `for` para percorrer todo o vetor printando em cada posição que é representada por `i`:
+E, para finalizar, precisamos mostrar a saída. Para isso devemos utilizar um `for` para percorrer todo o vetor, printando em cada posição (representada por `i`):
 
 ```c
         for(i=0; i<20; i++)
