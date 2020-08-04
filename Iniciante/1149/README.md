@@ -1,11 +1,15 @@
 # Problema:    
- Faça um algoritmo para ler um valor A e um valor N. Imprimir a soma de A para cada i com os valores (0 <= i <= N-1). Enquanto N for negativo ou ZERO, um novo N(apenas N) deve ser lido.
+Faça um algoritmo para ler um valor A e um valor N. Imprimir a soma de A para cada i com os valores (0 <= i <= N-1). Enquanto N for negativo ou ZERO, um novo N(apenas N) deve ser lido.
 
 **Problema completo**: https://www.urionlinejudge.com.br/judge/pt/problems/view/1149
 
 
 # Resolução:
 Apesar da descrição confusa, a resolução é simples.  
+
+
+> "Imprimir a soma de A para cada i com os valores (0 <= i <= N-1)."
+
 A lógica é somar o valor `A` com todos os valores de `0` a `N-1`, um a um. No exemplo de 3 e 2, temos:  
 - 3 + 0 = 3
 - 3 + 1 = 4
@@ -16,6 +20,10 @@ Outro exemplo, com as entradas 2 e 3:
 - 2 + 1 = 3
 - 2 + 2 = 4
 - Total = 9  
+
+> "Enquanto N for negativo ou ZERO, um novo N(apenas N) deve ser lido."
+
+Significa ler a entrada N até que o valor seja positivo, ignorando números negativos ou 0.  
 
 
 Dessa forma, o primeiro passo para resolver o exercício é declarar as variáveis necessárias para o problema: `A`, `N`, `i` e `soma`. Vamos utilizar a variável `i` em um loop e guardar a soma final em `soma`. Inicializamos `soma` com 0 para incrementar a variável depois.  
