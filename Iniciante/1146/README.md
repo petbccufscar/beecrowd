@@ -38,7 +38,7 @@ while (X != 0) {
 }
 ```
 
-###### Note que, como o faço `for` possui apenas uma linha dentro, podemos omitir as chaves `{}`. Em códigos maiores, esta sintaxe não é recomendada.
+###### Note que, como o laço `for` possui apenas uma linha dentro, podemos omitir as chaves `{}`. Em códigos maiores, esta sintaxe não é recomendada.
 
 
 ##### Para revisar sobre o laço while: [O comando while](http://linguagemc.com.br/o-comando-while-em-c/)
