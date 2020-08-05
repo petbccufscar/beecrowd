@@ -12,7 +12,7 @@ Analisando os valores fornecidos (entrada x saída), é possível notar que, sen
 Por conta do padrão conter potências, iremos importar a biblioteca `math.h`, para utilizarmos a função de potência `pow(base, expoente)`.
 
 
-Para realizar isso, depois de importar a bibliotaca `math.h`, declara-se as variáveis inteiras `N`, `i`. Além disso, declara-se também duas variáveis inteiras `num1` e `num2`, pois o retorno da função matemática `pow()`é do tipo `double` e, como o enunciado exige que o número apresentado na tela seja inteiro e não decimal, é preciso converter o valor de double para inteiro. 
+Para realizar isso, depois de importar a bibliotaca `math.h`, declara-se as variáveis inteiras `N`, `i`. Além disso, declara-se também duas variáveis inteiras `num1` e `num2`, pois o retorno da função matemática `pow()` é do tipo `double` e, como o enunciado exige que o número apresentado na tela seja inteiro e não decimal, é preciso converter o valor de double para inteiro. 
 
 ```c
 int N;
