@@ -6,7 +6,7 @@ Escreva um programa que leia um valor inteiro N. Este N é a quantidade de linha
 
 
 # Resolução:
-O exercício resume-se a decifrar a relação entre a entrada e saída(padrão) exemplificada e, então, ler um valor inteiro N e reproduzir tal padrão N vezes. Analisando os valores fornecidos(entrada x saída), é possível notar que o padrão de saída é:
+O exercício resume-se a decifrar a relação entre a entrada e saída(padrão) exemplificada e, então, ler um valor inteiro N e reproduzir tal padrão N vezes. Analisando os valores fornecidos (entrada x saída), é possível notar que o padrão de saída é:
 
 ** `numero`  `numero`+1 `numero`+2 PUM ** 
 
