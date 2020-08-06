@@ -38,7 +38,7 @@ int matriz[tamanho][tamanho];
 ```
 
 Para a definição dos valores presentes em nossa matriz, iremos utilizar algumas condições
-* Caso `linha == coluna`
+* Caso `linha == coluna` iremos definir o valor contido como "1"
 * Caso `linha < coluna` iremos definir o valor contido como "coluna - linha + 1"
 * Caso `linha > coluna` iremos definir o valor contido como "linha - coluna + 1"
 
