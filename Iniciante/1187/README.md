@@ -48,7 +48,7 @@ Note o padrão: a cada linha, aumentamos 1 unidade no início, diminuímos 1 uni
 - começamos na linha 0, coluna 1, e vamos até a coluna 10;
 - na próxima linha, aumentamos 1 coluna no início e diminuímos 1 coluna no fim.
 
-O primeiro `for` percorre as 5 linhas da matriz. O segundo `for` começa na coluna 1 número maior que a linha ou seja, na coluna `(i + 1)`, e percorre até a coluna `(10 - i)`. Para cada posição, incrementamos o `total` com o valor da posição.
+O primeiro `for` percorre as 5 linhas da matriz. O segundo `for` começa na coluna com 1 número maior que a linha, ou seja, na coluna `(i + 1)`, e percorre até a coluna `(10 - i)`. Para cada posição, incrementamos o `total` com o valor da posição.
 
 ```c
 for (i = 0; i < 5; i++) {
