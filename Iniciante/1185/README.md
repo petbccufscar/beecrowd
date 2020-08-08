@@ -8,23 +8,23 @@ Leia um caractere maiúsculo, que indica uma operação que deve ser realizada e
  
 # Resolução:
  
-Começamos instanciando as variáveis necessárias, sendo elas: 2 do tipo `double` (uma para armazenar a soma e outra, a matriz), um vetor de `char` (definido como `O[2]`, este vetor de char tem capacidade de armazenar 2 caracteres, contudo, o último caracter de uma string, deve ser sempre o caracter nulo “\0” que serve para indicar o final da string, ou seja, só modificaremos o `O[0]` pois o `O[1]` será o caracter nulo), e 5 inteiros (`coluna` para representar qual coluna está sendo acessada naquele momento; `x` e `y` para percorrer a matriz adicionando seus valores; `linha` que corresponde à linha percorrida no momento da soma; e `contagem` que garante um caminho na diagonal, pois indica em qual coluna está o 1º número dentre todos que devem ser somados na linha em questão). O valor de `contagem` começa em 10 pois não será somado valores da coluna 11.
+Começamos instanciando as variáveis necessárias, sendo elas: 2 do tipo `double` (uma para armazenar a soma e outra, a matriz), um vetor de `char` (definido como `O`), e 3 inteiros (`coluna` para representar qual coluna está sendo acessada naquele momento; `linha` que corresponde à linha percorrida; e `contagem` que garante um caminho na diagonal, pois indica em qual coluna está o 1º número dentre todos que devem ser somados na linha em questão). O valor de `contagem` começa em 10 pois não será somado valores da coluna 11.
 Após definir as variáveis, podemos ler o caractere que indica a operação (ou seja, `O`).
  
 ```c
     double soma = 0.0, M[12][12];
-    char O[2];
-    int coluna, x, y, linha, contagem = 10;
+    char O;
+    int coluna, linha, contagem = 10;
     scanf("%s", &O);
 ```
  
 Vamos utilizar 2 `for()` aninhados para ler os valores de cada elemento da matriz.
  
 ```c
-    for (x = 0; x <= 11; x++)
+    for (linha = 0; linha <= 11; linha++)
     {
-        for (y = 0; y <= 11; y++)
-            scanf("%lf", &M[x][y]);
+        for (coluna = 0; coluna <= 11; coluna++)
+            scanf("%lf", &M[linha][coluna]);
     }
 ```
  
@@ -38,16 +38,19 @@ Agora utilizaremos 2 `for()` aninhados para fazer a soma dos elementos. Ao final
         contagem--;
     }
 ```
-Levando em conta que o caractere maiúsculo pode somente ser 'S' ou 'M', comparamos `O[0]` à 'S'. Se a igualdade for verdadeira, imprimimos `soma` na tela; caso contrário imprimimos o cálculo `soma/66.0` referente à média (66 indica a quantidade de valores considerados na soma).
+Levando em conta que o caractere maiúsculo pode somente ser 'S' ou 'M', comparamos `O` à 'S'. Se a igualdade for verdadeira, imprimimos `soma` na tela; caso contrário imprimimos o cálculo `soma/66.0` referente à média (66 indica a quantidade de valores considerados na soma).
+
+Utilizamos `%.1lf`, sendo o `.1` para indicar uma casa decimal após a vírgula e `lf` para variáveis `double`.
  
 ```c
-    if (O[0] == 'S')
+    if (O == 'S')
         printf("%.1lf\n", soma);
     else
     {
-        printf("%.1lf\n", soma/66.0);
+        printf("%.1lf\n", soma / 66.0);
     }
 ```
+
 ##### Para aprender um pouco mais sobre o laço de repetição for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
  
 ##### Para aprender um pouco mais sobre matriz: [Matriz](http://linguagemc.com.br/matriz-em-c/)
