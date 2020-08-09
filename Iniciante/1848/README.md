@@ -12,7 +12,7 @@ Cada piscada do corvo comunica um número em binário. Um olho aberto significa 
 # Resolução:
 Para resolvermos o problema iremos verificar cada linha de entrada, e exibiremos a soma das piscadas do corvo depois de cada uma das 3 vezes que ele gritar.
 
-Para iniciar, iremos representar o grito ou piscadas, a quantide de gritos e a soma das piscadas do corvo declarando as seguintes variáveis:
+Para iniciar, iremos representar o grito (ou as piscadas), a quantide de gritos e a soma das piscadas do corvo declarando as seguintes variáveis:
 ```c
 char entrada[10]; // grito ou piscadas
 int grito = 3, piscada = 0; //quantidade de gritos e soma das piscadas
