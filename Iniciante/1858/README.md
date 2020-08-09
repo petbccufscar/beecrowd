@@ -16,14 +16,14 @@ Inicialmente declaramos as variáveis `n`, `i`, `algoz`, `menor` e `*v`. Em que 
 ```
 
 
-Em seguida, faremos a leitura do valor de `n` e a alocação de `*v`.
+Em seguida, faremos a leitura do valor de `n` e a [alocação dinâmica](http://linguagemc.com.br/alocacao-dinamica-de-memoria-em-c/) de `*v`.
 
 ```c
 scanf("%d",&n);
 v = (int *) malloc(n * sizeof(int));
 ```
 
-Após o passo anterior, iremos ter os valores de entrada da segunda linha, e para cada valor lido é feita uma comparaçāo a fim de que `menor` possua o menor valor. Caso `v[i] < menor`, menor irá receber o valor de `v[i]` e `algoz` terá seu valor alterado, como a posiçāo é iniciada em 1, adicionamos 1 a `i`.
+Após o passo anterior, iremos ter os valores de entrada da segunda linha, e para cada valor lido é feita uma comparação a fim de que `menor` possua o menor valor. Caso `v[i] < menor`, `menor` irá receber o valor de `v[i]` e `algoz` terá seu valor alterado para o `i+1`, já que começamos o vetor na posição 1 e não na 0.
 
 
 ```c
