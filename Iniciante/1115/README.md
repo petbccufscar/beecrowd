@@ -6,8 +6,31 @@ Escreva um programa para ler as coordenadas (X,Y) de uma quantidade indeterminad
 
 # Resolução:
 
-O objetivo desse exercício é ler duas coordenadas e escrever de qual quadrante esse ponto é no [plano cartesiano](https://brasilescola.uol.com.br/o-que-e/matematica/o-que-e-plano-cartesiano.htm).
-
+O objetivo desse exercício é ler duas coordenadas e escrever de qual quadrante esse ponto é no [plano cartesiano](https://brasilescola.uol.com.br/o-que-e/matematica/o-que-e-plano-cartesiano.htm). Abaixo temos um exeplo de plano cartesiano e a localização de cada quadrante:
+```
+                            Λ Y
+                            |
+                            |
+                            |
+       2º quadrante         |           1º quadrante
+                            |
+                            |
+                            |
+                            |
+                            |
+                            |
+-------------------------------------------------------------> X
+                            |
+                            |
+                            |
+                            |
+       3º quadrante         |           4º quadrante
+                            |
+                            |
+                            |
+                            |
+                            |
+```
 Primeiro criamos duas variáveis do tipo `int`:
 ```c
     int X, Y;
