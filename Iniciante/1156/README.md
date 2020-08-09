@@ -10,7 +10,7 @@ Para resolver o exercício, o primeiro passo é entender a fórmula fornecida:
 
 - S = 1 + 3/2 + 5/4 + 7/8 + ... + 39/?  equivale a:
 
-- S = n/i⁰ + n+2/i¹ + n+4/i² + … + 39/? , com o valor inicial de n = 1, valor final de n = 39 e valor de i = 2;
+- S = n/i⁰ + n/i¹ + n/i² + … + 39/? em que o valor de n aumenta em 2 a cada fração adicionada, com o valor inicial de n = 1, valor final de n = 39 e valor de i = 2;
 
 O segundo passo é declarar as variáveis necessárias para o problema:
 
@@ -35,7 +35,7 @@ while (numerador <= 39) {
 }
 ```
 
-Fora do laço, imprimi-se a `soma` com duas casas decimais e com a quebra de linha `\n`.
+Fora do laço, imprimi-se a `soma` com duas casas decimais, por meio do `.2f`,  e com a quebra de linha `\n`.
 
 ```c    
 printf("%.2f\n", soma);

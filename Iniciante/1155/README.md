@@ -10,7 +10,7 @@ Para resolver o exercício, o primeiro passo é entender a fórmula fornecida:
 
 - S = 1 + 1/2 + 1/3 + … + 1/100  equivale a:
 
-- S = 1/n + 1/n+1 + 1/n+2 + … + 1/100 , com o valor inicial de n = 1 e valor final de n = 100;
+- S = 1/n + 1/n + ... + 1/n em que o valor de n aumenta em 1 a cada fração somada, com o valor inicial de n = 1 e valor final de n = 100;
 
 O segundo passo é declarar as variáveis necessárias para o problema:
 
@@ -32,7 +32,7 @@ while (n <= 100) {
 }
 ```
 
-Fora do laço, imprimi-se a `soma` com duas casas decimais e com a quebra de linha `\n`.
+Fora do laço, imprimi-se a `soma` com duas casas decimais, e com a quebra de linha `\n`.
 
 ```c    
 printf("%.2f\n", soma);

@@ -5,7 +5,7 @@ Faça um algoritmo para ler um número indeterminado de dados, contendo cada um,
 
 
 # Resolução:
-Para resolver o exercício, o primeiro passo é declarar as variáveis necessárias para o problema: `idade`, `n` e `soma`. Iremos utilizar `n` para contar quantos números foram lidos e `soma` para armazenar a soma de todas as idades lidas, por conta disso, as duas são iniciadas com 0. Vale notar que `soma` é declarado como double pois o exercício informa que a média deve ser impressa com dois dígitos após o ponto decimal.
+Para resolver o exercício, o primeiro passo é declarar as variáveis necessárias para o problema: `idade`, `n` e `soma`. Iremos utilizar `n` para contar quantos números foram lidos e `soma` para armazenar a soma de todas as idades lidas, por conta disso, as duas são iniciadas com 0. Vale notar que `soma` é declarado como `double` pois o exercício informa que a média deve ser impressa com dois dígitos após o ponto decimal.
 
 ```c
 int idade, n = 0;
