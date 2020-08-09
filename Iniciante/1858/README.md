@@ -8,7 +8,7 @@ Imprima uma linha contendo o número da pessoa que Theon deve dizer ser seu algo
 
 Ao ler de primeira pode parecer confuso, no entanto a ideia é mostrar a posiçāo que está o algoz de Theon, que é o menor número dos N inteiros T1, T2, ..., Tn.
 
-Inicialmente declaramos as variáveis `n`, `i`, `algoz`, `menor` e `*v`. Em que `n` é a quantidade de algozes, `i` é usada para fazer iterações no for, `algoz` armazena a posição do algoz, `*v` é um ponteiro para um vetor que guarda os valores em que Theon pode ser atingido e menor irá armazenar o menor valor de `*v`.
+Inicialmente declaramos as variáveis `n`, `i`, `algoz`, `menor` e `*v`. Em que `n` é a quantidade de algozes, `i` é usada para fazer iterações no `for`, `algoz` armazena a posição do algoz, `*v` é um ponteiro para um vetor que guarda os valores em que Theon pode ser atingido e menor irá armazenar o menor valor de `*v`.
 
 ```c
    int n, i, algoz = 0, menor = 999;
