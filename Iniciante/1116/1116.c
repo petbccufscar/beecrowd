@@ -2,7 +2,7 @@
  
 int main() {
  
-    int x, y, N, i;
+    int N, x, y, i;
     
     scanf("%d", &N);
  
