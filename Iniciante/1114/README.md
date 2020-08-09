@@ -6,15 +6,15 @@ Escreva um programa que repita a leitura de uma senha até que ela seja válida.
 
 # Resolução:
 
-O objetivo desse exercício é verificar se o valor lido é 2002 e mostrar na tela a mensagem `Acesso Permitido` se o valor for 2002 ou `Senha Invalida` se não for. 
+O objetivo desse exercício é ler uma senha, verificar se é 2002 e, caso seja, mostrar na tela a mensagem `Acesso Permitido` e encerrar o programa. Caso não seja, mostrar na tela `Senha Invalida` e repetir o processo. 
 
-Nesse exercício só precisamos de uma variável do tipo `int`:
+Nesse exercício vamos declarar uma variável do tipo `int` chamado de `senha`:
 ```c
     int senha;
 ```
-`senha` é a variável que será lida e comparada com o número 2002, valor dado no enunciado.
+`senha` irá armazenar a senha lida. Depois no decorrer do código, iremos comparar o valor dessa variável com a senha correta fornecida pelo enunciado (2002).
 
-Precisamos ler a senha inúmeras vezes, já que não sabemos quantas vezes o usuário vai errar a senha. Aqui vamos usar o `do.. while`:
+Precisamos de uma estrutura que efetue a leitura enquanto a senha correta não for lida. Aqui vamos usar o `do.. while`:
 ```c
     do {
       scanf("%d", &senha);
@@ -27,7 +27,7 @@ Ao iniciar o laço de repetição, lemos um valor usando `scanf`. Em seguida, co
         printf ("Senha Invalida\n");
     } while (senha != 2002);
 ```
-Se `senha` for igual a 2002 (`senha == 2002`), mostramos a mensagem `Acesso Permitido` usando `printf` e o programa termina a repetição no `while`, pois o processo só acontece de novo se senha for diferente de 2002 (`senha != 2002`).
+Se `senha` for igual a 2002 (`senha == 2002`), mostramos a mensagem `Acesso Permitido` usando `printf` e o programa termina a repetição do `while`, pois o loop de repetição só continua em execução caso a senha for diferente de 2002 (`senha != 2002`).
 
 Se a senha for diferente de 2002, o programa mostra na tela a mensagem `Senha Invalida` e vai repetir o processo de leitura de `senha`.
 
