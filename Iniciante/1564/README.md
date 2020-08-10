@@ -16,8 +16,6 @@ Iniciamos declarando a variável `N`, a única a ser utilizada e que representa 
 ```c
         int N;
 ```
-`N` o número que representa as "reclamações".
-
 Fazemos a leitura do `N` no `scanf` e essa leitura é feita dentro do `while`:
 
 ```c
@@ -25,7 +23,7 @@ Fazemos a leitura do `N` no `scanf` e essa leitura é feita dentro do `while`:
 ```
 Dentro do `while` fazemos a leitura e comparamos ao EOF, portanto o while irá rodar até chegar no final do arquivo. Este é simbolizado pela quebra de linha ("\n"), que pode ser representada por CTRL+D no Linux  ou CTRL+Z no Windows.
 
-E o conteúdo do `while` é onde mora a resposta do exercício:
+A lógica presente no interior da estrutura `while` contém a resolução do exercício:
 ```c
         while (scanf("%d", &N)!=EOF)
         {
@@ -37,7 +35,7 @@ E o conteúdo do `while` é onde mora a resposta do exercício:
                 }
         }
 ```
-No `if` é verificado se `N` é igual 0 o que resulta na saída "vai ter copa" ou se ele é outro valor, dentro do intervalo explicado anteriormente, no qual resulta a saída "vai ter duas"
+No `if` é verificado se `N` é igual a 0, o que resulta na saída "vai ter copa!". Caso tenha outro valor, a saída resultante será "vai ter duas!".
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
