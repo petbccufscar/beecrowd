@@ -42,76 +42,78 @@ Tendo este valor em mãos, declaramos o inteiro `i` para auxiliar na estrutura d
 ```c
 int i;
 for(i=1; i<=T; i++){
-  ...
+	...
 }
 ```  
 
 No interior da estrutura, iremos, primeiramente, declarar as duas variáveis (ambas do tipo `char`) referentes a jogada dos participantes, `sheldon` e `raj`. Teremos conhecimento do tamanho de cada uma das palavras a serem inseridas apenas durante a execução do programa e, consequentemente, não há como alocar, com antecedência, a quantidade de memória necessária. Em cenários como este, podemos desfrutar da função `malloc` para realizar uma alocação dinâmica, sendo necessário fornecer-lhe somente o tamanho do tipo a ser utilizado (neste caso, `char`).  
 
 ```c
-  char *sheldon = (char*) malloc(sizeof(char));
-  char *raj = (char*) malloc(sizeof(char));
+char *sheldon = (char*) malloc(sizeof(char));
+char *raj = (char*) malloc(sizeof(char));
 ```  
 
 Agora, as entradas podem ser lidas para armazenarmos a escolha de cada um dos jogadores.  
 
 ```c
-  scanf("%s",sheldon);
-	scanf("%s",raj);
+scanf("%s",sheldon);
+scanf("%s",raj);
 ```  
 
 O passo seguinte é iniciar a verificação das jogadas de acordo com as regras propostas. Primeiro, tratamos a ocorrência de empate, ou seja, `sheldon` e `raj` guardam o mesmo conteúdo. Quando trabalhamos com strings, utilizamos a função `strcmp` para realizar uma comparação direta entre estas e, caso seja válida, o retorno será 0. Portanto, a incluímos no comando `if`, cujo escopo irá imprimir a especificação de qual dos `T` casos este se refere, bem como a frase equivalente ('De novo!').  
 
 ```c
-  if(strcmp(sheldon, raj) == 0)
-    printf("Caso #%d: De novo!\n",i);
+if(strcmp(sheldon, raj) == 0)
+	printf("Caso #%d: De novo!\n",i);
 ```  
 
 Se a jogada não corresponder a um empate, checamos, então, as demais opções através do `else`. Em seu interior, consideramos os cenários em que Sheldon pode escolher cada uma das opções existentes. Na primeira condição `if`, comparamos se `sheldon` armazena 'pedra'. Se sim, bifurcamos em duas possibilidades: se `raj` guarda os caracteres 'tesoura' ou 'lagarto', perde a rodada e `printf()` exibe 'Bazinga!'; se a variável não armazena nenhuma dessas duas palavras (`else`), então Raj vence e printamos 'Raj trapaceou!'.  
 
 ```c
-  else{
-    if(strcmp(sheldon, "pedra") == 0){
-      if( (strcmp(raj, "tesoura") == 0) || (strcmp(raj, "lagarto") == 0) )
-        printf("Caso #%d: Bazinga!\n",i);
-      else
-        printf("Caso #%d: Raj trapaceou!\n",i);
-			}
-      ...
-  }//referente ao primeiro else mais externo
+else{
+	if(strcmp(sheldon, "pedra") == 0){
+		if( (strcmp(raj, "tesoura") == 0) || (strcmp(raj, "lagarto") == 0) )
+			printf("Caso #%d: Bazinga!\n",i);
+		else
+			printf("Caso #%d: Raj trapaceou!\n",i);
+	}
+	...
+}
 ```  
 
 O mesmo será feito com as demais opções possíveis de Sheldon, sempre repartindo em dois cenários: Raj escolheu algo que perde para a escolha de Sheldon, ou não.  
 
 ```c
-    if(strcmp(sheldon, "tesoura") == 0){
-      if( (strcmp(raj, "papel") == 0) || (strcmp(raj, "lagarto") == 0))
-			   printf("Caso #%d: Bazinga!\n",i);
-			else
-				printf("Caso #%d: Raj trapaceou!\n",i);
-		}
+...
 
-		if(strcmp(sheldon, "lagarto") == 0){
-			if( (strcmp(raj, "papel") == 0) || (strcmp(raj, "Spock") == 0))
-				printf("Caso #%d: Bazinga!\n",i);
-			else
-				printf("Caso #%d: Raj trapaceou!\n",i);
-		}
+if(strcmp(sheldon, "tesoura") == 0){
+	if( (strcmp(raj, "papel") == 0) || (strcmp(raj, "lagarto") == 0))
+		printf("Caso #%d: Bazinga!\n",i);
+	else
+		printf("Caso #%d: Raj trapaceou!\n",i);
+}
 
-		if(strcmp(sheldon, "Spock") == 0){
-			if( (strcmp(raj, "tesoura") == 0) || (strcmp(raj, "pedra") == 0))
-				printf("Caso #%d: Bazinga!\n",i);
-			else
-				printf("Caso #%d: Raj trapaceou!\n",i);
-		}
+if(strcmp(sheldon, "lagarto") == 0){
+	if( (strcmp(raj, "papel") == 0) || (strcmp(raj, "Spock") == 0))
+		printf("Caso #%d: Bazinga!\n",i);
+	else
+		printf("Caso #%d: Raj trapaceou!\n",i);
+}
 
-		if(strcmp(sheldon, "papel") == 0){
-			if( (strcmp(raj, "pedra") == 0) || (strcmp(raj, "Spock") == 0))
-				printf("Caso #%d: Bazinga!\n",i);
-      else
-				printf("Caso #%d: Raj trapaceou!\n",i);
-		}
-  }//referente ao primeiro else mais externo
+if(strcmp(sheldon, "Spock") == 0){
+	if( (strcmp(raj, "tesoura") == 0) || (strcmp(raj, "pedra") == 0))
+		printf("Caso #%d: Bazinga!\n",i);
+	else
+		printf("Caso #%d: Raj trapaceou!\n",i);
+}
+
+if(strcmp(sheldon, "papel") == 0){
+	if( (strcmp(raj, "pedra") == 0) || (strcmp(raj, "Spock") == 0))
+		printf("Caso #%d: Bazinga!\n",i);
+	else
+		printf("Caso #%d: Raj trapaceou!\n",i);
+}
+}
 ```  
 
 
