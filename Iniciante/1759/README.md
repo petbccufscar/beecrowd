@@ -8,22 +8,25 @@ Seu trabalho é ajudar o Papai Noel montando um problema que mostre todos os "Ho
 
 # Resolução
 
-A ideia do exercício é usar uma variável de entrada para limitar uma estrutura de repetição e dentro da mesma printar `N` vezes **Ho Ho.. Ho!**, lembrando que o último "Ho" tem que ser seguido do "!" ficando "Ho!".
+A resolução do exercício consiste em utilizar uma variável para armazenar a entrada e limitar a fala do Papai Noel. Portanto, esta será exibida na tela `N` vezes: "**Ho Ho.. Ho!**". Lembrando que o último "Ho" deve ser seguido de um ponto de exclamação ("!"), resultando em "Ho!".  
 Para isso iniciamos declarando as variáveis que serão utilizadas:
 
 
 ```c
         int N, i;
 ```
-`N` o número de repetições que o usuário deseja e `i` variável padrão utilizada no controle do `for`.
+`N` representa o número de "Ho" que foi sorteado e `i` variável padrão utilizada no controle do `for`.
 
-Fazemos a leitura do `N` no `scanf`:
+Fazemos, então, a leitura de `N` através da função `scanf`:
 
 ```c
         scanf("%d", &N);
 ```
 
-Seguimos para a construção do `for` onde será feito os printes dos "Ho":
+Seguimos para a construção do `for` onde será feito os printes dos "Ho".
+
+Também temos que lembrar que o último "Ho" tem a forma "Ho!" e para fazer com que essa regra seja cumprida usamos um `if`.
+No `if` verificamos se `i`, nossa variável de iteração, iterou as n vezes, que no caso esse n = `N` representa o fim do `for` .
 
 ```c
         for (i = 1; i <= N; i++)
@@ -34,7 +37,7 @@ Seguimos para a construção do `for` onde será feito os printes dos "Ho":
                         printf("Ho ");
         }
 ```
-Temos que lembrar que o último "Ho" tem a forma "Ho!" e para fazer que essa regra seja cumprida usamos um `if`, no qual a regra a ser contemplada é a do `i` nossa variável iterativa, a qual controla nosso `for` e se ela for igual ao valor de `N` significara que o final da iteração chegou.
+#### Para aprender um pouco mais sobre: [Estrutura de repetição for](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),

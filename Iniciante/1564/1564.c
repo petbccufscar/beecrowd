@@ -3,7 +3,7 @@
 int main()
 {
    int N;
-   while ((scanf("%d", &N)!=EOF)&&(N<=100)&&(N>=0))
+   while (scanf("%d", &N)!=EOF)
    {
       if(N==0){
          printf("vai ter copa!\n");
