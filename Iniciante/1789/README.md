@@ -32,8 +32,8 @@ while(scanf("%d",&L) != EOF){
 No interior desta estrutura, devemos realizar a leitura das demais entradas, encontrar aquela de maior valor e, por fim, verificar a qual nível pertence. Para isto, é necessário, primeiramente, declararmos o vetor `V` de tamanho `L` para armazenar os dados que serão fornecidos em sequência. A variável `i` servirá de auxílio logo em seguida.
 
 ```c
-	int V[L];
-	int i;
+int V[L];
+int i;
 ```
 
 Usufruímos do comando `for` para efetuar a leitura da segunda linha do caso teste e guardar a velocidade de cada uma das `L` lesmas em uma posição diferente do vetor.
