@@ -39,15 +39,15 @@ No interior desta estrutura, devemos realizar a leitura das demais entradas, enc
 Usufruímos do comando `for` para efetuar a leitura da segunda linha do caso teste e guardar a velocidade de cada uma das `L` lesmas em uma posição diferente do vetor.
 
 ```c
-	for(i=0; i<L; i++){
-		scanf("%d",&V[i]);
-	}
+for(i=0; i<L; i++){
+	scanf("%d",&V[i]);
+}
 ```
 
 O método utilizado para encontrar o maior valor dentre os recém armazenados pode ser modularizado em uma função específica nomeada `buscaMaiorValor`. Para isto, declaramos o inteiro `maiorValor` e fazemos com que armazene o retorno desta função. Ao invocá-la, precisamos fornecer os dados necessários para seu funcionamento (neste caso, o vetor `V` e a variável `L`).
 
 ```c
-	int maiorValor = buscaMaiorValor(V, L);
+int maiorValor = buscaMaiorValor(V, L);
 ```
 
 A função é desenvolvida externamente à `main()` e, para elaborá-la, deve-se determinar qual o tipo de retorno que será fornecido, seguido de seu nome e, entre parênteses, os parâmetros a serem recebidos (lembrando de especificar seus tipos). Como citado anteriormente, seu tipo será `int` para que possa retornar o maior valor encontrado.
@@ -59,37 +59,37 @@ int buscaMaiorValor(int *V, int L){
 	int posicao = 0;
 	int maiorValor, i;
 	...
-}//chave referente a função
+}
 ```
 
 Como próximo passo, percorremos cada uma das posições do vetor utilizando o comando `for`. Neste conterá a aplicação da estrutura `if` para verificar qual valor é maior: o que está guardado na posição corrente do vetor ou aquele cujo índice encontra-se em `posicao`. Caso seja o primeiro, as variáveis são atualizadas para que contenham os novos dados correspondentes ao maior valor. Em cenário contrário, `else` garante que o valor continue o mesmo e a posição deste não seja alterada.
 Ao realizar todas as comparações necessárias, temos em `maiorValor` qual a máxima velocidade encontrada e, então, esta pode ser fornecida no retorno da função.
 
 ```c
-	for(i=0; i<L; i++){
-		if(V[i] > V[posicao]){
-			maiorValor = V[i];
-      posicao = i;
-		}
-
-		else{
-			maiorValor = V[posicao];
-    }
+for(i=0; i<L; i++){
+	if(V[i] > V[posicao]){
+		maiorValor = V[i];
+		posicao = i;
 	}
-	return maiorValor;
+
+	else{
+		maiorValor = V[posicao];
+	}
+}
+return maiorValor;
 ```
 
 Agora que possuímos a informação desejada, utilizamos, na função principal, três estruturas condicionais `if` para verificar em qual das exigências o resultado se adequa e, em seguida, exibir na tela o nível correspondente. Dessa forma, caso o valor contido em `maiorValor` seja inferior a 10, optamos pelo comando `printf()` exibindo o número '1'. No cenário em que a velocidade é maior ou igual a 10 e, simultaneamente, inferior a 20; mostramos o nível '2'. Por fim, caso seja maior ou igual a 20, exibimos '3'.  
 
 ```c
-	if(maiorValor < 10)
-		printf("1\n");
+if(maiorValor < 10)
+	printf("1\n");
 
-	if(maiorValor >= 10 && maiorValor < 20)
-		printf("2\n");
+if(maiorValor >= 10 && maiorValor < 20)
+	printf("2\n");
 
-	if(maiorValor >= 20)
-		printf("3\n");
+if(maiorValor >= 20)
+	printf("3\n");
 ```
 
 ##### Para aprender um pouco mais sobre fim de arquivos: [EOF](https://pt.wikipedia.org/wiki/EOF)
