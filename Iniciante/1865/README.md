@@ -9,8 +9,9 @@ Escreva um programa que, dado um nome, e a força, em Newtons, aplicado ao tenta
  
  
 # Resolução:
+Como sabemos, o Thor é o único que pode levantar o martelo, portanto o nosso código consiste em ler os nomes e a força equivalente do herói, sendo que somente quando o nome for *Thor* que iremos imprimir a letra *Y*, desconsiderando a força.
  
-Primeiro instanciámos as variáveis necessárias, sendo elas: 3 inteiros (`C` para o numero de casos de teste; `contagem` para contar o loop; e `newtons` para ler a força) e um char com 10 espaços (`nome[10]`).
+Primeiro instanciamos as variáveis necessárias, sendo elas: 3 inteiros (`C` para o número de casos de teste; `contagem` para contar o loop; e `newtons` para ler a força) e um `char` com 10 espaços (`nome[10]`).
 Começamos lendo o número de casos de teste.
 
 ```c
@@ -19,8 +20,8 @@ Começamos lendo o número de casos de teste.
     scanf("%d", &C);
 ```
 
- Agora iremos utilizar um `for()` para passar por todos os casos de teste. Dentro dele iremos ler cada `nome` e `newtons` referentes. Após ler iremos utilizar um `if()` para verificar se o herói e digno ou nao, assim gerando as saídas `Y` e `N` respectivamente.
- Obs: Iremos utilizar `%s` para ler toda a `string` que foi passada e como `nome` é tratado como um ponteiro diretamente não é necessário o `&` para fazer sua referencia.
+ Agora iremos utilizar um `for()` para passar por todos os casos de teste. Dentro dele iremos ler cada `nome` e `newtons` referentes. Após ler iremos utilizar um `if()` para verificar se o herói é digno ou não, assim gerando as saídas `Y` e `N` respectivamente.
+ Obs: Iremos utilizar `%s` para ler toda a `string` que foi passada e como `nome` é tratado como um ponteiro diretamente não é necessário o `&` para fazer sua referência.
 
 ```c
     for (contagem=1; contagem<=C; contagem++)
@@ -35,7 +36,7 @@ Começamos lendo o número de casos de teste.
 
 ##### Para aprender um pouco mais sobre o laço de repetição for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
  
-##### Para aprender um pouco mais sobre matriz: [Matriz](http://linguagemc.com.br/matriz-em-c/)
+##### Para aprender um pouco mais sobre Vetores: [Vetor](http://linguagemc.com.br/vetores-ou-arrays-em-linguagem-c/)
  
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
