@@ -22,7 +22,7 @@ Depois de ler esse valor, igualamos `x` a `N`. Como a operação fatorial é uma
 ```c
     x = N;
 ```
-Para fazer as multiplicaões, usamos a estrutura `for` e, dentro dela, multiplicamos `x` pelo valor presente em `i`:
+Para fazer as multiplicações, usamos a estrutura `for` e, dentro dela, multiplicamos `x` pelo valor presente em `i`:
 ```c
     for (i=1;i<N;i++)
       x = x * i;
