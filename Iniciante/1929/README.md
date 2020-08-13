@@ -36,7 +36,9 @@ Aqui começa a ordenação dos valores. Vamos deixar os valores dados em ordem c
         }
       }
 ```
-Para garantir que os valores estão em ordem crescente, passamos por todos os valores do vetor 4 vezes (`j=0;j<4;j++`). Ao inverter valores, devemos ter cuidado para não sobrescrever nenhum valor, por isso usamos a variável `aux`. Ela guarda um valor e permite a troca entre `v[i]` e `v[i+1]`.
+O algoritmo usado para a ordenação é chamado de [Bubble sort](https://medium.com/@henriquebraga_18075/algoritmos-de-ordena%C3%A7%C3%A3o-i-bubble-sort-c162a67261ef). Esse algoritmo compara dois valores de um vetor e, se o primeiro valor for maior que o segundo, os dois números trocam de posição entre si. Esse procedimento é feito com todos os números do vetor N vezes, sendo N o número de valores no vetor, que no caso desse exercício é 4 (`j=0;j<4;j++`).
+
+Ao inverter valores, devemos ter cuidado para não sobrescrever nenhum valor, por isso usamos a variável `aux`. Ela guarda um valor e permite a troca entre `v[i]` e `v[i+1]`.
 
 Agora que os comprimentos estão ordenados, podemos verificar se é possível fazer um triângulo usando três dos quatro valores mostrados. Como não sabemos qual valor será descartado nós consideramos todos os casos possíveis. Se for possível fazer o triângulo o programa deve mostrar `S` na tela, senão deve mostrar `N`:
 ```c
