@@ -5,7 +5,7 @@ Os cientistas da NASA descobriram um novo exoplaneta que fica a 1 bilhão de ano
 
 
 # Resolução:
-Devemos ler um número e exibi-lo ao contrário. O segredo deste tipo de exercício é tratar números como caracteres ao invés de números, assim podemos simplesmente percorrer os caracteres de trás para frente.  
+Devemos ler um número e exibi-lo ao contrário. O segredo deste tipo de exercício é tratar números como caracteres, assim podemos simplesmente percorrer os caracteres de trás para frente.  
 
 Para isso, vamos precisar saber o número de caracteres (casas) que o valor tem. A função que retorna esse número está na biblioteca `<string.h>`, importada no início do código.
 
@@ -45,6 +45,7 @@ printf("\n");
 
 ##### Para relembrar sobre o laço for: [O comando for](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
 ##### Para revisar sobre vetores de caracteres: [String em C](http://linguagemc.com.br/string-em-c-vetor-de-caracteres/)
+##### Para aprender mais sobre a biblioteca string.h: [A biblioteca string.h e suas funções ](https://www.cprogressivo.net/2013/03/Aprenda-a-usar-todas-as-funcoes-da-biblioteca-string-h-em-C.html)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),

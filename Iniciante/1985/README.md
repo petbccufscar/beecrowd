@@ -12,7 +12,7 @@ O MacPRONALTS está com uma super promoção, exclusivo para os competidores da 
 # Resolução:
 Para resolver este exercício, vamos receber a quantidade de códigos de produto e, por sua vez, a quantidade de cada produto. Devemos multiplicar a quantidade de cada por seu respectivo valor e exibir o valor total de produtos.
 
-Inicialmente, declaramos as variáveis necessárias para o problema. A variável `produtos` irá armazenar quantos produtos diferentes vamos ler, enquanto `codigo` e `quantidade` serão usadas para calcular o `total` - uma variável do tipo `float` já que os preços possuem casas decimais. Há também uma variável `i` para percorrer um loop.  
+Inicialmente, declaramos as variáveis necessárias para o problema. A variável `produtos` irá armazenar quantos produtos diferentes vamos ler, enquanto `codigo` e `quantidade` serão usadas para calcular o `total` - uma variável do tipo `float`, já que os preços possuem casas decimais. Também é criada uma variável `i` para percorrer um loop.  
 Obs: como o `total` será incrementado, é importante inicializar a variável com 0;
 
 ```c
