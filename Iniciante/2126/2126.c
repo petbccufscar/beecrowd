@@ -13,7 +13,7 @@ int main()
         int total, posicao, tmp, tam_subsq, tam_seq;
 
         tam_subsq = strlen(subsq); 
-        tam_seq = strlen(str);
+        tam_seq = strlen(seq);
         
         total = 0;
         casos++;
