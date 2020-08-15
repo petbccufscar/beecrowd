@@ -9,7 +9,7 @@ Sabendo que Bino leva de 30 a 60 minutos para chegar ao terminal. Diga o atraso 
 
 # Resolução: 1h min
 
-Para resolver o problema iremos receber horários em que o Bino acorda e para cada horário exibiremos o tempo máximo de atraso até Bino chegar ao terminal de ônibus na hora combinada(8h da manhã). 
+Para resolver o problema, vamos receber horários em que o Bino acorda e, para cada horário, exibir o tempo máximo de atraso até Bino chegar ao terminal de ônibus na hora combinada (8h da manhã).
 
 Primeiro declaramos as variáveis `hora` e `minutos` que receberão a hora e minuto referentes ao horário em que Bino acordou. 
 ```c
@@ -50,7 +50,6 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 * [Facebook](https://www.facebook.com/petbcc/),
 * [Instagram](https://www.instagram.com/petbcc.ufscar/)
 * ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
-
 
 
 
