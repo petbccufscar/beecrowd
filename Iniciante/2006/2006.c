@@ -16,4 +16,4 @@ int main(){
 	printf("%d\n", acertos);
 
 	return 0;
-}8min
+}
