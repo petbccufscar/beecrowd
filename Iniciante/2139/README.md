@@ -18,7 +18,7 @@ Em seguida, declararemos o vetor de dias em cada mês. Como cada mês tem uma qu
     int dias_mes[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 25};
 ```
 
-Inicializamos nossa estrutura de repetição `while`. Como nosso critério de parada do programa é a leitura de um `End Of File (EOF)`, colocaremos a função de leitura `scanf` dentro desta área de condição do `while`. Assim, quando a leitura do `scanf` for `EOF`, nosso programa terminará.]
+Inicializamos nossa estrutura de repetição `while`. Como nosso critério de parada do programa é a leitura de um `End Of File (EOF)`, colocaremos a função de leitura `scanf` dentro desta área de condição do `while`. Assim, quando a leitura do `scanf` for `EOF`, nosso programa terminará.
 ```c
     while(scanf("%d%d", &mes, &dia) != EOF)
 ```
