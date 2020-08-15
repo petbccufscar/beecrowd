@@ -7,7 +7,7 @@ Você deve escrever um programa que, dado um número em ponto flutuante, mostre 
 
 
 # Resolução:
-Usufruindo do comando de notação científica fornecido pela linguagem C, o exercício em questão torna-se bastante simples.  
+Usufruindo do comando de notação científica fornecido pela linguagem C (`%E`), o exercício em questão torna-se bastante simples.  
 
 Conforme exemplificado pelo enunciado, "a entrada é um número em ponto flutuante de dupla precisão" e, portanto, devemos declarar a variável `X` como sendo do tipo `double`. Para armazenar o valor fornecido na entrada, utilizamos a função `scanf()` tendo como argumento `%lf`.  
 
