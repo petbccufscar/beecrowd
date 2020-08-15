@@ -43,7 +43,7 @@ Declararemos mais variáveis dentro da estrutura `while`, visto que elas serão 
 Agora, iremos armazenar os tamanhos dos vetores de sequencia e subsequencia lidos em `scanf` em suas respectivas variáveis. Para isso, utilizaremos a função `strlen`, presente na biblioteca `string.h`. Esta função lê um vetor de caracteres e retorna o tamanho.
 ```c
     tam_subsq = strlen(subsq); 
-    tam_seq = strlen(str);
+    tam_seq = strlen(seq);
 ```
 
 Inicializamos a variável `total` com 0, visto que ainda não começamos a analisar as sequencias e subsequencias, e somamos 1 no contador de `casos`, pois iremos comneçar a ler o primeiro caso de sequencias e subsequencias.
