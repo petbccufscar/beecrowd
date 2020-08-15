@@ -9,7 +9,7 @@ Por exemplo, se eles partiram às 10 horas da manhã para uma viagem de 4 horas 
 
 # Resolução:
 
-Para a resolução deste problema iniciaremos declarando as variaveis, estas irão armazenar os valores que serão passados, dentre essas o horário de saida, o tempo de voo e a alteração fuso em relação à origem. Logo após ja realizamos a leitura destes valores através da função `scanf`
+Para a resolução deste problema iniciaremos declarando as variáveis, estas irão armazenar os valores que serão passados, dentre essas o horário de saída, o tempo de voo e a alteração fuso em relação à origem. Logo após ja realizamos a leitura destes valores através da função `scanf`
 ```c
 int saida, voo, fuso, chegada;
 
@@ -17,14 +17,14 @@ scanf("%d %d %d", &saida, &voo, &fuso);
 ```
 
 
-Sobre o horario de saida, iremos tratar "0 horas" como "24 horas", pois se o valor contido em `fuso` for maior que o de `voo` poderiamos ter um valor negativo como resultado
+Sobre o horário de saída, iremos tratar "0 horas" como "24 horas", pois se o valor contido em `fuso` for maior que o de `voo` poderíamos ter um valor negativo como resultado
 ```c
 if(saida == 0)
 	saida = 24;
 ```
 
 
-Para calcularmos a saida, basta somar o horario de saida com o tempo de voo e ajustar com o fuso. Caso o valor resultante seja maior que 24 pegaremos o resto da divisão por 24, que indicaria ter passado o dia. Após isso realizamos a impressão do valor encontrador que será o horário de chegada
+Para calcularmos a saída, basta somar o horário de saída com o tempo de voo e ajustar com o fuso. Caso o valor resultante seja maior que 24 pegaremos o resto da divisão por 24, que indicaria ter passado o dia. Após isso realizamos a impressão do valor encontrador que será o horário de chegada
 ```c
 chegada = ((saida + voo + fuso) % 24);
 

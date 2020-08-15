@@ -18,16 +18,16 @@ double volume, diametro, altura, area, raio;
 ```
 
 
-Utilizaremos o laço de repetição `while` juntamente com uma verficicação se chegamos ao final do arquivo passado, para isso fazemos uma compaçação com o valor `EOF` que é o retorno da função `scanf` caso tenha acabado. Caso seja negativo, prosseguimos com à resolução com os valores ja lidos e armazenados nas variaveis `volume` e `diametro`
+Utilizaremos o laço de repetição `while` juntamente com uma verificação se chegamos ao final do arquivo passado, para isso fazemos uma comparação com o valor `EOF` que é o retorno da função `scanf` caso tenha acabado. Caso seja negativo, prosseguimos com à resolução com os valores já lidos e armazenados nas variáveis `volume` e `diametro`
 ```c
 while(scanf("%lf%lf", &volume, &diametro)!=EOF){
 ```
 
 
-Dentro deste do laço, para cada dois valores de volume e diametros passados iremos realizar um calculo com o objetivo de encontrar a altura e area que o recepiente deverá possuir.
-* Para o calculo do raio basta dividirmos o valor do diametro que foi passado por 2. 
+Dentro deste do laço, para cada dois valores de volume e diâmetros passados iremos realizar um calculo com o objetivo de encontrar a altura e área que o recipiente deverá possuir.
+* Para o calculo do raio basta dividirmos o valor do diâmetro que foi passado por 2. 
 * Para calcular a área foi dito para considerar PI como 3,14 desta forma basta multiplicar PI por raio ao quadrado (raio\*raio).
-* E para a altura basta dividirmos o valor contido em volume pelo valor encontrado e armazenado na variavel `area`
+* E para a altura basta dividirmos o valor contido em volume pelo valor encontrado e armazenado na variável `area`
 ```c
 raio = diametro/2;
 area = 3.14*raio*raio;
@@ -35,7 +35,7 @@ altura = volume/area;
 ```
 
 
-Ao final de cada iteração do laço `while` realizamos a impressão dos respectivos valores de altura e area seguindo a formatação proposta pelo problema
+Ao final de cada iteração do laço `while` realizamos a impressão dos respectivos valores de altura e área seguindo a formatação proposta pelo problema
 ```c
 printf("ALTURA = %.2lf\n", altura);
 printf("AREA = %.2lf\n", area);	

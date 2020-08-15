@@ -17,7 +17,7 @@ Sua tarefa é escrever um programa que, dada as escolhas de dois jogadores, info
 
 # Resolução:
 
-Para a resolução deste problemas iremos precisar importar uma biblioteca com o nome de `<string.h>` com ela iremos trabalhar com strings, na forma de uma cadeia de caracteres, useremos para armazenar o valor informado pelos jogadores.
+Para a resolução deste problemas iremos precisar importar uma biblioteca com o nome de `<string.h>` com ela iremos trabalhar com strings, na forma de uma cadeia de caracteres, usaremos para armazenar o valor informado pelos jogadores.
 ```c
 #include <string.h>
 ```
@@ -28,7 +28,7 @@ Nessa biblioteca temos a função `strcmp` a qual é usado da seguinte forma: ` 
 * \> 0: conteúdo da string1 é maior do que string2.
 
 
-Agora explicado a função dessa biblioteca adicional que importamos, podemos começar com a resolução do problema, para isso realizamos as declarações das variaveis, dentre essas temos `char jogador1[10]` que indica ser uma variavel do tipo CHAR com tamanho de 10 caracteres, ou seja uma cadeia de caracteres (uma string). Assim como realizamos a leitura de `N` que será o números de casos de teste que nosso programa irá verificar.
+Agora explicado a função dessa biblioteca adicional que importamos, podemos começar com a resolução do problema, para isso realizamos as declarações das variáveis, dentre essas temos `char jogador1[10]` que indica ser uma variável do tipo CHAR com tamanho de 10 caracteres, ou seja uma cadeia de caracteres (uma string). Assim como realizamos a leitura de `N` que será o números de casos de teste que nosso programa irá verificar.
 ```c
 int N, aux;
 char jogador1[10], jogador2[10];
@@ -44,7 +44,7 @@ for(aux = 0; aux < N; aux++){
 ```
 
 
-Dentro de nosso `for` temos varios condicionais `if` que irão abordar todas as jogadas possiveis, para explicação trataremos de apenas uma. Nesse caso escolhido é verificado se a string contida em `jogador1` é igual a "pedra" e se a string contida em `jogador2` é igual a "papel", caso for positivo (pois a `strcmp` retorna 0 caso forem iguais) iremos imprimir na tela que o jogador 1 venceu pois segundo o problema, o jogador que escolheu pedra ganha por causar muito dano ao papel.
+Dentro de nosso `for` temos vários condicionais `if` que irão abordar todas as jogadas possíveis, para explicação trataremos de apenas uma. Nesse caso escolhido é verificado se a string contida em `jogador1` é igual a "pedra" e se a string contida em `jogador2` é igual a "papel", caso for positivo (pois a `strcmp` retorna 0 caso forem iguais) iremos imprimir na tela que o jogador 1 venceu pois segundo o problema, o jogador que escolheu pedra ganha por causar muito dano ao papel.
 ```c
 if (strcmp(jogador1, "pedra") == 0 && strcmp(jogador2, "papel") == 0)
 			printf("Jogador 1 venceu\n");
