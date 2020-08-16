@@ -10,7 +10,8 @@ int main(){
 		quantNumeros = 1;
 		caso++;
 
-		quantNumeros += ((numero*(numero+1))/2);
+  		for (i = numero; i > 0; i--)
+    		quantNumeros += i;
 
 		if(numero == 0)
 			printf("Caso %d: %d numero\n", caso, quantNumeros);
