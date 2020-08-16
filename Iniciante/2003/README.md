@@ -16,7 +16,7 @@ int hora, minuto;
 ```
 
 Depois, iniciamos o laço de repetição `while`, onde iremos calcular cada possível atraso de Bino de acordo com a hora em que ele acordou. A condição de parada do laço possui o comando `scanf`, que fará a leitura das variáveis `hora` e `minuto` até que receba o [final de arquivo (EOF)](https://pt.wikipedia.org/wiki/EOF), encerrando o laço de repetição.
-Os caracteres que são inseridos no meio, como :, são ignorados pela função `scanf`, pois com o `%d`  ela procura apenas por números inteiros. 
+Os caracteres que são inseridos no meio, como :, são ignorados pela função `scanf`, pois com o parâmetro `%d` a função procura apenas por números inteiros. 
 ```c
 while(scanf("%d:%d", &hora, &minuto)!=EOF){
 	/*
