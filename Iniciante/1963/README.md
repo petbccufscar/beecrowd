@@ -13,7 +13,7 @@ Mas ela não é muito boa em Matemática, e está solicitando sua ajuda para cal
  
 Para calcular o aumento percentual do valor do ingresso, iremos dividir o novo preço pelo preço inicial, subtrair 1 e depois multiplicar por 100.
 
-Iremos declarar duas variáveis do tipo `dou,ble`  `valorInicial` e `valorNovo`.
+Iremos declarar duas variáveis do tipo `double`  `valorInicial` e `valorNovo`.
  
 ```c
 double valorInicial, valorNovo;
