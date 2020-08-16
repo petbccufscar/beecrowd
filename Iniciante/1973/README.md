@@ -55,7 +55,7 @@ Em seguida, iremos iniciar o roubo dos carneiros. A variável `j` indica em qual
 Caso o fazendeiro tente ir para uma estrela antes da primeira, ou depois da última estrela, o programa encerra. Por conta disso, a condição da estrutura de repetição `while` que usaremos será `while(j >= 0 && j < N )`.
 
 A cada iteração do laço de repetição:
-- verificamos se a quantidade de carneiros da estrela vigente é ímpar e armazenamos este resultado na variável  `impar`.
+- atribuímos o resto da divisão do número de carneiros por 2 (`estrelas[j]%2`) a variável `impar` para obtermos a paridade do número de carneiros da estrela atual, pois como se trata de uma divisão por 2, o resto poderá ser apenas 0 ou 1.
 - se a quantidade de carneiros da estrela vigente for maior que zero, o irmão rouba um carneiro:
     - diminuímos em 1 a quantidade de carneiros da estrela e também do total
     - verificamos se tal estrela não foi atacada. Caso não tenha sido, aumentamos em 1 o número de estrelas atacadas e mudamos o valor desta estrela no vetor de atacadas de 0 para 1
