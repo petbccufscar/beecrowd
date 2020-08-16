@@ -27,7 +27,7 @@ Depois, lemos o valor de `N`, por meio da função `scanf()`.
 scanf("%lld", &N);
 ```
 
-Agora, iremos declarar dois vetores com tamanho igual a quantidade de estrelas, `N`. O primeiro, para armazenarmos a quantidade de carneiros que cada estrela tem. O segundo, para nos auxiliar a saber se tal estrela já foi atacada e para isso, inicializamos-o com 0 em todas as posições e caso uma estrela seja atacada, mudamos para 1.** Porém, como não sabemos o tamanho de `N` na hora de compilar o programa, é incorreto declarar um vetor de tamanho `N` de forma estática. Por isso, iremos utilizar alocação dinâmica.**
+Agora, iremos declarar dois vetores com tamanho igual a quantidade de estrelas, `N`. O primeiro, para armazenarmos a quantidade de carneiros que cada estrela tem. O segundo, para nos auxiliar a saber se tal estrela já foi atacada e para isso, inicializamos-o com 0 em todas as posições e caso uma estrela seja atacada, mudamos para 1. Porém, como não sabemos o tamanho de `N` na hora de compilar o programa, é incorreto declarar um vetor de tamanho `N` de forma estática. Por isso, iremos utilizar alocação dinâmica, que no nosso caso consiste em reservar na memória um espaço equivalente ao tamanho de uma variável do tipo `long long int` multiplicada por N e esses serão nossos vetores .
 
 ```c
 long long int* estrelas = (long long int*)malloc(N * sizeof(long long int));
