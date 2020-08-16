@@ -31,7 +31,7 @@ Agora, iremos calcular a quantidade de números que a sequência irá possuir.
 Esse cálculo é feito com um laço `for`, somando o número N com N-1 enquanto N for maior que 0. Note que `quantNumeros` foi iniciada com 1, pois a sequência sempre começa em 0, ou seja, já possuí um dígito. Com isso, obtemos a quantidade de números de sequência. Por exemplo, se N=3, ao realizar esses passos, encontramos a quantidade de números da sequência = 7.
 ```c
 for (i = numero; i > 0; i--)
-    		quantNumeros += i;
+	quantNumeros += i;
 ``` 
 
 Para podermos exibir a sequência, verificamos se o número N recebido é *igual* a 0. Se sim, exibimos a frase de saída no singular, caso contrário exibimos no plural.
