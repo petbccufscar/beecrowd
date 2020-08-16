@@ -30,7 +30,7 @@ Agora, dentro do `while` começamos a escrever a mensagem de atraso, referente a
 printf("Atraso maximo: ");
 ```
 
-Por fim, verificamos o tempo de atraso de Bino de acordo com o horário recebido e exibimos esse valor. Se ele acordou antes das 7h *ou* às 7h em ponto ele não irá se atrasar, pois ele demora até 60 minutos(1h) para chegar. Portanto, escrevemos: 0.
+Por fim, verificamos o tempo de atraso de Bino de acordo com o horário recebido e exibimos esse valor. Se ele acordou antes das 7h *ou* às 7h em ponto ele não irá se atrasar, pois ele demora até 60 minutos (1h) para chegar. Portanto, escrevemos: 0.
 ```c
 if(hora<7 || (hora==7 && minuto==0))
 	printf("0\n");
