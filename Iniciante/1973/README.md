@@ -58,7 +58,7 @@ A cada iteração do laço de repetição:
 - atribuímos o resto da divisão do número de carneiros por 2 (`estrelas[j]%2`) a variável `impar` para obtermos a paridade do número de carneiros da estrela atual, pois como se trata de uma divisão por 2, o resto poderá ser apenas 0 ou 1.
 - se a quantidade de carneiros da estrela vigente for maior que zero, o irmão rouba um carneiro:
     - diminuímos em 1 a quantidade de carneiros da estrela e também do total
-    - verificamos se tal estrela não foi atacada. Caso não tenha sido, aumentamos em 1 o número de estrelas atacadas e mudamos o valor desta estrela no vetor de atacadas de 0 para 1
+    - verificamos se tal estrela já não foi atacada. Caso ainda não tenha sido, aumentamos em 1 o número de estrelas atacadas e mudamos o valor desta estrela no vetor de atacadas de 0 para 1
 - por fim, o irmão passa para a próxima estrela:
     - se `impar` for 1, ou seja, a quantidade de carneiros antes do roubo era ímpar, adicionamos 1 a `j`;
     - se `impar` for 0, ou seja, a quantidade de carneiros antes do roubo era par, subtraímos 1 a `j`;
