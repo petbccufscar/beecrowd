@@ -14,10 +14,10 @@ Apesar do enunciado um tanto confuso, o exercício nos pede para, dado um númer
 
 Nesse exercício, utilizamos a biblioteca `<stdlib.h>` para fazer uso da função `abs()` que retorna o valor absoluto (positivo) do que for passado como argumento (ex: abs(-3) = 3).
 
-Começamos com a declaração de variáveis, `N` será quantos inteiros `T` receberemos, que por sua vez, é a quantidade de anos que iremos voltar partindo de 2015. `negativo` é uma variável auxiliar, que determinará se estamos em um ano antes ou depois de cristo com um valor lógico, 1 para A.C. (_true_) ou 0 para D.C. (_false_)
+Começamos com a declaração de variáveis, `N` será quantos inteiros `T` receberemos, que por sua vez, é a quantidade de anos que iremos voltar partindo de 2015. `antes` é uma variável auxiliar, que determinará se estamos em um ano antes ou depois de cristo com um valor lógico, 1 para A.C. (_true_) ou 0 para D.C. (_false_)
 
 ```c
-    int N, T, negativo, i;
+    int N, T, antes, i;
 ```
 
 Assim, com as variáveis declaradas, podemos fazer a leitura de quantos `T` receberemos.
@@ -28,9 +28,9 @@ Assim, com as variáveis declaradas, podemos fazer a leitura de quantos `T` rece
 
 Com essa lacuna preenchida, faremos um loop `for` de 0 a `N` (que não inclui `N`) para ler os valores de `T` e efetuar os cálculos, que são divididos em 2 passos.
 * Verificamos se estamos com um valor de 2015 - `T` positivo, que indicará que a apresentação deve ser D.C. Caso seja negativo, então a apresentação é A.C
-    * Caso a condição seja satisfeita, estamos lidando com um valor A.C. o que entra no quadro de um ano "negativo", portanto a variável `negativo` se torna 1 (_true_)
-    * Caso a condição não seja satisfeita, no `else` atribuimos `negativo = 0` que nos guia a apresentação D.C.
-* Após essa confirmação do valor lógico da variável `negativo`, entramos em outra estrutura de decisão `if(negativo)` que será o caso de `negativo == 1`.
+    * Caso a condição seja satisfeita, estamos lidando com um valor A.C. o que entra no quadro de um ano "negativo", portanto a variável `antes` se torna 1 (_true_)
+    * Caso a condição não seja satisfeita, no `else` atribuimos `antes = 0` que nos guia a apresentação D.C.
+* Após essa confirmação do valor lógico da variável `antes`, entramos em outra estrutura de decisão `if(antes)` que será o caso de `antes == 1`.
     * Caso nossa condição valide esse primeiro caso, ou seja, Antes de Criso, escrevemos na tela o resultado absoluto de (2015 - (`T`+1)), utilizamos `T`+1 pois quando se trata de anos A.C. o ano 0 nunca existiu, portanto é representado como 1 A.C. (exemplo: 2015 anos antes de 2015 nos leva a 1A.C. e não no ano 0).
     * Caso caímos no else, ou seja, Depois de Cristo, precisamos apenas escrever na tela o resultado de (2015 - `T`) pois por se tratar de um ano D.C., não precisaremos do valor absoluto, essa subtração sempre será positiva.
 
@@ -39,12 +39,12 @@ Com essa lacuna preenchida, faremos um loop `for` de 0 a `N` (que não inclui `N
    for(i=0;i<N;i++){
         scanf("%d",&T);
         if((2015-T) <= 0){
-            negativo = 1;
+            antes = 1;
         }
         else{
-            negativo = 0;
+            antes = 0;
         }
-        if(negativo){
+        if(antes){
             printf("%d A.C.\n",abs(2015-(T+1)));
         }
         else{

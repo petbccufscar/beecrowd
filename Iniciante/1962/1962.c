@@ -2,17 +2,17 @@
 #include <stdlib.h>
 
 int main(){
-    int N, T, negativo, i;
+    int N, T, antes, i;
     scanf("%d",&N);
     for(i=0;i<N;i++){
         scanf("%d",&T);
         if((2015-T) <= 0){
-            negativo = 1;
+            antes = 1;
         }
         else{
-            negativo = 0;
+            antes = 0;
         }
-        if(negativo){
+        if(antes){
             printf("%d A.C.\n",abs(2015-(T+1)));
         }
         else{
