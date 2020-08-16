@@ -52,7 +52,7 @@ for (i = 0; i < N; i++){
 
 Em seguida, iremos iniciar o roubo dos carneiros. A variável `j` indica em qual estrela o irmão está atualmente. O ponto inicial será sempre a primeira estrela, por isso incializamos `j` com 0 `j = 0`.
 
-Caso o fazendeiro tente ir para uma estrela ou antes da primeira estrela, ou depois da última estrela, o programa encerra. Por conta disso, a condição da estrutura de repetição `while` que usaremos será `while(j >= 0 && j < N )`.
+Caso o fazendeiro tente ir para uma estrela antes da primeira, ou depois da última estrela, o programa encerra. Por conta disso, a condição da estrutura de repetição `while` que usaremos será `while(j >= 0 && j < N )`.
 
 A cada iteração do laço de repetição:
 - verificamos se a quantidade de carneiros da estrela vigente é ímpar e armazenamos este resultado na variável  `impar`.
