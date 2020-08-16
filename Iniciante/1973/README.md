@@ -67,7 +67,7 @@ A cada iteração do laço de repetição:
 j = 0;
 while(j >= 0 && j < N ){
 
-	impar = estrelas[j] % 2 ;
+    impar = estrelas[j] % 2 ;
 		
     if( estrelas[j] > 0){
 
@@ -83,13 +83,12 @@ while(j >= 0 && j < N ){
 	}
 
    	if(impar)
-    	j++;
-    else
-		j--;
+    	    j++;
+        else
+	    j--;
 		
 	
 }
-```
 
 Quando a jornada de roubos acaba, ou seja, quando `j` for -1 ou `N`, exibimos a quantidade de estrelas atacadas e a quantidade de carneiros não roubados, `ataques` e `total` respectivamente.
 
