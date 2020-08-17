@@ -14,7 +14,7 @@ Você deve escrever um programa que, dado um número arábico, mostra seu equiva
 
 A ideia desse modo de resolução é achar o valor posicional da centena, dezena e unidade pertencentes a entrada do problema (`nroArabico`) para, em seguida, utilizá-lo como índice nos vetores: `*unidades`, `*dezenas` e `*centenas`. Estes possuem, respectivamente, os valores das unidades, dezenas e centenas em algarismos romanos, possibilitando que retornem o número romano correspondente. Tendo pré-armazenado as numerações romanas de centena, dezena e unidade; usamos uma função para poder juntar esses valores e mostrar o resultado convertido.
 
-Para achar o valor posicional da centena, dividimos a entrada por 100; o da dezena é encontrado dividindo por 10 o resto da divisão de `nroArabico` por 100. Por fim o cálculo da unidade é feito com o resto de `nroArabico` por 10.   
+Para achar o valor posicional da centena, dividimos a entrada por 100. A dezena é encontrada dividindo o resto do cálculo anterior (pois assim sabemos qual o restante que ainda precisa ser convertido) por 10. Por fim, a unidade é obtida através do resto do cálculo da dezena.   
 
 Primeiramente, como usaremos alocação dinâmica devido ao fato de trabalharmos com uma variável que seu tamanho muda conforme a entrada, importaremos a biblioteca `stdlib.h`; e como iremos trabalhar com strings, devemos também importar a biblioteca [`string.h`](http://linguagemc.com.br/a-biblioteca-string-h/).
 
