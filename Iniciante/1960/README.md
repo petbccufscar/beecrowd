@@ -30,7 +30,7 @@ Para iniciar, iremos declarar as variáveis inteiras: `nroArabico` (encarregada 
     int indiceCentena, indiceDezena, indiceUnidade;  
 ```
 
-Também iremos declarar 3 vetores de caracteres (`*unidades`, `*dezenas` e `*centenas`) que possuem os valores das unidades, dezenas e centenas em números romanos. Estas 3 variáveis são declaradas como ponteiros de caracteres pois ela armazenazam caracteres que estão justapostos, ou seja, `strings`.
+Também iremos declarar 3 vetores de caracteres (`*unidades`, `*dezenas` e `*centenas`) que possuem os valores das unidades, dezenas e centenas em números romanos. Estas 3 variáveis são declaradas como ponteiros de caracteres pois armazenam caracteres que estão justapostos, ou seja, strings.
 
 ```c
     char *unidades[11] = {"","I","II","III","IV","V","VI","VII","VIII","IX","\0"};
