@@ -22,7 +22,7 @@ Então, faremos a leitura dos valores de `nroLados` e `tamLados`, nesta ordem. N
 ```c
     scanf("%d %lld", &nroLados, &tamLados);
 ```
-Após isso, calcularemos o valor do perímetro
+Após isso, calcularemos o valor do perímetro através do cálculo anteriormente citado.
 
 ```c
     perimetro = nroLados * tamLados;
