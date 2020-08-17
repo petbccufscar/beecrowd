@@ -45,7 +45,7 @@ scanf("%d",&V);
 ```  
 
 Observando a tabela anterior, podemos notar que os valores em hexadecimal possuem apenas 16 tipos diferentes de caracteres: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E e F. Tendo esta informação em mãos, iremos declarar `digitosHexa` para armazená-los e, sabendo que todo vetor de `char` possui como último elemento o caractere especial `\0`, este possuirá tamanho 17.
-Também é importante declararmos o inteiro `i`, para auxiliar nos cálculos; e `Vhexa`, que conterá o resultado obtido. Porém, teremos conhecimento do tamanho da string gerada em hexadecimal apenas durante a execução do programa e, consequentemente, não há como alocar, com antecedência, a quantidade de memória necessária. Em cenários como este, podemos desfrutar da função `malloc` para realizar uma alocação dinâmica, sendo necessário fornecer-lhe somente o tamanho do tipo a ser utilizado (neste caso, `char`).  
+Também é importante declararmos `Vhexa`, que conterá o resultado obtido; e seu índice auxiliar, o inteiro `i`. Porém, teremos conhecimento do tamanho da string gerada em hexadecimal apenas durante a execução do programa e, consequentemente, não há como alocar, com antecedência, a quantidade de memória necessária. Em cenários como este, podemos desfrutar da função `malloc` para realizar uma alocação dinâmica, sendo necessário fornecer-lhe somente o tamanho do tipo a ser utilizado (neste caso, `char`).  
 
 ```c
 char digitosHexa[17] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
