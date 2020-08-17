@@ -12,7 +12,7 @@ Você deve escrever um programa que, dado um número arábico, mostra seu equiva
 
 # Resoluçāo:
 
-A ideia desse modo de resolução é achar o valor posicional da centena, dezena e unidade; que pertecem a entrada do problema(`nroArabico`), e usar o valor como índice para os vetores: `*unidades`, `*dezenas` e `*centenas`( que possuem os valores das unidades, dezenas e centenas em números romanos); de forma que retorne o número romano correspondente dos mesmo. Possuindo, cada valor da centena, dezena e unidade em número romano, usamos uma função para poder juntar esses valores e mostrar o resultado convertido.
+A ideia desse modo de resolução é achar o valor posicional da centena, dezena e unidade pertencentes a entrada do problema (`nroArabico`) para, em seguida, utilizá-lo como índice nos vetores: `*unidades`, `*dezenas` e `*centenas`. Estes possuem, respectivamente, os valores das unidades, dezenas e centenas em algarismos romanos, possibilitando que retornem o número romano correspondente. Tendo pré-armazenado as numerações romanas de centena, dezena e unidade; usamos uma função para poder juntar esses valores e mostrar o resultado convertido.
 
 Para achar o valor posicional da centena, dividimos a entrada por 100; o da dezena é encontrado dividindo por 10 o resto da divisão de `nroArabico` por 100. Por fim o cálculo da unidade é feito com o resto de `nroArabico` por 10.   
 
