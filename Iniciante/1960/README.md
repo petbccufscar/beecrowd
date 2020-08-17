@@ -38,7 +38,7 @@ Também iremos declarar 3 vetores de caracteres (`*unidades`, `*dezenas` e `*cen
     char *centenas[11] = {"","C","CC","CCC","CD","D","DC","DCC","DCCC","CM","\0"};
 ```
 
-A última variável a ser declarada é `nroRomano`. Sua função é armazenar o número romano resultante, que é a saída do problema. Além disso, como o tamanho desta varia conforme a entrada, usamos a função `malloc` da biblioteca `stdlib.h` para realizar a alocação dinâmica da variável. Colocamos com tamanho de 12, pois é o tamanho máximo que `*nroRomano` poderá ter.
+A última variável a ser declarada é `*nroRomano`. Sua função é armazenar o número romano resultante, que é a saída do problema. Além disso, como o tamanho desta varia conforme a entrada, usamos a função `malloc` da biblioteca `stdlib.h` para realizar a alocação dinâmica da variável. Colocamos com tamanho de 12, pois é o tamanho máximo que `*nroRomano` poderá ter.
 
 ```c
     char *nroRomano;
