@@ -15,7 +15,9 @@ int main(){
     scanf("%d", &nroArabico);
   
     indiceCentena = nroArabico/100;
-    indiceDezena = (nroArabico%100)/10;
+    nroArabico = nroArabico%100;
+    
+    indiceDezena = nroArabico/10;
     indiceUnidade = nroArabico%10;
     
     strcat(nroRomano, centenas[indiceCentena]);
