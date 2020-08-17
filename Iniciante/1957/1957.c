@@ -12,8 +12,8 @@ int main(){
 
 	while(V > 0){
 		Vhexa[i] = digitosHexa[V%16];
-    	V = V/16;
-    	i = i + 1;
+    		V = V/16;
+    		i = i + 1;
 	}
    
 	i = i - 1;
