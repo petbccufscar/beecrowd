@@ -54,8 +54,11 @@ Tendo esse valor guardado, é preciso achar o valor posicional da centena, dezen
 
 ```c
     indiceCentena = nroArabico/100;
-    indiceDezena = (nroArabico%100)/10;
+    nroArabico = nroArabico%100;
+    
+    indiceDezena = nroArabico/10;
     indiceUnidade = nroArabico%10;
+    
 ```
 
 Após isso, utilizamos a função `strcat` para poder concatenar (ou seja, "juntar") os conteúdos da centena, dezena e unidade com a variável `nroRomano`.  
