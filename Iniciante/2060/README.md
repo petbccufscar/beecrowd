@@ -16,8 +16,8 @@ Para isso iniciamos declarando as variáveis que serão utilizadas:
         int N, L, i;
         int mult2 = 0, mult3 = 0, mult4 = 0, mult5 = 0;
 ```
-`N` o número de repetições que o usuário deseja e `L` os valores de possíveis múltiplos a serem testados e `i` variável que será incrementada no `for`.
-`mult2, mult3, mult4, mult5` são contadores que iram controlar a quantidade de múltiplo que cada um deles possui.
+`N` o número de repetições que o usuário deseja, `L` os valores de possíveis múltiplos a serem testados e `i` variável que será incrementada no `for`.
+`mult2, mult3, mult4, mult5` são contadores que irão controlar a quantidade de múltiplos que cada um deles possui.
 
 Fazemos a leitura do `N` no `scanf`:
 
@@ -25,7 +25,7 @@ Fazemos a leitura do `N` no `scanf`:
         scanf("%d", &N);
 ```
 
-Seguimos para a construção do `for` onde será feito a lógica do exercício:
+Seguimos para a construção do `for` onde será feita a lógica do exercício:
 
 ```c
        for (i = 0; i < N; i++){
@@ -44,7 +44,7 @@ Seguimos para a construção do `for` onde será feito a lógica do exercício:
         }   
         }
 ```
-No `for` temos a leitura dos números de `L` a cada iteração, seguimos para a verificação, que é feita comparando o resto da divisão usando `%`, verifica se ele é múltiplo de algum dos números, e caso for, incrementamos a variável contadora que representa a quantidade de múltiplos daquele determinado número.
+No `for`, temos a leitura dos números de `L` a cada iteração, seguida pela verificação, que é feita comparando o resto da divisão usando `%`. Este operador verifica se ele é múltiplo de algum dos números e, caso for, incrementamos a variável contadora que representa a quantidade de múltiplos daquele determinado número.
 Ex: `L=2` resulta no `mult2 = 1` ou `mult2++`.
 
 Finalizamos printado a saída que o uri requisita:

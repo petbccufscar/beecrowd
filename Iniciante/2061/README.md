@@ -6,10 +6,6 @@ Por ironia do destino, o navegador de Péricles acabou sendo infectado por um ma
 
 Sua tarefa é descobrir com quantas abas que o navegador de Péricles ficou, sabendo o número inicial de abas e a sequência de ações de Péricles. As ações podem ser fechou (quando Péricles fechou uma aba) ou clicou (quando Péricles clicou em uma propaganda).
 
-###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/2061
-
-# Resolução
-
 Exemplo de Entrada:
 
                     3 5
@@ -20,7 +16,11 @@ Exemplo de Entrada:
                     clicou
 Saída: 2 
 
-Tendo como exemplo as entradas e a saída podemos entender melhor o exercício, que consiste em iniciar com o número de abas abertas e a quantidade de casos que será testado, seguindo pelo valor de cada caso que será fechou(resulta em mais 1 aba) ou clicou(resulta em menos 1 aba).
+###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/2061
+
+# Resolução
+
+Tendo como exemplo as entradas e a saída podemos entender melhor o exercício, que consiste em iniciar com o número de abas abertas e a quantidade de casos que serão testados, seguindo pelo valor de cada caso que será `fechou` (resulta em mais 1 aba) ou `clicou` (resulta em menos 1 aba).
 
 Nesse exercício iremos utilizar uma biblioteca para poder trabalhar com string/vetor de char:
 
@@ -34,8 +34,7 @@ Seguimos declarando as variáveis que serão utilizadas:
         int N, i, M;
         char str[20];
 ```
-`N` o número de abas, `i` variável padrão utilizada no controle do `for`, `M` número de casos clicou/fechou, `str[20]` str é a string responsável por armazenar as palavras clicou/fechou, o tamanho dela foi escolhido arbitrariamente, só tendo em mente que tem que ser maior ou igual a palavra que se pretende armazenar dentro da string.
-
+`N` o número de abas, `i` variável padrão utilizada no controle do `for`, `M` número de casos clicou/fechou, `str[20]` é a `string` responsável por armazenar as palavras clicou/fechou. O tamanho dela foi escolhido arbitrariamente, só tendo em mente que deve ser um valor maior ou igual a palavra que se pretende armazenar dentro da string.
 Fazemos a leitura de `N` e `M` no `scanf`:
 
 ```c

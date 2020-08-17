@@ -19,7 +19,7 @@ Para isso iniciamos declarando as variáveis que serão utilizadas:
 ```c
         int p, j1, j2, r, a, vencedor, soma;
 ```
-`p` representa a escolha do jogador 1 (se `p = 1` então o jogador 1 escolheu par, se `p = 0` então o jogador 1 escolheu ímpar). Os valores `j1, j2`, representam respectivamente o número escolhido pelo jogador 1 e pelo jogador 2. `r` representa se o jogador 1 roubou (se `r` = 1 então o jogador 1 roubou, se `r = 0` então o jogador 1 não roubou), `a` representa se o jogador 2 acusou o roubo (se `a = 1` então o jogador 2 acusou o jogador 1 de roubo, se `a = 0` então ele não acusou o jogador 1 de roubo). `vencedor` variável que ira armazenar 1 caso o jogador 1 venceu e 2 para o jogador 2 e `soma` é a variável que armazena o valor da soma das jogadas dos jogadores 1 e 2.
+`p` representa a escolha do jogador 1 (se `p = 1` então o jogador 1 escolheu par, se `p = 0` então o jogador 1 escolheu ímpar). Os valores `j1, j2`, representam respectivamente o número escolhido pelo jogador 1 e pelo jogador 2. `r` representa se o jogador 1 roubou (se `r` = 1 então o jogador 1 roubou, se `r = 0` então o jogador 1 não roubou), `a` representa se o jogador 2 acusou o roubo (se `a = 1` então o jogador 2 acusou o jogador 1 de roubo, se `a = 0` então ele não acusou o jogador 1 de roubo). `vencedor` é a variável que ira armazenar o número do jogador que ganhou e `soma` é a variável que armazena o valor da soma das jogadas dos jogadores 1 e 2.
 
 Fazemos a leitura das variáveis no `scanf`:
 
@@ -45,10 +45,10 @@ Criamos os `if` responsáveis pelas verificações, explicarei cada um abaixo us
         else if(r==1 && a==1) 
                 vencedor=2;
 ```
-**1º** `if`: Fazemos a verificação se a rodada saio par e(`&&`) verificamos se o jogador 1 excolheu par, ou(`||`) se a jogada resultou em ímpar e(`&&`) o jogador 1 escolheu ímpar.
+**1º** `if`: Fazemos a verificação se a rodada saiu par e(`&&`) verificamos se o jogador 1 escolheu par, ou(`||`) se a jogada resultou em ímpar e(`&&`) o jogador 1 escolheu ímpar.
 Portanto a variável `vencedor` recebe 1, jogador 1 ganhou. O seu `else` será o inverso, por exemplo jogador 1 escolher par e a `soma` for um valor ímpar.
 
-**2º** `if`: Será verificado a condição do jogar 1 roubar `r=1` e(`&&`) o jogador 2 não acusar `a=0`, ou(`||`) o jogador 1 não roubar `r=0` e o jogador 2 acusá-lo `a=1`, portanto resultando na vitória do jogar 1 `vencedor=1`. E o seu `else if` é a condição onde o jogador 1 rouba `r=1` e o jogador 2 acusa ele `a=1`, pego no flagra!
+**2º** `if`: Será verificado a condição do jogar 1 roubar `r=1` e(`&&`) o jogador 2 não acusar `a=0`, ou(`||`) o jogador 1 não roubar `r=0` e o jogador 2 acusá-lo `a=1`, portanto resultando na vitória do jogador 1 `vencedor=1`. E o seu `else if` é a condição onde o jogador 1 rouba `r=1` e o jogador 2 acusa ele `a=1`, pego no flagra!
 
 Terminamos printando o resultado:
 
