@@ -8,7 +8,7 @@ Você deve escrever um programa que, dados o número e o comprimento dos lados d
 
 # Resoluçāo:
 
-O [perímetro](https://mundoeducacao.uol.com.br/matematica/perimetro.htm.) é a medida do contorno de um polígono. Dessa forma, para calcula-lo é preciso fazer a soma de suas medidas; mas como os polígonos deste exercício são regulares, seu perímetro será igual ao tamanho dos lados multiplicado por sua quantidade.
+O [perímetro](https://mundoeducacao.uol.com.br/matematica/perimetro.htm.) é a medida do contorno de um polígono. Dessa forma, para calculá-lo é preciso fazer a soma de cada um de seus lados. Mas, como os polígonos deste exercício são regulares, seu perímetro será igual a quantidade de lados multiplicado pelo tamanho.
 
 Inicialmente declaramos as variáveis inteiras: `nroLados`, `tamLados` e `perimetro`. Tanto `tamLados` quanto `perimetro` são declaradas com o tipo `long long int`, pois podem ter valores muito grandes, que apenas o tipo de dado `int` não é capaz de armazenar.
 
