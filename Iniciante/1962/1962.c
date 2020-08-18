@@ -13,7 +13,7 @@ int main(){
             antes = 0;
         }
         if(antes){
-            printf("%d A.C.\n",abs(2015-(T+1)));
+            printf("%d A.C.\n",abs(2015-T+1));
         }
         else{
             printf("%d D.C.\n",abs(2015-T));
