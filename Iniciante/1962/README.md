@@ -32,7 +32,7 @@ Com essa lacuna preenchida, faremos um loop `for` de 0 a `N` (que não inclui `N
     * Caso a condição não seja satisfeita, no `else` atribuimos `antes = 0` que nos guia a apresentação D.C.
 * Após essa confirmação do valor lógico da variável `antes`, entramos em outra estrutura de decisão `if(antes)` que será o caso de `antes == 1`.
     * Caso nossa condição valide esse primeiro caso, ou seja, Antes de Criso, escrevemos na tela o resultado absoluto de (2015 - (`T`+1)), utilizamos `T`+1 pois quando se trata de anos A.C. o ano 0 nunca existiu, portanto é representado como 1 A.C. (exemplo: 2015 anos antes de 2015 nos leva a 1A.C. e não no ano 0).
-    * Caso caímos no else, ou seja, Depois de Cristo, precisamos apenas escrever na tela o resultado de (2015 - `T`) pois por se tratar de um ano D.C., não precisaremos do valor absoluto, essa subtração sempre será positiva.
+    * Caso o valor de `antes` seja 0, ou seja, Depois de Cristo, precisamos apenas escrever na tela o resultado de (2015 - `T`) pois por se tratar de um ano D.C. não precisaremos do valor absoluto, essa subtração sempre será positiva.
 
 
 ```c
