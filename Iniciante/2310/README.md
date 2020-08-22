@@ -55,11 +55,6 @@ Por fim imprimimos os resultados de cada tipo de tentativa.
 
 Obs: Precisamos imprimir com 2 casas decimais um tipo `double`, sendo assim, teremos que especificar isso, `.2` para o número de casas decimais, `l` pois é um `double` e `f` pois é preciso ser `float` para poder utilizar casas decimais. Para imprimir o símbolo de porcentagem utilizamos dois deles `%%`.
 
-##### Para aprender um pouco mais sobre o laço de repetição for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
- 
-##### Para aprender um pouco mais sobre Vetores: [Vetor](http://linguagemc.com.br/vetores-ou-arrays-em-linguagem-c/)
-
-##### Para aprender um pouco mais sobre tipos de Variáveis: [Variáveis](https://en.wikipedia.org/wiki/C_data_types)
  
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),

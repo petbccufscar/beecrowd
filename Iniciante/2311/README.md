@@ -20,7 +20,6 @@ Agora iremos utilizar um `for()` para passar por todos os competidores, sempre r
 
 Agora iremos utilizar outro `for()` dentro desse para ler as 7 pontuações, a cada leitura iremos conferir se essa é a maior ou a menor já lida desse competidor e iremos armazenar em `max` ou `min` respectivamente e antes de fechar o `for()` somamos a `pontuacao` a soma.
 
-Depois de ler as pontuações, retiramos `max` e `min` da soma, pois não serão consideradas, e multiplicamos pelo grau de dificuldade. Assim temos o resultado daquele competidor e já podemos imprimir seu `nome` e `resultado`.
 
 ```c
     for(i=1; i<=N; i++)
@@ -34,15 +33,20 @@ Depois de ler as pontuações, retiramos `max` e `min` da soma, pois não serão
             if(pontuacao < min) min = pontuacao;
             soma += pontuacao;
         }
+
+```
+
+Depois de ler as pontuações, retiramos `max` e `min` da soma, pois não serão consideradas, e multiplicamos pelo grau de dificuldade. Assim temos o resultado daquele competidor e já podemos imprimir seu `nome` e `resultado`.
+
+```c
         soma -= (max+min);
         soma *= GD;
         printf("%s %.2lf\n", nome, soma);
         max = 0.00, min = 10.00, soma = 0.00;
-    }
+
+    } //final do for externo
 ```
 
-##### Para aprender um pouco mais sobre estrutura de seleção: [If/Else](https://www.inf.pucrs.br/~flash/cbp/selecao_if.html)
- 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
