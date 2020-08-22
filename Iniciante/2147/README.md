@@ -14,7 +14,7 @@ Começamos incluindo a biblioteca `string.h`, que contém os tipos de vetores de
 ```
 
 Agora, iremos declarar as variáveis que serão utilizadas em nossa resolução. 
-Primeiro, as variáveis inteiras de quantidade de casos, `casos`, e para armazenar o tamanho da palavra, `tam`.
+Primeiro, as variáveis inteiras de quantidade de casos, `casos` e, para armazenar o tamanho da palavra, `tam`.
 ```c
     int casos, tam;
 ```
