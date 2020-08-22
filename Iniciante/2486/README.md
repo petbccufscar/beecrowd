@@ -18,7 +18,7 @@ Considere que o consumo diário recomendado de vitamina C está entre 110 mg e 1
 ###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/2486
 
 # Resolução:
-Para resolver esse problema, iremos receber uma quantidade de alimentos, a quantidade e o nome de um determinado alimento. A patir disso, iremos multiplicar o valor indicado na tabela, referente ao nome do alimento com a quantidade desse alimento e somaremos esse resultado com os outros alimentos. Assim, exibimos o quanto uma pessoa deve ingerir a mais ou a menos para atingir o indice recomendado de vitamina C.
+Para resolver esse problema, iremos receber uma quantidade de alimentos, a quantidade e o nome de um determinado alimento. A patir disso, iremos multiplicar o valor indicado na tabela, referente ao nome do alimento com a quantidade desse alimento e somaremos esse resultado com os outros alimentos. Assim, exibimos o quanto uma pessoa deve ingerir a mais ou a menos para atingir o índice recomendado de vitamina C.
 
 Começamos inserindo a biblioteca `string.h`, que contém a função `strncmp` e será utilizada posteriormente para comparar duas `strings`.
 ```c
@@ -30,7 +30,7 @@ Em seguida, vamos declarar as variáveis, que serão: `quantDiaria`, que irá ar
 int quantDiaria, quantAlimento, quantVitaminaC, i;
 char alimento[16];
 ```
-* Note que `alimento` é um vetor de caracteres.
+* Note que `alimento` é um vetor de caracteres, ou seja, uma `string`.
 
 Depois, recebemos a quantidade diária de alimentos consumidos com a função `scanf`.
 ```c
@@ -53,7 +53,7 @@ for(i=0; i<quantDiaria; i++){
  * Obs: Utilizamos a função `fgets`, que tem a mesma função do `scanf` com a diferença de que podemos ler espaços(' ') mais facilmente do que com o `scanf`.
 
 Com isso, iremos calcular a quantidade de vitamina C ingerida diariamente. Para isso, verificamos se o nome do alimento recebido é igual a algum alimento presente na tabela. Caso seja, multiplicamos a quantidade de alimentos pela quantidade de vitamina C, também dada na tabela do problema. 
-Utilizamos a função `strncmp` para comparar duas `strings`. Se o nome do alimento for igual a `alimento`, a função retorna 0 e, com o operador `!`, mudamos esse 0 para 1 tornando a condição do `if` verdadeira.  
+Utilizamos a função `strncmp` para comparar duas `strings`. Essa função recebe como parâmetro duas `strings` e um número inteiro que representa quantas posições(ou letras) iremos comparar. Se o nome do alimento for igual a `alimento`, a função retorna 0 e, com o operador `!`, mudamos esse 0 para 1 tornando a condição do `if` verdadeira.  
 ```c
 if (!strncmp(alimento, "suco de laranja", 15))
 	quantVitaminaC += quantAlimento * 120;
@@ -73,8 +73,8 @@ else if (!strncmp(alimento, "brocolis", 8))
 
 Assim, no fim do `for`, temos a quantidade total de vitamina C consumida e verificamos se o consumo está dentro do recomendado diariamente (entre 110 e 130mg). 
 Caso esteja acima do recomendado, exibimos que está acima e a quantidade de mg a mais que está sendo consumida; 
-Caso contrário, exibimos que está abaixo e a quantidade a menos de mg que está sendo consumida;
-Caso esteja dentro do recomendado, exibimos a quantidade de mg consumida.    
+caso contrário, exibimos que está abaixo e a quantidade a menos de mg que está sendo consumida;
+caso esteja dentro do recomendado, exibimos a quantidade de mg consumida.    
 ```c
 if(quantVitaminaC>130)
 	printf("Menos %d mg\n", quantVitaminaC-130);

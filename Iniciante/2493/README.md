@@ -8,14 +8,14 @@ Sua tarefa é simples: dadas as expressões e as respostas dos jogadores, determ
 
 # Resolução:
 
-Para resolver esse problema, vamos receber uma quantidade N de jogadores, uma quantidade N de expressoes, o nome 	e a resposta de cada jogador para uma determinada expressao. Com isso, verificamos se a respostas dadas satisfazem as expressões e exibimos se todos os jogadores acertaram, se todos erraram ou os que erraram.
+Para resolver esse problema, vamos receber uma quantidade N de jogadores, uma quantidade N de expressões, o nome e a resposta de cada jogador para uma determinada expressão. Com isso, verificamos se a respostas dadas satisfazem as expressões e exibimos se todos os jogadores acertaram, se todos erraram ou os que erraram.
 
-Começamos inserindo a bibliote `stdlib.h`, que contém a função [`qsort`](http://www.galirows.com.br/meublog/programacao/utilizacao-funcao-qsort/) que junto a função auxiliar `compara` será utilizada posteriormente para ordenar alfabéticamente os nomes dos jogadores.
+Começamos inserindo a bibliote `stdlib.h`, que contém a função [`qsort`](http://www.galirows.com.br/meublog/programacao/utilizacao-funcao-qsort/) que junto a função auxiliar `compara` será utilizada posteriormente para ordenar alfabeticamente os nomes dos jogadores.
 ```c
-#include <stblib.h>
+#include <stdlib.h>
 ```
 
-Depois declaramos uma [variável global](http://linguagemc.com.br/funcoes-e-escopo-de-variaveis/) `nomeJogador`, que é um vetor de `string` para armazenar o nome de cada jogador. Ela é declarada globalmente pois será utilizada em todas as funções do programa. Por exemplo, na função `compara` que, como foi dito, é uma função auxliar ao `qsort` que servirá para ordenar o nome dos jogadores.
+Depois declaramos uma [variável global](http://linguagemc.com.br/funcoes-e-escopo-de-variaveis/) `nomeJogador`, que é um vetor de `string` para armazenar o nome de cada jogador. Ela é declarada globalmente pois será utilizada em todas as funções do programa. Por exemplo, na função `compara` que, como foi dito, é uma função auxiliar ao `qsort` que servirá para ordenar o nome dos jogadores.
 ```c
 char nomeJogador[50][50];
 
@@ -28,7 +28,7 @@ int compara(const void *a, const void *b)
 }
 ```
 
-Agora podemos iniciar as outras variáveis normalmente: `quantJogadores` que armazenará a quantidade de jogadores; `x`, `y` e `z` que juntas representam cada expressão; `expressao` que será um vetor para armazenar a qual expressão um jogador está se referindo; `naoProsseguira` irá armazenar 0's ou 1's dependendo se a resposta do jogador esta errada ou certa, respectivamente; `flag` que servirá para saber se todos ou nenhum jogador venceu a rodada; `i` iterar sobre o loops `for` e `resposta`, que é um vetor de caracteres que amazena cada resposta referente a um jogador.
+Agora podemos iniciar as outras variáveis normalmente: `quantJogadores` é um vetor de inteiros, que armazenará a quantidade de jogadores; `x`, `y` e `z` são vetores de inteiros, que juntos representam cada expressão; `expressao` que será um vetor para armazenar a qual expressão um jogador está se referindo; `naoProsseguira` é um vetor que irá armazenar 0's ou 1's dependendo se a resposta do jogador esta errada ou certa, respectivamente; `flag` que servirá para saber se todos ou nenhum jogador venceu a rodada; `i` itera sobre o loop `for` e `resposta`, que é um vetor de caracteres que amazena cada resposta referente a um jogador.
 ```c
 int quantJogadores, x[50], y[50], z[50], expressao[50], naoProsseguira[50], flag, i;
 char resposta[50];
@@ -97,7 +97,7 @@ Caso `flag` tenha o número de jogadores, significa que todos os jogadores errar
 ```
 
 Caso contrário, alguns jogadores acertaram e outros erraram. 
-Utilizamos a função `qsort` para ordenar a lista de nomes que não passarão em ordem alfabética
+Utilizamos a função `qsort` para ordenar a lista de nomes que não passarão em ordem alfabética. Essa função recebe como parâmetros o vetor que irá ser ordenado(`naoProsseguira`), o tamanho desse vetor(`flag`), o tamanho de cada elemento de vetor(`sizeof(int)`) e uma função auxiliar `compara`, que mostramos no início da explicação.
 ```c
 		else{
 			qsort(naoProsseguira, flag, sizeof(int), compara);
