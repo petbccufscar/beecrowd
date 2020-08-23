@@ -20,7 +20,7 @@ Precisamos saber quantos testes serão feitos. Para isso lemos um valor usando o
 ```c
     scanf("%d", &N);
 ```
-Agora vamos ler os testes. Criamos um laço de repetição e, dentro dele, lemos os valores correspondentes a cada teste e guardamos o valor no vetor `R`. Ao iniciar o laço de repetição, usamos `scanf` para ler os dados:
+Agora, vamos ler os testes. Criamos um laço de repetição `for` e, dentro dele, lemos os valores correspondentes a cada teste e guardamos o valor no vetor `R`. Ao iniciar esse laço de repetição, usamos `scanf` para ler os dados:
 ```c
     for(i=0;i<N;i++)
       scanf("%d", &R[i]);
