@@ -27,8 +27,8 @@ int main()
             printf("Valido-Escaleno\n");
         else
             printf("Valido-Isoceles\n");
-        if (maior * maior == 
-           (intermediario * intermediario + menor * menor))
+        
+        if (maior * maior == (intermediario * intermediario + menor * menor))
             printf("Retangulo: S\n");
         else
             printf("Retangulo: N\n");
