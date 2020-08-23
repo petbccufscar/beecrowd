@@ -12,14 +12,14 @@ Você deve escrever um programa que recebe uma nota no sistema numérico e deter
 
 # Resolução:
 
-Iniciaremos a resolução desse problema com a declaração da variavel que iremos armazenar o valor que será inserido. Após isso realizamos a leitura do valor através da função `scanf`
+Iniciaremos a resolução desse problema com a declaração da variável que iremos armazenar o valor que será inserido. Após isso realizamos a leitura do valor através da função `scanf`
 ```c
 int n;
 scanf("%d", &n);
 ```
 
 
-Após armazenado o valor, iremos realizar uma sequencia de comparações para selecionar em qual intervalo o valor inserido se encontra, ao entrar no `if` correspondente realizamos a impressão do conceito atribuido à aquele intervalor de notas.
+Após armazenado o valor, iremos realizar uma sequência de comparações para selecionar em qual intervalo o valor inserido se encontra, ao entrar no `if` correspondente realizamos a impressão do conceito atribuído à aquele intervalor de notas.
 ```c
 if (n == 0)
 	printf("E\n");

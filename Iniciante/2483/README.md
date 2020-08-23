@@ -6,13 +6,13 @@ Você fica tão feliz no natal que tem vontade de gritar para todo mundo: "Feliz
 
 # Resolução:
 
-Para a resolução deste problema iremos declarar uma variavel para armazenar a quantidade de repetições da letra "a" o usuario deseja e uma variavel para utilizarmos em um laço `for`. Realizamos também a leitura do valor através da função `scanf`.
+Para a resolução deste problema iremos declarar uma variável para armazenar a quantidade de repetições da letra "a" o usuário deseja e uma variável para utilizarmos em um laço `for`. Realizamos também a leitura do valor através da função `scanf`.
 ```c
 int i, indice;
 scanf("%d", &indice);
 ```
 
-Com o valor de repetições definidos, iniciamos imprimindo uma parte base da mensagem que contém as letras até o momento em que serão inseridos as novas, ou seja iremos imprimir "Feliz nat". Após isso entramos em um laço de repetição que irá iterar o número de vezes inserida pelo usuario realizando a impressão da letra "a", e por final imprimimos a parte que falta para completarmos a frase, sendo essa parte o "l!", seguido de um `\n` como é solicitado pelo problema.
+Com o valor de repetições definidos, iniciamos imprimindo uma parte base da mensagem que contém as letras até o momento em que serão inseridas as novas, ou seja, iremos imprimir "Feliz nat". Após isso entramos em um laço de repetição que irá iterar o número de vezes inserida pelo usuário realizando a impressão da letra "a", e por final imprimimos a parte que falta para completarmos a frase, sendo essa parte o "l!", seguido de um `\n` como é solicitado pelo problema.
 ```c
 printf("Feliz nat");
 for(i = 0; i < indice; i++){

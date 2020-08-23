@@ -10,7 +10,7 @@ A mamãe patinha ficou tão triste naquele dia que resolveu pedir sua ajuda para
 
 Neste problema haverá vários casos de testes, a primeira linha de cada caso de teste contém um inteiro representando a quantidade total de patos, a saída por sua vez deverá conter a quantidade de patinhos que retornaram, o qual será sempre 1 a menos do que a quantidade inicial (exceto pelos casos que iremos tratar).
 
-Iniciamos declarando a variavel que irá armazenar a quantidade inicial de patinhos. Declaramos como long double pois dentro dos casos de testes existem valores maiores do que aqueles que uma variavel do tipo inteiro suporta.
+Iniciamos declarando a variável que irá armazenar a quantidade inicial de patinhos. Declaramos como long double pois dentro dos casos de testes existem valores maiores do que aqueles que uma variável do tipo inteiro suporta.
 ```c
 long double qntPatinhos;
 ```
