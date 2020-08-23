@@ -20,7 +20,7 @@ O exercício aborda um caso de leitura em que deve ser lido até o final do arqu
 ```c
     while (scanf("%d%d", &n, &q)!=EOF) {
 ```
-Um uníco `scanf` pode ler mais de um valor se usarmos mais de um `%d`. Dentro do `while` fazemos a leitura e comparamos ao EOF, portanto o while irá rodar até chegar no final do arquivo. Este é simbolizado pela quebra de linha (`\n`).
+Um único `scanf` pode ler mais de um valor se usarmos mais de um `%d`. Dentro do `while`, fazemos a leitura e comparamos ao EOF, portanto o `while` irá rodar até chegar no final do arquivo. Este é simbolizado pela quebra de linha (`\n`).
 
 No começo do laço de repetição, criamos um vetor do tipo `int` com `n` posições. Esse vetor vai guardar todas as notas que serão registradas:
 ```c
