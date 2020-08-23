@@ -13,13 +13,13 @@ Nesse exercício vamos declarar duas variáveis do tipo `int` e uma do tipo `cha
     int T, i;
     char N[26];
 ```
-`T` indica o número de nomes que vamos ler. `i` é uma variável auxiliar que vai ser usada na estrutura `for` e `N` é um vetor de `char` que vai armazenar o nome do vilão.
+`T` indica o número de nomes que vamos ler, `i` é uma variável auxiliar que vai ser usada na estrutura `for` e `N` é um vetor de `char` que vai armazenar o nome do vilão.
 
 Primeiro vamos saber quantos nomes serão lidos. Para isso usamos `scanf`:
 ```c
     scanf("%d", &T);
 ```
-Em seguida vamos iniciar o laço de repetição. Aqui lemos o vetor de `chars` como uma `string` (`%s`) usando `scanf` e mostramos na tela a mensagem `Y`:
+Em seguida vamos iniciar o laço de repetição `for`. Aqui, lemos o vetor de `chars` como uma `string` (`%s`), usando `scanf` e mostramos na tela a mensagem `Y`:
 ```c
     for(i=0;i<T;i++) {
       scanf("%s", N);
