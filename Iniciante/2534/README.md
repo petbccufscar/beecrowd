@@ -14,7 +14,7 @@ Dentro do `int main()`, vamos criar 4 variáveis do tipo `int`:
 ```c
     int n, q, p, i;
 ```
-`n` representa o número de notas que vão ser lidas, `q` indica quantas posições serão buscadas e `p` é a variável que vai guardar a posição a ser buscada e `i` é uma variável auxiliar para o `for`.
+`n` representa o número de notas que vão ser lidas, `q` indica quantas posições serão buscadas, `p` é a variável que vai guardar a posição a ser buscada e `i` é uma variável auxiliar para o `for`.
 
 O exercício aborda um caso de leitura em que deve ser lido até o final do arquivo [EOF - End of File](https://pt.wikipedia.org/wiki/EOF). Fazemos a leitura do `n` e `q` no `scanf` dentro do `while`:
 ```c
