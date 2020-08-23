@@ -12,7 +12,7 @@ Por exemplo, ao repetir 2 vezes a fração continuada para calcular a raiz quadr
 
 A ideia de resolver este exercício é que para cada  iteração, incrementamos o valor da raiz em 6 e a dividimos por 1 sob o valor atual da raiz, fazendo esse cálculo durante n repetições; e ao final adicionamos 3 o resultado final.
 
-Primeiramente, declaramos as variáveis inteiras `nro`, que é o número de repetições; `i` é responsável pelo controle do laço `for`. Do mesmo modo também definimos a variável de ponto flutuante `raiz`, que guaradá o valor da raiz de 10 que será calculada.
+Primeiramente, declaramos as variáveis inteiras `nro`, que é o número de repetições; `i` é responsável pelo controle do laço `for`. Do mesmo modo também definimos a variável de ponto flutuante `raiz`, que guardará o valor da raiz de 10 que será calculada.
 
 ```c
    int nro, i;
