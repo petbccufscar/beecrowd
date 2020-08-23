@@ -38,7 +38,7 @@ Usamos a função `scanf` para guardar o valor de cada valor que pertece a posi�
     }
 ```
 
-Percorremos os elementos da matriz, começando em 1 e terminamos em `n-1`, pois o padrao do sabre de luz percisa que o número 42 tenha 8 números 7 ao redor dele.
+Percorremos os elementos da matriz, começando em 1 e terminamos em `n-1`, pois o padrão do sabre de luz precisa que o número 42 tenha 8 números 7 ao redor dele.
 
 Após acharmos um elemento é 42, usamos a função `oitoVizinhos` para fazer a verificação dos números ao redor do 42. No primeiro `if` nessa função fazemos a verificação se os números acima da posição 42 são 7; a segunda condicional verifica as posições ao abaixo do 42 e por fim verificamos as posições ao lado do 42.
 
