@@ -10,7 +10,7 @@ O professor MC ficou curioso com esse padrão e quer saber se, ao medir outras p
 
 O padrão de Nlogônia ocorre quando o vetor segue um padrão que há número maior que é seguido por um menor que ele para todos os elementos, chamaremos esse padrão de maiorMenor; ou o contrário, quando há um número menor que é seguido por um maior até o final da estrutura, vamos chama-lo de menorMaior. Sabendo disso, iremos verificar se esse padrão é quebrado.
 
-Primeiramente iremos declarar os interios `n`, que guarda a quantidade de alturas, `i` é uma variável auxiliar para fazer a iteração dentro de laços e `padrao` guarda valor de 0 ou 1, sendo que 0 é quando o vetor de alturas não segue o padrão de Nlogônia e 1 é quando segue.
+Primeiramente iremos declarar os inteiros `n`, que guarda a quantidade de alturas, `i` é uma variável auxiliar para fazer a iteração dentro de laços e `padrao` guarda valor de 0 ou 1, sendo que 0 é quando o vetor de alturas não segue o padrão de Nlogônia e 1 é quando segue.
 
 ```c
    int n, i, padrao = 1;
