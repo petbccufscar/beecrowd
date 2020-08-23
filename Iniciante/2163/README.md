@@ -13,7 +13,7 @@ Após o declínio do Império, sucateiros estão espalhados por todo o universo 
 
 Para resolver este exercício, é necessário percorrer a matriz que é dada de entrada, e quando achar um valor igual a 42, verifica se todos os números vizinhos dele são iguais a 7.
 
-Inicialmente declaramos as variáveis inteiras `N`, `M` que respectivamente guardam o número de linhas e colunas da matriz do problema. Já `i` e `j` são atuam como auxiliáres para percorrer laços. Por último, `padrao` conterá um valor 0 ou 1, em que 0 é quando não há padrão do sabre de luz da matriz de entrada, e 1 ocorre quando esse padrão é encontrado.
+Inicialmente declaramos as variáveis inteiras `N`, `M` que respectivamente guardam o número de linhas e colunas da matriz do problema. Já `i` e `j` são atuam como auxiliares para percorrer laços. Por último, `padrao` conterá um valor 0 ou 1, em que 0 é quando não há padrão do sabre de luz da matriz de entrada, e 1 ocorre quando esse padrão é encontrado.
 
 
 ```c
