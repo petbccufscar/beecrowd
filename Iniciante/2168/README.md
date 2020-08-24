@@ -41,9 +41,9 @@ Começamos declarando as variáveis que serão utilizadas:
         int i, j;
 ```
 
-`N` é o tamanho da matriz e esse tamanho é passado pelo usuário, portanto temos que ler ele primeiro antes de fazer a declaração da matriz `M`, `i` e `j` são as variáveis de iteração do nosso `for`.
+`N` é o tamanho da matriz e esse tamanho é passado pelo usuário, lembrando que o exercício pede que o tamanho `N` receba +1 ficando `N+1`, portanto temos que ler ele primeiro antes de fazer a declaração da matriz `M`, `i` e `j` são as variáveis de iteração para os `for`.
 
-Fazemos a leitura da matriz `M` e para isso precisamos de dois `for` em conjunto, devido a natureza da matriz e ela possuir linha, representada no `for` como `i`, e coluna, representada por `j`:
+Fazemos a leitura da matriz `M` e para isso precisamos de dois `for` em conjunto, devido a natureza da matriz e ela possuir linhas, que são representadas no `for` mais externo como `i`, e colunas, representadas por `j` dentro do for mais interno:
 
 ```c
        for (i = 0; i <= N; i++){  
@@ -70,7 +70,7 @@ Seguimos para a construção dos `for` onde será feito a lógica do exercício:
 
 ```
 
-Lembrando que queremos verificar as quadras dentro de uma matriz quadrática, pegando uma matriz 2x2 como exemplo, representaríamos a quadra dela na forma escrita assim: `M[0][0], M[0][1], M[1][0], M[0][1]` (Lembrando que o início se dá no 0 e não no 1). Então tendo isso em mente podemos verificar, usando `if`, se há pelo menos dois 1 nessa quadra, tendo ela na forma escrita fica fácil, porém isso deve estar transcrito de uma forma genérica, iremos somar essas posições e caso for maior que 2 está seguro ou `S`, menor que 2 não segura `U`
+Lembrando que devemos verificar as quadras dentro de uma matriz quadrática, pegando uma matriz 2x2 como exemplo, representaríamos a quadra dela na forma escrita assim: `M[0][0], M[0][1], M[1][0], M[0][1]` (Lembrando que o indíce se inicia em 0 e não em 1). Então tendo isso em mente, podemos verificar usando `if`, se há pelo menos dois 1 nessa quadra. Isso deve ser feito para todas as quadras na matriz de entrada do problema, então isso deve estar transcrito de uma forma genérica, que é: `M[i][j], M[i][j+1], M[i+1][j], M[i+1][j+1]`. Iremos somar essas posições e se for maior que 2 está seguro e printaremos `S`, caso contrário, ou seja menor que 2, não é segura e será printado `U`.
 
 ##### Para aprender um pouco mais sobre Matriz: [Matriz](http://linguagemc.com.br/matriz-em-c/)
 

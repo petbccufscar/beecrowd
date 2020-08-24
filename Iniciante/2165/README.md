@@ -8,8 +8,7 @@ O microblog Twitter é conhecido por limitar as postagens em 140 caracteres. Con
 
 O exercício consiste em ler uma cadeia de caracteres e verificar se o tamanho dela ultrapassa 140.
 
-Nesse exercício se faz necessário a utilização da biblioteca das string, por isso devemos declarará
-ao início:
+Nesse exercício se faz necessário a utilização da biblioteca `string.h` para lidarmos com strings, por isso devemos declara-la ao início:
 
 ```c
         #include <string.h>
@@ -28,7 +27,7 @@ Fazemos a leitura de `T` usando a função `fgets` da biblioteca `<string.h>`.
         fgets(T, sizeof(T), stdin);
 ```
 
-Após a leitura só resta verificar atravez de `if` se o tamanho é menor ou igual 140 ou maior:
+Após a leitura só resta verificar através de `if` se o tamanho de `T` é menor ou igual 140 ou maior:
 
 ```c
         if(strlen(T)<=140)
@@ -38,7 +37,7 @@ Após a leitura só resta verificar atravez de `if` se o tamanho é menor ou igu
                 printf("MUTE\n");
 ```
 
-Dentro do `if` estamos usando a função `strlen` que também é uma função da biblioteca `<string.h>`, ela pega/retorna o tamanho total de uma string que no caso é a nossa `T`, usamos esse retorno e fazemos a comparação com o limite de 140, caso estiver respeitando o limite printa "TWEET", caso não "MUTE".
+Dentro do `if` estamos usando a função `strlen` que também é uma função da biblioteca `<string.h>`, ela retorna o tamanho total de uma string, que no caso é a nossa `T`. Usamos este retorno e comparamos com o limite de 140, caso for respeitado  printa "TWEET", se não "MUTE".
 
 ##### Para aprender um pouco mais sobre String: [String](http://linguagemc.com.br/a-biblioteca-string-h/)
 

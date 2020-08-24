@@ -6,7 +6,7 @@ A fórmula de Binet é uma forma de calcular números de Fibonacci.
 
 Sua tarefa é, dado um natural n, calcular o valor de Fibonacci(n) usando a fórmula acima.
 
-###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/2059
+###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/2164
 
 # Resolução
 
