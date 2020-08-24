@@ -37,7 +37,7 @@ fgets(cifra1, sizeof(cifra1), stdin);
 fgets(cifra2, sizeof(cifra2), stdin);
 ```
 
-Criamos um laço de repetição `for` para tornar todas a letras das cifras minúsculas. Utilizamos a função `tolower` da biblioteca `ctype.h`, explicada anteriormente, para esse propósito. Isto é feito para que caracteres especiais, números e espaços sejam trocados para letras minúsculas, como pede o enunciado.  
+Criamos um laço de repetição `for` para tornar todas as letras das cifras minúsculas. Utilizamos a função `tolower` da biblioteca `ctype.h` para esse propósito. Isto é feito para que caracteres especiais, números e espaços sejam trocados para letras minúsculas, como pede o enunciado.
 ```c
 for (i = 0; i < tamCifra ; i++){
 	
