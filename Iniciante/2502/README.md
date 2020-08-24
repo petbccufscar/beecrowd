@@ -89,7 +89,7 @@ Por fim, exibimos a frase decifrada e na última frase da mensagem pulamos uma l
 ##### Para aprender um pouco mais sobre o laço de repetição `for` : [for](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
 ##### Para aprender um pouco mais sobre a função `fgets`: [fgets](https://aprendendoc.wordpress.com/tag/fgets/)
 ##### Para aprender um pouco mais sobre a biblioteca `string.h`: [string.h e strncmp](http://linguagemc.com.br/a-biblioteca-string-h/)
-##### Para aprender um pouco mais sobre a biblioteca `ctype.h`: [string.h e strncmp](http://linguagemc.com.br/ctype-h-toupper-tolower-isalpha-isdigit-em-c/)
+##### Para aprender um pouco mais sobre a biblioteca `ctype.h`: [ctype.h, toupper e tolower](http://linguagemc.com.br/ctype-h-toupper-tolower-isalpha-isdigit-em-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
  * [Facebook](https://www.facebook.com/petbcc/),
