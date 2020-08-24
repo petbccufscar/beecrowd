@@ -53,7 +53,7 @@ for(i=0; i<qntLinhas; i++){
 	fgets(fraseEncriptada, sizeof(fraseEncriptada), stdin);
 ```
 
-Dentro do loop anterior, iremos criar outros dois `for` de forma aninhada. O primeiro loop percorrerá a linha da mensagem, já o segundo irá percorrer as duas cifras, comparando o caracter da linha com os caracteres das cifras, através do comando `if`. Caso sejam iguais, trocamos o caracter da linha pelo caracter da outra cifra. 
+ Dentro do loop anterior, iremos criar outros dois `for` de forma aninhada. O primeiro loop percorrerá a linha da mensagem, já o segundo irá percorrer as duas cifras, comparando o caractere da linha com os caracteres das cifras, através do comando `if`. Caso sejam iguais, trocamos o caractere da linha pelo caractere da outra cifra.
 A condição de parada do primeiro `for` tem função `strlen`, que irá retornar o tamanho (em caracteres) da linha passada anteriormente.
 ```c
 for(j=0; j<strlen(fraseEncriptada); j++){
