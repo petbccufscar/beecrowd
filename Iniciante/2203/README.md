@@ -11,7 +11,7 @@ Obs: Considere que Fiddlesticks sempre luta exatamente na direção do invasor e
 <img src="https://resources.urionlinejudge.com.br/gallery/images/problems/UOJ_2203.png" />
 
 
-##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/2176
+##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/2203
  
  
 # Resolução:
@@ -29,7 +29,13 @@ Para resolver o problema, precisamos:
 - Somar a distância que o inimigo se afasta em 1.5 segundos;
 - Verificar se essa distância está dentro dos raios de ataque.
 
-Começamos declarando as variáveis necessárias para o algoritmo ─ as entradas que o exercício fornece, do tipo inteiro, e as distâncias que vamos calcular, do tipo `double`.  
+Como o exercício vai utilizar funções de potenciação e raiz, começamos importando a biblioteca `math.h`, que contém essas e outras operações matemáticas mais complexas.
+
+```c
+#include <math.h>
+```
+
+Em seguida, declaramos as variáveis necessárias para o algoritmo ─ as entradas que o exercício fornece, do tipo inteiro, e as distâncias que vamos calcular, do tipo `double`.  
 Note que (Xf,Yf) são coordenadas de Fiddlesticks e (Xi,Yi) são coordenadas do inimigo.
 ```c
 int Xf, Yf, Xi, Yi, V, R1, R2;
@@ -47,21 +53,26 @@ while (scanf("%d %d %d %d %d %d %d", &Xf, &Yf, &Xi, &Yi, &V, &R1, &R2) != EOF) {
 ```
 ###### Sim, essa linha assusta, mas estamos apenas lendo dados (:
 
-Para calcular a distância entre os dois campeões, vamos utilizar funções de potência e raiz que podem ser revisadas [aqui](https://brasilescola.uol.com.br/matematica/distancia-entre-dois-pontos.htm). Essas funções ─ `pow()` e `sqrt()` ─ estão presentes na biblioteca `math.h`, importada no início do código.  
-Primeiro, calculamos as distâncias nos eixos X e Y e elevá-las ao quadrado, ou seja, (Xi - Xf)² e (Yi - Yf)².
+Para calcular a [distância](https://brasilescola.uol.com.br/matematica/distancia-entre-dois-pontos.htm) entre os dois campeões, vamos utilizar funções de potência e raiz ─ `pow()` e `sqrt()` ─  presentes na biblioteca `math.h`. Primeiro, calculamos as distâncias nos eixos X e Y, realizando a subtração de cada coordenada e elevando o resultado ao quadrado, ou seja, (Xi - Xf)² e (Yi - Yf)².
 
 ```c
 distX = pow((Xi - Xf), 2);
 distY = pow((Yi - Yf), 2);
 ```
 
-Em seguida, tiramos a raiz entre a soma das duas distâncias.
+Em seguida, tiramos a raiz entre a soma das duas distâncias obtidas no passo anterior.
 
 ```c
 distancia = sqrt(distX + distY);
 ```
 
-Sabemos qual a distância entre os campeões, mas precisamos adicionar o espaço que o inimigo vai andar em 1.5 segundos. Para isso, incrementamos `distancia` com `V * 1.5`.
+Sabemos qual a distância entre os campeões, mas precisamos adicionar o espaço que o inimigo vai andar em 1.5 segundos. Para isso, vamos aplicar uma fórmula de [movimento uniforme](https://www.sofisica.com.br/conteudos/Mecanica/Cinematica/mu.php):
+```
+ΔS = V * Δt
+```
+Sendo que:  
+`V` = (valor dado pelo exercício)  
+`Δt` = 1.5  
 
 ```c
 distancia += V * 1.5;
