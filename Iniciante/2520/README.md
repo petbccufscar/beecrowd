@@ -17,7 +17,7 @@ Para resolver esse problema, faremos um cálculo de distância entre a posição
 
 Nesse exercício, utilizamos a biblioteca `<stdlib.h>` para fazer uso da função `abs()` que retorna o valor absoluto (positivo) do que for passado como argumento (ex: abs(-3) = 3).
 
-Primeiramente, declararemos as variáveis que serão utilizadas. A matriz `cidade` é nosso "campo", declarada inicialmente com tamanho 100x100, que é o tamanho máximo de `N` e `M`,o tamanho real dessa cidade é dado por `N` x `M` que representam a quantidade de linha e colunas, respectivamente. `pos_i_jogador` e `pos_j_jogador` é a posição na matriz, em linha e colunas em que o jogador está, o mesmo vale para o analogimon, com as variáveis `pos_i_analogimon`, `pos_j_analogimon` e por fim, `i` e `j` serão contadores para os loops.
+Primeiramente, declararemos as variáveis que serão utilizadas. A matriz `cidade` é nosso "campo", declarada inicialmente com tamanho 100x100 que é o tamanho máximo de `N` e `M`. Dessa forma, o tamanho real dessa cidade será dado por `N` x `M` que representarão a quantidade de linha e colunas, respectivamente. Em relação aos personagens, `pos_i_jogador` e `pos_j_jogador` é a posição na matriz, em linhas e colunas em que o jogador está, o mesmo vale para o analogimon, com as variáveis `pos_i_analogimon`, `pos_j_analogimon`.  Por fim, `i`(referente às linhas) e `j`(referente às colunas) serão contadores para os loops.
 
 ```c
     int i, j;
@@ -25,7 +25,7 @@ Primeiramente, declararemos as variáveis que serão utilizadas. A matriz `cidad
     int pos_i_jogador, pos_j_jogador, pos_i_analogimon, pos_j_analogimon;
 ```
 
-Começaremos validando a condição de saída do exercício, que diz que a entrada terminará com o fim do arquivo (EOF).
+Em seguida validamos a condição de saída do exercício, que diz que a entrada terminará com o fim do arquivo (EOF).
 
 ```c
 while(scanf("%d %d",&N,&M) != EOF){
