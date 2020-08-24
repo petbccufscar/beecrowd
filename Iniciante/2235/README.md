@@ -19,14 +19,14 @@ scanf("%d %d %d",&A, &B, &C);
 Em seguida, verificamos se o primeiro caso é atendido: aplica-se a estrutura condicional `if` para realizar a comparação, aos pares, da quantia armazenada em cada variável. Desse modo, a condição será cumprida se `A` contiver mesmo valor que a `B` ou `C`; ou se `B` equivaler a `C`. Desse modo, averiguamos se existe algum par de créditos iguais e, em caso positivo, imprime-se 'S'.  
 
 ```c
-if(A==B || A==C || B==C)
+if(A == B || A == C || B == C)
   printf("S\n");
 ```  
 
 Se este cenário não ocorrer, `else` analisará o outro caso possível. Em seu escopo, a estrutura `if` verifica se as somas de 2 créditos corresponde ao terceiro (utilizando o operador lógico 'ou': `||`) e, então, exibe 'S'. Em situação contrária, `else` imprime 'N'.  
 
 ```c
-else{
+else {
   if( (A+B == C) || (A+C == B) || (B+C == A))
     printf("S\n");
   else

@@ -4,10 +4,10 @@ int main() {
 	int A, B, C;
 	scanf("%d %d %d",&A, &B, &C);
 	
-	if(A==B || A==C || B==C)
+	if(A == B || A == C || B == C)
 		printf("S\n");
 		
-	else{
+	else {
 		if( (A+B == C) || (A+C == B) || (B+C == A))
 			printf("S\n");
 		else

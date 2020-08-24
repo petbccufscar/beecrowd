@@ -25,7 +25,7 @@ scanf("%d",&T);
 Usufruímos, então, do comando `for`, para tratar os inputs de cada instância. A iteração será feita de acordo com o número contido em `T` e, em cada laço, realizará, primeiramente, a leitura dos dados, armazenando-os corretamente de acordo com a ordem definida pelo enunciado. Portanto, as 3 funções `scanf()` tratarão separadamente as linhas da entrada, em que a primeira corresponde ao valor do bônus; a segunda aos dados do Pomekon de Dabriel; e a terceira, aos de Guarte.  
 
 ```c
-for(i=1; i<=T; i++){
+for(i = 1; i <= T; i++) {
   scanf("%d",&B);
   scanf("%d %d %d",&A[0], &D[0], &L[0]);
   scanf("%d %d %d",&A[1], &D[1], &L[1]);
@@ -36,8 +36,8 @@ for(i=1; i<=T; i++){
 Tendo todos os valores em mãos, podemos iniciar o cálculo do golpe de cada um dos Pomekons da jogada. Assim, a posição 0 do vetor `Golpe` conterá o resultado obtido por Dabriel; enquanto a posição 1, o obtido por Duarte.  
 
 ```c
-  Golpe[0] = (A[0] + D[0])/2;
-  Golpe[1] = (A[1] + D[1])/2;
+  Golpe[0] = (A[0] + D[0]) / 2;
+  Golpe[1] = (A[1] + D[1]) / 2;
 ```  
 
 Em seguida, é importante verificarmos se algum dos jogadores possuem o requisito necessário para receber a bonificação. Deste modo, a estrutura condicional `if` verifica se o level em questão é par (ou seja, o resto da divisão de `L` por 2 equivale a 0) e, em caso positivo, soma-se `B` ao valor já contido em `Golpe` do jogador correspondente.  
@@ -60,7 +60,7 @@ if(Golpe[0] == Golpe[1])
 Se não forem iguais, `else` direciona à outra estrutura condicional, com o intuito de analisar qual posição do vetor `Golpe` armazena o maior valor. Se for a posição 0 (correspondente ao Pomekon de Dabriel), exibimos 'Dabriel' na tela. Se não, exibe-se 'Guarte'.  
 
 ```c
-else{
+else {
 
   if(Golpe[0] > Golpe[1])
     printf("Dabriel\n");
