@@ -29,7 +29,7 @@ Iniciamos o laço de repetição `while`, onde iremos decifrar as mensagens. A c
 ```c
 while(scanf("%d %d\n", &tamCifra, &qntLinhas) != EOF){
 ```
- * Note que: o enunciado do problema não especifíca a condição de parada do `while` com (EOF), mas visto isso em exercícios anterioes, podemos concluir que é assim que termina.
+ * Note que: o enunciado do problema não especifica a condição de parada do `while` com EOF, mas visto isso em exercícios anteriores, podemos concluir que é assim que termina.
 
 Depois, recebemos as duas cifras através do comando `fgets`, que é similar ao comando `scanf`, mas se difere por poder armazenar caracteres em branco (`' '`) mais facilmente.
 ```c
