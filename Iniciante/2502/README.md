@@ -12,7 +12,7 @@ Neste tipo de brincadeira, ao escrever uma carta a letra Z é trocada pela letra
 
 Para resolver esse problema receberemos a quantidade de letras das cifras, a quantidade de linhas da mensagem a ser decifrada, as cifras e cada linha da mensagem a ser decifrada. A partir disso, comparamos as letras da mensagem com as letras das duas cifras. Caso alguma letra seja igual, trocamos com a letra correspondente na outra cifra.
 
-Começamos inserindo 2 bibliotecas, a `string.h` e a `ctype.h`. A primeira contém a função `strlen`, que será utilizada posteriormente para verificar o tamanho de uma `string`, já a segunda possuí as funções `tolower` e `toupper`, as quais serão utilizadas para mudar uma letra maiúscula para minúscula, e vice versa, respectivamente.
+Começamos inserindo 2 bibliotecas, a `string.h` e a `ctype.h`. A primeira contém a função `strlen`, que será utilizada posteriormente para verificar o tamanho de uma `string`, já a segunda possui as funções `tolower` e `toupper`, as quais serão utilizadas para mudar uma letra maiúscula para minúscula, e vice versa, respectivamente.
 
 ```c
 #include <string.h>
