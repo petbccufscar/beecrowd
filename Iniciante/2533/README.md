@@ -16,7 +16,7 @@ De acordo com as notas que você obteve e a carga de trabalho de cada disciplina
 
 # Resolução:
 
-Para resolver o problema, será necessário informar o número `M` de disciplinas cursadas, onde `M` deve estar dentro do intervalo de 1 à 40 (1 =< M =< 40), e para cada disciplina, será lido dois valores por linha, a nota `N` e a carga horária `C`.
+Para resolver o problema, será necessário informar o número `M` de disciplinas cursadas, onde `M` deve estar dentro do intervalo de 1 a 40 (1 =< M =< 40). Ademais, para cada disciplina, será lido dois valores por linha, a nota `N` e a carga horária `C`.
 
 Primeiro declaramos as variáveis `M`, `N` e `C`, do tipo inteiro (onde `N` e `C` são vetores), que receberão o número de disciplinas, as notas e as cargas horárias, respectivamente. Também, será necessário adicionar a variavel `i` do tipo inteiro que servirá como um contador, e as variaveis `resultado`, `cima` e `baixo` do tipo double que serão utilizadas na hora do cálculo.
 
