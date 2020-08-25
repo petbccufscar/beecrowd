@@ -68,7 +68,7 @@ resultado = cima / baixo;
 
 ```
 
-Desta forma, basta escrever o resultado final no código utilizando o comando `printf`:
+Por fim, basta escrever o resultado final no código utilizando o comando `printf`:
 ```c
 printf("%.4lf\n",resultado);
 ```
