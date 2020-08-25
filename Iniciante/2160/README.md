@@ -9,7 +9,7 @@ Sua tarefa é, dada uma linha de texto, indicar se ele cabe ou não cabe em um f
  
 # Resolução:
  
-Para sabermos se a entrada digitada é menor ou igual que 80 caracteres, iremos importar a biblioteca `string.h`, para utilizarmos a função strlen() e declarar um vetor de 500 caracteres, `entrada`.
+Para sabermos se a entrada digitada é menor ou igual a 80 caracteres, iremos importar a biblioteca `string.h`, para utilizarmos a função strlen() e declarar um vetor de 500 caracteres, `entrada`.
 
 ```c
 char entrada[500];
