@@ -55,7 +55,7 @@ baixo = 0;
 
 Agora, com todos os valores em mãos, ainda dentro do `while` iremos calcular os somatórios para obter o numerador e denominador da divisão.
 Para isto, fazemos dois laços de repetição `for`, para calcularmos, primeiramente o somatório superior da divisão (numerador), sendo este o somatório das (notas * carga horaria) que é armazenado na variável `cima`; Posteriormente, o somatório inferior da divisão (denominador), sendo este o somatório (carga horaria * 100) que é armazenado na variável `baixo`.
-E por fim, obtemos o `resultado` fazendo a divisão do resultado dos dois somatórios (como proposto na fórmula):
+Desta forma, obtemos o `resultado` fazendo a divisão do resultado dos dois somatórios (como proposto na fórmula):
 
 ```c
 for ( i=0; i<M; i++ ) {
