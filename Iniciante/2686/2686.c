@@ -2,7 +2,7 @@
  
 int main() {
  
-    float m, tempo;
+    float m;
     int hora, minuto;
     
     while (scanf("%f", &m) != EOF) {
@@ -10,8 +10,7 @@ int main() {
             printf("Bom Dia!!\n");
             
             hora = 6;
-            tempo = m/0.5;
-            minuto = tempo*2;
+            minuto = m*4;
             
             if (minuto >= 60) {
                 hora = hora + (minuto/60);
@@ -24,8 +23,7 @@ int main() {
             
             hora = 12;
             m = m-90;
-            tempo = m/0.5;
-            minuto = tempo*2;
+            minuto = m*4;
             
             if (minuto >= 60) {
                 hora = hora + (minuto/60);
@@ -38,8 +36,7 @@ int main() {
             
             hora = 18;
             m = m-180;
-            tempo = m/0.5;
-            minuto = tempo*2;
+            minuto = m*4;
             
             if (minuto >= 60) {
                 hora = hora + (minuto/60);
@@ -52,8 +49,7 @@ int main() {
             
             hora = 0;
             m = m-270;
-            tempo = m/0.5;
-            minuto = tempo*2;
+            minuto = m*4;
             
             if (minuto >= 60) {
                 hora = hora + (minuto/60);
