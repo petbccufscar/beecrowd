@@ -10,7 +10,7 @@ Marcos e Leonardo estão na grande final do campeonato brasileiro de Iu-di-oh!, 
 
 O objetivo desse problema é verificar qual atributo é maior, dado as cartas escolhidas por Marcos e Leonardo, e exibir o vencedor da partida.
 
-Para resolve-lo, começamos declarando as variáveis: 
+Para resolvê-lo, começamos declarando as variáveis: 
 - `numAtributos`, que irá armazenar a quantidade de atributos a serem considerados de cada carta;
 - `tamBaralhoM` e `tamBaralhoL`, que irão armazenar a quantidade de cartas de Marcos e Leonardo, respectivamente; 
 - `cartasMarcos[100][100]` e `cartasLeonardo[100][100]` são matrizes, que guardarão os atributos de cada carta de Marcos e Leonardo, respectivamente; 
@@ -63,6 +63,8 @@ Caso contrário exibimos o nome de Leonardo.
 else if(cartasMarcos[escolhidaM-1][atributoSorteado-1] < cartasLeonardo[escolhidaL-1][atributoSorteado-1])
 	printf("Leonardo\n");
 ```
+ * Note que todas as posições da matriz são subtraídas em 1. Fazemos isso pois suas posições se iniciam em 0 e em liguagem natural iniciamos em 1.
+
 Caso os atributos sejam iguais, exibimos: Empate.
 ```c
 else	
