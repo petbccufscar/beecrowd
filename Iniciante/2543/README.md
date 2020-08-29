@@ -10,7 +10,7 @@ A página publica muitos vídeos diariamente. Por isso, pode ser dificil encontr
 
 O objetivo desse problema é verificar e exibir quantos gameplays de um determinado jogo e jogador foram postados em uma página da internet. Isto é feito recebendo o código de identificação de um jogador, a quantidade de gameplays postadas na página e uma lista das gameplays postadas, contendo a identificação do jogador e o jogo.
 
-Para resolve-lo, começamos declarando as variáveis: `totalGameplays`, que armazenará a quantidade de gameplays postados na página; `idAutor`, que receberá o cógido do jogador a ser buscado; `idPublicado`, que guadará a identificação dos jogadores nos jogos postados; `jogo`, que irá receber `0` se a gameplay postada é de Contra-Strike, ou `1` se é de Liga of Legendas; `contador`, que vai incrementar a medida que achamos uma determinada gameplay e código do jogador e `i` que servirá para iterar sobre um loop `for`.
+Para resolvê-lo, começamos declarando as variáveis: `totalGameplays`, que armazenará a quantidade de gameplays postados na página; `idAutor`, que receberá o código do jogador a ser buscado; `idPublicado`, que guadará a identificação dos jogadores nos jogos postados; `jogo`, que irá receber `0` se a gameplay postada é de Contra-Strike, ou `1` se é de Liga of Legendas; `contador`, que vai incrementar à medida que achamos uma determinada gameplay e código do jogador e `i` que servirá para iterar sobre um loop `for`.
 ```c
 int totalGameplays, idAutor, idPublicado, jogo, contador, i;
 ```
