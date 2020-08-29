@@ -25,7 +25,7 @@ Dentro do `while` iniciamos a variável contador em 0, pois em cada busca precis
 contador = 0;
 ```
 
-Criamos um laço de repetição`for` para receber, através do comando `scanf`, o identificador e o jogo referente aos gameplays postados, e com o comando `if` verificamos se o gameplay possui o código de jogador igual a `idAutor` *e* se é de Contra-Strike(`jogo == 0`). Caso seja, incrementamos `contador` em 1.
+Criamos um laço de repetição `for` para receber, através do comando `scanf`, o identificador e o jogo referente aos gameplays postados, e com o comando `if` verificamos se o gameplay possui o código de jogador igual a `idAutor` *e* se é de Contra-Strike(`jogo == 0`). Caso seja, incrementamos `contador` em 1.
 ```c
 for(i = 0; i < totalGameplays; i++){
 	scanf("%d %d", &idPublicado, &jogo);
