@@ -22,7 +22,7 @@ int numAtributos, tamBaralhoL, tamBaralhoM, cartasMarcos[100][100], cartasLeonar
 int escolhidaM, escolhidaL, atributoSorteado, i, j;
 ```
 
-Em seguida, criamos um laço de repetição `while` que irá calcular o resultado de cada partida. A condição de parada do laço possui o comando `scanf`, que fará a leitura da variável `numAtrinutos` até que receba o [final de arquivo (EOF)](https://pt.wikipedia.org/wiki/EOF), encerrando o laço de repetição. 
+Em seguida, criamos um laço de repetição `while` que irá calcular o resultado de cada partida. A condição de parada do laço possui o comando `scanf`, que fará a leitura da variável `numAtributos` até que receba o [final de arquivo (EOF)](https://pt.wikipedia.org/wiki/EOF), encerrando o laço de repetição.
 Dentro do `while` realizamos a leitura com `scanf` da quantidade de cartas de Marcos de Leonardo.
 ```c
 while(scanf("%d", &numAtributos) != EOF){
