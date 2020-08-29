@@ -5,16 +5,16 @@ Novamente Júlio pede sua ajuda, ele esqueceu de um pequeno detalhe. Como o seu 
 
 # Resolução:
 
-Esse exercício é uma continuação do exercício 2685. Seu onbjetivo é indicar em qual período do dia estamos e o horário com base no ângulo de inclinação do Sol/Lua. Se for entre 0 e 90° está de dia, entre 90 e 180° está de tarde, entre 180 e 270° é noite e entre 270 e 360° está de madrugada, como 360° está na mesma posição que 0° em uma circunferência, é considerado de manhã.
+Esse exercício é uma continuação do exercício 2685. Seu objetivo é indicar em qual período do dia estamos e o horário com base no ângulo de inclinação do Sol/Lua. Se for entre 0 e 90° está de dia, entre 90 e 180° está de tarde, entre 180 e 270° é noite e entre 270 e 360° está de madrugada, como 360° está na mesma posição que 0° em uma circunferência, é considerado de manhã.
 
-Para começar, criamos quatro variáveis, sendo `m` e `tempo` do tipo `float` e `hora` e `minuto` do tipo `int`:
+Para começar, criamos três variáveis, sendo `m` do tipo `float` e `hora` e `minuto` do tipo `int`:
 ```c
-    float m, tempo;
+    float m;
     int hora, minuto;
 ```
-`m` representa o ângulo em graus que será usada para indicar o período do dia, `tempo` indica um valor auxiliar que será convertido em minutos, `hora` e `minuto` representa o tempo descrito pelo ângulo dado em horas e minutos, respectivamente. 
+`m` representa o ângulo em graus que será usada para indicar o período do dia, `hora` e `minuto` representa o tempo descrito pelo ângulo dado em horas e minutos, respectivamente. 
 
-O exercício indica que ele terá vários casos de teste, isso significa que haverão leituras até o final do arquivo [EOF - End of File](https://pt.wikipedia.org/wiki/EOF). Fazemos a leitura do `m` no `scanf` dentro do `while`:
+O exercício indica que ele terá vários casos de teste, significando que haverão leituras até o final do arquivo [EOF - End of File](https://pt.wikipedia.org/wiki/EOF). Fazemos a leitura do `m` no `scanf` dentro do `while`:
 ```c
     while (scanf("%f", &m) != EOF) {
 ```
@@ -23,20 +23,20 @@ Dentro do `while`, fazemos a leitura e comparamos ao EOF, portanto o `while` ir�
       if (m < 90) {
         printf("Bom Dia!!\n");
 ```
-Sabemos que o ângulo sempre será um valor entre 0 e 360 graus. Com isso verificamos se `m` é menor que 90 (`m < 90`) e, se for, mostramos a mensagem `Bom Dia!!`. Agora precisamos calcular a hora do dia:
+Sabemos que o ângulo sempre será um valor entre 0 e 360 graus. Com isso, verificamos se `m` é menor que 90 (`m < 90`) e, se for, mostramos a mensagem `Bom Dia!!`. Agora precisamos calcular a hora do dia. Analisando os casos de teste presentes no enunciado, descobrimos que 1° equivale a 4 minutos.
+```
+     1.5° = 6 min
+       1° = X min
+                                
+     1.5X = 6
+        X = 4
+```
+Como está de dia, o horário deve estar entre 6 da manhã e meio-dia (12:00), por isso igualamos `hora` a 6. Em seguida, calculamos quantos minuto a mais o ângulo indica. Descobrimos quantos minutos temos multiplicando `m` por 4 (`minuto = m*4`): 
 ```c 
         hora = 6;
-        tempo = m/0.5;
-        minuto = tempo*2;
-            
-        if (minuto >= 60) {
-          hora = hora + (minuto/60);
-          minuto = minuto%60;
-        }
-        printf("%02d:%02d:00\n", hora, minuto);
-      }
+        minuto = m*4;
 ```
-Como está de dia, o horário deve estar entre 6 da manhã e meio-dia (12:00), por isso igualamos `hora` a 6. Em seguida calculamos quantos minuto a mais o ângulo indica. Analisando os casos de teste presentes no enunciado, descobrimos que 0,5° equivale a 2 minutos. Com isso, descobrimos quantos minutos temos dividindo `m` por 0,5 (`tempo = m/0.5`) e depois multiplicando o valor obtido por 2 (`minuto = tempo*2`). Agora resta descobrir o valor de `hora`:
+Agora resta descobrir o valor de `hora`:
 ```c            
         if (minuto >= 60) {
           hora = hora + (minuto/60);
@@ -54,8 +54,7 @@ Para os períodos de tarde, noite e madrugada, o cálculo do horário funciona p
         
         hora = 12;
         m = m-90;
-        tempo = m/0.5;
-        minuto = tempo*2;
+        minuto = m*4;
             
         if (minuto >= 60) {
           hora = hora + (minuto/60);
@@ -71,8 +70,7 @@ No caso do período de tarde (quando `m` está entre 90 e 180), mostramos a mens
         
         hora = 18;
         m = m-180;
-        tempo = m/0.5;
-        minuto = tempo*2;
+        minuto = m*4;
             
         if (minuto >= 60) {
           hora = hora + (minuto/60);
@@ -88,8 +86,7 @@ No caso do período de noite (quando `m` está entre 180 e 270), mostramos a men
         
         hora = 0;
         m = m-270;
-        tempo = m/0.5;
-        minuto = tempo*2;
+        minuto = m*4;
             
         if (minuto >= 60) {
           hora = hora + (minuto/60);
