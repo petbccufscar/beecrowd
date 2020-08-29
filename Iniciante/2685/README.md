@@ -17,7 +17,7 @@ O exercício indica que ele terá vários casos de teste, isso significa que hav
 ```c
     while (scanf("%d", &m) != EOF) {
 ```
-Dentro do `while`, fazemos a leitura e comparamos ao EOF, portanto o `while` irá rodar até chegar no final do arquivo. Este é simbolizado pela quebra de linha (`\n`). Agora vamos verificar o ângulo dado e indicar qual período do dia ele indica:
+Dentro do `while`, fazemos a leitura e comparamos ao EOF, portanto o `while` irá rodar até chegar no final do arquivo. Este é simbolizado pela quebra de linha (`\n`). Agora vamos verificar o ângulo dado e indicar qual período do dia ele representa:
 ```c
       if ((m >= 0) && (m < 90))
         printf("Bom Dia!!\n");
