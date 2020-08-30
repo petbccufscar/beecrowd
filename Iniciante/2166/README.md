@@ -3,6 +3,8 @@
 Uma das formas de calcular a raiz quadrada de um número natural é pelo método das frações periódicas continuadas. Esse método usa como denominador uma repetição de frações. Essa repetição pode ser feita uma quantidade específica de vezes.
 Sua tarefa é, dado o número N de repetições, calcular o valor aproximado da raiz quadrada de 2.
 
+###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/2166
+
 # Resolução
 
 Para resolver o problema, iremos receber o número de repetições e, com o cálculo exibido pelo problema de [fração contínua](https://pt.wikipedia.org/wiki/Fra%C3%A7%C3%A3o_cont%C3%ADnua), iremos calcular a raiz de 2.
