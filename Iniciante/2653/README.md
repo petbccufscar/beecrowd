@@ -52,15 +52,14 @@ if (!ramo){
 ```
 
 Caso o nó recebido não seja NULL, o nó em questão já foi inicializado, então só precisamos decidir se iremos para o nó a esquerda ou para o nó a direita. Decidiremos isso com base no tamanho da string recebida.
-
-Se for menor que o nó em que estamos, iremos para o nó da esquerda.
+- Se for menor que o nó em que estamos, iremos para o nó da esquerda.
 
 ```c
 else if (strcmp(ramo->joia, p) > 0)
         ramo->esq = adiciona(ramo->esq, p);
 ```
 
-Se for maior que o nó em que estamos, iremos para o nó da direita.
+- Se for maior que o nó em que estamos, iremos para o nó da direita.
 
 ```c
 else if (strcmp(ramo->joia, p) < 0)
