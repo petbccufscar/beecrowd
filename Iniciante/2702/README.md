@@ -11,7 +11,7 @@ Dada a quantidade de refeições disponíveis para cada escolha e o número de r
 
 # Resolução:
 
-Começamos declarando as variaveis que iremos armazenar a quantidade de alimentos disponiveis, em seguida as variaveis que irão armazenar a quantidade que os passageiros pediram e outras tres variaveis para verificar se irá haver pedidos que não poderão ser atendidos. Juntamente com a declaração das variaveis realizamos a leitura dos valores.
+Começamos declarando as variaveis  em que iremos armazenar a quantidade de alimentos disponiveis, em seguida as variaveis que irão armazenar a quantidade que os passageiros pediram e outras tres variaveis para verificar se irá haver pedidos que não poderão ser atendidos.  Após a declaração das variaveis, realizamos a leitura dos valores.
 ```c
 int frangoDisp, bifeDisp, massaDisp;
 int frangoReq, bifeReq, massaReq;
@@ -22,8 +22,8 @@ scanf("%d %d %d", &frangoReq, &bifeReq, &massaReq);
 ```
 
 
-Para cada tipo de alimento sendo ele Frango, Bife ou Massa, teremos um bloco onde faremos o calculo de quantos alimentos faltaram, no caso do Frango iremos calcular o valor contido em `frangoDisp` menos o valor contido em `frangoReq`, com isso iremos ter algumas possibilidades de resultado:
-- Caso de um numero negativo significa que tiveram mais pedidos do que alimento disponivel, então armazenamos este valor (negativo) em `resFrango`.
+Para cada tipo de alimento sendo ele Frango, Bife ou Massa, teremos um bloco onde faremos o calculo de quantos alimentos faltaram. No caso do Frango iremos calcular o valor contido em `frangoDisp` menos o valor contido em `frangoReq`, com isso iremos ter algumas possibilidades de resultado:
+- Caso seja um numero negativo significa que tiveram mais pedidos do que alimento disponivel, então armazenamos este valor (negativo) em `resFrango`.
 - Caso seja 0 ou um valor maior que 0 significa que foi possivel atender todos os pedidos, portanto iremos definir o valor em `resFrango` como 0, para que não atrapalhe na contagem de pedidos que não foram atendidos. 
 ```c
 resFrango = frangoDisp - frangoReq;

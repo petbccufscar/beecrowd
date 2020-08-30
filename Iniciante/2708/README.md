@@ -35,9 +35,9 @@ if (strcmp(operacao, "ABEND") == 0)
 ```
 
 
-Caso contrario, seguimos em nesso laço realizamo a leitura de quantos turistas embarcaram ou desembarcaram e iremos agora verificar se a operação foi "SALIDA" ou "VUELTA".
-- Caso tenha sido "SALIDA" iremos somar em `turistasFaltantes` o valor recebido em `turistas` pois estes estão saindo para o passeio e deve ser armazenado esse valor para conferir se ao final todos voltaram, o mesmo para a quantidade de jipes que ficará armazenada na variavel `jipes` porém nesta variavel iremos incrementar apenas em 1 pois apenas um jipe esta saindo.
-- Caso tenha sido "VUELTA" subtraimos o valor contido em `turistas` do total contido em `turistasFaltantes` indicando que esta quantidade de turistas voltaram do passeio, restando apenas os que ainda não voltaram, o mesmo para a variavel `jipe`, indicando que um jipe retornou do passeio.
+Caso contrario, seguimos em nosso laço e realizamos a leitura de quantos turistas embarcaram ou desembarcaram e, verificamos se a operação foi "SALIDA" ou "VUELTA".
+- Caso tenha sido "SALIDA", iremos somar em `turistasFaltantes` o valor recebido em `turistas` pois estes estão saindo para o passeio e esse valor deve ser armazenado para conferir se, ao final, todos voltaram. O mesmo ocorre para a quantidade de jipes, que ficará armazenada na variavel `jipes` porém, nesta variavel iremos incrementar apenas em 1 pois apenas um jipe esta saindo.
+- Caso tenha sido "VUELTA", subtraimos o valor contido em `turistas` do total contido em `turistasFaltantes`, indicando que esta quantidade de turistas voltaram do passeio, restando apenas os que ainda não voltaram. O mesmo ocorre para a variavel `jipe`, indicando que um jipe retornou do passeio.
 
 ```c
 scanf("%d", &turistas);
@@ -48,7 +48,7 @@ else
 ```
 
 
-Ao final, ou seja ao receber o sinalizador de fim de processamento "ABEND", realizamos a impressão de quantos turistas não retornaram de seu passeio de jipe e na linha de baixo a quantidade de jipes que não retornaram.
+Ao final, ou seja, ao receber o sinalizador de fim de processamento "ABEND", realizamos a impressão de quantos turistas não retornaram de seu passeio de jipe e, na linha de baixo a quantidade de jipes que não retornaram.
 ```c
 printf("%d\n%d\n", turistasFaltantes, jipes);
 ```
