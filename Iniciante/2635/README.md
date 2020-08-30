@@ -57,13 +57,11 @@ A cada iteração do laço de repetição:
 - atribuímos valor zero as variáveis `achou` e `tam`;
 - lemos a string que será consultada;
 - para cada pesquisa já feita:
-    - verificamos se a consulta atual é prefixo de alguma pesquisa feita anteriormente. Fazemos isso por meio da função `strncmp()`, que compara duas strings caracter por caracter. O terceiro parâmetro da função define o número de caracteres a ser comparado. A função retorna 0 caso as strings sejam iguais. Se for :
-        - adicionamos 1 a `achou`;
-        - se `tam` é menor que o tamanho da pesquisa cujo prefixo é igual à consulta, `tam` recebe este valor
-
+        - verificamos se a consulta atual é prefixo de alguma pesquisa feita anteriormente. Fazemos isso por meio da função `strncmp()`, que compara duas strings caracter por caracter. O terceiro parâmetro da função define o número de caracteres a ser comparado. A função retorna "0" caso as strings sejam iguais. Se for :
+        - adicionamos "1" a variavel `achou` e, se `tam` for menor que o tamanho da pesquisa cujo prefixo é igual à consulta, `tam` recebe este valor;
 - Verificamos se `achou` é um ou zero:
-    -caso seja zero, exibimos `-1` com quebra de linha
-    -caso seja positivo, exibimos `achou` e `tam` com quebra de linha
+        - caso seja zero, exibimos "-1" com quebra de linha.
+        - caso seja positivo, exibimos `achou` e `tam` com quebra de linha.
 
 ```c
 while(q--){
