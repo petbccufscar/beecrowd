@@ -15,6 +15,11 @@ Há N cópias de um dado ninja (incluindo o original). Sua tarefa é determinar 
 
 Os números de ninja deste exercício são resultados de um expoente da base 2, e queremos achar o expoente em que ao ser elevado a 2 nos mostra a quantidade de vezes que a técnica foi utilizada. Para isso, é preciso calcular o [logaritmo](https://www.todamateria.com.br/logaritmo/) do número da entrada na base 2.
 
+Primeiramente, é necessário declarar a biblioteca `math.h`, pois precisaremos trabalhar com uma função que calcula o logaritmo de num número na base 2.
+```c
+    #include<math.h>
+```
+
 Iremos declarar as variáveis que serão utilizadas neste problema.
 
 ```c
