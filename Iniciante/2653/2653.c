@@ -9,14 +9,14 @@ typedef struct no{
 
 } no;
 
-int joias = 0;
+int numJoias = 0;
 
 no * adiciona(no *ramo, char *p){
     if (!ramo){
         ramo = (no * ) malloc(sizeof(no));
         ramo->esq = ramo->dir = NULL;
         strcpy(ramo->joia, p);
-        joias++;
+        numJoias++;
 
     }
     else if (strcmp(ramo->joia, p) > 0)
@@ -35,7 +35,7 @@ int main(int argc, char **argv){
     while (scanf("%s", joia) != EOF)
         arvore = adiciona(arvore, joia);
 
-    printf("%d\n", joias);
+    printf("%d\n", numJoias);
 
     return 0;
 
