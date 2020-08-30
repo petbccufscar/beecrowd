@@ -11,7 +11,7 @@ Lucas está preocupado com a quantidade de palavras que seu programa pode sugeri
  
 # Resolução:
  
-Para a resolução do problema, iremos importar a biblioteca `string.h`, para utilizarmos a função `strlen()` e `strncmp()` e `stdlib.h`, para utilizarmos a função `malloc()`. 
+Para a resolução do problema, iremos importar a biblioteca `string.h`, para utilizarmos a função `strlen()` e `strncmp()`, e a biblioteca `stdlib.h`, para utilizarmos a função `malloc()`. 
 
 Além disso, iremos declarar cinco variáveis do tipo `inteiro `, `n`, `q`, `i`, `achou` e `tam` e um vetor de caracteres de tamanho 100, `consulta[100]`. A variável `achou` indica quantas palavras o navegador deverá sugerir e `tam` o comprimento da maior dessas palavras.
 
