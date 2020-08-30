@@ -35,11 +35,11 @@ int joias = 0;
 
 Em seguida, ainda de forma global, iremos construir a nossa função `adiciona` que irá adicionar nós na árvore. Nossa função terá como parâmetros um ponteiro para um nó e uma string, que representa a joia atual. Com isso, teremos 3 ocorrências:
 
-Caso o nó recebido seja NULL, ou seja, o nó em questão ainda não existe e aquele tipo de jóia não foi lido anteriormente, iremos inicializá-lo da seguinte forma :
+Caso o nó recebido seja NULL, ou seja, o nó em questão ainda não existe e aquele tipo de joia não foi lido anteriormente, iremos inicializá-lo da seguinte forma :
 - alocamos o espaço de memória necessária de um nó, utilizando `malloc()`;
 - atribuímos `NULL` aos ponteiros `esq` e `dir` deste nó, já que estes não apontam para nenhum outro nó ainda;
-- atribuímos a `joia` a string (jóia) passada como parâmetro pela nossa função `adiciona`;
-- adicionamos 1 ao nosso contador de tipos de jóia (`joias`).
+- atribuímos a `joia` a string passada como parâmetro pela nossa função `adiciona`;
+- adicionamos 1 ao nosso contador de tipos de joia (`joias`).
 
 ```c
 if (!ramo){
