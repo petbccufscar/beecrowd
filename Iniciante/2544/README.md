@@ -15,7 +15,7 @@ Há N cópias de um dado ninja (incluindo o original). Sua tarefa é determinar 
 
 Os números de ninja deste exercício são resultados de um expoente da base 2, e queremos achar o expoente em que ao ser elevado a 2 nos mostra a quantidade de vezes que a técnica foi utilizada. Para isso, é preciso calcular o [logarítimo](https://www.todamateria.com.br/logaritmo/) do número da entrada na base 2.
 
-Iremos declarar as variáveis que serão utilizades neste problema.
+Iremos declarar as variáveis que serão utilizadas neste problema.
 
 ```c
     int  x;
