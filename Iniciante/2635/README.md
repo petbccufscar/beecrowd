@@ -45,7 +45,7 @@ for( i = 0; i < n ; i++){
 }
 ```
 
-Depois disto, lemos o número de consultas que serão feitass.
+Depois disto, lemos o número de consultas que serão feitas.
 
 ```c
 scanf("%d", &q);
