@@ -27,10 +27,10 @@ typedef struct no{
 } no;
 ```
 
-Também iremos declarar de forma global a variável do tipo inteiro `joias` e atribuí-la o valor 0. Esta variável representa o número de tipos de joias lidos.
+Também iremos declarar de forma global a variável do tipo inteiro `numJoias` e atribuí-la o valor 0. Esta variável representa o número de tipos de joias lidos.
 
 ```c
-int joias = 0;
+int numJoias = 0;
 ```
 
 Em seguida, ainda de forma global, iremos construir a nossa função `adiciona` que irá adicionar nós na árvore. Nossa função terá como parâmetros um ponteiro para um nó e uma string, que representa a joia atual. Com isso, teremos 3 ocorrências:
@@ -39,14 +39,14 @@ Caso o nó recebido seja NULL, ou seja, o nó em questão ainda não existe e aq
 - alocamos o espaço de memória necessária de um nó, utilizando `malloc()`;
 - atribuímos `NULL` aos ponteiros `esq` e `dir` deste nó, já que estes não apontam para nenhum outro nó ainda;
 - atribuímos a `joia` a string passada como parâmetro pela nossa função `adiciona`;
-- adicionamos 1 ao nosso contador de tipos de joia (`joias`).
+- adicionamos 1 ao nosso contador de tipos de joia (`numJoias`).
 
 ```c
 if (!ramo){
     ramo = (no * ) malloc(sizeof(no));
     ramo->esq = ramo->dir = NULL;
     strcpy(ramo->joia, p);
-    joias++;
+    numJoias++;
 
 }
 ```
@@ -89,7 +89,7 @@ while (scanf("%s", joia) != EOF)
 Em seguida, exibimos o número de joias diferentes pesquisadas.
 
 ```c
-printf("%d\n", joias);
+printf("%d\n", numJoias);
 ```
 
 ##### Mais sobre alocação dinâmica: [alocação dinâmica](https://www.ime.usp.br/~pf/algoritmos/aulas/aloca.html)
