@@ -37,9 +37,10 @@ while (scanf("%lld", &num)!=EOF)
         }
     }
 ```
-A cada iteração verificamos, se `num` é igual 1 em caso afirmativo, a técnica ainda não foi usada, então imprimimos 0 na tela. Se não calculamos o logaritmo de `num` na base 2 e imprimimos o resultado.
+A cada iteração verificamos, se `num` é igual 1 em caso afirmativo, a técnica ainda não foi usada, então imprimimos 0 na tela. Se não calculamos o logaritmo de `num` na base 2, utilizando a função `log2`, que receberá `num` e retornará o resultado na variável `x`.
 
 ##### Para aprender um pouco mais sobre Loops: [Loops](https://sites.google.com/site/itabits/treinamento/introducao-a-programacao-em-c/comandos-de-repeticao)
+##### Para aprender um pouco mais sobre a biblioteca `Math.h`: [`Math.h`](http://linguagemc.com.br/a-biblioteca-math-h/)
  
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
