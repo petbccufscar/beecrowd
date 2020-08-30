@@ -15,13 +15,13 @@ Lembrando que:
 - Tesoura ganha de Papel
 - Papel ganha de Pedra
 
-Primeiro devemos incluir a biblioteca `string.h` para termos a função de comparar `strings`.
+Primeiro devemos incluir a biblioteca `string.h` para termos a função de comparar `strings`, a `strcmp`.
 
 ```c
 #include <string.h>
 ```
 
-Antes de iniciarmos nosso `main()` vamos criar uma função `ganhar()` que retorna se um jogador **ganhou** do outro ou não; no caso do nosso código, se o `ganha` ganha ou não.
+Antes de iniciarmos nosso `main()` vamos criar uma função `ganhar()` que retorna se um jogador **ganhou** do outro ou não; no caso do nosso código, se a variável`ganha` tem sucesso ou não.
 Para conferir se o jogador cumpre os requisitos de ganhar do outro iremos utilizar a função `strcmp()`; ela compara as duas strings passadas e se elas forem iguais ela retorna **0**, por isso as duas comparações devem ser iguais a **0** para o jogador ganhar.
 
 ```c
@@ -44,7 +44,7 @@ Dentro no nosso `main` vamos começar instanciando 3 vetores do tipo `char`, que
 ```
 
 Agora iremos utilizar um `while()` para passar por todas as partidas, lendo o que cada um colocou por partida, ou seja, lendo 3 valores de cada vez.
-Um único `scanf` pode ler mais de um valor se usarmos mais de um `%d`. Dentro do `while`, fazemos a leitura e comparamos ao `EOF`, portanto o `while` irá rodar até chegar no final do arquivo.
+Um único `scanf` pode ler mais de um valor se usarmos mais de um `%s`. Dentro do `while`, fazemos a leitura e comparamos ao `EOF`, portanto o `while` irá rodar até chegar no final do arquivo.
 
 Obs: Como vamos ler um vetor completo de `char`, iremos ler utilizando `%s`.
 
@@ -72,4 +72,3 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
-
