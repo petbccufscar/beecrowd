@@ -99,11 +99,11 @@ Por fim, exibimos o valor em `soma`.
 ```
 
 Agora, trataremos os casos em que há 2 colunas. 
-Caso seja apenas 1 linha, inicializamos nossa variável de soma e verificamos se a primeira posição contém um pão de queijo.
-	- Em caso positivo, exibimos 9.
-	- Em caso negativo, procuramos se a próxima posição à inicial contém.
-		- Caso tenha, exibimos 1 pois há um pão de queijo na redondeza.
-		- Caso contrário, exibimos 0 pois não há nenhum próximo.
+Caso seja apenas 1 linha, inicializamos nossa variável de soma e verificamos se a primeira posição contém um pão de queijo.  
+* Em caso positivo, exibimos 9.  
+* Em caso negativo, procuramos se a próxima posição à inicial contém.  
+    * Caso tenha, exibimos 1 pois há um pão de queijo na redondeza.  
+    * Caso contrário, exibimos 0 pois não há nenhum próximo.
 
 ```c
         else if(M==2)
