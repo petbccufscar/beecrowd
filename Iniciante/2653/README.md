@@ -27,7 +27,7 @@ typedef struct no{
 } no;
 ```
 
-Também iremos declarar de forma global a variável do tipo `inteiro ` `joias` e atribuí-la o valor 0. Esta variável representa o número de tipos de jóias lidos.
+Também iremos declarar de forma global a variável do tipo inteiro `joias` e atribuí-la o valor 0. Esta variável representa o número de tipos de joias lidos.
 
 ```c
 int joias = 0;
