@@ -80,7 +80,7 @@ char joia[1000000];
 no *arvore = NULL;
 ```
 
-Em seguida, utilizaremos uma estrutura de repetição `while` que irá iterar enquanto houver entrada. A cada iteração do laço de repetição lemos a jóia fornecida e a adicionamos na árvore. A árvore é atualizada a cada chamada de função, por isso utilizamos `arvore = adiciona(arvore, joia)`
+Em seguida, utilizaremos uma estrutura de repetição `while` que irá iterar enquanto houver entrada. A cada iteração do laço de repetição lemos a joia fornecida e a adicionamos na árvore. A árvore é atualizada a cada chamada de função, por isso utilizamos `arvore = adiciona(arvore, joia)`
 
 ```c
 while (scanf("%s", joia) != EOF)
