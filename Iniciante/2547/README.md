@@ -12,7 +12,7 @@ Para o dia da inauguração do parque, todos os convidados realizaram um pré-ca
 
 O objetivo desse problema é verificar se a altura de cada visitante está dentro dos limites estabelecido para poder andar na montanha russa, e ao final, imprimir o total de visitantes que podem usar a montanha russa.
 
-Primeiramente iremos reclarar as variáveis inteiras: `n` armazena a quantidade de pessoas que irão na montanha russa, `min` e `max` são os limites mínimo e máximo de alturas permitidos. `i` tem a função de auxiliar do loop `for`, `altura` guarda o valor da altura que usaremos para verificar se está dentro do limite permitido e por fim, `visitantes` é um contador que tem o número total de visitantes que podem andar na montanha russa.
+Primeiramente iremos declarar as variáveis inteiras: `n` armazena a quantidade de pessoas que irão na montanha russa, `min` e `max` são os limites mínimo e máximo de alturas permitidos. `i` tem a função de auxiliar do loop `for`, `altura` guarda o valor da altura que usaremos para verificar se está dentro do limite permitido e por fim, `visitantes` é um contador que tem o número total de visitantes que podem andar na montanha russa.
 
 ```c
     int n, min, max, i;
