@@ -14,7 +14,7 @@ Sabendo que você é o melhor programador do continente Dijkstra te contratou pa
  
 Para a resolução do problema, iremos importar a biblioteca `string.h`, para utilizarmos a função `strcmp()` e `strcpy()`, e a biblioteca `stdlib.h`, para utilizarmos a função `malloc()`. 
 
-Além disso, iremos utilizar o conceito de árvore binária para armazenarmos cada jóia. Cada nó da árvore (`no`) será composto por um vetor de caracteres de tamanho 1000000, que representa a jóia, e dois ponteiros de `no`, o da esquerda, que aponta para uma jóia de string menor (caso aponte para algo) e o da direita, que aponta para uma jóia de string maior (caso aponte para algo). 
+Além disso, iremos utilizar o conceito de árvore binária para armazenarmos cada joia. Cada nó da árvore (`no`) será composto por um vetor de caracteres de tamanho "1000000", que representa a joia, e dois ponteiros de `no`, o da esquerda, que aponta para uma joia de string menor (caso aponte para algo) e o da direita, que aponta para uma joia de string maior (caso aponte para algo). 
 
 Para isso, iremos declarar nosso tipo `no`, de forma global, utilizando `typedef struct`.
 
