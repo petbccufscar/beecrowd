@@ -15,7 +15,7 @@ Para resolver o problema, iremos, posição por posição, verificar se existe u
 Começamos declarando as variáveis, todas do tipo inteiro. Serão elas:
 - `N`, o número de linhas;
 - `M`, o número de colunas;
-- `a[N][M]`, a matriz do tabuleiro com 100 posições;
+- `a[100][100]`, a matriz do tabuleiro com 10000 posições;
 - `soma`, para a quantidade de pães de queijo nas redondezas;
 - `i` e `j`, para iterar pelas estruturas de repetição.
 ```c
