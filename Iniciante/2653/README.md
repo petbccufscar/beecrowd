@@ -93,6 +93,7 @@ printf("%d\n", numJoias);
 ```
 
 ##### Mais sobre alocação dinâmica: [alocação dinâmica](https://www.ime.usp.br/~pf/algoritmos/aulas/aloca.html)
+##### Mais sobre alocação dinâmica de matrizes: [alocação dinâmica matrizes](http://www.inf.ufpr.br/roberto/ci067/14_alocmat.html)
 ##### Mais sobre árvore binária: [árvore binária](https://pt.wikibooks.org/wiki/Programar_em_C/Árvores_binárias)
 
 
