@@ -28,12 +28,12 @@ no * adiciona(no *ramo, char *p){
 }
 
 int main(int argc, char **argv){
-    char joia[1000000];
+    char novaJoia[1000000];
 
     no *arvore = NULL;
 
     while (scanf("%s", joia) != EOF)
-        arvore = adiciona(arvore, joia);
+        arvore = adiciona(arvore, novaJoia);
 
     printf("%d\n", numJoias);
 
