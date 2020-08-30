@@ -10,7 +10,7 @@ Flávio está muito preocupado com a evolução de seu desempenho nos treinos, e
 
 # Resolução
 
-Para resolver o problema, iremos receber os valores de distância e tempo e calcular se são maiores que os recordes anteriores. Caso forem, exibimo-os.
+Para resolver o problema, iremos receber os valores de distância e tempo e calcular se são maiores que os recordes anteriores. Caso forem, exibimo-nos.
 
 Começamos declarando as variáveis que serão utilizadas no problema, todas do tipo inteiro. Serão elas:
 - `N`, para o número de treinos feitos;
@@ -45,7 +45,14 @@ Faremos uma estrutura de repetição `for` para ler os valores de cada treino. E
 ```
 
 Para realizar a conta dos recordes, faremos as médias do treino atual e do treino do recorde. Para isso, utilizaremos o cálculo da média dividindo a distância e o tempo, comparando ambas médias (tanto do atual quanto do recorde). Assim, faremos uma [regra de 3](https://www.somatematica.com.br/fundam/regra3s.php) para podermos multiplicar distâncias e tempos para compará-los, da seguinte forma:
-(inserir imagem)
+
+distancia     recorde_D
+---------  >  --------- 
+tempo         recorde_T  
+
+Utilizando a multiplicação cruzada, temos:
+
+distancia * recorde_T > recorde_D * tempo
 
 Caso a média do treino recebido seja maior do que a média do recorde anterior, exibimos qual dos treinos bateu o recorde e atualizamos a distância recorde e o tempo recorde nas variáveis.
 ```c
