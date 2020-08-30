@@ -72,18 +72,18 @@ Ao fim da função, retornarmos a árvore, para que possamos construí-la e arma
 return ramo;
 ```
 
-**Com as preparações para utilizarmos a nossa estrutura de árvore feitas, mudamos nosso escopo para a função main() agora.** Iremos declarar um vetor de caracteres de tamanho 1000000 (`joia`), para lermos a string fornecida e o nó raiz da nossa árvore, inicializado com NULL.
+**Com as preparações para utilizarmos a nossa estrutura de árvore feitas, mudamos nosso escopo para a função main() agora.** Iremos declarar um vetor de caracteres de tamanho 1000000 (`novaJoia`), para lermos a string fornecida e o nó raiz da nossa árvore, inicializado com NULL.
 
 ```c
-char joia[1000000];
+char novaJoia[1000000];
 no *arvore = NULL;
 ```
 
-Em seguida, utilizaremos uma estrutura de repetição `while` que irá iterar enquanto houver entrada. A cada iteração do laço de repetição lemos a joia fornecida e a adicionamos na árvore. A árvore é atualizada a cada chamada de função, por isso utilizamos `arvore = adiciona(arvore, joia)`
+Em seguida, utilizaremos uma estrutura de repetição `while` que irá iterar enquanto houver entrada. A cada iteração do laço de repetição lemos a joia fornecida e a adicionamos na árvore. A árvore é atualizada a cada chamada de função, por isso utilizamos `arvore = adiciona(arvore, novaJoia)`
 
 ```c
 while (scanf("%s", joia) != EOF)
-    arvore = adiciona(arvore, joia);
+    arvore = adiciona(arvore, novaJoia);
 ```
 
 Em seguida, exibimos o número de joias diferentes pesquisadas.
