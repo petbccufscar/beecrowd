@@ -203,11 +203,11 @@ Por fim, exibiremos a soma e a quebra de linha.
 
 Caso não seja uma matriz com 1 ou 2 colunas, faremos o caso geral.
 Inicializamos a váriavel `soma` novamente em 0.
-Seguimos a mesma sequência de ações demonstrada anteriormente, verificando, em ordem:
-	- A posição atual;
-	- A posição inicial;
-	- A última posição;
-	- As outras posições.
+Seguimos a mesma sequência de ações demonstrada anteriormente, verificando, em ordem:  
+* A posição atual;  
+* A posição inicial;  
+* A última posição;  
+* As outras posições.
 
 Por fim, exibimos a soma final e a quebra de linha.
 ```c
