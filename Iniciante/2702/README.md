@@ -11,7 +11,7 @@ Dada a quantidade de refeições disponíveis para cada escolha e o número de r
 
 # Resolução:
 
-Começamos declarando as variaveis  em que iremos armazenar a quantidade de alimentos disponiveis, em seguida as variaveis que irão armazenar a quantidade que os passageiros pediram e outras tres variaveis para verificar se irá haver pedidos que não poderão ser atendidos.  Após a declaração das variaveis, realizamos a leitura dos valores.
+Começamos declarando as variáveis  em que iremos armazenar a quantidade de alimentos disponíveis, em seguida as variáveis que irão armazenar a quantidade que os passageiros pediram e outras três variáveis para verificar se irá haver pedidos que não poderão ser atendidos.  Após a declaração das variáveis, realizamos a leitura dos valores.
 ```c
 int frangoDisp, bifeDisp, massaDisp;
 int frangoReq, bifeReq, massaReq;
@@ -19,23 +19,6 @@ int resFrango, resBife, resMassa;
 
 scanf("%d %d %d", &frangoDisp, &bifeDisp, &massaDisp);
 scanf("%d %d %d", &frangoReq, &bifeReq, &massaReq);
-```
-
-
-Para cada tipo de alimento sendo ele Frango, Bife ou Massa, teremos um bloco onde faremos o calculo de quantos alimentos faltaram. No caso do Frango iremos calcular o valor contido em `frangoDisp` menos o valor contido em `frangoReq`, com isso iremos ter algumas possibilidades de resultado:
-- Caso seja um numero negativo significa que tiveram mais pedidos do que alimento disponivel, então armazenamos este valor (negativo) em `resFrango`.
-- Caso seja 0 ou um valor maior que 0 significa que foi possivel atender todos os pedidos, portanto iremos definir o valor em `resFrango` como 0, para que não atrapalhe na contagem de pedidos que não foram atendidos. 
-```c
-resFrango = frangoDisp - frangoReq;
-if (resFrango > 0)
-	resFrango = 0;
-```
-
-
-Ao final iremos imprimir apenas quantos passageiros não foram atendidos, para isso realizamos a soma dos valores contidos em `resFrango`, `resBife` e `resMassa`. Como são valores negativos realizamos a inversão do valor e imprimimos este na tela.
-```c
-printf("%d\n", -(resFrango + resBife + resMassa));
-```
 
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
