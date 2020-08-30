@@ -87,7 +87,7 @@ while (scanf("%s", joia) != EOF)
     arvore = adiciona(arvore, joia);
 ```
 
-Em seguida, exibimos o número de jóias diferentes pesquisadas.
+Em seguida, exibimos o número de joias diferentes pesquisadas.
 
 ```c
 printf("%d\n", joias);
