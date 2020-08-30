@@ -54,7 +54,7 @@ scanf("%d", &q);
 Em seguida, vamos utilizar a estrutura de repetição `while(q--)` para o programa funcionar até que o valor de `q` seja 0, iterando `q` vezes.
 
 A cada iteração do laço de repetição:
-- atribuimos zero a `achou` e `tam`;
+- atribuímos valor zero as variáveis `achou` e `tam`;
 - lemos a string que será consultada;
 - para cada pesquisa já feita:
     - verificamos se a consulta atual é prefixo de alguma pesquisa feita anteriormente. Fazemos isso por meio da função `strncmp()`, que compara duas strings caracter por caracter. O terceiro parâmetro da função define o número de caracteres a ser comparado. A função retorna 0 caso as strings sejam iguais. Se for :
