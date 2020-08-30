@@ -150,10 +150,10 @@ Caso haja mais de uma linha, faremos duas estruturas `for` para procurar, posiç
                             printf("9");
 ```
 
-Caso contrário, verificaremos em todas as posições se sua posição atual tem um pão de queijo ou algum em sua redondeza. Seguiremos sempre a sequência de verificar, em ordem:
-	- A posição inicial
-	- A última
-	- Outras posições
+Caso contrário, verificaremos em todas as posições se sua posição atual tem um pão de queijo ou algum em sua redondeza. Seguiremos sempre a sequência de verificar, em ordem:  
+* A posição inicial  
+* A última  
+* Outras posições
 Podemos, inclusive, somar o valor presente na posição da matriz, visto que é formada por 0 e 1.
 
 Por fim, exibiremos a soma e a quebra de linha.
