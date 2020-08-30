@@ -67,7 +67,7 @@ else if (strcmp(ramo->joia, p) < 0)
         ramo->dir = adiciona(ramo->dir, p);
 ```
 
-Ao fim da função, retornarmos a árvore, para que possamos construí-la e armazenar a alteração realizada a cada chamada da função. Vale ressaltar que caso a jóia do nó seja igual a jóia recebida pela função, o retorno da função strcmp() será 0, então nada irá acontecer.
+Ao fim da função, retornarmos a árvore, para que possamos construí-la e armazenar a alteração realizada a cada chamada da função. Vale ressaltar que caso a `joia` do nó seja igual a `joia` recebida pela função, o retorno da função `strcmp()` será "0", então nada irá acontecer.
 
 ```c
 return ramo;
