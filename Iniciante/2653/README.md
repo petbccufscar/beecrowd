@@ -33,7 +33,7 @@ Também iremos declarar de forma global a variável do tipo inteiro `joias` e at
 int joias = 0;
 ```
 
-Em seguida, ainda de forma global, iremos construir a nossa função (`adiciona`) que irá adicionar nós na árvore. Nossa função terá como parâmetros um ponteiro para um nó e uma string, que representa a jóia atual. Com isso, teremos 3 ocorrências:
+Em seguida, ainda de forma global, iremos construir a nossa função `adiciona` que irá adicionar nós na árvore. Nossa função terá como parâmetros um ponteiro para um nó e uma string, que representa a joia atual. Com isso, teremos 3 ocorrências:
 
 Caso o nó recebido seja NULL, ou seja, o nó em questão ainda não existe e aquele tipo de jóia não foi lido anteriormente, iremos inicializá-lo da seguinte forma :
 - alocamos o espaço de memória necessária de um nó, utilizando `malloc()`;
