@@ -44,15 +44,15 @@ Faremos uma estrutura de repetição `for` para ler os valores de cada treino. E
       scanf("%d %d", &T, &D);
 ```
 
-Para realizar a conta dos recordes, faremos as médias do treino atual e do treino do recorde. Para isso, utilizaremos o cálculo da média dividindo a distância e o tempo, comparando ambas médias (tanto do atual quanto do recorde). Assim, faremos uma [regra de 3](https://www.somatematica.com.br/fundam/regra3s.php) para podermos multiplicar distâncias e tempos para compará-los, da seguinte forma:
+Para realizar a conta dos recordes, faremos as médias do treino atual e do treino do recorde. Para isso, utilizaremos o cálculo da [velocidade média](https://www.educamaisbrasil.com.br/enem/fisica/velocidade-media) dividindo a distância e o tempo, comparando ambas médias (tanto do atual quanto do recorde). Assim, faremos uma [regra de 3](https://www.somatematica.com.br/fundam/regra3s.php) para podermos multiplicar distâncias e tempos para compará-los, da seguinte forma:
 
-distancia     recorde_D
----------  >  --------- 
-tempo         recorde_T  
-
+| Treino recorde        | Operação           | Treino atual  |
+| ------------- |:-------------:| -----:|
+| Velocidade média (recorde)      | > | Velocidade média (atual) |
+| ``recorde_D``/``recorte_T``      | > |``D``/``T``|  
+  
 Utilizando a multiplicação cruzada, temos:
-
-distancia * recorde_T > recorde_D * tempo
+``D`` * ``recorde_T`` **>** ``recorde_D`` * ``T``
 
 Caso a média do treino recebido seja maior do que a média do recorde anterior, exibimos qual dos treinos bateu o recorde e atualizamos a distância recorde e o tempo recorde nas variáveis.
 ```c
@@ -66,4 +66,3 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
-
