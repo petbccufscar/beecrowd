@@ -20,7 +20,8 @@ Escreva um programa que, dados os dois botões que forem pressionados, determine
 # Resolução:
 O exercício consiste em ler dois valores inteiros e com eles imprimir a música referente.
 
-Primeiro instanciamos as variáveis necessárias, sendo elas: 4 `unsigned short` (`C` a quantidade de casos de teste; `X` e `Y` os valores dos botões; e `resultado` para a soma dos valores).
+Primeiro instanciamos as variáveis necessárias, sendo elas: 4 `unsigned short` (`C` a quantidade de casos de teste; `X` e `Y` os valores dos botões; e `resultado` para a soma dos valores). Será utilizado o `unsigned short` pois não é necessário o espaço de memória de um `int`, já que não serão utilizados números muito altos; e não é preciso o sinal, já que todos os números serão positivos.
+Obs: Como iremos utilizar um `short` nós teremos comparações mais rápidas, pois temos menos memória desnecessária na comparação, assim obtendo resultados mais rapidamente; e para a resolução desse problema temos o tempo limite de 1 segundo para que seja finalizado.
 Começamos lendo a quantidade de casos de teste.
 
 Obs: Como vamos ler um `unsigned short`, iremos ler utilizando `%hu`.
