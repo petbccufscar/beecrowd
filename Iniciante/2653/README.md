@@ -94,7 +94,7 @@ printf("%d\n", joias);
 ```
 
 ##### Mais sobre alocação dinâmica: [alocação dinâmica](https://www.ime.usp.br/~pf/algoritmos/aulas/aloca.html)
-##### Mais sobre árvore binária: [árvore binária](https://pt.wikibooks.org/wiki/Programar_em_C/Árvores_binárias#:~:text=Uma%20árvore%20binária%20é%20uma,elemento%20é%20chamado%20de%20raiz.)
+##### Mais sobre árvore binária: [árvore binária](https://pt.wikibooks.org/wiki/Programar_em_C/Árvores_binárias)
 
 
 
