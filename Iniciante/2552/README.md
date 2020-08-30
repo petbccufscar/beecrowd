@@ -79,10 +79,10 @@ Enquanto não estamos na última posição (N-1), verificamos se a posição atu
 
 ```
 
-Caso estejamos na última posição, verificamos se há um pão de queijo nela. 
-	- Em caso positivo, exibimos 9.
-	- Em caso negativo, procuramos na posição anterior. 
-		- Caso haja, somamos na variável `soma`.
+Caso estejamos na última posição, verificamos se há um pão de queijo nela.  
+* Em caso positivo, exibimos 9.  
+* Em caso negativo, procuramos na posição anterior. 
+	* Caso haja, somamos na variável `soma`.
 
 Por fim, exibimos o valor em `soma`.
 ```c
