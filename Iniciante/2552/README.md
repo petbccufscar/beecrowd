@@ -61,9 +61,10 @@ Inicializamos nossa variável `soma` com 0, visto que não foi contabilizado nen
                     soma=0;
 ```
 
-Enquanto não estamos na última posição (N-1), verificamos se a posição atual é igual a 1, isto é, tem um pão de queijo. 	- Caso tenha, exibimos 9.
-	- Caso contrário, procuramos se há na próxima posição.
-		- Caso haja, somamos 1 na variável `soma`.
+Enquanto não estamos na última posição (N-1), verificamos se a posição atual é igual a 1, isto é, tem um pão de queijo.   
+* Caso tenha, exibimos 9.   
+* Caso contrário, procuramos se há na próxima posição.   
+    * Caso haja, somamos 1 na variável `soma`.
 ```c
                     if(i!=N-1)
                     {
