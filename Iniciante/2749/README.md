@@ -28,6 +28,8 @@ No final deve ficar igual a imagem a seguir:
 
 #### Problema completo: [https://www.urionlinejudge.com.br/judge/pt/problems/view/2749]
 
+# Resolução
+
 De início declaramos as variáveis que usaremos, são elas: `tela` que será nossa matriz utilizada para receber os elementos da imagem, ela é composta de 39 colunas e 7 linhas; Em seguida, temos as variáveis `expressao1`, `expressao2` e `expressao3` que serão utilizadas para serem as linhas que contêm as expressões "x = 35'; Por fim, declaramos `i` e `j` para serem auxiliares no decorrer do código.
  
 ``` c
