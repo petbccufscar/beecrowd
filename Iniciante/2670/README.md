@@ -6,22 +6,11 @@ Cada funcionário da SBC bebe 1 café expresso por dia. Ele precisa ir do andar 
 
 Sua tarefa é ajudar a diretoria a posicionar a máquina de forma a minimizar o tempo total gasto pelos funcionários subindo e descendo escadas.
 
-
-Exemplo de Entrada:
-
-                    10
-                    20
-                    30
-Saída: 
-
-                    80
-
-
 ###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/2670
 
 # Resolução
 
-A ideia do exercício é entender o andar onde irá ficar a cafeteira e baseado nisso compreender também a relação matemática entre os andares e o subir dos andares.
+A ideia do exercício é definir o andar onde irá ficar a cafeteira e, baseado nisso, calcular o tempo gasto por todos os funcionários subindo e descendo escadas.
 
 Começamos declarando as variáveis que serão utilizadas:
 
@@ -30,7 +19,7 @@ Começamos declarando as variáveis que serão utilizadas:
         int A1, A2, A3, i, menor;
 ```
 
-`cafe[3]` representa o andar onde ficará a cafeteira, ex: `cafe[0]` = primeiro andar. `A1, A2, A3` são as variáveis que representam a quantidade de pessoas em cada andar, `i` variável de iteração do `for`, `menor` variável responsável por armazenar o menor valor do momento.
+`cafe[3]` representa o andar onde ficará a cafeteira, ex: `cafe[0]` = primeiro andar. `A1, A2, A3` são as variáveis que representam a quantidade de pessoas em cada andar. A variável `i`  será usada para iteração no `for` e a `menor` será responsável por armazenar o andar com menor tempo gasto subindo e descendo.
 
 
 Passamos para a leitura da quantidade de pessoas que cada andar terá:
@@ -39,35 +28,41 @@ Passamos para a leitura da quantidade de pessoas que cada andar terá:
        scanf("%d %d %d", &A1, &A2, &A3);
 ```
 
-Seguimos para a lógica principal do exercício:
+Seguimos para a lógica principal do exercício - vamos calcular quanto tempo os funcionários dos outros andares gastariam se a cafeteira ficar naquele andar.
 
 ```c
         cafe[0] = A2*2 + A3*4;
         cafe[1] = A1*2 + A3*2;
         cafe[2] = A1*4 + A2*2;
 ```
-Sendo `cafe[]` a variável que representa onde a cafeteira está naquele momento, temos então `cafe[0]` cafeteira no primeiro andar. Com isso só nos resta fazer a lógica matemática envolvida no sobe e desce dos andares, lembrando que descer leva 1 minuto e subir também.
 
-Feito o calculo agora temos que escolher entre as posições que a cafeteira `cafe[]` tem o menor valor: 
+Sendo `cafe[]` a variável que representa posições possíveis da cafeteira, e sabendo que `cafe[0]` significa que a cafeteira está no primeiro andar, fazemos a seguinte conta:
+- Funcionários do segundo andar gastam 2 minutos com escada;
+- Funcionários do terceiro andar gastam 4 minutos (2 descendo e 2 subindo);
+- O tempo total é a quantidade `A2` de funcionários gastando 2 minutos mais a quantidade `A3` gastando 4 minutos;
+- Análogo para os andares `cafe[1]` e `cafe[2]`.
+
+Feito o cálculo, temos que escolher qual posição de `cafe[]` em que os funcionários gastam menos tempo com escadas:
 
 ```c
         menor = cafe[0];
 
-        for (i = 1; i < 3; i++)
-        {
-          if(menor>cafe[i]){
-              menor=cafe[i];
-          }
-        }
+        if(menor > cafe[1])
+                menor = cafe[1];
+        else if (menor > cafe[2])
+                menor = cafe[2];
 
 ```
-Para isso passamos o valor de `cafe[0]` para menor para assim conseguirmos comparar essa posição inicial com a seguinte `cafe[1]`. Dentro do `for` temos o `if` que está fazendo a comparação para nos retornar o menor valor entre as três possíveis posições da cafeteira.
 
-Terminamos com o `printf` da variável `menor` pedida pelo Uri:
+Para isso, vamos assumir que o valor de `cafe[0]` é o menor e vamos compará-lo com as outras duas posições. Caso nosso `menor` seja maior que alguma posição, trocamos o valor de `menor` para o dessa posição.
+
+Terminamos com o `printf` da variável `menor` pedida pelo URI:
 
 ```c
        printf("%d\n", menor);
 ```
+
+#### Para aprender um pouco mais sobre: [Estrutura de repetição for](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),

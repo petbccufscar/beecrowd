@@ -2,13 +2,13 @@
 
 int main()
 {
-   int N, i, j, pivo, classificados;
+   int N, i, j, pivo, minclassificados;
    scanf("%d", &N);
    int Participantes[N];
    
-   int NumPassou;
-   scanf("%d", &NumPassou);
-   int Passou[NumPassou], cont=0;
+   int numpassou;
+   scanf("%d", &numpassou);
+
 
 
    for (i = 0; i < N; i++)
@@ -37,17 +37,17 @@ int main()
 
 	}
 
-   j=NumPassou;
-   i=NumPassou - 1;
+   j=numpassou;
+   i=numpassou - 1;
 
-   classificados=NumPassou;
+   minclassificados=numpassou;
 
    while (Participantes[j++] == Participantes[i])
    {
-         classificados++;                                         
+         minclassificados++;                                         
    }
    
-   printf("%d\n", classificados);
+   printf("%d\n", minclassificados);
 
    return 0;
 }

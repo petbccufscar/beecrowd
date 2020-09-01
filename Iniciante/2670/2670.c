@@ -14,12 +14,11 @@ int main()
 
    menor = cafe[0];
 
-   for (i = 1; i < 3; i++)
-   {
-      if(menor>cafe[i]){
-         menor=cafe[i];
-      }
-   }
+   if(menor > cafe[1])
+      menor = cafe[1];
+   else if (menor > cafe[2])
+      menor = cafe[2];
+      
    printf("%d\n", menor);
 
    return 0;

@@ -4,47 +4,28 @@ Em diversas competições acadêmicas, como a Olimpíada Brasileira de Informát
 
 Sua tarefa é ajudar a calcular o número de competidores classificados para a próxima fase. Você receberá uma lista de pontuações obtidas pelos competidores e o número mínimo de vagas para a fase seguinte e você deve decidir quantos competidores de fato vão se classificar.
 
-Exemplo de Entrada:
-
-                        10
-                        3
-                        1
-                        2
-                        3
-                        4
-                        5
-                        5
-                        4
-                        3
-                        2
-                        1
-
-Saída: 
-
-                        4
-
 
 ###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/2663
 
 # Resolução
 
-A questão do exercício é dado o número de questões e o número mínimo de classificados, definir a quantidade de pessoas que iram passar usando como critério a nota feita em cada exercício. 
+O problema do exercício é: dado o número de questões e o número mínimo de classificados, definir a quantidade de pessoas que irão passar de acordo com sua nota, considerando que podem haver notas empatadas na última posição.
 
 Começamos declarando e lendo algumas variáveis:
 
 ```c
-        int N, i, j, pivo, classificados;
+        int N, i, j, pivo, minclassificados;
         scanf("%d", &N);
         int Participantes[N];
         
-        int NumPassou;
-        scanf("%d", &NumPassou);
-        int Passou[NumPassou], cont=0;
+        int numpassou;
+        scanf("%d", &numpassou);
+        
 ```
 
-`N` é a variável que representa o número de participantes, `i, j` variáveis de iteração, `pivo` usado mais a frente para ajudar na troca de valores. Fazemos um `scanf` do `N` antes de declarar um vetor, devido a esse `N` ser o tamanho dele, `Participantes[N]` vetor que armazena a nota das questões dos participantes. `NumPassou` é a variável referente quantidade mínima de participantes, lemos ela no `scanf` pelo mesmo motivo de `N`, declaramos o vetor `Passou[NumPassou]` que representa o número total efetivo de candidatos que passaram e `cont` que servirá mais pra frente como um contador.
+`N` é a variável que representa o número de participantes, `i, j` variáveis de iteração, `pivo` usado mais a frente para ajudar na troca de valores. Fazemos um `scanf` do `N` antes de declarar um vetor, devido a esse `N` ser o tamanho dele, `Participantes[N]` vetor que armazena a nota das questões dos participantes. `numpassou` é a variável referente quantidade mínima de participantes, lemos ela no `scanf` pelo mesmo motivo de `N`.
 
-Seguimos para a leitura das notas de cada um dos `N` participantes:
+Seguimos para a leitura da nota de cada um dos `N` participantes:
 
 ```c
         for (i = 0; i < N; i++)
@@ -53,7 +34,7 @@ Seguimos para a leitura das notas de cada um dos `N` participantes:
         }
 ```
 
-Uma estratégia para se resolver o exercício é ordenar o vetor das notas `Participantes[]` para facilitar depois a verificação das maiores notas e definir os que iram passar.
+Uma estratégia para se resolver o exercício é ordenar o vetor `Participantes[]`, que contém as notas, e definir quantos irão passar baseado na nota do último aprovado.
 
 ```c
         i = 1;
@@ -76,28 +57,31 @@ Uma estratégia para se resolver o exercício é ordenar o vetor das notas `Part
 ```
 Iniciamos setando o `i=1` para podermos iniciar a comparação e assim comparar a primeira posição `[0]` com a segunda `[1]`, `j` receberá a primeira posição na primeira iteração e nas seguintes ele recebera a posição anterior `j = i-1`. `pivo` irá receber o valor da posição seguinte do vetor `Participantes[]`. Dentro do `while` o menor valor está sendo jogado para o final do vetor e ao sair é passado o maior valor para a posição anterior da que foi verificada dentro do `while`, fazendo com que os maiores números permaneçam no inicio do vetor, `i++` para seguir a comparação de todas as posições.    
 
-Setamos valores para `j` e `i` para podermos usar no `while` que irá fazer a verificação se há mais participantes classificados do que nos foi passado `NumPassou`(número mínimo de participantes), `classificados` é o nosso contador que será incrementado caso a situação explicada seja verdade, por isso ele de inicio tem que receber o valor mínimo de participantes `NumPassou`.
+Iniciamos os valores para `j` e `i` para podermos usar no `while` que irá fazer a verificação se há mais participantes classificados do que nos foi passado `numpassou`(número mínimo de participantes), `minclassificados` é o nosso contador que será incrementado caso a situação explicada seja verdade, por isso ele de inicio tem que receber o valor mínimo de participantes `numpassou`.
 
 ```c
-        j=NumPassou;
-        i=NumPassou - 1;
-        classificados=NumPassou;
+        j=numpassou;
+        i=numpassou - 1;
+        minclassificados=numpassou;
 ```
 
-Lembrando que tendo como número mínimo de participantes passados `NumPassou` e o vetor `Participantes[]` podemos tirar dai que as primeira posições do nosso vetor são os candidatos que já eram esperados passar e por isso iniciamos verificando se a posição seguinte a esse número já esperado é igual a anterior (última posição dos esperados para se classificar), e caso for classificados é incrementado.
+Como  sabemos o número mínimo de participantes aprovados `NumPassou` e temos o vetor de notas  `Participantes[]` ordenado, podemos concluir que as primeira posições do vetor são os primeiros candidatos aprovados. A partir da nota do último classificado, que está em `Participantes[j]`, vamos verificar quantos participantes tiraram a mesma nota e também devem ser aprovados. Nesse caso, incrementamos a variável `classificados` além do número mínimo.
 
 ```c
         while (Participantes[j++] == Participantes[i])
         {
-                classificados++;                                         
+                minclassificados++;                                         
         }
 ```
 
-Finalizamos printando a saída pedida pelo Uri:
+Finalizamos exibindo a saída pedida pelo URI:
 
 ```c
-       printf("%d\n", classificados);
+       printf("%d\n", minclassificados);
 ```
+#### Para aprender um pouco mais sobre: [Estrutura de repetição for](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
+
+#### Para aprender um pouco mais sobre: [Métodos de Ordenações](https://www.treinaweb.com.br/blog/conheca-os-principais-algoritmos-de-ordenacao/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
