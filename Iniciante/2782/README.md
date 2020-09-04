@@ -1,7 +1,7 @@
 # Problema
 
 Dizemos que uma sequência de números é uma escadinha, se a diferença entre números consecutivos é sempre a mesma. Por exemplo, “2, 3, 4, 5” e “10, 7, 4” são escadinhas. Note que qualquer sequência com apenas um ou dois números também é uma escadinha! Neste problema estamos procurando escadinhas em uma sequência maior de números. Dada uma sequência de números, queremos determinar quantas escadinhas existem. Mas só estamos interessados em escadinhas tão longas quanto possível. Por isso, se uma escadinha é um pedaço de outra, consideramos somente a maior. Por exemplo, na sequência “1, 1, 1, 3, 5, 4, 8, 12” temos 4 escadinhas diferentes: “1, 1, 1”, “1, 3, 5”, “5, 4” e “4, 8, 12”.
-#### Problema completo: [https://www.urionlinejudge.com.br/judge/pt/problems/view/2782]
+**Problema completo **: [https://www.urionlinejudge.com.br/judge/pt/problems/view/2782]
 
 # Resolução 
 
@@ -15,7 +15,7 @@ Agora, com a função `scanf`, lemos o tamanho da sequência.
     scanf("%d", &tamanho_sequencia);
 ```
 
-Dando continuidade, fazemos um loop `for`, com a variável auxiliar `i`, para receber os valores da sequência a ser analisada e armazená-los em `sequenica`. 
+Dando continuidade, fazemos um loop `for`, com a variável auxiliar `i`, para receber os valores da sequência a ser analisada e armazená-los em `sequencia`. 
 ``` c
     for (i = 0; i < tamanho_sequencia; i++) {
         scanf("%d", &sequencia[i]);

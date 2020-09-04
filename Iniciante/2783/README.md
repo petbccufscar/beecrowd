@@ -11,7 +11,7 @@ Dados o número total de espaços e figurinhas do álbum (N), a lista das figuri
 
 # Resolução
 
-De início declaramos as variáveis que usaremos, nesse caso: `carimbadas` que será nosso ponteiro de vetor para armazenar os valores das figurinhas que são carimbadas; `compradas` que assumirá os valores das figurinhas compradas; `carimbadas_restantes` que assumirá os valores das figurinhas obtidas que são carimbadas; `n_figurinhas` que assumirá o valor da quantidade total de figurinhas presente no álbum; `c_carimbadas` que assumirá o valor da quantidade de figurinhas carimbadas presentes no álbum; `m_compradas` que assumirá o valor do total de figurinhas compradas; `i` e `j` que serão variáveis auxiliares em futuros loops.
+De início declaramos as variáveis que usaremos, nesse caso: `carimbadas` que será um ponteiro para criação de um vetor que irá armazenar os valores das figurinhas que são carimbadas; `compradas` que assumirá os valores das figurinhas compradas; `carimbadas_restantes` que assumirá os valores das figurinhas obtidas que são carimbadas; `n_figurinhas` que assumirá o valor da quantidade total de figurinhas presente no álbum; `c_carimbadas` que assumirá o valor da quantidade de figurinhas carimbadas presentes no álbum; `m_compradas` que assumirá o valor do total de figurinhas compradas; `i` e `j` que serão variáveis auxiliares em futuros loops.
 
 ``` c
     int *carimbadas, compradas, carimbadas_obtidas;
