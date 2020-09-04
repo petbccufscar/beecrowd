@@ -7,7 +7,7 @@ Algumas figurinhas são carimbadas (efetivamente têm um carimbo impresso sobre 
 Para ajudar os usuários, a empresa responsável pela venda do álbum e das figurinhas quer criar um aplicativo que permita gerenciar facilmente as figurinhas que faltam para completar o álbum.
 
 Dados o número total de espaços e figurinhas do álbum (N), a lista das figurinhas carimbadas e uma lista das figurinhas já compradas (que pode conter figurinhas repetidas), sua tarefa é determinar quantas figurinhas carimbadas faltam para completar o álbum.
-#### Problema completo: [https://www.urionlinejudge.com.br/judge/pt/problems/view/2783]
+**Problema completo**: [https://www.urionlinejudge.com.br/judge/pt/problems/view/2783]
 
 # Resolução
 
