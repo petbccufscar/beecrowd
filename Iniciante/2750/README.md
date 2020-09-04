@@ -52,7 +52,7 @@ void faz_linha(){
 
 Utilizamos essa função em nosso código da seguinte forma: `faz_linha()`.
 
-Nesse momento, é importante percebermos que temos 39 caracteres por linha, basicamente 39 colunas que podem ser preenchidas com caracteres ou inteiros. É essencial se atentar ao tamanho das palavras ou números que estamos imprimindo na tela.
+Nesse momento, é importante percebermos que temos 39 caracteres por linha, basicamente 39 colunas que podem ser preenchidas com caracteres ou inteiros. Por isso, é essencial se atentar ao tamanho das palavras ou números que estaremos imprimindo na tela.
 
 Iniciamos um loop `for(i=0;i<39;i++)` para percorrer essas 39 colunas que temos, e preênche-las de acordo com o que foi pedido no enunciado.
 
