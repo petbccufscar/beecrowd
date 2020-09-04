@@ -38,7 +38,7 @@ Vamos a declaração de variáveis:
 ``` 
 
 Implementamos para esse exercício uma função `void faz_linha()` que se encarrega de escrever 39 traços na tela, que forma uma espécie de linha. Essa função está declarada antes do início da função principal(`int main`).
-Nota: Funções do tipo `void` não possuem retorno, como no nosso caso precisamos apenas que a função escreva na tela, é o tipo mais recomendado.
+Nota: Funções do tipo [void](https://www.pucsp.br/~so-comp/cursoc/aulas/c740.html#:~:text=Em%20ingl%C3%AAs%2C%20void%20quer%20dizer,fun%C3%A7%C3%A3o%20que%20n%C3%A3o%20retorna%20nada%3A&text=Se%20n%C3%A3o%20quisermos%2C%20basta%20declarar,tipo%2Dde%2Dretorno%20void.) não possuem retorno, como no nosso caso precisamos apenas que a função escreva na tela, é o tipo mais recomendado.
 
 ```c
 void faz_linha(){
@@ -61,7 +61,7 @@ Iniciamos um loop `for(i=0;i<39;i++)` para percorrer essas 39 colunas que temos,
 Durante o loop, passaremos por todas a posições e faremos verificações se correspondem a alguma posição que devemos inserir algo diferente de um espaço em branco, que é nosso caso "default". Começaremos o loop `for` em 0, o que nos leva a uma diferença de posição em relação ao exercício, que começa sua contagem a partir do 1. Assim, subtraimos 1 dessa posição dada pelo enunciado para encontrar o valor real no nosso loop. (Primeiro traço = 0, Décimo terceiro = 12 e assim por diante).
 
 * O primeiro `if` verifica as posições em que deve existir um traço vertical e caso positivo, imprime uma barra vertical na tela `printf("|")`;
-* O próximo `else if` verificam se está na posição inicial de a palavra decimal e caso positivo a imprime na tela e logo em seguida aumenta o contador em `strlen("decimal") - 1` pois temos um número limitado de caracteres para escrever (39) e nesse momento utilizamos `strlen("decimal")` que nos retorna o inteiro 7. Subtraimos 1 pois a primeira letra 'd' já foi considerada pela iteração do próprio loop
+* O próximo `else if` verificam se está na posição inicial de a palavra decimal e caso positivo a imprime na tela e logo em seguida aumenta o contador em `strlen("decimal") - 1` pois temos um número limitado de caracteres para escrever (39) e nesse momento utilizamos `strlen("decimal")` que nos retorna o inteiro 7. Ademais, subtraimos 1, porque a primeira letra 'd' já foi considerada pela iteração do próprio loop
 * Os próximos `else if` fazem o mesmo, mas para as palavras octal e Hexadecimal;
 * Por fim, o `else` imprime um espaço em branco na tela (caso em que não temos nenhuma posição determinada no enunciado do exercício).
   
