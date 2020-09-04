@@ -9,19 +9,17 @@ Neste ano, devido ao grande sucesso cultural e histórico e à enorme quantidade
  
 # Resolução:
 
-Começando pela declaração de variáveis, criamos uma variável do tipo inteiro `copo`, um iterador `i` para realizar o loop `for` e uma variável para armazenar a posição do feijao, chamada de `feijao_pos`
+Começando pela declaração de variáveis, criamos uma variável do tipo inteiro `copo`, um iterador `i` para realizar o loop `for` e uma variável para armazenar a posição do feijao, chamada de `feijao_pos`.
 
 ```c
 int i, copo, feijao_pos;
 ```
 
-Para receber os 4 valores, utilizamos um loop `for(i = 0; i < 4; i++)` começado em 0, enquanto o iterador ser < 4 (intervalo 0,1,2,3), com passo 1.
+Para receber os 4 valores, utilizamos um loop `for(i = 0; i < 4; i++)` começado em 0, que ocorrerá enquanto o iterador for < 4 (intervalo 0,1,2,3), com passo 1.
 
 Dentro do loop, recebemos um inteiro por meio da função `scanf` e armazenamos na variável `copo`.
 
-Assim, podemos verificar se o valor inserido nessa variável é 1, que é o que buscamos. Caso positivo, armazenamos a posição `i+1` na variável `feijao_pos` porém, utilizamos.
-
-Utilizamos `i+1` pois estamos trabalhando em um intervalo diferente do padrão, já que os copos vão de 1 a 4 e nosso `for` de 0 a 3.
+Assim, podemos verificar se o valor inserido nessa variável é 1, que é o que buscamos. Caso positivo, armazenamos a posição `i+1` na variável `feijao_pos`. Porém, utilizamos `i+1`, pois estamos trabalhando em um intervalo diferente do padrão, já que os copos vão de 1 a 4 e nosso `for` de 0 a 3 (mesma quantidade de elementos).
 
 ```c
    for(i = 0; i < 4; i++){
@@ -32,7 +30,7 @@ Utilizamos `i+1` pois estamos trabalhando em um intervalo diferente do padrão, 
     }
 ```
 
-Por fim, imprimimos a posição do feijão na tela, com a função `printf`
+Por fim, imprimimos a posição do feijão na tela, com a função `printf`.
 
 ```c
 printf("%d\n",feijao_pos);

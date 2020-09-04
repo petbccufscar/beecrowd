@@ -58,12 +58,12 @@ Iniciamos um loop `for(i=0;i<39;i++)` para percorrer essas 39 colunas que temos,
 
     "Ter uma | embaixo do primeiro traço, décimo terceiro, vigésimo terceiro e do trigésimo nono traço da primeira linha, embaixo do 4o traço deve começar a escrever “decimal”, embaixo do 16o traço deve começar a escrever “octal”, embaixo do 26o traço deve começar a escrever “Hexadecimal” e o restante preencher com espaço em branco;"
 
-Durante o loop, passaremos por todas a posições e faremos verificações se correspondem a alguma posição que devemos inserir algo diferente de um espaço em branco, que é nosso caso "default". Começaremos o loop `for` em 0, o que nos leva a uma diferença de posição em relação ao exercício, que começa sua contagem a partir do 1. Assim, subtraimos 1 dessa posição dada pelo enunciado para encontrar o valor real no nosso loop. (Primeiro traço = 0, Décimo terceiro = 12, etc...).
+Durante o loop, passaremos por todas a posições e faremos verificações se correspondem a alguma posição que devemos inserir algo diferente de um espaço em branco, que é nosso caso "default". Começaremos o loop `for` em 0, o que nos leva a uma diferença de posição em relação ao exercício, que começa sua contagem a partir do 1. Assim, subtraimos 1 dessa posição dada pelo enunciado para encontrar o valor real no nosso loop. (Primeiro traço = 0, Décimo terceiro = 12 e assim por diante).
 
-* O primeiro `if` verifica as posições em que deve existir um traço vertical e caso positivo, imprime uma barra vertical na tela `printf("|")`
+* O primeiro `if` verifica as posições em que deve existir um traço vertical e caso positivo, imprime uma barra vertical na tela `printf("|")`;
 * O próximo `else if` verificam se está na posição inicial de a palavra decimal e caso positivo a imprime na tela e logo em seguida aumenta o contador em `strlen("decimal") - 1` pois temos um número limitado de caracteres para escrever (39) e nesse momento utilizamos `strlen("decimal")` que nos retorna o inteiro 7. Subtraimos 1 pois a primeira letra 'd' já foi considerada pela iteração do próprio loop
-* Os próximos `else if` fazem o mesmo, mas para as palavras octal e Hexadecimal.
-* Por fim, o else imprime um espaço em branco na tela (caso em que não temos nenhuma posição determinada no enunciado do exercício).
+* Os próximos `else if` fazem o mesmo, mas para as palavras octal e Hexadecimal;
+* Por fim, o `else` imprime um espaço em branco na tela (caso em que não temos nenhuma posição determinada no enunciado do exercício).
   
 ```c
 for(i=0;i<39;i++) {
@@ -96,7 +96,7 @@ Após essa linha escrita, temos mais uma linha com 39 traços, portanto:
     faz_linha();
 ```
 
-Nessa próxima parte, iremos escrever as 16 linhas que contêm os números, que já estão salvos nos vetores declarados no começo do exercício e para cada linha, percorrermos as 39 "colunas" uma a uma, verificando as condições de escrita que o exercício nos passa. Novamente, estamos com o iterador `i` variando de 0 a 38, então para todas as verificações, faremos  -1 na posição passada pelo enunciado.
+Nessa próxima parte, iremos escrever as 16 linhas que contêm os números, que já estão salvos nos vetores declarados no começo do exercício, e percorreremos, para cada linha, as 39 "colunas", uma a uma, verificando as condições de escrita que o exercício nos passa. Novamente, estamos com o iterador `i` variando de 0 a 38, então para todas as verificações, faremos "-1" na posição passada pelo enunciado.
 
 PS: Os trechos de código a seguir estão contidos dentro do loop for interno, os blocos condicionais serão separados a fim de tornar a explicação mais didática.
 
@@ -108,7 +108,7 @@ for(k=0;k<16;k++) {
 }
 ```
 
-No primeiro condicional, verificaremos as posições em que imprimimos uma barra vertical
+No primeiro condicional, verificaremos as posições em que imprimiremos uma barra vertical.
     
     "Ter uma | embaixo do primeiro traço, décimo terceiro, vigésimo terceiro e do trigésimo nono traço da primeira linha"
 
@@ -118,11 +118,11 @@ No primeiro condicional, verificaremos as posições em que imprimimos uma barra
     }
 ```
 
-No segundo bloco de verificação, agora um `else if` temos dois casos para imprimir decimais.
-* Caso 1: `i==7` imprimimos na tela o decimal na posição solicitada pelo exercício.
-* Caso 2: Linha maior que 9 (`k>9`), ou seja, estamos lidando com um número de dois dígitos, e portanto, devemos imprimi-lo uma coluna antes, para as unidades ficarem alinhadas verticalmente. Para isso, deve satisfazer a condição `i==6 && k>9`
+No segundo bloco de verificação, agora um `else if`, temos dois casos para imprimir decimais:
+* Caso 1: `i==7` imprimimos na tela o decimal na posição solicitada pelo exercício;
+* Caso 2: Linha maior que 9 (`k>9`), ou seja, estamos lidando com um número de dois dígitos, e portanto, devemos imprimi-lo uma coluna antes, para as unidades ficarem alinhadas verticalmente. Para isso, deve satisfazer a condição `i==6 && k>9`.
 
-O condicional interno verifica se estamos imprimindo um número de 2 digítos, e caso positivo, aumenta nosso contador `i` em 1, para não ultrapassar os 39 caracteres máximos e desalinhas a "tabela" que estamos criando.
+O condicional interno verifica se estamos imprimindo um número de 2 digítos, e caso positivo, aumenta nosso contador `i` em 1, para não ultrapassar os 39 caracteres máximos e desalinhar a "tabela" que estamos criando.
 
 ```c
 else if((i==7)||((i==6) && (k > 9))){
@@ -133,11 +133,11 @@ else if((i==7)||((i==6) && (k > 9))){
 ```
 
 
-No terceiro bloco de verificação, novamente `else if` temos a mesma divisão feita para os decimais, porém, com os números octais
-* Caso 1: `i==17` imprimimos na tela o octal na posição solicitada pelo exercício.
-* Caso 2: Linha maior que 7 (`k>7`), ou seja, estamos lidando com um número de dois dígitos, e portanto, devemos imprimi-lo uma coluna antes, para as unidades ficarem alinhadas verticalmente. Para isso, deve satisfazer a condição `i==16 && k>7`
+No terceiro bloco de verificação, novamente `else if`, temos a mesma divisão feita para os decimais, porém, com os números octais.
+* Caso 1: `i==17` imprimimos na tela o octal na posição solicitada pelo exercício;
+* Caso 2: Linha maior que 7 (`k>7`), ou seja, estamos lidando com um número de dois dígitos, e portanto, devemos imprimi-lo uma coluna antes, para as unidades ficarem alinhadas verticalmente. Para isso, deve satisfazer a condição `i==16 && k>7`;
 
-O condicional interno verifica se estamos imprimindo um número de 2 digítos, e caso positivo, aumenta nosso contador `i` em 1, para não ultrapassar os 39 caracteres máximos e desalinhas a "tabela" que estamos criando.
+O condicional interno verifica se estamos imprimindo um número de 2 digítos, e caso positivo, aumenta nosso contador `i` em 1, para não ultrapassar os 39 caracteres máximos e desalinhar a "tabela" que estamos criando.
 
 ```c
 else if((i==17) ||((i==16) && (k > 7))){
@@ -186,7 +186,7 @@ E claro, não se esqueça do `return 0`
 ```
 
 
-Obs: Alguns `printf("\n")` foram omitidos durante essa explicação, porém são necessários para a formação da tabela como pede no enunciado. Consulte o arquivo 2750.c nessa mesma pasta!
+Obs: Alguns `printf("\n")` foram omitidos durante essa explicação, porém são necessários para a formação da tabela como pede no enunciado. Aconselho que consulte o arquivo 2750.c nessa mesma pasta para verificar tais casos!
 
 #### Para aprender sobre funções: [Funções](http://linguagemc.com.br/funcoes-em-c/#:~:text=Uma%20fun%C3%A7%C3%A3o%20nada%20mais%20%C3%A9,do%20nome%20atribu%C3%ADdo%20a%20ela.)
 
