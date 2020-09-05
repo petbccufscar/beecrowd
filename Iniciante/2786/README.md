@@ -24,7 +24,7 @@ Após informarmos as variáveis que serão utilizadas dentro da `int main(){}`, 
 scanf("%d %d",&Largura,&Comprimento);
 ```
 
-Em seguida, com os valores de `L` e `C` declarados, basta fazermos o cálculo para descobrirmos o número de ladrilhos do tipo 1 e do tipo 2. O cálculo é feito da seguinte forma:
+Em seguida, com os valores de `Largura` e `Comprimento` declarados, basta fazermos o cálculo para descobrirmos o número de ladrilhos do tipo 1 e do tipo 2. O cálculo é feito da seguinte forma:
 
 ```c
 tipo1 = (Largura+Largura-1)*(Comprimento-1)+L;
