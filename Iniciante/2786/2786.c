@@ -2,7 +2,7 @@
  
 int main() {
  
-    int L,C,type1,type2;
+    int Largura,Comprimento,tipo1,tipo2;
 
     scanf("%d %d",&L,&C);
 
