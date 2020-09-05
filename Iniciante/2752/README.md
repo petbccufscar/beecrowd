@@ -23,7 +23,7 @@ Para começar declaramos a única variável do problema: `frase`, que é um veto
 ```c
 char frase[50] = "AMO FAZER EXERCICIO NO URI";
 ```
-Note que ao ser iniciado o vetor recebe a frase "AMO FAZER EXERCICIO DE URI" que possui 26 caracteres.
+Note que, ao ser iniciado, o vetor recebe a frase "AMO FAZER EXERCICIO DE URI", que possui 26 caracteres.
 
 Depois, podemos realizar todas as impressões com as características listadas no problema:
 
