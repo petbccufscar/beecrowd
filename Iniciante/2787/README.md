@@ -35,7 +35,7 @@ int main() {
 }
 ```
 
-Após informarmos as variáveis que serão utilizadas no decorrer do problema, usamos o comando `scanf` para informarmos os valores de `L` e `C`, linhas e colunas, da matriz.
+Após informarmos as variáveis que serão utilizadas no decorrer do problema, usamos o comando `scanf` para lermos os valores de `L` e `C`, que serão as linhas e colunas, da matriz.
 
 ```c
 scanf("%d %d",&L,&C);
