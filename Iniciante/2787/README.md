@@ -4,14 +4,6 @@ No tabuleiro de xadrez, o quadrado do tabuleiro da linha 1, coluna 1 (canto supe
 
 ![Imagem_Da_Descrição](https://resources.urionlinejudge.com.br/gallery/images/problems/UOJ_2787.png)
 
-**Input**
-
-A primeira linha da entrada contém um inteiro L (1 ≤ L ≤ 1000) indicando o número de linhas no tabuleiro de xadrez. A segunda linha da entrada contém um inteiro C (1 ≤ C ≤ 1000) representando o número de colunas.
-
-**Output**
-
-Imprima uma linha na saída. A linha deve conter um inteiro, representando a cor da casa no canto inferior direito do tabuleiro: 1, se for branco; e 0, se for preto.
-
 **Problema Completo:** https://www.urionlinejudge.com.br/judge/en/problems/view/2787
 
 # Resolução:
