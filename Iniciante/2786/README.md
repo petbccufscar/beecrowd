@@ -12,28 +12,28 @@ A loja fornecerá ladrilhos do tipo 1: inteiros; do tipo 2, que são da metade d
 
 # Resolução:
 
-Para resolver este problema apenas utilizamos os comandos `scanf`, `printf` e fazemos um cálculo relativamente simples. Primeiramente, dentro da `int main(){}` devemos declarar as variáveis que serão utilizadas para a resolução deste problema, que no caso são `L` e `C` do tipo inteiro, que receberão seus valores através do comando `scanf`; E as variáveis `type1` e `type2` também do tipo inteiro, que serão utilizadas para realizar o cálculo e receberão o número de ladrilhos do tipo 1 e tipo 2 necessários.
+Para resolver este problema apenas utilizamos os comandos `scanf`, `printf` e fazemos um cálculo relativamente simples. Primeiramente, dentro da `int main(){}` devemos declarar as variáveis que serão utilizadas para a resolução deste problema, que no caso são `Largura` e `Comprimento` do tipo inteiro, que receberão seus valores através do comando `scanf`; E as variáveis `tipo1` e `tipo2` também do tipo inteiro, que serão utilizadas para realizar o cálculo e receberão o número de ladrilhos do tipo 1 e tipo 2 necessários.
 
 ```c
-int L,C,type1,type2;
+int Largura,Comprimento,tipo1,tipo2;
 ```
 
-Após informarmos as variáveis que serão utilizadas dentro da `int main(){}`, usamos o comando `scanf` para informamos as medidas da sala em questão, sendo `L` e `C`, metros de largura e metros de comprimento, respectivamente.
+Após informarmos as variáveis que serão utilizadas dentro da `int main(){}`, usamos o comando `scanf` para informamos as medidas da sala em questão, sendo `Largura` e `Comprimento`, metros de largura e metros de comprimento, respectivamente.
 
 ```c
-scanf("%d %d",&L,&C);
+scanf("%d %d",&Largura,&Comprimento);
 ```
 
 Em seguida, com os valores de `L` e `C` declarados, basta fazermos o cálculo para descobrirmos o número de ladrilhos do tipo 1 e do tipo 2. O cálculo é feito da seguinte forma:
 
 ```c
-type1 = (L+L-1)*(C-1)+L;
-type2 = ((L-1)*2) + ((C-1)*2);
+tipo1 = (Largura+Largura-1)*(Comprimento-1)+L;
+tipo2 = ((Largura-1)*2) + ((Comprimento-1)*2);
 ```
 
 E por fim, escrevemos o nosso resultado com o comando `printf`, conforme demonstrado abaixo.
 
 ```c
-printf("%d\n", type1);
-printf("%d\n", type2);
+printf("%d\n", tipo1);
+printf("%d\n", tipo2);
 ```
