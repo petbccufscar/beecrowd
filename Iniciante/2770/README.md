@@ -21,7 +21,7 @@ Começamos declarando nossas variáveis que serão utilizadas no problema, todas
 	int alturaPci, larguraPci, i;
 ```
 
-Inicializamos a estrutura de repetição `while`, com a leitura de EOF da estrutura `scanf` como critério de parada. 
+Inicializamos a estrutura de repetição `while`, com a leitura das dimensões da placa e a quatidade de pedidos pela estrutura `scanf`. O critério de parada é a leitura de um EOF. 
 ```c
 	while (scanf("%d %d %d", &alturaPlaca, &larguraPlaca, &qtsPedidos) != EOF)
 ```
