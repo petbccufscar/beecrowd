@@ -2,7 +2,7 @@
 
 int main(){
 	int i;
-	char palavra[40];
+	char palavra[30];
 
 	for (i = 1; i <= 10; i++){
 		scanf("%s", palavra);

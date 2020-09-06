@@ -10,17 +10,17 @@ O seu professor gostaria de fazer um programa com as seguintes características:
 
 # Resolução:
 
-Iniciaremos a resolução deste problema declarando as variaveis que iremos utilizar, serão 3 variaveis do tipo inteiro onde iremos armazenar os valores correspondentes as datas que iremos receber como entrada
+Iniciaremos a resolução deste problema declarando as 3 variáveis do tipo inteiro que iremos utilizar, nas quais serão armazenados os valores correspondentes às datas recebidas como entrada
 ```c
   int dia, mes, ano;
 ```
 
-Durante a nossa leitura através da função `scanf` ao deparar com um caractere "/" ele irá interromper a leitura e ira procurar por novos valores, salvando estes em cada variavel, dividindo em 3 blocos de numeros inteiros
+Durante a leitura (através da função `scanf`), ao deparar-se com um caractere "/", este será ignorado e os demais valores serão salvos em cada variável, dividindo-os em 3 blocos de números inteiros.
 ```c
 	scanf("%d/%d/%d", &dia, &mes, &ano);
 ```
 
-Após realizada a leitura dos 3 valores inteiros iremos apenas imprimir estes seguindo a formatação proposta pelo problema
+Após realizada a leitura dos 3 valores inteiros, iremos apenas imprimi-los seguindo a formatação proposta pelo problema. Para isto, utilizamos o argumento `%02d`, garantindo que o valor que será apresentado irá, necessariamente, possuir 2 dígitos, colocando um "0" a esquerda quando necessário.
 ```c
   printf("%02d/%02d/%02d\n", mes, dia, ano);
   printf("%02d/%02d/%02d\n", ano, mes, dia);

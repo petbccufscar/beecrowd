@@ -9,20 +9,21 @@ O seu professor gostaria de fazer um programa com as seguintes características:
 
 # Resolução:
 
-Iniciaremos a resolução deste problema declarando as variaveis que iremos utilizar, serão 2 variaveis "char" `primeira` e `segunda` onde iremos armazenar, respectivamente, a primeira parte a segunda parte da frase que iremos receber como entrada
+Iniciaremos a resolução deste problema declarando as 2 variáveis do tipo `char` que iremos utilizar: `primeira` e `segunda`, onde armazenaremos, respectivamente, a 1ª e a 2ª parte da frase recebida como entrada.
 ```c
 char primeira[100];
 char segunda[100];
 ```
 
-Iremos realizar a leitura da frase de outra maneira, utilizando os delimitadores `%[^,],%[^\n]`:
-- `%[^,],` percorre a entrada até encontrar uma virgula e salva na variavel `primeira`, ao colocar a virgula após fechar o colchetes, irá descartar a virgula, armazenando apenas as letras.
-- `%[^\n]` percorre até encontrar um `\n` que indica o final da frase e armazena o conteudo em nossa variavel `segunda`.
+A leitura da frase será feita utilizando os delimitadores `%[^,]` e `%[^\n]`:
+- `%[^,]` percorre a entrada (salvando seu conteúdo em `primeira`) até encontrar uma vírgula;
+- `%[^\n]` percorre o restante da entrada (armazenando-a na variável `segunda`) até encontrar um `\n`, que indica o final da frase).  
+Além disso, inserimos uma vírgula (,) entre os dois delimitadores para que esta seja descartada quando lida.
 ```c
 scanf("%[^,],%[^\n]", &primeira, &segunda);
 ```
 
-Ao final, imprimimos a primeira parte da frase sem considerar a virgula, e na linha de baixo a segunda parte da frase.
+Ao final, imprimimos a primeira parte da frase (sem considerar a virgula) e, na linha abaixo, a segunda.
 ```c
 printf("%s\n", primeira);
 printf("%s\n", segunda);

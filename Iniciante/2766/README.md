@@ -10,13 +10,13 @@ O seu professor gostaria de fazer um programa com as seguintes características:
 
 # Resolução:
 
-Iniciaremos a resolução deste problema declarando as variaveis que iremos utilizar, serão 1 variavel do tipo inteiro a qual iremos utilizar em nosso laço de repetição `for` e uma variavel do tipo "char" na qual iremos armazenar, a cada iteração, uma palavra.
+Iniciaremos a resolução deste problema declarando as 2 variáveis que iremos utilizar: `i`, do tipo inteiro, para utilizar no laço de repetição `for`; e `palavra`, do tipo `char`, na qual será armazenada, a cada iteração, uma palavra diferente e com tamanho máximo igual a 30.
 ```c
 int i;
-char palavra[40];
+char palavra[30];
 ```
 
-Iremos realizar um total de 10 iterações variando o valor de i de "1" até "10", a cada iteração iremos realizar a leitura da palavra que iremos receber como entrada
+Iremos incrementar `i` até 10 (número máximo de linhas do arquivo), para que possamos realizar um total de 10 iterações. Em cada uma destas, faremos a leitura da palavra fornecida como entrada.
 ```c
 for (i = 1; i <= 10; i++){
 	scanf("%s", palavra);
@@ -24,7 +24,7 @@ for (i = 1; i <= 10; i++){
 }
 ```
 
-Ainda dentro de nosso laço `for` após ler a palavra, verificamos se a iteração que estamos possui como indice "3", "7" ou "9", caso positivo para alguma desses condições, realizamos a impressão desta palavra na tela.
+Em seguida, ainda dentro de nosso laço `for`, verificamos se a iteração atual possui índice "3", "7" ou "9". Caso positivo para alguma desses condições, a estrutura `if` garante que seja realizada a impressão de `palavra` na tela.
 ```c
 if (i == 3 || i == 7 || i == 9)
 	printf("%s\n", palavra);
