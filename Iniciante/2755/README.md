@@ -48,7 +48,8 @@ Sempre lembrando da quebra de linha `\n` necessária em todas as etapas:
 ```c
         printf("(\"_\") ('.')\n");
 ```
-Nessa etapa final só se atentar ao tentar imprimir aspas duplas, não basta apenas colocar ela dentro do `printf` devido a função compreender isso como uma palavra chave, então devemos usar o mesmo modo que usamos na primeira etapa para exibir as aspas duplas que é `\"`. Com isso finalizamos o exercício.
+
+Nessa etapa final só se atentar ao tentar imprimir aspas duplas, não basta apenas colocar ela dentro do `printf` porque a função vai entender o " como uma palavra chave, então devemos usar o mesmo modo que usamos na primeira etapa para exibir as aspas duplas que é `\"`. Com isso finalizamos o exercício.
 
 #### Para aprender um pouco mais sobre: [Formatação da frase dentro do printf](http://excript.com/linguagem-c/caracter-escape-c.html)
 
