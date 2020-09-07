@@ -33,7 +33,7 @@ O vetor de caracteres `*letra` é usado para guardar a o código da letra que qu
     char *letra;
 ```
 
-Abaixo declaramos 3 vetores de caracteres, cada um deles possuem as letras conforme o padrão de pontos dela, por exemplo `um[10]` só tem letras que tem um ponto entre espaços. Cada vetor guarda conjunto de letras de acordo com o modelo de pontos, sendo assim `dois[10]` tem o padrão de letras com 2 pontos e `tres[10]` tem o de 3 pontos.
+Abaixo declaramos 3 vetores de caracteres, cada um deles possui letras conforme o padrão de pontos do código, por exemplo `um[10]` só tem letras que tem um ponto entre espaços. Cada vetor guarda conjunto de letras de acordo com o modelo de pontos, sendo assim `dois[10]` tem o padrão de letras com 2 pontos e `tres[10]` tem o de 3 pontos.
 
 ```c
     char um[10] = {'a', 'd', 'g', 'j', 'm', 'p', 's', 'v', 'y', '\0'};
