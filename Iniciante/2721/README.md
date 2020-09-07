@@ -11,7 +11,7 @@ Dado o número de bolas de neve feitas por cada Rena, determine qual Rena ganhou
 
 O exercício consiste em ler as 9 quantidades de bolinhas e imprimir a última rena a pegar a bolinha.
 
-Primeiro definimos os nomes das `renas` na respectiva ordem.
+Primeiro definimos os nomes das `renas` na respectiva ordem.  
 Agora instanciamos as variáveis necessárias, sendo elas: 3 `int` (`i` para o `for()` que será utilizado; `A` para ler o número de bolinhas; e `soma` para a soma dos valores).
 
 ```c
