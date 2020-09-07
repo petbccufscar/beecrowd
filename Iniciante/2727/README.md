@@ -65,7 +65,7 @@ Por seguinte, usamos a função `malloc` para alocar dinâmicamente um espaço n
 
 Neste laço, percorremos cada caractere de `letra` a fim de contar a quantidade de espaços e descobrir qual é o padrão de pontos do código correspondente. 
 
-Na primeira condicional é verificado se o caractere atual é um espaço, caso seja, `espaco` é acrescida de uma unidade. Dentro do `else` a quantidade de pontos apenas é aumentada se ainda não achou nenhum caractere de espaço.
+Na primeira estrutura condicional `if` é verificado se o caractere atual é um espaço, caso seja, `espaco` é acrescida de uma unidade. Dentro do `else` a quantidade de pontos apenas é aumentada se ainda não achou nenhum caractere de espaço.
 
 ```c
             for (j = 0; j < strlen(letra); j++)
