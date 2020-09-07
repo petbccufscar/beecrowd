@@ -24,7 +24,7 @@ Primeiramente, como iremos trabalhar com string e alocação dinâmica, é neces
     #include <string.h>
 ```
 
-A seguinte, declararemos as variáveis inteiras `n`(número de letras), `i` e `j` são auxiliares para iteração dentro de loops. Usamos `qtd` como um contador de pontos que o padrão do código tem e `espaco` é utilizada para contar a quantidade de espaços que o código possui.
+A seguinte, declaramos as variáveis inteiras `n`(número de letras), `i` e `j` são auxiliares para iteração dentro de loops. Usamos `qtd` como um contador de pontos que o padrão do código tem e `espaco` é utilizada para contar a quantidade de espaços que o código possui.
 
 O vetor de caracteres `*letra` é usado para guardar a o código da letra que queremos traduzir.
 
