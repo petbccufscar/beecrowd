@@ -15,7 +15,7 @@ Primeiro definimos os nomes das `renas` na respectiva ordem.
 Agora instanciamos as variáveis necessárias, sendo elas: 3 `int` (`i` para o `for()` que será utilizado; `A` para ler o número de bolinhas; e `soma` para a soma dos valores).
 
 ```c
-	char *renas[] = {"Rudolph","Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"};
+    char *renas[] = {"Rudolph","Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"};
     int i, A, soma = 0;
 ```
 

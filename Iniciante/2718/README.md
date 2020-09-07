@@ -16,7 +16,7 @@ Começamos lendo o número de grupos.
 Obs: Como vamos ler um `unsigned long long`, iremos ler utilizando `%llu`.
 
 ```c
-	unsigned long long X;
+    unsigned long long X;
     int max, seq, N;
     scanf("%d", &N);
 ```
@@ -34,27 +34,27 @@ Agora iremos utilizar um `while(N--)` para passar por todos os grupos. Dentro de
     }
 ```
 
-Nesse `while(X > 0)` verificamos se o bit mais à direita é 1 (logo indicando que a lâmpada esteja queimada), caso verdadeiro incrementamos `seq` e se `seq > max` colocamos o conteúdo de `seq` em `max`, caso contrário seremos `seq`. Ao final do `while` damos um shift para a direita em `X`, o shift transloca todos os bits um bit para a direita e o bit mais à esquerda se torna `0`, os operadores de shift são conhecidos como bitwise.
-Obs: Esse `while` so vai terminar quando todos os bits do `X` forem 0, ou seja, quando ele armazenar o 0, por isso `X > 0`.
+Nesse `while(X > 0)` verificamos se o bit mais à direita é 1 (logo indicando que a lâmpada esteja queimada), caso verdadeiro incrementamos `seq` e se `seq > max` colocamos o conteúdo de `seq` em `max`, caso contrário zeramos `seq`. Ao final do `while` damos um shift para a direita em `X`, o shift transloca todos os bits um bit para a direita e o bit mais à esquerda se torna `0`, os operadores de shift são conhecidos como bitwise.  
+**Obs:** Esse `while` so vai terminar quando todos os bits do `X` forem 0, ou seja, quando ele armazenar o 0, por isso `X > 0`.
 
 ```c
     while (X > 0) {
-            if ((X & 1) == 1) {
-                seq++;
-                if (seq > max) {
-                    max = seq;
-                }
-            } else {
-                seq = 0;
+        if ((X & 1) == 1) {
+            seq++;
+            if (seq > max) {
+                max = seq;
             }
-            X >>= 1;
+        } else {
+            seq = 0;
         }
+        X >>= 1;
+    }
 ```
 
 Ao final do `while` externo imprimimos o valor de `max` (que é a maior sequência de lâmpadas queimadas do grupo referente) antes de o reiniciar.
 
 ```c
-    printf("%d\N", max);
+    printf("%d\n", max);
 ```
 
 ##### Para aprender um pouco mais sobre a estrutura While: [While](http://linguagemc.com.br/o-comando-while-em-c/)

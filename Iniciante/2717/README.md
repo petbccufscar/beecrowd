@@ -13,7 +13,7 @@ E lemos os valores de `N`, `A` e `B`.
 
 
 ```c
-	int N, A, B;
+    int N, A, B;
     scanf("%d", &N);
     scanf("%d %d", &A, &B);
 ```
