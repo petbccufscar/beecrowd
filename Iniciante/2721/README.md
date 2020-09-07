@@ -19,7 +19,7 @@ Agora instanciamos as variáveis necessárias, sendo elas: 3 `int` (`i` para o `
     int i, A, soma = 0;
 ```
 
-Para ler os 9 valores de bolinhas iremos utilizar um `for()` e conforme vamos lendo já vamos somá-lo a `soma`.
+Para ler os 9 valores de bolinhas iremos utilizar um `for()` e, conforme vamos lendo, incrementamos o valor de `soma` com o valor lido.
 
 ```c
     for (i = 0; i < 9; i++)
