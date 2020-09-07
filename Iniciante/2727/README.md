@@ -13,7 +13,7 @@ O código secreto funciona da seguinte forma:
 
 # Resoluçāo:
 
-Neste exercício declaramos 3 vetores que possuem as letras em ordem de número de espaço, ou seja o código do primeiro elemento não tem espaço, e cada elemento seguinte tem um espaço a mais que o anterior. Também cada vetor representa um padrão de pontos, o primeiro o código cada letra tem apenas 1 ponto entre os espaços, já no último tem 3 pontos entre espaços.  
+Neste exercício declaramos 3 vetores que organizam as letras de acordo com a ordem do número de espaços, ou seja, o código do primeiro elemento não tem espaço, e cada elemento seguinte tem um espaço a mais que o anterior. Também cada vetor representa um padrão de pontos. Isto é, o primeiro vetor representa letras em que o código tem apenas 1 ponto entre os espaços, o segundo vetor representa letras em que o código tem 2 pontos entre os espaços e o terceiro vetor representa letras em que o código tem 3 pontos entre espaços.  
 
 De modo geral, ideia deste problema é acharmos a quantidade de espaços e o padrão de pontos que a letra tem. A partir destes dados, a letra traduzida será encontrada no vetor com o padrão de pontos dela e na posição que corresponde a quantidade de espaço da mesma.
 
