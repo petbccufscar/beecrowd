@@ -29,13 +29,14 @@ Para ler os 9 valores de bolinhas iremos utilizar um `for()` e, conforme vamos l
     }
 ```
 
-Agora nos resta imprimir a rena ganhadora com base no resto das bolinhas (`[soma % 9]`).
+Agora nos resta imprimir a rena ganhadora com base no resto das bolinhas (`[soma % 9]`). Iremos utilizar o operador `%` para pegar o resta da divisão; que nesse caso será um valor inteiro de 0 a 8, que são os valores possíveis; de forma resumida é o valor que sobra e é menor que o divisor e que se nao fosse uma divisão inteira seria referente ao valor decimal menor que 1 do resultado. Como será um valor de 0 a 8 ele será usado como índice para selecionar o nome da rena vencedora no vetor de char `*renas[]`.
 
 ```c
     printf("%s\n", renas[soma % 9]);
 ```
 
 ##### Para aprender um pouco mais sobre a estrutura for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
+##### Para aprender um pouco mais sobre o resto de divisão inteira: [Divisão](http://linguagemc.com.br/resto-de-uma-divisao-inteira-em-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
