@@ -29,7 +29,7 @@ Para ler os 9 valores de bolinhas iremos utilizar um `for()` e, conforme vamos l
     }
 ```
 
-Agora nos resta imprimir a rena ganhadora com base no resto das bolinhas (`[soma % 9]`). Iremos utilizar o operador `%` para pegar o resta da divisão; que nesse caso será um valor inteiro de 0 a 8, que são os valores possíveis; de forma resumida é o valor que sobra e é menor que o divisor e que se nao fosse uma divisão inteira seria referente ao valor decimal menor que 1 do resultado. Como será um valor de 0 a 8 ele será usado como índice para selecionar o nome da rena vencedora no vetor de char `*renas[]`.
+Agora nos resta imprimir a rena ganhadora com base no resto das bolinhas (`[soma % 9]`). Iremos utilizar o operador `%` para pegar o resto da divisão, que nesse caso será um valor inteiro de 0 a 8, que são os valores possíveis de um resto de divisão por 9. Utilizamos o resto pois toda "volta" completa no vetor é um múltiplo de 9, logo, precisamos saber apenas o que resta da divisão. Dessa forma, usamos o resultado como índice para selecionar o nome da rena vencedora no vetor de char `*renas[]`.
 
 ```c
     printf("%s\n", renas[soma % 9]);
