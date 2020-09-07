@@ -84,7 +84,7 @@ Na primeira estrutura condicional `if` é verificado se o caractere atual é um 
             }
 ```
 
-Possuindo os valores de `qtd` e `espaco`, verificamos por meio de condicionais para saber qual é o modelo de pontos do código, podendo ser de 1 a 3 pontos. Após descobrir este padrão, imprimimos o elemento correspondente a posição `espaco`.
+Em seguida, com o padrão do código já descoberto, imprimimos a letra correspondente, de acordo com os valores `qtd` e `espaco` .  
 
 ```c
     if (qtd == 1)
