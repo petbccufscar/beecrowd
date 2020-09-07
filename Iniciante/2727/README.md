@@ -41,7 +41,7 @@ Abaixo declaramos 3 vetores de caracteres, cada um deles possui letras conforme 
     char tres[10] = {'c', 'f', 'i', 'l', 'o', 'r', 'u', 'x', '\0'};
 ```
 
-O laço do `while` é repetido até que o que for lido não seja o fim do arquivo, usamos a constante `EOF` para fazer esta comparação. Por seguinte, usamos a função `fflush` passando o `stdin` como parâmetro para poder limpar o buffer, a fim de evitar que caracteres não desejados sejam lidos.
+O laço do `while` é repetido enquanto o fim do arquivo não for lido , usamos a constante `EOF` para fazer esta comparação. Por seguinte, usamos a função `fflush` passando o `stdin` como parâmetro para poder limpar o buffer, a fim de evitar que caracteres não desejados sejam lidos.
 
 ```c
     while ((scanf("%d", &n)) != EOF)
