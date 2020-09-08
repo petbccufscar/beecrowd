@@ -28,7 +28,7 @@ Depois, lemos o `distancia`.
 scanf("%d", &distancia);
 ```
 
-Em seguida, imprimimos o resultado. Caso o valor lido seja menor ou igual a 800, imprimimos 1. Caso seja maior que 800 e menor que 1400, imprimirmos 2. Caso seja maior que 1400, imprimimos 3.
+Em seguida, imprimimos o resultado. Caso o valor lido seja menor ou igual a 800, imprimimos 1. Caso seja maior que 800 e menor ou igual a 1400, imprimirmos 2. Caso seja maior que 1400, imprimimos 3.
 
 ```c
 if (distancia <= 800)
