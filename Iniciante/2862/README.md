@@ -30,7 +30,7 @@ for (i = 0; i < C; i++) {
         scanf("%d", &N);
 ```
 
-Se o nível for maior que 8000, imprimimos "Mais de 8000!" na tela e pulamos para a próxima linha. Note que a condição é estritamente maior que 8000, ou seja, a partir de 8001. Se não, imprimimos "Inseto!" e também pulamos a linha.
+Se o nível for maior que 8000, imprimimos `"Mais de 8000!"` na tela e pulamos para a próxima linha. Note que a condição é estritamente maior que 8000, ou seja, a partir de 8001. Se não, imprimimos `"Inseto!"` e também pulamos a linha.
 
 ```c
     if (N > 8000) {
