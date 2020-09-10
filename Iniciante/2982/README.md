@@ -20,12 +20,12 @@ scanf("%d%*c", &n);
 Em nosso laço principal realizamos a leitura da operação que for realizada, seja ela "G" ou "V", e em seguida o valor da mesma. Após isso caso a operação seja igual a "G" subtraímos o valor da quantia presente em `total`, caso contrario incrementamos este valor ao total.
 ```c
 for (i = 0; i < n; ++i){
-    scanf("%c %d%*c", &op, &valor);
+  scanf("%c %d%*c", &op, &valor);
 
-    if (op == 'G')
-        total -= valor;
-    else
-        total += valor;
+  if (op == 'G')
+  	total -= valor;
+  else
+  	total += valor;
 }
 ```
 
