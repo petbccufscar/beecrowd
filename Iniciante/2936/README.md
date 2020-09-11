@@ -36,7 +36,7 @@ Após informarmos as variáveis que serão utilizadas no decorrer do problema, u
 scanf("%d %d %d %d %d",&Curupira_porcao,&Boitata_porcao,&Boto_porcao,&Mapinguari_porcao,&Iara_porcao);
 ```
 
-Em seguida, é feito o cálculo do tanto de mandioca em gramas que cada um come, multiplicando o número de porção pelo número de grama de mandioca em cada porção.
+Em seguida, é feito o cálculo da quantidade em gramas de mandioca que cada um come, multiplicando as gramas de mandioca de cada porção pelo número de porções.
 
 ```c
 Curupira_come = 300 * Curupira_porcao;
