@@ -46,7 +46,7 @@ printf("Parece o trabalho do meu filho!\n");
 }
 ```
 
-Dentro do segundo `else if` é adicionado nova estrutura de desicão, que conta com um `if` e um `else`. E esta estrutura faz a seguinte analise: É adicionado mais dois dias (a `data_final_pra_entregar` é aumentada em 2), e com o `if` verificamos se essa nova data final é menor que a véspera do natal (24), e caso seja, ela poderá apresentar o trabalho final, e é impresso através do comando `printf` a frase "TCC Apresentado!", e a estrutura `else` é para o caso contrário e com o comando `printf` é impresso "Fail! Entao eh nataaaaal!"
+Dentro do segundo `else if` é adicionado nova estrutura de decisão, que conta com um `if` e um `else`. E esta estrutura faz a seguinte análise: É adicionado mais dois dias (a `data_final_pra_entregar` é aumentada em 2), e com o `if` verificamos se a nova data final é menor que a véspera do natal (24), caso seja, ela poderá apresentar o trabalho final, e é impresso através do comando `printf` a frase "TCC Apresentado!", enquanto a estrutura `else` é para o caso contrário (`data_final_pra_entregar > 24`) assim, imprimimos "Fail! Entao eh nataaaaal!"
 
 ```c
 if ( data_final_pra_entregar+2 <= 24)
