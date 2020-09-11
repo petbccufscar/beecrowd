@@ -47,7 +47,7 @@ Iara_come = 150 * Iara_porcao;
 DonaChica_come = 225;
 ```
 
-Assim, resta fazer a soma total, para calcular o tanto de mandioca em gramas que será comido:
+Assim, resta fazer a soma total, para calcular quantas gramas de mandioca precisará ser preparada:
 
 ```c
 Soma_total = Curupira_come+Boitata_come+Boto_come+Mapinguari_come+Iara_come+DonaChica_come;   
