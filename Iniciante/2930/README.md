@@ -18,7 +18,7 @@ Após informarmos as variáveis que serão utilizadas no decorrer do problema, u
 scanf("%d %d",&dia_que_foi_entregue,&data_final_pra_entregar);
 ```
 
-Em seguida, é feito uma estrutura de seleção `if` para que cada um dos casos descritos no problema seja seja avaliado e em sequida seja escrita a frase em questão.
+Em seguida, é feito uma estrutura condicional `if` para verificar cada um dos casos descritos no problema e em caso positivo, imprimir na tela a saída exigida pelo problema.
 
 O primeiro `if` é para o caso que verifica se a acadêmica apresentará ou não. A única possibilidade da entrega não ser realizada na data é por falta de orientação da Takanada. E caso não seja possivel, é escrito através do comando `printf` a frase "Eu odeio a professora!".
 
