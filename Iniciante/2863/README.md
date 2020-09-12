@@ -11,8 +11,8 @@ Nesse exercício iremos receber um número de tentativas e analisar elas para es
 Declaração das variáveis usadas:
 
 ```c
-        int T, i;
-	float numero, menor;
+    	int T, i;
+		float numero, menor;
 ```
 
 `T` representa o número de tentativas, `i` variável de iteração, `numero` o tempo das tentativas e `menor` o tempo da tentativa de menor valor.
@@ -20,7 +20,7 @@ Declaração das variáveis usadas:
 Seguimos para a leitura do número de tentativas `T`:
 ```c
        while (scanf("%d", &T) != EOF)
-	{
+		{
         }
 ```
 Usamos esse `while` com a condição `EOF` devido ao exercício não limitar quantas vezes os testes serão executados.
@@ -28,7 +28,7 @@ Usamos esse `while` com a condição `EOF` devido ao exercício não limitar qua
 Passamos para lógica do exercício:
 ```c
         while (scanf("%d", &T) != EOF)
-	{
+		{
 
 		menor = 100.0;
 		for (i = 0; i < T; i++)
