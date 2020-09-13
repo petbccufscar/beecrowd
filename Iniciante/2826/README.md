@@ -29,9 +29,9 @@ scanf("%s",&secondWord);
 ```  
 
 De acordo com a tabela ASCII, os valores correspondentes às 26 letras minúsculas do alfabeto relacionam-se da seguinte forma: 'a' > 'b' > 'c' > 'd' > ... > 'z'. Além disso, a biblioteca `string.h` contém uma função que compara caracteres (`strcmp`) e seu retorno corresponde a um valor:
-* = 0, se o conteúdo das strings são iguais;
-* < 0, se o conteúdo da 1ª string é menor do que da 2ª;
-* > 0, se o conteúdo da 1ª string é maior do que da 2ª.  
+* igual a 0, se o conteúdo das strings são iguais;
+* menor que 0, se o conteúdo da 1ª string é menor do que da 2ª;
+* maior que 0, se o conteúdo da 1ª string é maior do que da 2ª.  
 
 Considerando tais informações, utilizamos a estrutura condicional `if` para verificar se a comparação das strings `firstWord` e `secondWord` retorna valor inferior a 0; ou seja, a 1ª palavra é menor do que a 2ª e, neste caso, será exibida primeiro. Se tal cenário não ocorrer, `else` conterá outro comando `if` em seu interior para averiguar se o contrário acontece (retorno é superior a 0) e, assim, imprimir `secondWord` primeiramente.  
 
