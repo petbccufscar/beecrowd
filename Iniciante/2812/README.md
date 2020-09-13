@@ -21,7 +21,7 @@ Então iremos declarar as variáveis inteiras `i`, `j`, `a` que serão usadas co
     int indice = 0, elem;
 ```
 
-Guardamos o valor de `n`, `tam` e declaramos o vetor de inteiros `v` que tem tamanho de `tam`. A partir disto, usamos um `for` para poder ler os valores de entrada do vetor, mas antes de inserir ele dentro de `v`, verificamos por meio de um `if` para verificar se o valor de `elem` é ímpar, caso afirmativo adicionamos o valor a `v` e acrescentamos `indice` em uma unidade.
+Guardamos o valor de `n`, `tam` e declaramos o vetor de inteiros `v` que tem tamanho de `tam`. A partir disso, usamos um `for` para poder ler os valores de entrada do vetor, mas antes de inserir ele dentro de `v`, verificamos por meio de um `if` para verificar se o valor de `elem` é ímpar, caso afirmativo adicionamos o valor a `v` e acrescentamos `indice` em uma unidade.
 
 ```c
     scanf("%d", &n);
