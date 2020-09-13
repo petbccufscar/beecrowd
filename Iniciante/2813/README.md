@@ -21,7 +21,7 @@ Primeiramente, iremos importar a biblioteca `stdlib.h`, pois utilizarmos a funç
     #include <string.h>
 ```
 
-Então, iremos declarar as nossas variáveis inteiras. O inteiro `n` é o número de casos em que iremos analizar, e `i` é uma variável auxiliar para laços.
+Então, iremos declarar as nossas variáveis inteiras. O inteiro `n` é o número de casos em que iremos analisar, e `i` é uma variável auxiliar para laços.
 
 ```c
     int n, i;
