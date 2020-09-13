@@ -63,7 +63,7 @@ Se `indice` for maior que 0, isto significa que existe ao menos um número ímpa
         }
 ```
 
-Declaramos as variáveis `maior`, `menor` e um vetor `resultado` com o tamanho de `indice`. Tanto `maior` quanto `menor` são utilizadas para marcar índice de `v`, sendo que `maior` marca o inicio, que possui os elementos de tamanho maior e `menor` marca o final, que possui os elementos de tamanho menor.
+Declaramos as variáveis `maior`, `menor` e um vetor `resultado` com o tamanho de `indice`. Tanto `maior` quanto `menor` são utilizadas para marcar índice de `v`, sendo que `maior` marca o início, que possui os elementos de tamanho maior e `menor` marca o final, que possui os elementos de tamanho menor.
 
 Designamos `i` a 0, pois ele servirá como índice do vetor `resultado`. Dentro do `while` acontecerá a organização dos elementos de `v` de maneira que terá o maior elemento seguido do menor, o segundo maior seguido do segundo menor e por diante. A organização dos elementos consiste da seguinte maneira, colocamos `v[maior]` na primeiro em `resultado` e `v[menor]` uma posição a frente de `v[maior]` no vetor `resultado`, aumentamos `i` em 2 unidades e incrementamos `maior` em 1 e decrementamos `menor` em 1.
 
