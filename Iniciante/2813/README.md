@@ -27,7 +27,7 @@ Então, iremos declarar as nossas variáveis inteiras. O inteiro `n` é o númer
     int n, i;
 ```
 
-Estas variáveis de pointeiros de caracteres, `ida` e `volta` irão guardar respectivamente, a previsão do tempo da ida e da volta. Note que iremos alocalas dinâmicamente, pois não sabemos previamente o tamanho delas.
+Estas variáveis de ponteiros de caracteres, `ida` e `volta` irão guardar respectivamente, a previsão do tempo da ida e da volta. Note que iremos alocar elas dinamicamente, pois não sabemos previamente o tamanho delas.
 
 ```c
     char *ida = (char*) malloc(sizeof(char));
