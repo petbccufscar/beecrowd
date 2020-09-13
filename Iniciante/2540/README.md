@@ -12,7 +12,7 @@ Dados os votos de todos os jogadores, determine o resultado da votação.
  
 O exercício consiste em ler o número de jogadores depois seus respectivos votos e ficar repetindo isso até que acabe as votações.
  
-Primeiro definimos as variáveis necessárias, sendo elas: 4 `int` (`i` para o `for()` que será utilizado; `N` para o número de jogadores; `v` para ler o voto, sendo `1` a favor e `0` contra; e `soma` para somar os votos).
+Primeiro definimos as variáveis necessárias, sendo elas 4 do tipo inteiro: `N` para o número de jogadores, `v` para ler o voto, sendo `1` a favor e `0` contra, `i` para o `for()` que será utilizado  e `soma` para fazer a somar de todos os votos.
  
 ```c
            	int N, v, i, soma;
@@ -63,4 +63,3 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
-
