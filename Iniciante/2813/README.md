@@ -27,12 +27,15 @@ Então, iremos declarar as nossas variáveis inteiras. O inteiro `n` é o númer
     int n, i;
 ```
 
-Estas variáveis de ponteiros de caracteres, `ida` e `volta` irão guardar respectivamente, a previsão do tempo da ida e da volta. Note que iremos alocar elas dinamicamente, pois não sabemos previamente o tamanho delas.
+Iremos alocar dinamicamente as variáveis `*ida` e `*volta`, pois não sabemos previamente o tamanho delas. Estas variáveis irão guardar respectivamente, a previsão do tempo da ida e aprevisão do tempo da volta. 
+
+Lidamos com alocação dinâmica usando a função `malloc`, esse método aloca um espaço de memória e recebe um tamanho como parâmetro, utlizamos o operador `sizeof` para saber o número de bytes ocupado pelo tipo `char`. À esquerda de `malloc` é usado `(char*)` para converter o ponteiro para o tipo de dados desejado. Assim `malloc` retorna um ponteiro do tipo void para o início do espaço de memória alocado.
 
 ```c
     char *ida = (char*) malloc(sizeof(char));
     char *volta = (char*) malloc(sizeof(char));
 ```
+
 Os inteiros abaixo irão guardar os valores relacionados a quantidade de guarda chuvas para comprar e guarda chuvas que estão sobrando. A variável `cCompra` corresponde aos guarda-chuvas da casa que é necessário comprar, `cSobra` são a quantidade de guarda-chuvas que estão sobrando em casa. Já `eCompra` são os guarda-chuvas do escritório que precisa ser comprado e `eSobra` são os guarda-chuvas do escritório que estão sobrando.
 
 ```c
