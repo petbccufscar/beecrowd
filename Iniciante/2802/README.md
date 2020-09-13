@@ -12,7 +12,7 @@ Sua tarefa é determinar em quantas partes esses segmentos dividem o interior do
 O exercício consiste em ler o número de pontos na circunferência e imprimir um inteiro representando a quantidade de partes do círculo.
 
 Primeiro instanciamos as variáveis necessárias, sendo elas: 2 `long long` (`N` para o número de pontos e `resultado` para armazenar o resultado de quantas partes foi dividido).
-Começamos lendo o número de pontos existem, lembrando de que como estamos utilizando um `long long` devemos utilizar `%lli` para ler e imprimir essa variável
+Começamos lendo o número de pontos que existem, e como estamos utilizando um tipo `long long` devemos usar `%lli` para ler e imprimir essa variável.
 
 ```c
 	long long N, resultado;
