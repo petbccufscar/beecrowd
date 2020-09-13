@@ -39,6 +39,12 @@ Dentro do `while()` utilizaremos um `for()` para ler os votos dos jogadores (ten
 ```
  
 Depois de ler todos os votos vamos verificar se o número de votos favoráveis foi maior ou igual a 2/3 de todos os jogadores, em outras palavras o valor de `soma` deve ser maior ou igual ao número de jogadores dividido por 2/3, sendo que esse deve ser tratado como um `float`, para fazer essa divisão de forma fácil basta inverter o divisor com o dividendo e ao invés de dividir vamos multiplicar. Assim a expressão fica da seguinte forma: `N / (3 * 1.0f) * 2`, para transformar um `int` em um `float` basta multiplica ele por `1.0f`.
+
+##### Exemplo:
+
+![imagem](https://www.wikihow.com/images/thumb/6/68/Divide-Fractions-by-a-Whole-Number-Step-3-Version-3.jpg/v4-728px-Divide-Fractions-by-a-Whole-Number-Step-3-Version-3.jpg.webp)
+
+
 Com o resultado imprimimos se houve impeachment ou se a acusação foi arquivada.
  
 ```c
