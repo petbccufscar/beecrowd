@@ -97,7 +97,7 @@ for (i = 0; i < indice; i++)
 }
 ```
 
-Ao final, atribuímos `ìndice` a 0 e usamos a função `memset` para deixar todos os elementos de `v` e `resultado` com o valor de 0.
+Ao final atribuímos o valor de `ìndice` a 0. A função `memset` recebe 3 parâmetros, respectivamanete, um ponteiro para uma posição de memória para ser preeenchido, o valor a ser atribuído e o número de bytes a ser preenchido com o valor em questão. Assim, usamos a função `memset` para deixar todos os elementos de `v` e `resultado` com o valor de 0, ambos vão ser preenchidos totalmente com o tamanho do ponteiro, utlizamos o operador `sizeof`, ele permite saber o número de bytes ocupado por um determinado tipo de variável.
 
 ```c
 indice = 0;
@@ -106,6 +106,7 @@ memset(resultado, 0, sizeof(resultado));
 
 ```
 Caso `indice` for 0, apenas imprimimos uma quebra de linha, devido ao fato de não ter nenhum valor ímpar no vetor de entrada.
+
 ```c
 else
     printf("\n");
