@@ -6,7 +6,7 @@ Umil Bolt é um excelente corredor. Sua especialidade é a prova dos 100 metros 
 
 # Resolução
 
-Nesse exercício iremos receber um número de tentativas e analisar elas para escolher a melhor entre as tentativas, sendo a melhor a que possuir menor valor.
+Nesse exercício, iremos receber um número de tentativas e analisá-las para escolher a melhor entre elas, isto é, a que possuir menor valor.
 
 Declaração das variáveis usadas:
 
@@ -43,7 +43,7 @@ Passamos para lógica do exercício:
 
 	}
 ```
-Temos que iniciar a variável `menor` com um valor grande só para garantir que o primeiro `if` seja contemplado, lógica do `if` é padrão no caso se achar um menor que é maior algum dos tempos `numero` o `menor` troca de valor, passando assim a possuir o menor valor naquele momento.
+Iniciamos a variável `menor` com um valor alto para garantir que o primeiro `if` seja executado. A lógica do `if` é, caso encontrar um valor menor na última leitura de tempos na variável `numero`, a variável `menor` torna-se o valor de `numero`.
 
 Terminamos exibindo a saída pedida pelo URI:
 ```c
