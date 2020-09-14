@@ -23,10 +23,10 @@ int main()
     linha = diferenca( inicial[1], final[1]);
 
     if((coluna == 1 && linha == 2) || (coluna == 2 && linha == 1))
-    	printf("%s\n", "VALIDO");
+    	printf("VALIDO");
 
     else 
-    	printf("%s\n", "INVALIDO");
+    	printf("INVALIDO");
         
     return 0;
 }
