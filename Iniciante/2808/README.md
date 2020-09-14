@@ -47,10 +47,10 @@ Note que as posições que são representadas por vetores de `char` são transfo
 Através dos operadores lógicos, verificamos se a diferença na `coluna` é igual a `1` *e* na `linha` é igual a `2` *ou* se a diferença na `coluna` é igual a `2` *e* na `linha` é igual a `1`. Caso uma dessas proposições seja verdadeira os movimentos do cavalo são válidos e exibimos VALIDO com o comando `printf`, caso nenhumas delas seja, o movimento é inválido e exibimos INVALIDO, também com o `printf`.
 ```c
 if((coluna == 1 && linha == 2) || (coluna == 2 && linha == 1))
-    printf("VALIDO");
+    printf("VALIDO\n");
 
 else 
-    printf("INVALIDO");
+    printf("INVALIDO\n");
 ```
 
 ##### Para aprender um pouco mais sobre funções: [funções em C](http://linguagemc.com.br/funcoes-em-c/)
