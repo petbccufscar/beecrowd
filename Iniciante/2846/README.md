@@ -26,7 +26,7 @@ Nesse exercício vamos declarar sete variáveis do tipo `int`:
 ```
 `a`, `b` e `fibo` são as variáveis usadas para calcular quais são os números da sequência de Fibonacci. `k` é a posição da sequência de Fibonot que devemos ler como resultado do algoritmo. `vetor[1000000]` é um vetor de números inteiros que vai guardar a sequência de Fibonot. `aux` e `i` são variáveis auxiliares que serão usadas no laço de repetição.
 
-Precisamos saber qual posição da sequência devemos obter. Para isso lemos um valor usando o `scanf`:
+Precisamos saber qual posição da sequência devemos obter. Para isso lemos este valor usando o `scanf`:
 ```c
   scanf("%d", &k);
 ```
