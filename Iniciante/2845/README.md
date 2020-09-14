@@ -8,7 +8,7 @@ Dada a carta que os duendes receberam, determine na casa de qual Duende será a 
 
 # Resolução:
 
-A ideia do exercício é que você mostre na tela qual o número de identificação do duende que vai disponibilizar a casa para fazer a festa. O número sempre será um valor maior que o maior número listado na carta.
+A ideia do exercício é que você mostre na tela qual o número de identificação do duende que vai disponibilizar a casa para fazer a festa. O número sempre será um valor maior que o maior número listado na carta, já que o enunciado menciona que é escrito o identificador de duendes com números menores que os do anfitrião.
 
 Nesse exercício vamos declarar quatro variáveis do tipo `int`:
 ```c
@@ -16,7 +16,7 @@ Nesse exercício vamos declarar quatro variáveis do tipo `int`:
 ```
 `N` irá armazenar quantos números estão escritos na carta. `A` é um vetor que representa a lista de números escritos na carta, `maior` é uma variável que vai guardar o valor do maior número e `i` é uma variável auxiliar que vai ser usada no `for`.
 
-Precisamos saber quantos números serão escritos. Para isso lemos um valor usando o `scanf`:
+Em seguida, lemos quantos números serão escritos, utilizando `scanf`:
 ```c
   scanf("%d", &N);
 ```
