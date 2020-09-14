@@ -42,7 +42,7 @@ Em seguida, calculamos a diferença entre as posições do cavalo em relação a
 coluna = diferenca(inicial[0], final[0]);
 linha = diferenca(inicial[1], final[1]);as = diferenca( inicial[1], final[1]);
 ```
-Note que as posiçoes que são representadas por vetores de `char` são transformadas em inteiros ao serem passadas para a função `diferenca`. Isso é possível porque o tipo `char` interpreta caracteres como números através da [Tabela ASCII](https://www.tecmundo.com.br/imagem/1518-o-que-e-codigo-ascii.htm) permitindo realizar operações como se as variáveis `char` fossem inteiros. 
+Note que as posições que são representadas por vetores de `char` são transformadas em inteiros ao serem passadas para a função `diferenca`. Isso é possível porque o tipo `char` interpreta caracteres como números através da [Tabela ASCII](https://www.tecmundo.com.br/imagem/1518-o-que-e-codigo-ascii.htm) permitindo realizar operações como se as variáveis `char` fossem inteiros. 
 
 Através dos operadores lógicos, verificamos se a diferença na `coluna` é igual a `1` *e* na `linha` é igual a `2` *ou* se a diferença na `coluna` é igual a `2` *e* na `linha` é igual a `1`. Caso uma dessas proposições seja verdadeira os movimentos do cavalo são válidos e exibimos VALIDO com o comando `printf`, caso nenhumas delas seja, o movimento é inválido e exibimos INVALIDO, também com o `printf`.
 ```c
