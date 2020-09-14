@@ -59,7 +59,7 @@ Agora vamos ver os valores de Fibonot. Primeiro temos que saber se há números 
     }
   }
 ```
-Os números da sequência de Fibonot estarão entre `a` e `b`. Então igualamos `aux` a `a+1` e criamos um novo laço de repetição. Dentro dele vamos inserir na posição `i` do `vetor` o valor de `aux` e incrementar os valores de `aux` e `i`. Caso `aux` seja menor que `b` (`aux < b`), repetimos o processo.  
+**Os números da sequência de Fibonot estarão entre `a` e `b`**. Então igualamos `aux` a `a+1` e criamos um novo laço de repetição. Dentro dele vamos inserir na posição `i` do `vetor` o valor de `aux` e incrementar os valores de `aux` e `i`. Caso `aux` seja menor que `b` (`aux < b`), significa que ainda estamos no intervalo de números entre `a` e `b` e por isso repetimos o processo.  
 
 Depois de finalizar os dois laços `while`, mostramos na tela o k-ésimo valor da sequência de Fibonot. Usamos `printf` pra isso:
 ```c
