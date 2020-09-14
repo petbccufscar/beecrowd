@@ -26,9 +26,9 @@ Para determinar qual placa representa 10% ... 90% da corrida iremos utilizar 2 o
 
 No primeiro operador ternário iremos calcular quais serão as placas que indicarão o progresso da corrida, para isso, dentro de nosso `for` que irá iterar do valor "1" até "9", iremos realizar a seguinte operação:
  - `(i*v*p)%10 ? ((i*v*p)/10)+1 : (i*v*p)/10`
-  - `(i*v*p)%10` irá realizar a divisão do valor resultante de `i*v*p`  por 10 e pegar o resto, caso esse seja maior do que "0" o operador ternário tratará isto como `TRUE` e irá incrementar "1" no resultado, caso contrário, ou seja possui resto igual a "0", usaremos o resultado da operação `(i*v*p)/10`, com isso iremos imprimir as 9 placas que indicam o progresso.
+  - `(i*v*p)%10` irá realizar a divisão do valor resultante de `i*v*p`  por 10 e pegar o resto, caso esse seja maior do que "0" o operador ternário tratará isto como `TRUE` e irá incrementar "1" no resultado, caso contrário, ou seja, possui resto igual a "0", usaremos o resultado da operação `(i*v*p)/10`. Com isso iremos imprimir as 9 placas que indicam o progresso.
 
-Juntamente com a determinação de qual placa será impressa, iremos definir se iremos dar um espaço entre as placas que serão impressas ou se não há mais placas a serem impressas
+Juntamente com a determinação de qual placa será impressa, iremos definir se daremos um espaço entre as placas que serão impressas ou se não há mais placas a serem impressas.
 
 - `i<9 ? ' ' : '\n'`
  - Caso não tenhamos mostrado todas as placas (i<9) iremos apenas dar um espaço para imprimir a próxima. Caso contrário, tendo todas as placas impressas, iremos inserir um `\n` ao final.
