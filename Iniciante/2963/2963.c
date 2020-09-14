@@ -12,11 +12,11 @@ int main() {
         }
     }
     if (carlos > -1) {
-        printf("N\n");
-    }
-    else {
         printf("S\n");
     }
- 
+    else {
+        printf("N\n");
+    }
+
     return 0;
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main () {
+int main () {
     char runa_atual, letras_runas[100];
     int runas_existentes, amizade_necessaria, valor_amizade = 0, runas_recitadas, j, i, valor_runas[100];
     
@@ -21,7 +21,7 @@ main () {
             }
         }
     }
-    printf("\n%d\n", valor_amizade);
+    printf("%d\n", valor_amizade);
     if (valor_amizade >= amizade_necessaria) {
         printf("You shall pass!\n");
     }
