@@ -8,7 +8,7 @@ Dada a carta que os duendes receberam, determine na casa de qual Duende será a 
 
 # Resolução:
 
-A ideia do exercício é que você mostre na tela qual o número de identificação duende que vai disponibilizar a casa para fazer a festa. O número sempre será um valor maior que o maior número listado na carta.
+A ideia do exercício é que você mostre na tela qual o número de identificação do duende que vai disponibilizar a casa para fazer a festa. O número sempre será um valor maior que o maior número listado na carta.
 
 Nesse exercício vamos declarar quatro variáveis do tipo `int`:
 ```c
