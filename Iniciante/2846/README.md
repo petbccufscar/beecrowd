@@ -36,7 +36,7 @@ Agora, vamos guardar valores em `a`, `b` e `i`. Aqui preparamos as variáveis pa
   b = 3;
   i = 0;
 ```
-`a` e `b` começam com o terceiro e quarto valores da sequência de Fibonacci, pois o primeiro valor da sequência que estamos procurando é o número 4, que só aparece após o quarto valor de Fibonacci. O `i` vai apresentar a posição do vetor que vamos preencher no laço de repetição.
+`a` e `b` começam com o terceiro(2) e quarto(3) valores da sequência de Fibonacci, pois o primeiro valor da sequência Fibonot é o número 4, que só aparece após o quarto valor de Fibonacci. O `i` vai representar a posição do vetor que vamos preencher no laço de repetição.
 
 Para fazer o laço de repetição, usaremos um `while`. Dentro dele vamos descobrir os valores da sequência de Fibonacci e Fibonot até a k-ésima posição:
 ```c
