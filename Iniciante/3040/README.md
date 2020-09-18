@@ -25,7 +25,7 @@ Lemos, inicialmente, a quantidade de casos que serão lidos, com a estrutura `sc
     scanf("%d", &casos);
 ```
 
-Em seguida, iniciamos a estrutura de repetição `for` que terá a variável `i` repetir a quantidade `casos` de vezes.
+Em seguida, iniciamos a estrutura de repetição `for` que vai repetir a quantidade `casos` de vezes com o auxílio da variável `i`.
 ```c
     for (i = 0 ; i < casos; ++i)
 ```
