@@ -9,16 +9,18 @@ int main()
 
     for (i = 0 ; i < casos; ++i)
     {
+
         scanf("%d %d %d", &altura, &tronco, &galhos);
 
         if (altura >= 200 && altura <= 300)
             if (tronco >= 50)
                 if (galhos >= 150)
                 {
-                    printf("Sim");
+                    printf("Sim\n");
+                    continue;
                 }
-        else
-            printf("Nao");
+
+        printf("Nao\n");
 
     }
 

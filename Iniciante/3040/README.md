@@ -38,18 +38,23 @@ Recebemos, com a estrutura `scanf`, as variáveis de altura da árvore, tamanho 
 Verificamos se essas entradas estão de acordo com os critérios explicitados no enunciado, verificando se:
 * A altura da árvore é maior ou igual a 200cm e menor ou igual a 300cm;
 * O tamanho do tronco é maior ou igual a 50cm;
-* A quantidade de galhos é maior ou igual a 150.
-Caso esses critérios sejam atendidos, exibimos "Sim" com a estrutura `printf`. Caso contrário, exibimos "Não".
-```c
+* A quantidade de galhos é maior ou igual a 150.```c
     if (altura >= 200 && altura <= 300)
         if (tronco >= 50)
             if (galhos >= 150)
-            {
-                printf("Sim");
-            }
-    else
-        printf("Nao");
+
+
+Caso esses critérios sejam atendidos, exibimos "Sim" com a estrutura `printf`. Utilizamos a estrutura `continue` para que passe para a próxima iteração do laço. A condição do laço continua sendo testada, assim como o incremento.
+Caso os critérios não sejam atendidos, exibi-se "Não" e passa para a próxima iteração do laço.
+```c
+            printf("Sim\n");
+            continue;
+        }
+
+    printf("Nao\n");
 ```
+
+##### Para aprender um pouco mais sobre o comando continue: [continue](http://linguagemc.com.br/o-comando-continue/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
