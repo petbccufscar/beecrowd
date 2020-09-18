@@ -56,7 +56,7 @@ Depois de ter a resposta de todos os convidados, podemos saber se o evento será
       }
     } 
 ```
-Nesse caso, `!conf` equivale à `conf == 0`. Dentro do `if` igualamos `evento` a `i`, já que os números guardados na posição `i` de `data_dia[]`, `data_mes[]` e `data_ano[]` representam a data do evento. Também igualamos `conf` a 1 para indicar que o evento já está marcado.
+Nesse caso, `!conf` equivale à `conf == 0`, simbolizando que não havia uma data marcada antes. Dentro do `if` igualamos `evento` a `i`, já que os números guardados na posição `i` de `data_dia[]`, `data_mes[]` e `data_ano[]` representam a data do evento. Também igualamos `conf` a 1 para indicar que o evento já está marcado.
 
 Por fim, mostramos na tela quando o evento vai ser realizado ou `Pizza antes do FdI` caso não tenha marcado o evento:
 ```c
