@@ -48,7 +48,7 @@ Agora temos que verificar quem pode participar na data escrita acima. Marcamos i
 ```
 Dentro do laço de repetição, verificamos a resposta de cada pessoa. Se `p` for 1, significa que a pessoa confirmou a sua presença nesse dia, então incrementamos o valor de `num1`.
 
-Depois de ter a resposta de todos os convidados, podemos saber se o evento será nesse dia. O evento está confirmado se todas as pessoas responderem que podem ir (`num1 == n`). Além disso, devemos verificar sse já não tem uma outra data confirmada para o evento (`!conf`):
+Depois de ter a resposta de todos os convidados, podemos saber se o evento será nesse dia. O evento está confirmado se todas as pessoas responderem que podem ir (`num1 == n`). Além disso, devemos verificar se já não tem uma outra data confirmada previamente para o evento (`!conf`):
 ```c
       if ((num1 == n) && (!conf)) {
         evento = i;
