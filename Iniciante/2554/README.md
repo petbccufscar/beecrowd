@@ -23,7 +23,7 @@ O exercício aborda um caso de leitura em que deve ser lido até o final do arqu
 ```
 Um único `scanf` pode ler mais de um valor se usarmos mais de um `%d`. Dentro do `while`, fazemos a leitura e comparamos ao EOF, portanto o `while` irá rodar até chegar no final do arquivo. Este é simbolizado pela quebra de linha (`\n`).
 
-Agora, criamos mais três variáveis do tipo `int`, elas representam vetores e cada um deles vai guardar um vetor de dias, meses e anos, respectivamente:
+Agora, criamos mais três variáveis do tipo `int`, elas representam vetores e cada uma delas vai guardar um vetor de dias, meses e anos, respectivamente:
 ```c
     int data_dia[d], data_mes[d], data_ano[d];
 ```
