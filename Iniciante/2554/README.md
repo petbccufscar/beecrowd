@@ -32,7 +32,7 @@ Para poder verificar se a data foi marcada e qual é a data, igualamos `evento` 
     evento = -1;
     conf = 0;
 ```
-Aqui usamos um `for` para repetição. dentro dela lemos as datas possíveis para o evento com `scanf`:
+Aqui usamos um `for` para repetição. Dentro dele lemos as datas possíveis para o evento com `scanf`:
 ```c
     for (i=0;i<d;i++) {
       scanf("%d/%d/%d", &data_dia[i], &data_mes[i], &data_ano[i]);
