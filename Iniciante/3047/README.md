@@ -17,7 +17,7 @@ Começamos lendo as idades de Mônica e de dois filhos.
     scanf("%d %d %d", &M, &A, &B);
 ```
 
-Para descobrirmos a idade do ultimo filho basta subtrairmos as idades dos filhos que ja conhecemos da idade da Mônica, como explicado no enunciado.
+Para descobrirmos a idade do ultimo filho basta subtrairmos as idades dos filhos que já conhecemos da idade da Mônica, como explicado no enunciado.
 
 ```c
     X = M - A - B;
