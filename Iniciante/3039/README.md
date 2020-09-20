@@ -31,7 +31,7 @@ Atribuímos 0 em ambas variáveis incrementadoras e usamos um `scanf` para guard
     scanf ("%d",&n);
 ```
 
-Dentro do laço, lemos as variáveis `nome` e `genero`. Note que, lemos `nome` usando o especificador de formato `"%s "` com um espaço, pois queremos ler o espaço também.
+Dentro do primeiro laço `for`, lemos as variáveis `nome` e `genero`. Note que, lemos `nome` usando o especificador de formato `"%s "` com um espaço, pois queremos ler o espaço também.
 
 Após a leitura, usamos um `if` para verificar se o `genero` é igual a F(indicando o gênero feminino), em caso afirmativo incrementamos em uma unidade da variável `boneca`, ao contrário aumentamos em um a variável `carrinho`, que indica o gênero masculino.
 
