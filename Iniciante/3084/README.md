@@ -9,7 +9,7 @@ Ezequiel utiliza um instrumento auxiliar para observar os ângulos formados pelo
 
 Para resolver este problema, receberemos vários casos de teste com os ângulos formados pelos ponteiros de hora e minuto. Dado isso, faremos um laço de repetição para ler cada caso de teste e dentro desse laço realizaremos a conversão dos ângulos para horas e minutos correspondentes.
 
-Iniciamos declarando as varíaveis inteiras `angulo_horas` e `angulo_minutos`, que serão utilizadas para leitura dos ângulos sobre os ponteiros de hora e minuto, respectivamente.  
+Iniciamos declarando as variáveis inteiras `angulo_horas` e `angulo_minutos`, que serão utilizadas para leitura dos ângulos sobre os ponteiros de hora e minuto, respectivamente.  
 
 ```c
 int angulo_horas, angulo_minutos;
