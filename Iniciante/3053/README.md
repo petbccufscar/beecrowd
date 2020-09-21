@@ -20,7 +20,7 @@ Nesta tarefa, dadas a descrição da sequência de movimentos e a posição inic
  
 Para determinar a posição final da moeda após todos os movimentos, após determinarmos o estado inicial, trocamos a moeda de lugar, a cada movimento lido. Ao fim de todos os movimentos, imprimimos qual copo a moeda está.
 
-Iremos declarar uma variável do tipo inteiro `N`, indicando o número de movimentos, um caracter `moeda`, indicando o copo inicial da moeda, um vetor de 3 caracteres `copos[3]`, para representar os copos A, B e C,** em ordem**, um caracter `aux`, para auxiliar na troca de copo da moeda e duas variáveis do tipo inteiro, `movimento` e `i`. A variável `movimento` será utilizada na leitura do movimento a ser realizada e `i` será utilizada nos laços de repetição.
+Iremos declarar uma variável do tipo inteiro `N`, indicando o número de movimentos, um caracter `moeda`, indicando o copo inicial da moeda, um vetor de 3 caracteres `copos[3]`, para representar os copos A, B e C,** em ordem**, um caracter `aux`, para auxiliar na troca de copo da moeda e duas variáveis do tipo inteiro, `movimento` e `i`. A variável `movimento` será utilizada na leitura do movimento a ser realizado e `i` será utilizada nos laços de repetição.
 
 ```c
 int N;
@@ -53,7 +53,7 @@ else if( moeda == 'C')
 Depois, realizaremos `N` movimentos de troca e, para isso, utilizaremos o laço de repetição `for`. A cada iteração do laço, lemos o movimento a ser realizado por meio da função `scanf()` e, de acordo com o movimento lido, trocamos a moeda de lugar:
 - Se o movimento lido for `1`, trocamos o conteúdo do copo A (`copos[0]`) pelo do copo B (`copos[1]`), utilizando um auxiliar `aux`.
 - Se o movimento lido for `2`, trocamos o conteúdo do copo B (`copos[1]`) pelo do copo C (`copos[2]`), utilizando um auxiliar `aux`.
-- Se o movimento lido for `2`, trocamos o conteúdo do copo A (`copos[0]`) pelo do copo C (`copos[2]`), utilizando um auxiliar `aux`.
+- Se o movimento lido for `3`, trocamos o conteúdo do copo A (`copos[0]`) pelo do copo C (`copos[2]`), utilizando um auxiliar `aux`.
 
 
 ```c
