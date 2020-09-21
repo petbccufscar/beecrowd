@@ -16,7 +16,7 @@ Para resolver este problema, primeiramente devemos declarar as variáveis que se
 
 E também é declarada a variável que será utilizada para armazenar a nota esquecida, ou seja, o resultado do cálculo a ser realizado (Media * 2 - nota_A), que também é uma variável do tipo inteiro, sendo essa variável a `Nota_B`.
 
-Após informarmos as variáveis que serão utilizadas no decorrer do problema, usamos o comando `scanf` para lermos os valores da `Nota_A` e da `Media`.
+Após declararmos as variáveis que serão utilizadas no decorrer do problema, usamos o comando `scanf` para lermos os valores da `Nota_A` e da `Media`.
 
 ```c
 int Nota_A, Nota_B, Media;
