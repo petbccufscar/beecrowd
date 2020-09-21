@@ -25,10 +25,9 @@ Recebemos a quantidade de jogos (`n`) através do comando `scanf` e criamos um l
 scanf("%d", &n);
 
 while (n--){
-	jogadas = 6;
+    jogadas = 6;
     pontos[0] = 0;
     pontos[1] = 0;
-```
 
 Então, criamos outros dois loops `while`, onde iremos calcular os pontos de João e Maria. No primeiro loop recebemos, através do `scanf`, as distâncias entre o dardo e o centro do alvo (`distanciaCentro`) e, entre João e o alvo (`distanciaJogador`). Depois multiplicamos esses valores e armazenamos os pontos de João em `pontos[0]`. No segundo `while` faremos o mesmo para Maria, mas guardaremos seus pontos em `pontos[1]`.
 ```c
