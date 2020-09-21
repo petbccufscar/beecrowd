@@ -25,19 +25,19 @@ Para isso, utilizaremos a [tabela ASCII](https://www.ime.usp.br/~kellyrb/mac2166
 
 ![Tabela ASCII](http://s2.glbimg.com/fEu3dqWDHAo0Gi1rGJin--DMiT4=/695x0/s.glbimg.com/po/tt2/f/original/2015/02/12/imagem28.jpg)
 
-Podemos atribuir converter o caractere `letra` em um inteiro fazendo uma atribuição simples.
+Podemos converter o caractere `letra` em um inteiro fazendo uma atribuição simples.
 
 ```c
     numero = letra
 ```
 
-Dessa forma, o valor contido em número será o referente a letra na tabela ASCII. Porém, o exercício nos pede que o número seja a posição da letra no alfabeto, ('A' = 1, 'B' = 2 e assim sucessivamente) e como vimos na tabela, o caractere 'A' equivale ao inteiro 65. Portanto, antes de exibir o resultado, faremos um tratamento em `numero`.
+Dessa forma, o valor contido em `numero` será o decimal referente a letra na tabela ASCII. Porém, o exercício nos pede que a saída seja a posição da letra no alfabeto; ou seja, 'A' = 1, 'B' = 2, e assim sucessivamente. Como é possível observar na tabela, o caractere 'A' equivale ao inteiro 65 e, portanto, antes de exibirmos o resultado, faremos um tratamento do valor contido em `numero`.
 
 ```c
     numero = numero - 64;
 ```
 
-Subtraindo 64 de `numero` temos o equivalente a posição no alfabeto daquele caractere e podemos exibir esse resultado na tela, com a função `printf`. (Tenha sempre em mente que 'A' equivale a 65 e queremos que 'A' = 1)
+Subtraindo 64 de `numero`, temos a posição no alfabeto equivalente ao caractere em questão. É essencial ter sempre em mente que 'A' equivale a 65 e, na verdade, queremos que 'A' = 1. Dessa forma, podemos exibir esse resultado na tela, com a função `printf`.
 
 ```c
 printf("%d \n",numero);
