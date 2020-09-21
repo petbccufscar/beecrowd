@@ -12,7 +12,7 @@ Para a resolução deste problema iniciaremos incluindo a biblioteca `math.h` po
 #include <math.h>
 ```
 
-Declaramos a variável que iremos realizar a leitura do ano que será passado para calcularmos a qual seculo este pertence, para isso iremos declarar um variável `ano` do tipo `double` pois iremos realizar divisões com casas decimais
+Declaramos a variável que iremos realizar a leitura do ano que será passado para calcularmos a qual século este pertence, para isso iremos declarar uma variável `ano` do tipo `double` pois iremos realizar divisões com casas decimais
 ```c
 double ano;
 ```
@@ -24,7 +24,7 @@ while (~scanf("%lf", &ano)){
 }
 ```
 
-Por final, a cada iteração de nosso laço de repetição, já com o valor lido, realizamo a divisão deste por "100.0" e o resultado usamos como parâmetro na função `ceil` que foi incluída no inicio de nosso programa através da biblioteca `math.h`, com isso teremos como resultado o valor da divisão acrescentado de "1", fazemos isso pois o século 1 vai do ano 0 até 99. Ao imprimir o valor final utilizamos `%.lf` para imprimir um valor sem casas decimais, apenas o inteiro.
+Por final, a cada iteração de nosso laço de repetição, já com o valor lido, realizamos a divisão deste por "100.0" e o resultado usamos como parâmetro na função `ceil` que foi incluída no início de nosso programa através da biblioteca `math.h`, com isso teremos como resultado o valor da divisão acrescentado de "1", fazemos isso pois o século 1 vai do ano 0 até 99. Ao imprimir o valor final utilizamos `%.lf` para imprimir um valor sem casas decimais, apenas o inteiro.
 ```c
 printf("%.lf\n", ceil(ano / 100.0));
 ```
