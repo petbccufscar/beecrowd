@@ -14,7 +14,7 @@ João a determinar a nota da outra prova?
 
 Para resolver este problema, primeiramente devemos declarar as variáveis que serão utilizadas ao longo do exercício em questão. Iniciamos declarando as variáveis que utilizaremos para fazer a leitura da nota A, e da Média, sendo respectivamente as seguintes variáveis do tipo inteiro: `Nota_A`, e `Media`.
 
-E também é declarada a variável que será utilizada para armazenar o valor do cálculo realizado, que também é uma variável do tipo inteiro, sendo essa variável a `Nota_B`.
+E também é declarada a variável que será utilizada para armazenar a nota esquecida, ou seja, o resultado do cálculo a ser realizado (Media * 2 - nota_A), que também é uma variável do tipo inteiro, sendo essa variável a `Nota_B`.
 
 Após informarmos as variáveis que serão utilizadas no decorrer do problema, usamos o comando `scanf` para lermos os valores da `Nota_A` e da `Media`.
 
