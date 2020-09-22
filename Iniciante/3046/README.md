@@ -16,7 +16,7 @@ Agora, através da função `scanf` leremos o tipo de dominó e atribuiremos ess
     scanf("%d", &duplo_N);
 ```
 
-Desse modo, com o valor obtido, usaremos a fórmula dada no enunciado do problema (((N+1)*(N+2))/2), calcularemos a quantidade de peças do jogo e a atribuíremos à `pecas_existentes`.
+Desse modo, com o valor obtido, usaremos a fórmula dada no enunciado do problema (((N+1)*(N+2))/2), para fazer o cálculo da quantidade de peças do jogo, e a atribuíremos à `pecas_existentes`.
 ``` c
     pecas_existentes = (((duplo_N + 1) * (duplo_N + 2)) / 2);
 ```
