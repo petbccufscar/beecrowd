@@ -7,7 +7,7 @@ Sua tarefa é escrever um programa que faça com que o computador opere como uma
 
 # Resolução:
 
-De início, declaramos as variáveis que usaremos, todas do tipo `int`: `operandos` que receberá a quantidade de operandos de cada expressão e servirá como controle de teste; `expressao` que receberá cada operanda presente na expressão que estiver sendo calculada no momento; `i` que servirá comoa auxiliar em loops; `teste` que assumirá o valor representante do teste que está sendo feito no momento; `resultado` que receberá os valores do resultado da expressão que estiver sendo calculada.
+De início, declaramos as variáveis que usaremos, todas do tipo `int`: `operandos` que receberá a quantidade de operandos de cada expressão e servirá como controle de teste; `expressao` que receberá cada operando presente na expressão que estiver sendo calculada no momento; `i` que servirá como auxiliar em loops; `teste` que assumirá o valor representante do teste que está sendo feito no momento; `resultado` que receberá os valores do resultado da expressão que estiver sendo calculada.
 ``` c
     int operandos, expressao, i, teste = 0, resultado;
 ```
