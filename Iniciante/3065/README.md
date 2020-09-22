@@ -21,7 +21,7 @@ Agora, por meio de uma função `scanf` leremos o valor de `operandos`. Ademais,
     /* código omitido */
     }
 ```
-Continuando, abrimos um loop for com o auxílio de `i` e limite máximo sendo o valor de `operandos`, caracterizando o intervalo de `i`=1 até `i`=`operandos`. Assim sendo, dentro do loop leremos, por meio de `scanf`, o valor de cada número da expressão e atribuímos a `expressão`. Após isso, somamos o valor do membro em questão ao valor de `resultado`. Como a linguagem C interpreta número com sinais de + e - como valores e não uma expressão, não é preciso se preocupar em ler a operação que estiver sendo feita. 
+Continuando, abrimos um loop for com o auxílio de `i` e limite máximo sendo o valor de `operandos`, caracterizando o intervalo de `i`=1 até `i`=`operandos`. Assim sendo, dentro do loop leremos, por meio de `scanf`, o valor de cada número da expressão e atribuímos à variável `expressão`. Após isso, somamos o valor do membro em questão ao valor de `resultado`. Como a linguagem C interpreta número com sinais de + e - como valores e não uma expressão, não é preciso se preocupar em ler a operação que estiver sendo feita. 
 ``` c
         for (i=1; i<=operandos; i++) {
             scanf("%d", &expressao);
