@@ -12,7 +12,7 @@ De início, declaramos as variáveis que usaremos, todas do tipo `int`: `operand
     int operandos, expressao, i, teste = 0, resultado;
 ```
 
-Agora, por meio de uma função `scanf` leremos o valor de `operandos`. Ademais, com um loop `while` conferiremos os valores de entrada de cada teste, sendo que, se `operandos` for igual a zero significa que os testes se encerraram e se for igual X!=0 temos a quantidade de membros da expressão. Além disso, iniciamos os procedimentos para cada expressão. Dessa forma, atribuímos à `resultado` o valor de 0 e à `teste` somamos um - este procedimento é necessário no início de cada teste (as demais linhas de códgio do loop foram omitidas para futuras explicações).
+Agora, por meio de uma função `scanf` leremos o valor de `operandos`. Ademais, com um loop `while` conferiremos os valores de entrada de cada teste, sendo que, se `operandos` for igual a zero significa que os testes se encerraram, caso contrário temos a quantidade de membros da expressão. Além disso, iniciamos os procedimentos para cada expressão. Dessa forma, atribuímos à `resultado` o valor de 0, e à `teste` somamos um - este procedimento é necessário no início de cada teste (as demais linhas de códgio do loop foram omitidas para futuras explicações).
 ``` c
     scanf("%d", &operandos);
     while (operandos != 0) {
