@@ -17,7 +17,7 @@ Agora, leremos com `scanf` o valor do número a ser divido e o valor da divisão
     scanf("%d %d", &dividendo, &divisor);
 ```
 
-Proseguindo, usamos `%` para retornar o valor do resto da divisão entre `dividendo` e `divisor`. Ademais, atribuímos esse valor à `resto`.
+Proseguindo, usamos `%` para retornar o valor do resto da divisão entre `dividendo` e `divisor`. Ademais, atribuímos esse valor à variável `resto`.
 ``` c
     resto = dividendo % divisor;
 ```
