@@ -12,7 +12,7 @@ De início, declaramos as variáveis que usaremos, todas do tipo `int`: `dividen
     int dividendo, divisor, resto;
 ```
 
-Agora, leremos com `scanf` os valores do número a ser divido e o valor da divisão e atribuíremos os mesmos à `dividendo` e `divisor`, respectivamente.
+Agora, leremos com `scanf` o valor do número a ser divido e o valor da divisão e atribuiremos os mesmos à `dividendo` e `divisor`, respectivamente.
 ``` c
     scanf("%d %d", &dividendo, &divisor);
 ```
