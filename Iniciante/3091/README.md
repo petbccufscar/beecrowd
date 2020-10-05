@@ -22,7 +22,7 @@ Proseguindo, usamos `%` para retornar o valor do resto da divisão entre `divide
     resto = dividendo % divisor;
 ```
 
-Por fim, imprimimos na tela, com `printf`, o valor de `resto` - não esquecendo de `\n`, por questões de padrão de resposta do URI, e de retornar 0.
+Por fim, com o comando `printf` imprimimos na tela o valor da variável `resto` - não esquecendo de colocar `\n`, por questões de padrão de resposta do URI, e de retornar 0.
 ``` c
     printf("%d\n", resto);
     return 0;
