@@ -88,7 +88,7 @@ Como é uma pirâmide, todos os valores da última linha estarão incluídos na 
   printf("%d\n", soma);
 ```
 
-##### Para aprender um pouco mais sobre vetores: [Vetores](http://linguagemc.com.br/vetores-ou-arrays-em-linguagem-c/)
+##### Para aprender um pouco mais sobre matrizes: [Matrizes](http://linguagemc.com.br/matriz-em-c/)
 ##### Para aprender um pouco mais sobre a estrutura for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
 ##### Para aprender um pouco mais sobre a estrutura while: [While](http://linguagemc.com.br/o-comando-while-em-c/)
 ##### Para aprender um pouco mais sobre o uso de variáveis globais e locais: [Variáveis globais](http://linguagemc.com.br/funcoes-e-escopo-de-variaveis/)
