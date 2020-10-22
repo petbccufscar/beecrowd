@@ -25,7 +25,7 @@ Sabendo o número de etapas para a produção, criamos quatro vetores de tamanho
 ```c
     int a1[N], a2[N], t1[N], t2[N];
 ```
-`a1` e `a2` são vetores responsáveis por guardar o custo de cada estação das linhas 1 e 2, respectivamente. `t1` e `t2` representam o custo de transição de uma linha para a outra, sendo `t1` o gasto envolvido na transição da linha 1 pra 2 e `t2` o custo para ir da linha 2 pra 1.
+`a1` e `a2` são vetores responsáveis por guardar o custo de cada estação das linhas 1 e 2, respectivamente. `t1` e `t2` representam o custo de transição de uma linha para a outra, sendo `t1` o gasto envolvido na transição da linha 1 para 2 e `t2` o custo de ir da linha 2 para 1.
 
 Agora é hora de escrever os custos de cada etapa de produção e cada transição. os primeiros valores a serem escritos são o custo de entrada para as linhas 1 e 2. Vamos usar um `scanf`:
 ```c
