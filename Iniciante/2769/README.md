@@ -80,7 +80,7 @@ Como vamos calcular o menor custo possível, temos que usar os valores obtidos n
         soma2 += a2[i];
     }
 ```
-Para a verificação usamos um `if`. Nele verificamos se o menor custo é mudar de linha e realizar a próxima etapa na outra linha (`aux2+t2[i]+a1[i]` e `aux1+t1[i]+a2[i]`) ou se é menos custoso manter a producão na mesma linha (`aux1+a1[i]` e `aux2+a2[i]`). Descobrindo o menor valor somamos ele a `soma1` ou `soma2`. 
+Para a verificação usamos um `if`. Nele verificamos se o menor custo é mudar de linha e realizar a próxima etapa na outra linha (`aux2+t2[i]+a1[i]` e `aux1+t1[i]+a2[i]`) ou se é menos custoso manter a produção na mesma linha (`aux1+a1[i]` e `aux2+a2[i]`). Descobrindo o menor valor somamos ele a `soma1` ou `soma2`. 
 
 Feitas as somas, resta saber qual o menor custo obtido. Aqui usaremos outro `if` levando em consideração o custo de saída de cada linha representados por `x1` e `x2`:
 ```c
