@@ -47,7 +47,7 @@ A partir de agora, o `maux` será preenchido apenas com as menores somas obtidas
   inicio = 0;
   fim = 1;
 ```
-`i` vai representar a linha que vamos preencher, `inicio` e `fim` representam a primeira e última coluna que serão somadas para descobrir a menor soma. Aqui criamos um `while` para repetição. Dentro dele vamos preencher `maux`:
+`i` vai representar a linha que vamos preencher, `inicio` e `fim` representam respectivamente a primeira e última coluna que serão somadas para descobrir a menor soma. Aqui criamos um `while` para repetição. Dentro dele vamos preencher `maux`:
 ```c
   while (i < tamMatriz-1) {
     for (j = inicio; j <= fim; j++)
