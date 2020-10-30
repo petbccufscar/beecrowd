@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 
 int main() {
- 
     int t, level, dano, i;
     float w, h, x, y, xc, yc, raio;
     float distx, disty, pontomediox, pontomedioy;
