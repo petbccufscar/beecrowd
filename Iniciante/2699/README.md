@@ -40,7 +40,7 @@ Agora vamos padronizar a matriz `verificador` igualando todos os valores dela pa
       for (j = 0; j < 1001; j++)
         verificador[i][j] = -1;
 ```
-Aqui usamos um `for`dentro de outro para passar por todas as colunas de todas as linhas da matriz. Agora vamos chamar a função `divisao` para descobrir se existe valor `d` que pode ser múltiplo de `n`:
+Aqui usamos um `for` dentro de outro para passar por todas as colunas de todas as linhas da matriz. Agora vamos chamar a função `divisao` para descobrir se existe valor `d` que pode ser múltiplo de `n`:
 ```c
     if (divisao(0, 0, n) == 1) 
       printf("%s\n", d);
