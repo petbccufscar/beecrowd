@@ -49,7 +49,7 @@ A primeira coisa a se fazer para começar a contagem é saber quantos meteoros c
         }
       }
 ```
-Para comparar a coordenada oonde o meteoro caiu com as coordenadas da fazenda, utilizamos dois `if`. No primeiro comparamos apenas os valores de `x`, `x1` e `x2` e no segundo comparamos `y`, `y1` e `y2`. Se o valor de `x` estiver entre `x1` e `x2` verificamos `y`, e se `y` estiver entre `y1` e `y2`, incrementamos o contador.
+Para comparar a coordenada onde o meteoro caiu com as coordenadas da fazenda, utilizamos dois `if`. No primeiro comparamos apenas os valores de `x`, `x1` e `x2` e no segundo comparamos `y`, `y1` e `y2`. Se o valor de `x` estiver entre `x1` e `x2` verificamos `y`, e se `y` estiver entre `y1` e `y2`, incrementamos o contador.
 
 Depois de fazer as comparações com todos os meteoros, incrementamos `numTestes` e mostramos na tela o resultado usando `printf`:
 ```c
