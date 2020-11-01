@@ -110,7 +110,7 @@ Agora que temos as coordenadas do ponto do retângulo mais próximo ao círculo,
       printf("0\n");
   }
 ```
-A fórmula original utiliza a raíz quadrada da distância entre (`distx`,`disty`) e (0,0). No entanto, se elevarmos a distância `raio` ao quadrado a raíz não é necessária. Se `raio` ao quadrado for maior ou igual à soma de `distx` ao quadrado e `disty` ao quadrado (`raio * raio >= distx * distx + disty * disty`), isso quer dizer que parte do círculo está dentro do retângulo e a magia acertou, então mostramos na tela o valor do `dano`. Se não acertou (`else`), a resposta dada é 0.
+A fórmula original utiliza a raiz quadrada da distância entre (`distx`,`disty`) e (0,0). No entanto, se elevarmos a distância `raio` ao quadrado a raiz não é necessária. Se `raio` ao quadrado for maior ou igual à soma de `distx` ao quadrado e `disty` ao quadrado (`raio * raio >= distx * distx + disty * disty`), isso quer dizer que parte do círculo está dentro do retângulo e a magia acertou, então mostramos na tela o valor do `dano`. Se não acertou (`else`), a resposta dada é 0.
 
 ##### Para aprender um pouco mais sobre a estrutura for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
 ##### Para aprender um pouco mais sobre vetor de caracteres: [Strings](http://linguagemc.com.br/string-em-c-vetor-de-caracteres/)
