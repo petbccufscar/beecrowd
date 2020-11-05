@@ -11,7 +11,7 @@ Para resolver o problema, iremos receber o grau de dificuldade dos trabalhos e s
 Começamos inicializando as variáveis. Todas serão do tipo `long long int`, devido à natureza dos valores do exercício serem muito grandes.
 Serão elas:
 * `N`, o número de trabalhos para a divisão;
-* `X[]`, o vetor que armazenará o grau de dificildade de cada trabalho;
+* `X[]`, o vetor que armazenará o grau de dificuldade de cada trabalho;
 * `somaGugu`, a soma das dificildades dos trabalhos que Gugu fará;
 * `somaRangel`, a soma das dificildades dos trabalhos para Rangel;
 * `i`, a variável que iterará no começo do vetor;
