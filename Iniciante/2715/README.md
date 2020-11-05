@@ -12,7 +12,7 @@ Começamos inicializando as variáveis. Todas serão do tipo `long long int`, de
 Serão elas:
 * `N`, o número de trabalhos para a divisão;
 * `X[]`, o vetor que armazenará o grau de dificuldade de cada trabalho;
-* `somaGugu`, a soma das dificildades dos trabalhos que Gugu fará;
+* `somaGugu`, a soma das dificuldades dos trabalhos que Gugu fará;
 * `somaRangel`, a soma das dificildades dos trabalhos para Rangel;
 * `i`, a variável que iterará no começo do vetor;
 * `j`, a variável para o fim do vetor.
