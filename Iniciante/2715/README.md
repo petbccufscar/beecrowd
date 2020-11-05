@@ -6,7 +6,7 @@ Chegamos finalmente no final do semestre e pra variar, trabalhos estão acumulad
 
 # Resolução
 
-Para resolver o problema, iremos receber o grau de dificuldade dos trabalhos e salvá-los em um vetor. Em seguida, iremos manter uma variável na posiçao final e uma na posição inicial do vetor, para realizar a separação dos trabalhos.
+Para resolver o problema, iremos receber o grau de dificuldade dos trabalhos e salvá-los em um vetor. Em seguida, iremos manter uma variável na posição final e uma na posição inicial do vetor, para realizar a separação dos trabalhos.
 
 Começamos inicializando as variáveis. Todas serão do tipo `long long int`, devido à natureza dos valores do exercício serem muito grandes.
 Serão elas:
