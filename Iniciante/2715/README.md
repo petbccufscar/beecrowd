@@ -53,7 +53,7 @@ Caso a soma de trabalhos do Rangel com o i-ésimo trabalho da fila seja menor ou
 	}
 ```
 
-Caso contrário, adicionamos o trabalho para Gugu e diminuimos a variável de final, visto que um trabalho já foi atribuido e pode parar de ser considerado para o vetor.
+Caso contrário, adicionamos o trabalho para Gugu e diminuímos a variável de final, visto que um trabalho já foi atribuído e pode parar de ser considerado para o vetor.
 ```c
 	else{
 		somaGugu += X[j];
