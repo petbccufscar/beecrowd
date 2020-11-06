@@ -26,7 +26,7 @@ Utilizaremos um `for()` para passar por todos os casos de teste.
     }
 ```
 
-Dentro dele iremos ler as duas `strings`, utilizando o `strlen()` iremos armazenar o tamanho de ambas e em sequencia utilizaremos um `if (t1 < t2)` para encontrar qual tem o maior tamanho e armazená-lo em `m`. O `strlen()` retorna o número de caracteres da `string` passada para ele.
+Dentro dele iremos ler as duas `strings`. Depois, utilizando o `strlen()` iremos armazenar o tamanho de ambas e em sequencia utilizaremos um `if (t1 < t2)` para encontrar qual tem o maior tamanho e armazená-lo em `m`. A função `strlen()` retorna o número de caracteres da `string` passada para ele.
 ```c
     scanf("%s %s", &n1, &n2);
     t1 = strlen(n1);
