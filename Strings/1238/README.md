@@ -8,7 +8,7 @@ Implemente um programa denominado combinador, que recebe duas strings e deve com
 
 O exercício consiste em ler o número de casos de teste, para cada caso de teste teremos 2 `strings` que iremos imprimir intercalando seus caracteres.
 
-Primeiro instanciamos as variáveis necessárias, sendo elas: 6 `int` (`i` e `j` para os `loopings`; `t1` e `t2` para o tamanho das `strings`; `m` para o guardar o tamanho da maior `string`; `N` para o número de casos de teste) e 2 vetores de `char` (`n1` e `n2` para armazenar as `strings`).
+Primeiro instanciamos as variáveis necessárias, sendo elas: 6 do formato `int` (`i` e `j` para os `loopings`; `t1` e `t2` para o tamanho das `strings`; `m` para o guardar o tamanho da maior `string`; `N` para o número de casos de teste) e 2 vetores do tipo `char` (`n1` e `n2` para armazenar as `strings`).
 Começamos lendo o número de casos de teste.
 
 ```c
