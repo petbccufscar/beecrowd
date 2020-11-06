@@ -12,42 +12,43 @@ Primeiro instanciamos as variáveis necessárias, sendo elas: 6 do formato `int`
 Começamos lendo o número de casos de teste.
 
 ```c
-    int i, j, t1, t2, m, n;
-    char n1[55], n2[55];
-    scanf("%d", &n);
+    int i, j, tamanho1, tamanho2, maior, N;
+    char string1[55], string2[55];
+    scanf("%d", &N);
 ```
 
 Utilizaremos um `for()` para passar por todos os casos de teste.
 
 ```c
-    for (i = 0; i < n; i++)
+    for (i = 0; i < N; i++)
     {
         \\código para cada caso individual
     }
 ```
 
 Dentro dele iremos ler as duas `strings`. Depois, utilizando o `strlen()` iremos armazenar o tamanho de ambas e em sequencia utilizaremos um `if (t1 < t2)` para encontrar qual tem o maior tamanho e armazená-lo em `m`. A função `strlen()` retorna o número de caracteres da `string` passada para ele.
+
 ```c
-    scanf("%s %s", &n1, &n2);
-    t1 = strlen(n1);
-    t2 = strlen(n2);
-    if (t1 < t2)
-        m = t2;
-    else
-        m = t1;
+    scanf("%s %s", &string1, &string2);
+        tamanho1 = strlen(string1);
+        tamanho2 = strlen(string2);
+        if (tamanho1 < tamanho2)
+            maior = tamanho2;
+        else
+            maior = tamanho1;
 ```
 
 Por fim, para terminar o caso de teste individual vamos imprimir caractere por caractere de forma intercalada usando um `for()` com limite do tamanho da maior `string` (`m`), dentro dele iremos utilizar 2 `if` para saber se a determinada `string` foi completamente usada (ou seja, se `j` for menor que o tamanho dela iremos imprimir um caractere, caso contrario nao sera impresso nada). Ao finalizar esse `for()` imprimimos a quebra de linha (`printf("\n")`).
 
 ```c
-    for (j = 0; j < m; j++)
-        {
-            if (j < t1)
-                printf("%c", n1[j]);
-            if (j < t2)
-                printf("%c", n2[j]);
-        }
-        printf("\n");
+    for (j = 0; j < maior; j++)
+    {
+        if (j < tamanho1)
+            printf("%c", string1[j]);
+        if (j < tamanho2)
+            printf("%c", string2[j]);
+    }
+    printf("\n");
 ```
 
 ##### Para aprender um pouco mais sobre a estrutura for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)

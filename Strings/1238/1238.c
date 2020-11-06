@@ -3,24 +3,24 @@
 int main()
 {
 
-    int i, j, t1, t2, m, n;
-    char n1[55], n2[55];
-    scanf("%d", &n);
-    for (i = 0; i < n; i++)
+    int i, j, tamanho1, tamanho2, maior, N;
+    char string1[55], string2[55];
+    scanf("%d", &N);
+    for (i = 0; i < N; i++)
     {
-        scanf("%s %s", &n1, &n2);
-        t1 = strlen(n1);
-        t2 = strlen(n2);
-        if (t1 < t2)
-            m = t2;
+        scanf("%s %s", &string1, &string2);
+        tamanho1 = strlen(string1);
+        tamanho2 = strlen(string2);
+        if (tamanho1 < tamanho2)
+            maior = tamanho2;
         else
-            m = t1;
-        for (j = 0; j < m; j++)
+            maior = tamanho1;
+        for (j = 0; j < maior; j++)
         {
-            if (j < t1)
-                printf("%c", n1[j]);
-            if (j < t2)
-                printf("%c", n2[j]);
+            if (j < tamanho1)
+                printf("%c", string1[j]);
+            if (j < tamanho2)
+                printf("%c", string2[j]);
         }
         printf("\n");
     }
