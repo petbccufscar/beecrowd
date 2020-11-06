@@ -63,7 +63,7 @@ Sabendo quantos números serão montados, criamos um laço de repetição `for` 
 ```
 Aqui usamos a função `strlen` da biblioteca [string.h](http://linguagemc.com.br/a-biblioteca-string-h/) para determinar o tamanho da string `numero`. Como cada dígito usa um número específico de leds, fazemos um `switch case` para somar os leds usados ao valor de `numLed` de acordo com o dígito escrito em `numero[j]`.
 
-Para finalizar o exercício, mostramos na tela quantos leds serão usados para montar todos os dígitos de `numero`:
+Para finalizar a iteração, mostramos na tela quantos leds serão usados para montar todos os dígitos de `numero` e voltamos ao início do loop para o próximo valor de `numero`
 ```c
     printf("%d leds\n", numLed);
   }
