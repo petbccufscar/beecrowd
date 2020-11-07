@@ -9,6 +9,17 @@ Nós temos algumas palavras e queremos justificá-las à direita, ou seja, alinh
 
 Para resolver esse problema, precisamos primeiro receber quantas palavras justificaremos e todas as palavras. Assim, conseguimos descobrir a maior palavra e quanto para a direita precisaremos afastar a palavra para justificá-la em relação a maior.
 
+Como faremos algumas comparações ente dois inteiros para definir o maior entre eles, criamos a função `int max(int a, int b)` que com um `if` nos retorna o maior entre os dois números a serem comparados, aqui definidos como `a` e `b`.
+
+```c
+int max(int a,int b){
+    if(a>b)
+        return a;
+    else
+        return b;
+}
+```
+
 Usaremos a biblioteca `string.h` para utilizar a função `strlen(char* string)` que nos retorna o tamanho de uma dada string.
 
 ```c
