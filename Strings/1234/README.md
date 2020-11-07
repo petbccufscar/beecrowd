@@ -14,7 +14,7 @@ Primeiramente, vamos declarar a biblioteca `string.h` pois usaremos as funções
     #include <string.h>
 ```
 
-Então iremos declarar a cadeia de caracteres `sentenca` que irá armezar a frase que iremos fazer as modificações, ela tem tamanho 50 pois este é o tamanho máximo que uma sentença deste exercício pode ter. A seguinte declaramos os inteiros `i` e `count` , ambas variáveis contadoras, sendo que `i` é uma variável auxiliar dentro do `for` e `count` é usado para verificar o número da posição das letras da frase, se a posição que estar é par ou ímpar. Por último temos `tam` que guardará o tamanho da sentença.
+Então iremos declarar a cadeia de caracteres sentenca que irá armazenar a frase que iremos fazer as modificações. Ela tem tamanho 50, pois é o tamanho máximo que uma sentença deste exercício pode ter. A seguir, declaramos os inteiros i e count, ambas variáveis contadoras, sendo que i é uma variável auxiliar dentro do for e count é usado para verificar o número da posição das letras da frase, se a posição que está é par ou ímpar. Por último temos tam, que guardará o tamanho da sentença.
 
 ``` c
     char sentenca[50];
@@ -22,7 +22,7 @@ Então iremos declarar a cadeia de caracteres `sentenca` que irá armezar a fras
     int tam;
 ```
 
-Como não sabemos a quantidade de sentenças que serão transformadas, usamos um `while` para poder fazer as iterações e a cada uma delas usamos a função `gets` para poder armazenar a frase em `sentenca` .  Iremos exercutar o que está dentro do laço até lermos um valor nulo.
+Como não sabemos a quantidade de sentenças que serão transformadas, usamos um while para poder fazer as iterações e, a cada uma delas, usamos a função gets para poder armazenar a frase em sentenca. Iremos executar o que está dentro do laço até lermos um valor nulo.
 
 ``` c
     while (gets(sentenca) != NULL)
@@ -31,7 +31,7 @@ Como não sabemos a quantidade de sentenças que serão transformadas, usamos um
     }
 ```
 
-Utilizando a função `strlen` para retornamos o tamanho da sentença e atribuímos a variável `tam` , já `count` recebe 1 pois definimos as posições ímpares sendo letras maiúsculas.
+Utilizamos a função strlen para retornamos o tamanho da sentença e atribuímos à variável tam. count recebe 1 pois definimos as posições ímpares sendo letras maiúsculas, e o primeiro número ímpar será a primeira letra de sentenca.
 
 ``` c
     tam = strlen(sentenca);
@@ -43,7 +43,7 @@ Usamos um `for` para poder iterar caractere por caractere da sentença.
 ``` c
     for (i = 0; i < tam; i++)
         {
-            //BLOCO
+            //CÓDIGO
         }
 ```
 
