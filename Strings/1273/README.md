@@ -2,23 +2,21 @@
 
 Nós temos algumas palavras e queremos justificá-las à direita, ou seja, alinhar todas elas à direita. Crie um programa que, após ler várias palavras, reimprima estas palavras com suas linhas justificadas à direita.
 
-Entrada
-A entrada contém diversos casos de testes. A primeira linha de cada caso de teste conterá um inteiro N (1 ≤ N ≤ 50), que indicará o número de palavras que virão a seguir. Cada uma das N palavras contém no mínimo uma letra e no máximo 50 letras maiúsculas (‘A’-‘Z’). O fim da entrada é indicado por N = 0.
 
 ###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1273
 
 # Resolução
 
-Para resolver esse problema, precisamos primeiro receber quantas palavras justificaremos e todas as palavras. Assim, conseguimos descobrir a maior palavra e quanto para a direita precisaremos afastar a palavra para justifica-la em relação a maior.
+Para resolver esse problema, precisamos primeiro receber quantas palavras justificaremos e todas as palavras. Assim, conseguimos descobrir a maior palavra e quanto para a direita precisaremos afastar a palavra para justificá-la em relação a maior.
 
-Usaremos a biblioteca `string.h` para utilizar a função `strlen(str string)` que nos retorna o tamanho de uma dada string.
+Usaremos a biblioteca `string.h` para utilizar a função `strlen(char* string)` que nos retorna o tamanho de uma dada string.
 
 ```c
 #include <string.h>
 
 ```
 
-Começaremos declarando as variáveis que iremos utilizar. `N` será quantas palavras receberemos (0 para parar a execução), `i,j e t` são auxiliares, `maior_palavra` é o tamanho da maior palavra recebida. A matriz `palavras[50][50]` é uma lista de palavras, que recebe até 50 palavras de tamanho 50. 
+Começaremos declarando as variáveis que iremos utilizar. `N` será quantas palavras receberemos (0 para parar a execução), `i`, `j` e `t` são auxiliares, `maior_palavra` é o tamanho da maior palavra recebida. A matriz `palavras[50][50]` é uma lista de palavras, que recebe até 50 palavras de tamanho 50.
 
 ```c
     int N, i,maior_palavra = 0, j,t;
@@ -35,7 +33,7 @@ Assim, recebemos o valor do primeiro `N` e iniciamos o loop para os próximos va
     }
 ```
 
-Dentro do loop, começamos zerando a variável `maior_palavra` que será diferente para cada conjunto de palavras recebida. Logo em seguida, criamos um loop para receber todas as `N` palavras e a cada palavra recebida, utilizamos  para substituir o conteúdo da variável `maior_palavra` pelo retorno da função `max()` que retorna o maior entre o tamanho da palavra atual e da `maior_palavra`
+Dentro do loop, começamos zerando a variável `maior_palavra`, que será diferente para cada conjunto de palavras recebida. Logo em seguida, criamos um loop para receber todas as `N` palavras e a cada palavra recebida, substituímos o conteúdo da variável `maior_palavra` pelo retorno da função `max()` que retorna o maior entre o tamanho da palavra atual e da `maior_palavra`.
 
 
 ```c
