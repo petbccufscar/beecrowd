@@ -5,7 +5,7 @@ Paulinho tem em suas mãos um novo problema. Agora a sua professora lhe pediu qu
 
 
 # Resolução:
-De início, como manipularemos strings, devemos incluir as bibliotecas de funções necessárias. Nesse caso, `<stdio.h>` para receber os dados do usuário e impressão de mensagens, e `<string.h>` para manipulação de string. 
+De início, como iremos manipular `strings`, devemos incluir as bibliotecas de funções necessárias. Nesse caso, `<stdio.h>` para receber os dados do usuário e impressão de mensagens, e `<string.h>` para manipulação de `string`. 
 ``` c
 #include <stdio.h>
 #include <string.h>
@@ -33,8 +33,7 @@ Sendo assim, como cada algarismo foi armazenado em cada elemento do vetor como u
         b_tamanho = strlen(b_valor);
 ```
 
-Agora, atribuimos o valor de 0 para a variável `encaixa`, para dar inicio ao ciclo de comparações. Em seguida, abrimos um loop `for`, com auxílio de `j`, que se repetirá a quantidade de vezes conforme o comprimento do valor B (tal comprimento foi armazenado em `b_tamanho`). 
-Dentro do loop, através de uma estrutura `if`, acessaremos de trás para frente cada algarismo dos valores A e B, com o uso da variável `j`, que aumentará conforme o loop e com isso irá acessando cada algarismo dos valores. Se ambos os algarismos forem iguais, a variável `encaixa` tem seu valor aumentado em 1.
+Agora, atribuímos o valor de 0 para a variável `encaixa`, para dar inicio ao ciclo de comparações. Em seguida, abrimos um loop `for`, com auxílio de `j`, que se repetirá a quantidade de vezes conforme o comprimento do valor B (tal comprimento foi armazenado em `b_tamanho`). 
 ``` c
         encaixa = 0;
         for (j=1; j<=b_tamanho; j++) {
@@ -44,7 +43,7 @@ Dentro do loop, através de uma estrutura `if`, acessaremos de trás para frente
         }
 ```
 
-Para encerrar nosso primeiro loop `for`, usamos uma estrutura `if` que comparará `encaixa` com `b_tamanho`, e se forem iguais impriremos, através do uso de `printf` "encaixa", caso contrário imprimimos "nao encaixa". A lógica dessa estrutura condicional é: como `encaixa` aumenta em 1 a cada algarismo final igual entre os valores A e B, se o valor de `encaixa` for igual ao tamanho do vetor B(`b_tamanho`), significa que todos os numeros do valor B estavam presentes no final do valor A. Por fim, finalizamos o programa com `return 0`.
+Para encerrar nosso primeiro loop `for`, usamos uma estrutura `if` que comparará `encaixa` com `b_tamanho`, e se forem iguais imprimimos, através do uso de `printf` "encaixa", caso contrário imprimimos "nao encaixa". A lógica dessa estrutura condicional é: como `encaixa` aumenta em 1 a cada algarismo final igual entre os valores A e B, se o valor de `encaixa` for igual ao tamanho do vetor B(`b_tamanho`), significa que todos os numeros do valor B estavam presentes no final do valor A. Por fim, finalizamos o programa com `return 0`.
 ``` c
         if (encaixa == b_tamanho) {
             printf("encaixa\n");
