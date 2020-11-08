@@ -12,7 +12,7 @@ Inicialmente, na função `main` declaramos duas varíaveis `i` e `j` que serão
 	char letras_espaco[50], letras[50];
 ```
 
-Logo após, temos um loop que será executado enquanto houver letras sendo lidas.
+Logo após as declarações, temos um loop que será executado enquanto houver letras sendo lidas.
 ``` c
     while ( gets(letras_espaco) )
 ```
