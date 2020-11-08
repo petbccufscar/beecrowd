@@ -12,7 +12,7 @@ Começamos declarando nossas variáveis, do tipo inteiro (`int`) e do tipo carac
 * `cifra[50]`, variável para a cifra recebida de até 50 caracteres, conforme indicado no exercício;
 * `deslocamento`, para receber o quanto iremos deslocar a cadeia de caracteres da cifra recebida;
 * `casos`, para receber quantos casos serão lidos pelo programa;
-* `aux`, para armazenar a cifra antes de ser exibida;
+* `aux`, para armazenar a cifra descodificada;
 * `i`, para iterar pelo laço de repetição.
 ```c
     int i, deslocamento = 0, casos = 0, aux = 0;
