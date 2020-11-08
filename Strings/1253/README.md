@@ -6,7 +6,7 @@ Júlio César usava um sistema de criptografia, agora conhecido como Cifra de C�
 
 # Resolução
 
-Para resolver o problema, iremos utiizar o sistema da [tabela ASCII](https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm). Enquanto houverem casos, iremos receber o deslocamento e movimentar o valor na tabela ASCII para que mude a letra do alfabeto.
+Para resolver o problema, iremos utiizar o sistema da [tabela ASCII](https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm). Enquanto houverem casos, iremos receber a frase codificiada com a cifra de César, e a quantidade de vezes que cada caractere da sentença foi deslocado para a direita. Subtraímos o valor na tabela ASCII de cada letra, para que mude para sua representação não codificada.
 
 Começamos declarando nossas variáveis, do tipo inteiro (`int`) e do tipo caracter (`char`). Serão elas:
 * `cifra[50]`, variável para a cifra recebida de até 50 caracteres, conforme indicado no exercício;
