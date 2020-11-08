@@ -80,7 +80,7 @@ Dessa forma, há também uma verificação por meio do `else if` que analisa se 
    }
  ```
 
- De maneira semelhante, também verificamos se o caractere que foi lido é igual ao sublinhado, através do `else if`. Dentro deste `else if` temos outras duas estruturas condicionais (`if` e `else if`) que analisam se a variável `encontrado_italico` possui o valor 1 ou 0, indicando que o primeiro sublinhado referente a um par de sublinhados foi encontrado ou não, respectivamente. Com essas verificações, coloca-se na saída ou o caractere `<b>` ou `</b>` e altera-se o valor da variável `encontrado_italico` ou para 1 ou para
+ De maneira semelhante, também verificamos se o caractere que foi lido é igual ao sublinhado, através do `else if`. Dentro deste `else if` temos outras duas estruturas condicionais (`if` e `else if`) que analisam se a variável `encontrado_italico` possui o valor 1 ou 0, indicando que o primeiro sublinhado referente a um par de sublinhados foi encontrado ou não, respectivamente. Com essas verificações, coloca-se na saída o caractere `<b>` ou `</b>` e altera-se o valor da variável `encontrado_italico` para _1_ ou _0._
  0.
 
  ```c
