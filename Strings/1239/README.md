@@ -52,7 +52,7 @@ encontrado_negrito = 0;
 encontrado_italico = 0;
 ```
 
-Para a leitura da entrada, utilizamos um laço `while`  com a função `scanf`
+Para a leitura da entrada, utilizamos um laço `while` com a função `scanf`
 para ler cada caractere da entrada e armazená-lo na variável `caractere`. A constante `EOF` pertence à biblioteca `stdio.h`, assume valor -1 na maioria dos computadores e indica o fim da entrada dos dados. Com isso, o programa sairá do laço quando a função `scanf` retornar o valor `EOF`.
 
 ##### Para aprender um pouco mais sobre entrada e saída: [Entrada e saída](https://www.ime.usp.br/~pf/algoritmos/aulas/io.html)
