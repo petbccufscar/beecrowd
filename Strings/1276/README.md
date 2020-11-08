@@ -41,7 +41,7 @@ void ordena_letras(char letras[50], int n)
     }
 }
 ```
-Por fim, chamamos a função `encontra_faixa` que recebe os parâmetros `letras[50]` e `tam_vetor` e possui os índices `inicio`, em que será demarcado o ínicio da faixa de letras, e `meio` e `fim` que irão percorrer o vetor. O laço `for` irá durar até o índice `inicio` chegar ao fim da frase e a cada iteração o valor de `meio` e `fim` irão percorrer dois a dois os elementos do vetor, até que atinjam o fim do vetor ou a letra apontada por `fim` não seja a seguinte na ordem alfabética daquela apontada por `meio`. Quando o laço `while` for quebrado, `inicio` continuará apontando para o começo da faixa e `meio` (ou `[fim-1]`) apontam para o último valor da faixa. Então, imprimimos esses valores e alteramos o valor de `inicio` para onde a faixa foi quebrada, ou seja, `fim`.
+Por fim, chamamos a função `encontra_faixa` que recebe os parâmetros `letras[50]` e `tam_vetor`. Além disso, há também os índices `inicio`, o qual servirá para demarcar o ínicio da faixa de letras, `meio` e `fim`, que irão percorrer o vetor. O laço `for` irá durar até o índice `inicio` chegar ao fim da frase e a cada iteração os valores de `meio` e `fim` irão percorrer dois a dois os elementos do vetor, até que atinjam o fim do vetor ou até que a letra apontada por `fim` não seja a seguinte na ordem alfabética daquela apontada por `meio`. Quando o laço `while` for quebrado, `inicio` continuará apontando para o começo da faixa e `meio` (ou `[fim-1]`) apontam para o último valor da faixa. Então, imprimimos esses valores e alteramos o valor de `inicio` para onde a faixa foi quebrada, ou seja, `fim`.
 ```c
 void encontra_faixa(char letras[50], int tam_vetor)
 {
