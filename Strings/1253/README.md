@@ -19,7 +19,7 @@ Começamos declarando nossas variáveis, do tipo inteiro (`int`) e do tipo carac
     char cifra[50];
 ```
 
-Em seguida, lemos a quantidade de casos que o programa calculará, com a estrutura `scanf`.
+Em seguida, lemos a quantidade de casos que o programa calculará, com a função `scanf`.
 ```c
     scanf("%d", &casos);
 ```
