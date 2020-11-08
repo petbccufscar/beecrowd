@@ -42,7 +42,7 @@ Utilizaremos a estrutura de repetição `for` para iterar em todas as posições
             break;
 ```
 
-Caso o deslocamento, quando utilizado na cifra, faça com que a letra tenha código ASCII menor do que 65 (valor da letra A), significa que devemos voltar para o começo, conforme explicado no enunciado de Y virar A. Valores menores do que 65 na tabela ASCII são utilizados para sinais de pontuação, símbolos, etc.
+Caso o deslocamento, quando utilizado na cifra, faça com que a letra tenha código ASCII menor do que 65 (valor da letra A), significa que devemos ir para o final do alfabeto para fazer a descodificação, conforme explicado no enunciado de Y virar A. Valores menores do que 65 na tabela ASCII são utilizados para sinais de pontuação, símbolos, etc.
 Para voltar para o começo do alfabeto, adicionamos 26 (quantidade de letras do alfabeto).
 Caso o valor esteja acima de 65, significa que o deslocamento resulta em uma letra válida da cifra. Com isso, apenas aplicamos o deslocamento.
 ```c
