@@ -93,7 +93,7 @@ Dessa forma, há também uma verificação por meio do `else if` que analisa se 
      }
    }
  ```
-Por fim, caso o caractere lido e armazenado na variável `caractere` não seja nem um asterisco, nem um sublinhado, o programa entra no `else` que possui apenas um comando `print` para colocar este caractere na saída.
+Por fim, caso o caractere lido e armazenado na variável `caractere` não seja nem um asterisco, nem um sublinhado, o programa entra no `else` que possui apenas um comando `printf` para colocar este caractere na saída.
 
 ```c
   else{
