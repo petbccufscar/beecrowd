@@ -55,7 +55,6 @@ encontrado_italico = 0;
 Para a leitura da entrada, utilizamos um laço `while` com a função `scanf`
 que serve para ler cada caractere da entrada e armazená-lo na variável `caractere`. A constante `EOF` pertence à biblioteca `stdio.h`e assume valor _-1_ na maioria dos computadores, indicando o fim da entrada dos dados. Com isso, o programa sairá do laço quando a função `scanf` retornar o valor `EOF`.
 
-##### Para aprender um pouco mais sobre entrada e saída: [Entrada e saída](https://www.ime.usp.br/~pf/algoritmos/aulas/io.html)
 
 ```c
 while(scanf("%c", &caractere) != EOF){
