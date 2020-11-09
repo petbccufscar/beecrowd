@@ -101,6 +101,8 @@ Por fim, caso o caractere lido e armazenado na variável `caractere` não seja n
   }
 }
 ```
+##### Para aprender um pouco mais sobre entrada e saída: [Entrada e saída](https://www.ime.usp.br/~pf/algoritmos/aulas/io.html)
+
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
