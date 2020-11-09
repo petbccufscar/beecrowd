@@ -63,7 +63,7 @@ while(scanf("%c", &caractere) != EOF){
 
 Posteriormente, verificamos se o caractere lido é igual ao caractere asterisco através de um `if`. Caso esta condição seja verdade temos outras duas verificações feitas sobre o valor da variável `encontrado_negrito`. Há um `ìf` que verifica se `encontrado_negrito` possui valor 0. Isso indica que até o momento não foi encontrado outro asterisco.
 
- Já que o caractere analisado é um asterisco e o primeiro encontrado, utilizamos a função `print` para enviar a tag `<b>`para a posição respectiva da saída.  Além disso, alteramos o valor da variável `encontrado_negrito` para 1, indicando que foi encontrado o primeiro par de asteriscos. Essa indicação permite que seja possível identificar  que o próximo asterisco que for encontrado corresponde ao segundo asterisco daquele par, o que permite colocar a tag `</b>` na saída.
+ Já que o caractere analisado é um asterisco e o primeiro encontrado, utilizamos a função `printf` para enviar a tag `<b>`para a posição respectiva da saída.  Além disso, alteramos o valor da variável `encontrado_negrito` para 1, indicando que foi encontrado o primeiro par de asteriscos. Essa indicação permite que seja possível identificar que o próximo asterisco que for encontrado corresponde ao segundo asterisco daquele par, o que permite colocar a tag `</b>` na saída.
 
 Dessa forma, há também uma verificação por meio do `else if` que analisa se `encontrado_negrito` é igual a 1,  colocando `</b>` na saída e alterando o valor de `encontrado_negrito` para 0 novamente. Com isso, torna-se possível diferenciar os momentos de colocarmos ou `<b>` ou `</b>` na saída.
 
