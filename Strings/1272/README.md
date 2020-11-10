@@ -39,7 +39,7 @@ fgets(texto, sizeof(texto), stdin);
 j = 0;
 ```
 
-Criamos uma laço de repetição `for` para percorrer cada caracter do texto e com a estrutura `if` verificamos se o caracter `texto[i]` não é uma espaço (' ') e se é a primeira letra do alfabeto, ou seja, o caractere anterior `texto[i-1]` é um espaço. Também, utilizamos o operador lógico ou para verificar se o primeiro caractere do texto é uma letra. Caso essa preposição seja verdadeira adicionamos o caractere na `mensagemOculta` na posição `j` e passamos para a próxima posição `j++`.
+Criamos uma laço de repetição `for` para percorrer cada caracter do texto e com a estrutura `if` verificamos se o caracter `texto[i]` não é um espaço (' ') e se é a primeira letra do alfabeto, ou seja, o caractere anterior `texto[i-1]` é um espaço. Também, utilizamos o operador lógico ou para verificar se o primeiro caractere do texto é uma letra. Caso essa preposição seja verdadeira adicionamos o caractere na `mensagemOculta` na posição `j` e passamos para a próxima posição `j++`.
 ```c
 for(i = 0; i < strlen(texto)-1; i++){
 	
