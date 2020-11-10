@@ -4,23 +4,23 @@ Você terá como uma entrada várias linhas, cada uma com uma string. O valor de
 
 Valor = (Posição no alfabeto) + (Elemento de entrada) + (Posição do elemento)
 
-Todas posições são baseadas em zero. 'A' tem posição 0 no alfabeto, 'B' tem posição 1 no alfabeto, ... O cálculo de hash retornado é a soma de todos os caracteres da entrada. Por exemplo, se a entrada for 
-CBA 
+Todas posições são baseadas em zero. 'A' tem posição 0 no alfabeto, 'B' tem posição 1 no alfabeto, ... O cálculo de hash retornado é a soma de todos os caracteres da entrada. Por exemplo, se a entrada for  
+CBA  
 DDD
 
 então cada caractere deverá ser computado como segue
 
-2 = 2 + 0 + 0  'C' no elemento 0 posição 0 
-2 = 1 + 0 + 1  'B' no elemento 0 posição 1 
-2 = 0 + 0 + 2  'A' no elemento 0 posição 2 
-4 = 3 + 1 + 0  'D' no elemento 1 posição 0 
-5 = 3 + 1 + 1  'D' no elemento 1 posição 1 
-6 = 3 + 1 + 2  'D' no elemento 1 posição 2
+2 = 2 + 0 + 0  'C' no elemento 0 posição 0  
+2 = 1 + 0 + 1  'B' no elemento 0 posição 1  
+2 = 0 + 0 + 2  'A' no elemento 0 posição 2  
+4 = 3 + 1 + 0  'D' no elemento 1 posição 0  
+5 = 3 + 1 + 1  'D' no elemento 1 posição 1  
+6 = 3 + 1 + 2  'D' no elemento 1 posição 2 
 
 O cálculo final de hash será 2+2+2+4+5+6 = 21.
 
-Problema Completo
-[httpswww.urionlinejudge.com.brjudgeptproblemsview1257](httpswww.urionlinejudge.com.brjudgeptproblemsview1257)
+**Problema Completo:**
+[https://www.urionlinejudge.com.br/judge/pt/problems/view/1257](https://www.urionlinejudge.com.br/judge/pt/problems/view/1257)
 
 # Resolução
 
@@ -35,12 +35,12 @@ int n, l, i, j, k, total;
 
 A entrada do exercício contém vários casos de teste. Dessa forma, inicialmente realiza-se a leitura de um inteiro `n`, que representa a quantidade de casos de teste. Para cada caso de teste, pode-se ler `l` strings.
 
-Para realizarmos a leitura de `l` para cada caso de teste, fazemos isso dentro de um `for`, que irá de 0 até a quantidade de casos de teste de entrada (valor salvo na variável `n`). Dessa forma, realiza-se a leitura de um inteiro `l`, que representa a quantidade de linhas que vem a seguir. Neste caso, utilizamos `%d%c` ao invés de apenas `%d` porque ele é responsável por ler algum caractere que entrou no buffer (neste caso o `n` ao dar ENTER) e, posteriormente, limpar a sujeira do buffer. Realizamos também a atribuição do valor 0 a variável `total`, já que toda vez que o código entrar nesse loop, irá retornar um novo valor `total` para as novas strings de entrada.
+Para realizarmos a leitura de `l` para cada caso de teste, fazemos isso dentro de um `for`, que irá de 0 até a quantidade de casos de teste de entrada (valor salvo na variável `n`). Dessa forma, realiza-se a leitura de um inteiro `l`, que representa a quantidade de linhas que vem a seguir. Neste caso, utilizamos `%d%*c` ao invés de apenas `%d` porque ele é responsável por ler algum caractere que entrou no buffer (neste caso o `n` ao dar ENTER) e, posteriormente, limpar a sujeira do buffer. Realizamos também a atribuição do valor 0 a variável `total`, já que toda vez que o código entrar nesse loop, irá retornar um novo valor `total` para as novas strings de entrada.
 
 ```c
-scanf(%d, &n);
-for(i=0;in;i++){
-   scanf(%d%c, &l);
+scanf("%d", &n);
+for(i=0;i<n;i++){
+   scanf("%d%*c", &l);
    total = 0;
    /* Continuação omitida */
 }
@@ -49,12 +49,12 @@ for(i=0;in;i++){
 Cada uma dessas linhas contém uma string com até 50 letras maiúsculas. Para realizarmos a leitura de todas as strings, fazemos isso dentro de um `for`, que irá de 0 até a quantidade de strings de entrada (valor salvo na variável `l`).
 
 ```c
-scanf(%d, &n);
-for(i=0;in;i++){
-   scanf(%d%c, &l);
+scanf("%d", &n);
+for(i=0;i<n;i++){
+   scanf("%d%*c", &l);
    total = 0;
-   for(j=0;jl;j++){
-      scanf(%s%c, linha);
+   for(j=0;j<l;j++){
+      scanf("%s%*c", linha);
       /* Continuação omitida */
    }
    /* Continuação omitida */
@@ -70,12 +70,12 @@ O elemento de entrada a qual ela pertence está sendo representado pela variáve
 Ao término do `for`, finalmente o programa retorna o resultado da variável `total`.
 
 ```c
-scanf(%d, &n);
-for(i=0;in;i++){
-   scanf(%d%c, &l);
+scanf("%d", &n);
+for(i=0;i<n;i++){
+   scanf("%d%*c", &l);
    total = 0;
-   for(j=0;jl;j++){
-      scanf(%s%c, linha);
+   for(j=0;j<l;j++){
+      scanf("%s%*c", linha);
       for(k=0;k<linha[k] != '\0';k++){
           total += linha[k] - 65 + j + k;
       }  
@@ -84,9 +84,9 @@ for(i=0;in;i++){
 }
 ```
 
-Para aprender um pouco mais sobre a estrutura de repetição for [For](httplinguagemc.com.bra-estrutura-de-repeticao-for-em-c)
+**Para aprender um pouco mais sobre a estrutura de repetição for:** [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
-[Facebook](httpswww.facebook.competbcc),
-[Instagram](httpswww.instagram.competbcc.ufscar)
-ou nos mande um e-mail com o assunto URI para petbcc.ufscar@gmail.com.
+[Facebook](https://www.facebook.com/petbcc/),
+[Instagram](https://www.instagram.com/petbcc.ufscar/)
+ou envie um e-mail com o assunto "URI" para petbcc.ufscar@gmail.com
