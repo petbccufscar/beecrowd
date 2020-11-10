@@ -33,7 +33,7 @@ while(N>0){
 ```
 
 Em seguida, utilizamos o comando `fgets` para receber o texto e iniciamos a variável `j` em 0, pois ela servirá para iteramos entre as posições de `mensagemOculta`. Esse comando `fgets` é similar ao `scanf`, mas se diferencia por conseguir receber espaços(' ').
-```
+```c
 fgets(texto, sizeof(texto), stdin);
 
 j = 0;
