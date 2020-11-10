@@ -26,7 +26,7 @@ Problema Completo
 
 O exercício pede que para cada string de entrada, deve-se calcular o valor de cada caractere dessa string, de acordo com sua posição no alfabeto, o elemento de entrada a qual ele pertence e sua posição na string.
 
-Começaremos declarando as variáveis que iremos utilizar. A variável `linha[51]` irá guardar uma string com até 50 letras maiúsculas ('A'-'Z') (51 porque é o número de caracteres máximo que o exercício aceita, incluindo o `\0` indicando o fim da string). `n`, `l`, `i`, `j` e `k` são variáveis auxiliares. `total` é a variável responsável por guardar o cálculo final de hash e retornar o resultado no fim do código.
+Começaremos declarando as variáveis que iremos utilizar. A variável `linha[51]` irá guardar uma string com até 50 letras maiúsculas (51 porque é o número de caracteres máximo que o exercício aceita, incluindo o `\0` indicando o fim da string). `n`, `l`, `i`, `j` e `k` são variáveis auxiliares. `total` é a variável responsável por guardar o cálculo final de hash e retornar o resultado no fim do código.
 
 ```c
 char linha[51];
@@ -59,7 +59,7 @@ for(i=0;in;i++){
 }
 ```
 
-Para cada linha, vamos retornar um resultado `total`, que é a soma dos valores calculados para cada caractere. Para percorrer todas as letras da string, usamos um `for` que é iniciado na letra de posição 0 e percorre até a letra da string ser igual a `0`, que indica o fim dessa string. Realizamos a soma com o valor de cada caractere e atribuímos à variável `total`. Esse valor, como comentado no enunciado, depende da posição da letra no alfabeto, o elemento de entrada a qual ela pertence e sua posição na string.
+Para cada linha, vamos retornar um resultado `total`, que é a soma dos valores calculados para cada caractere. Para percorrer todas as letras da string, usamos um `for` que é iniciado na letra de posição 0 e percorre até a letra da string ser igual a `\0`, que indica o fim dessa string. Realizamos a soma com o valor de cada caractere e atribuímos à variável `total`. Esse valor, como comentado no enunciado, depende da posição da letra no alfabeto, o elemento de entrada a qual ela pertence e sua posição na string.
 
 Para calcularmos a posição da letra no alfabeto, usamos como base a tabela [ASCII](httpsweb.fe.up.pt~ee96100projectoTabela%20ascii.htm), que é um conjunto de códigos binários que codificam 128 sinais, entre eles as letras do alfabeto latino. A letra A tem código decimal 65, a letra B tem código decimal 66, e assim por diante. Ao realizar `linha[k] - 65`, estamos pegando o código decimal da letra na posição `k` da string `linha` e subtraindo 65 (que é a quantidade de símbolos anteriores ao alfabeto), resultando na posição da letra no alfabeto. Pegamos como exemplo a letra A, seu código decimal é 65, ao realizar a subtração 65 - 65, obtemos o resultado 0, que é sua posição no alfabeto.
 
