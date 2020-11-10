@@ -33,7 +33,9 @@ char linha[51];
 int n, l, i, j, k, total;
 ```
 
-A entrada do exercício contém vários casos de teste. Dessa forma, inicialmente realiza-se a leitura de um inteiro `n`, que representa a quantidade de casos de teste. Para cada caso de teste, pode-se ler `l` strings. Para realizarmos a leitura de `l` para cada caso de teste, fazemos isso dentro de um `for`, que irá de 0 até a quantidade de casos de teste de entrada (valor salvo na variável `n`). Dessa forma, realiza-se a leitura de um inteiro `l`, que representa a quantidade de linhas que vem a seguir. Neste caso, utilizamos `%d%c` ao invés de apenas `%d` porque ele é responsável por ler algum caractere que entrou no buffer (neste caso o `n` ao dar ENTER) e, posteriormente, limpar a sujeira do buffer. Realizamos também a atribuição do valor 0 a variável `total`, já que toda vez que o código entrar nesse loop, irá retornar um novo valor `total` para as novas strings de entrada.
+A entrada do exercício contém vários casos de teste. Dessa forma, inicialmente realiza-se a leitura de um inteiro `n`, que representa a quantidade de casos de teste. Para cada caso de teste, pode-se ler `l` strings.
+
+Para realizarmos a leitura de `l` para cada caso de teste, fazemos isso dentro de um `for`, que irá de 0 até a quantidade de casos de teste de entrada (valor salvo na variável `n`). Dessa forma, realiza-se a leitura de um inteiro `l`, que representa a quantidade de linhas que vem a seguir. Neste caso, utilizamos `%d%c` ao invés de apenas `%d` porque ele é responsável por ler algum caractere que entrou no buffer (neste caso o `n` ao dar ENTER) e, posteriormente, limpar a sujeira do buffer. Realizamos também a atribuição do valor 0 a variável `total`, já que toda vez que o código entrar nesse loop, irá retornar um novo valor `total` para as novas strings de entrada.
 
 ```c
 scanf(%d, &n);
