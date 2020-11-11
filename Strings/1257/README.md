@@ -61,7 +61,7 @@ for(i=0;i<n;i++){
 }
 ```
 
-Para cada linha, vamos retornar um resultado `total`, que é a soma dos valores calculados para cada caractere. Para percorrer todas as letras da string, usamos um `for` que é iniciado na letra de posição 0 e percorre até a letra da string ser igual a `\0`, que indica o fim dessa string. Realizamos a soma com o valor de cada caractere e atribuímos à variável `total`. Esse valor, como comentado no enunciado, depende da posição da letra no alfabeto, o elemento de entrada a qual ela pertence e sua posição na string.
+Para cada linha lida da entrada, vamos retornar um resultado `total`, que é a soma dos valores calculados para cada caractere. Para percorrer todas as letras da string, usamos um `for` que é iniciado na letra de posição 0 e percorre até a letra da string ser igual a `\0`, que indica o fim dessa string. Realizamos a soma com o valor de cada caractere e atribuímos à variável `total`. Esse valor, como comentado no enunciado, depende da posição da letra no alfabeto, o elemento de entrada a qual ela pertence e sua posição na string.
 
 Para calcularmos a posição da letra no alfabeto, usamos como base a tabela [ASCII](httpsweb.fe.up.pt~ee96100projectoTabela%20ascii.htm), que é um conjunto de códigos binários que codificam 128 sinais, entre eles as letras do alfabeto latino. A letra A tem código decimal 65, a letra B tem código decimal 66, e assim por diante. Ao realizar `linha[k] - 65`, estamos pegando o código decimal da letra na posição `k` da string `linha` e subtraindo 65 (que é a quantidade de símbolos anteriores ao alfabeto), resultando na posição da letra no alfabeto. Pegamos como exemplo a letra A, seu código decimal é 65, ao realizar a subtração 65 - 65, obtemos o resultado 0, que é sua posição no alfabeto.
 
