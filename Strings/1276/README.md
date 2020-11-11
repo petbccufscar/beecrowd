@@ -26,7 +26,7 @@ Para os espaços serem retirados, utilizamos uma condição `if` para que, se a 
     if (letras_espaco[i] >= 'a' && letras_espaco[i] <= 'z')
                 letras[j++] = letras_espaco[i];
 ```
-Em seguida, chamamos a função `ordena_letras` que recebe os parâmetros `letras[50]` que é o vetor de letras e `n` que é o seu tamanho e tem o intuito de ordenar as letras em ordem alfabética.
+Em seguida, chamamos a função `ordena_letras` que recebe os parâmetros `letras[50]` que é o vetor de letras e `n` que é o seu tamanho e tem o intuito de ordenar as letras em ordem alfabética. Para realizar a ordenação utilizamos um algoritmo **InsertionSort** que funciona basicamente utilizando dois contadores e um auxiliar em dois `for` alinhados, cujo objetivo é para colocar antes da letra selecionada as letras que forem maiores do que ela. Você pode conferir detalhes sobre ordenação por inserção em: [Ordenação: Algoritmos elementares](https://www.ime.usp.br/~pf/algoritmos/aulas/ordena.html)
 ```c
 void ordena_letras(char letras[50], int n)
 {
