@@ -46,7 +46,7 @@ for(i=0;i<n;i++){
 }
 ```
 
-Cada uma dessas linhas contém uma string com até 50 letras maiúsculas. Para realizarmos a leitura de todas as strings, fazemos isso dentro de um `for`, que irá de 0 até a quantidade de strings de entrada (valor salvo na variável `l`).
+Cada uma dessas linhas contém uma string com até 50 letras maiúsculas. Para realizarmos a leitura de todas as strings, fazemos isso dentro de um loop `for` interno, que irá de 0 até a quantidade de strings de entrada (valor salvo na variável `l`).
 
 ```c
 scanf("%d", &n);
