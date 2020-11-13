@@ -45,7 +45,7 @@ Igualamos `contador` a 0 e lemos a string `frase`. `%1001[^\n]` significa que a 
 ```
 Aqui usamos a função `strlen` da biblioteca [string.h](http://linguagemc.com.br/a-biblioteca-string-h/) para determinar o tamanho da string `frase`. Na iteração usamos dois `if`:
 * O primeiro `if` verifica se o caractere escrito é uma letra minúscula do alfabeto (`frase[j] >= 'a' && frase[j] <= 'z'`). Se for, podemos verificar a condição do segundo `if`.
-* O segundo `if` verifica se essa é a primeira vez que a letra aparece na string (`alfabeto[frase[j] - 'a'] == 0`). Se for, atribuímos 1 na posição que representa a letra presente em `frase[j]` no vetor `alfabeto`. Note que dentro dos colchetes está escrito uma subtração entre `frase[j]` e `'a'`, que são valores do tipo `char`. Nesse caso a subtração é feita utilizando o valor decimal da [tabela ASCII](https://pt.wikipedia.org/wiki/ASCII) que representa o caractere.
+* O segundo `if` verifica se essa é a primeira vez que a letra aparece na string (`alfabeto[frase[j] - 'a'] == 0`). Se for, atribuímos 1 na posição que representa a letra presente em `frase[j]` no vetor `alfabeto`. Note que, dentro dos colchetes, está escrito uma subtração entre `frase[j]` e `'a'`, que são valores do tipo `char`. Nesse caso, a subtração é feita utilizando o valor decimal da [tabela ASCII](https://pt.wikipedia.org/wiki/ASCII) que representa o caractere.
 
 Depois de verificar todos os caracteres de `frase`, vamos contar quantas letras diferentes estão na string. Criamos um `for` e, para cada valor 1 presente em `alfabeto`, incrementamos `contador` e igualamos `alfabeto[j]` a 0, para usar o vetor na próxima verificação:
 ```c
