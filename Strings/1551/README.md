@@ -20,7 +20,7 @@ Vamos usar seis variáveis, em que cinco são do tipo `int` e uma é do tipo `ch
 ```
 `n` representa quantos frases serão categorizadas. `contador` indica quantas letras diferentes foram usadas na frase. `i` e `j` são variáveis auxiliares para a estrutura `for`. `alfabeto` é um vetor de `int` que vai indicar se uma determinada letra está presente na frase. `frase` é uma string que representa a frase que vai ser analisada.
 
-Precisamos saber quantos casos de teste vão ser realizados, para isso vamos usar um `scanf` para ler `n`:
+Precisamos saber quantos casos de teste vão ser realizados. Para isso, vamos usar um `scanf` para ler `n`:
 ```c
   scanf("%d", &n);
 ```
