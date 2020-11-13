@@ -24,7 +24,7 @@ Precisamos saber quantos casos de teste vão ser realizados. Para isso, vamos us
 ```c
   scanf("%d", &n);
 ```
-Para poder categorizar as frases, temos que garantir que uma mesma letra não seja considerada duas vezes na frase. Para isso criamos o vetor `alfabeto`. Esse vetor possui 26 posições, cada uma representando uma letra (a 1ª posição do vetor representa a letra "a", a 2ª posição do vetor representa a letra "b" etc.). Os valores nesse vetor serão 0, se a letra não estiver na frase, ou 1, se estiver. Para inicializar esse vetor atribuímos 0 a todas as posições de `alfabeto`:
+Para poder categorizar as frases, temos que garantir que uma mesma letra não seja considerada duas vezes na frase. Para isso, criamos o vetor `alfabeto` com 26 posições, cada uma representando uma letra (a 1ª posição do vetor representa a letra "a", a 2ª posição do vetor representa a letra "b", etc.). Os valores nesse vetor serão 0, se a letra não estiver na frase, ou 1, se estiver. Para inicializar esse vetor, atribuímos 0 a todas as posições de `alfabeto`:
 ```c
   for(i = 0; i < 26; i++)
     alfabeto[i] = 0;
