@@ -8,7 +8,7 @@ Vendo que sua mochila está bem cheia, Dabriel pediu para que você fizesse um p
 
 # Resolução:
 
-Para resolver este problema, iremos comparar o nome de um Pomekon com o de outro recebido anteriormente. Caso os nomes forem diferentes, acrescentamos um Pomekon em nossa pomedex e, ao final mostramos quantos pomekons diferentes Dabiel possui.
+Para resolver este problema, iremos comparar o nome de um Pomekon com o de outro recebido anteriormente. Caso os nomes forem diferentes, acrescentamos um Pomekon em nossa pomedex e, ao final, mostramos quantos pomekons diferentes Dabriel possui.
 
 Iremos importar a biblioteca `string.h` para a utilizaçao das funções:
 `strcmp`, que serve para comparar duas `strings` e retornar 0, caso elas forem iguais e `-1` ou `1` se
