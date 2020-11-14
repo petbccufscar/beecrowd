@@ -22,7 +22,7 @@ Iniciamos declarando as variáveis:
 `pomedex`, é uma matriz de `char`, ou seja, uma lista de `strings` para armazenar os nomes dos pomekons;
 `pomekon`, é uma `string` para receber o nome de cada pomekon;
 `i` e `topo`, são variáveis inteira que servirão para percorrer a `pomedex` e verificar os pomekons diferentes;
-`n`, que serve para sabermos quantos pomekons no total Dabiel já capturou;
+`n`, que serve para sabermos quantos pomekons no total Dabriel já capturou;
 `quant`, que serve para contarmos os pomekons diferentes.
 ```c
 char pomedex[151][1001], pomekon[1001];
