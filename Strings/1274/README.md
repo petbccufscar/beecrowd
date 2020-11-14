@@ -65,7 +65,7 @@ if(i>topo){
 }
 ```
 
-Por fim, com o comando `printf` exibimos a quatidade de pomekons que faltam para Dabiel completar a sua `pomedex`.
+Por fim, com o comando `printf` exibimos a quatidade de pomekons que faltam para Dabriel completar a sua `pomedex`.
 ```c
 printf("Falta(m) %d pomekon(s).\n", 151 - quant);
 ```
