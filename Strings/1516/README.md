@@ -46,7 +46,7 @@ Depois, lemos a nova altura e largura que o desenho terá e calculamos as propor
 ```
 
 Agora, iremos fazer o processo de receber cada linha do desenho original, salvar na variável temporária e exibir o novo desenho.
-Primeiro, iremos iniciar uma estrutura `for` que iterará `N`-vezes. Começamos copiando a linha `i` do desenho na variável `temp` com a estrutura `strcpy`, da biblioteca `string.h`.
+Primeiro, iremos iniciar uma estrutura `for` que iterará `N` vezes. Começamos copiando a linha `i` do desenho na variável `temp` com a estrutura `strcpy`, da biblioteca `string.h`.
 ```c
     for(i=0;i<N;i++)
     {
