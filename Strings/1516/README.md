@@ -25,7 +25,7 @@ Começamos declarando nossas variáveis, que serão do tipo `char` e do tipo `in
     int proporcao_altura, proporcao_largura;
 ```
 
-Em seguida, iremos iniciar nossa estrutura de repetição `while`, que executará o programa enquanto a leitura de altura e largura `N` e `M` for válida e enquanto a variável de altura `N` for diferente de zero.
+Em seguida, iniciaremos nossa estrutura de repetição `while`, que executará o programa enquanto a leitura de altura e largura `N` e `M` for válida e enquanto a variável de altura `N` for diferente de zero.
 Esta adição é necessária por conta do enunciado especificar que a entrada `N = M = 0` não deve ser executada e, visto que `N = M = 0`, podemos usar apenas `N` ou `M` para verificar, para que o código fique mais limpo.
 ```c
     while(scanf("%d %d", &N, &M), N)
