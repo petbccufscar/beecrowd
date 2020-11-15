@@ -13,8 +13,8 @@ Começamos lendo o número de casos de teste.
 
 ```c
     int X, Y, i, N, j;
-	unsigned char vezes;
-	scanf("%d", &N);
+    unsigned char vezes;
+    scanf("%d", &N);
 ```
 
 Utilizaremos um `for()` para passar por todos os casos de teste.
@@ -34,11 +34,11 @@ Lembrando de imprimir no formato pedido, sendo:
 
 ```c
     if (X == Y)
-			for (j = 5; j <= 10; j++)
-				printf("%d x %d = %d\n", X, j, X*j);
-		else
-			for (j = 5; j <= 10; j++)
-				printf("%d x %d = %d && %d x %d = %d\n", X, j, X*j, Y, j, Y*j);
+	for (j = 5; j <= 10; j++)
+		printf("%d x %d = %d\n", X, j, X*j);
+    else
+	for (j = 5; j <= 10; j++)
+		printf("%d x %d = %d && %d x %d = %d\n", X, j, X*j, Y, j, Y*j);
 ```
 
 ##### Para aprender um pouco mais sobre a estrutura for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
