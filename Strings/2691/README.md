@@ -6,7 +6,7 @@ No Instituto Federal do Sul de Minas, na cidade de Muzambinho, há um matemátic
  
 # Resolução:
 
-O exercício consiste em ler o número de casos de teste, para cada caso de teste teremos 2 `int` que iremos imprimir a tabuada de multiplicação do 5 ao 10.
+O exercício consiste em ler o número de casos de teste, e para cada caso de teste teremos dois números que iremos imprimir a tabuada de multiplicação deles do 5 ao 10.
 
 Primeiro instanciamos as variáveis necessárias, sendo elas: 5 `int` (`i` e `j` para os `loopings`; `X` e `Y` para para armazenar os números; `N`  para o número de casos de teste) e 1 `char` (para ler o caractere `x`).
 Começamos lendo o número de casos de teste.
