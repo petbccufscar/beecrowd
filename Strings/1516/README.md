@@ -15,7 +15,7 @@ Começamos declarando nossas variáveis, que serão do tipo `char` e do tipo `in
 * `temp[51]`, para representar a variável temporária de cada linha do desenho com novas proporções;
 `i`, `j`, `k`, `print`, as variáveis de iteração para receber o desenho original e exibir o novo desenho;
 * `N`, `M`, representando a altura e largura do desenho, respectivamente;
-* `nova_altura, nova_largura`, para representar os novos valores de altura e largura do desenho a ser exibido;
+* `nova_altura`, `nova_largura`, para representar os novos valores de altura e largura do desenho a ser exibido;
 * `proporcao_altura, proporcao_largura`, para calcular a proporção entre os novos tamanhos e os originais, visto que são múltiplos.
 ```c
     char desenho[51][51], temp[51];
