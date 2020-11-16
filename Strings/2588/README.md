@@ -29,7 +29,7 @@ void ordena_sequencia(char *sequencia){
 }
 ```
 
-No início da função `main`, utilizamos um vetor de caracteres com tamanho `TAM_MAX` denominado `sequencia` para armazenar cada string da entrada. Também temos 4 variáveis inteiras: `i` que servirá como contador para um laço de repetição; `par`que indicará se um par de um determinado caractere ainda precisa ser encontrado ou não; `aux` que auxiliará no armazenamento de algum caractere verificado; `caracteres_faltantes` que armazena quantos caracteres não têm seu par de caractere com mesmo valor dentro da seqûencia.
+No início da função `main`, utilizamos um vetor de caracteres com tamanho `TAM_MAX` denominado `sequencia` para armazenar cada string da entrada. Também temos 4 variáveis inteiras: `i` que servirá como contador para um laço de repetição, `par`que indicará se um par de um determinado caractere ainda precisa ser encontrado ou não, `aux` que auxiliará no armazenamento de algum caractere verificado, `caracteres_faltantes` que armazena quantos caracteres não têm seu par de caractere com mesmo valor dentro da sequência.
 
 ```c
   char sequencia[TAM_MAX];
