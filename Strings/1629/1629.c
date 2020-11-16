@@ -6,7 +6,7 @@ int somaDigitos(int n);
 int main()
 {
 	char s[1000];
-    	int tamanho, casos;
+    	int tamanho, casos, i;
 	
 	while (1)
 	{
