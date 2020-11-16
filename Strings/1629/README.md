@@ -26,7 +26,7 @@ Logo após as declarações, temos um loop que será executado e irá realizar a
 ```
 Em seguida, há um outro `while` que realizará as operações principais do código, que funcionam da seguinte maneira:
 - Primeiro, será realizada a leitura do conjunto de valores, armazenando-os numa string e, logo após, serão contados quantos valores existem no conjunto com a função `strlen()`;
-- A seguir será contada a quantidade de *uns* e *zeros* utilizando dois `for` seguidos. Por exemplo: no número *45*, como o número *4* está na primeira posição, descompactamos transformando em *0000*, para o *5* transformamos em *11111* e seguimos alternando entre os *zeros* e *uns*;
+- A seguir, será contada a quantidade de `uns` e `zeros` utilizando dois `for` seguidos. Por exemplo: no número *45*, como o número *4* está na primeira posição, descompactamos transformando em *0000*, com quatro dígitos possuindo valor 0. No caso do número *5*, transformamos em *11111*, com cinco dígitos de valor 1. Assim, seguimos alternando entre *zeros* e *uns* para cada dígito armazenado no vetor `s`;
 - Após a contagem, será chamada a função `somaDigitos` duas vezes, para somar os dígitos *uns* e os *zeros*. Por exemplo: se tivessemos *14 zeros* e *12 uns*, essa função retornaria respectivamente *5* e *3*. Por fim, imprime-se a soma total, que no caso do exemplo citado, seria *8*.
 ``` c
     while (casos--)
