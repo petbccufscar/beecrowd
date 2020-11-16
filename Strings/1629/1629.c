@@ -6,7 +6,7 @@ int somaDigitos(int n);
 int main()
 {
 	char s[1000];
-    int tamanho, casos;
+    	int tamanho, casos;
 	
 	while (1)
 	{
@@ -15,7 +15,7 @@ int main()
 		while (casos--)
 		{
 			scanf("%s", s);
-            tamanho = strlen(s);
+            		tamanho = strlen(s);
 		
 			int uns = 0;
 			int zeros = 0;
