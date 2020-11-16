@@ -13,7 +13,7 @@ No início do código, é definido um tamanho máximo de valor **1002**, que ser
 #define TAM_MAX 1002
 ```
 
-Após isso, existe a definição da função `ordena_sequencia`, que recebe como parâmetro um endereço para a posição inicial do vetor de caracteres e efetua uma ordenação nesse mesmo vetor. O algoritmo adotado para ordenar a sequência é o Insertion Sort, com seu código adaptado a caracteres presentes no vetor `sequencia`. Esta função de ordenação servirá para compor a solução do exercício que se encontra na função `main`.
+Logo após, definimos a função `ordena_sequencia`, que recebe como parâmetro um endereço para a posição inicial do vetor de caracteres e efetua uma ordenação nesse mesmo vetor. O algoritmo adotado para ordenar a sequência é o Insertion Sort, com seu código adaptado a caracteres presentes no vetor `sequencia`. Esta função de ordenação servirá para compor a solução do exercício que se encontra na função `main`.
 
 ```c
 void ordena_sequencia(char *sequencia){
