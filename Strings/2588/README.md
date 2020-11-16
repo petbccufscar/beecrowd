@@ -36,7 +36,7 @@ No início da função `main`, utilizamos um vetor de caracteres com tamanho `TA
   int i, par, aux, caracteres_faltantes;
 ```
 
-Utilizamos a função `scanf` dentro de um laço `while`. No `scanf`, usamos o `%s` para ler cada string na entrada e armazenar na variável `sequencia`. A condição para continuar a execução do `while` verifica se o valor retornado pela função `scanf` a cada leitura difere da constante `EOF`,que possui o valor **-1** na maioria dos computadores e indica fim de arquivo, como foi solicitado pelo exercício.
+Utilizamos a função `scanf` dentro de um laço `while`. No `scanf`, usamos o `%s` para ler cada string na entrada e armazenar na variável `sequencia`. A condição para continuar a execução do `while` verifica se o valor retornado pela função `scanf` a cada leitura difere da constante `EOF`, que possui o valor **-1** na maioria dos computadores e indica fim de arquivo, como foi solicitado pelo exercício.
 ```c
   while(scanf("%s", sequencia) != EOF){
 ```
