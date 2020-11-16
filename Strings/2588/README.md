@@ -7,7 +7,7 @@ Rener era um garoto que adorava palíndromos. Tanto que inventou um jogo com est
 # Resolução:
 O exercício pede para descobrirmos a quantidade de caracteres que devem ser adicionados de maneira que qualquer anagrama da sequência de letras na entrada se torne um [palíndromo](https://www.normaculta.com.br/palindromo-exemplos-de-palavras-e-frases/).
 
-No início do código, é definido um tamanho máximo de valor **1002** que será usado posteriormente no tamanho vetor que armazena cada caso de teste da entrada. Apesar do enunciado apontar que o valor máximo da linha na entrada é de 1000 caracteres, colocamos **1002**, considerando os carcteres `\n` e `\0` que ficam no final da string.
+No início do código, é definido um tamanho máximo de valor **1002**, que será usado posteriormente no tamanho vetor que armazena cada caso de teste da entrada. Apesar do enunciado apontar como valor máximo de 1000 caracteres na linha de entrada, colocamos **1002**, considerando os caracteres `\n` e `\0` que ficam no final da string.
 
 ```c
 #define TAM_MAX 1002
