@@ -3,8 +3,11 @@ Em diversos sistemas de computação, vários processos podem ler de um mesmo re
 
 Por exemplo, se o rastro de histórico é "RWWRRR" e o número de processos é 3, então o número mínimo de ciclos de máquina será 4: um para a primeira leitura, um para cada uma das gravações e apenas um para todo o último grupo de leituras.
 
+###### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/1262
+
 # Resolução: 
-Iniciando, incluímos as bibliotecas que usaremos para a resolução `<stdio.h>`, para leitura e impressão na tela de dados; `<string.h>` para calcularmos o tamanho de vetor de caracteres.
+Para resolver este problema, leremos uma sequência de caracteres "W" e "R" e, conforme os padrões estipulados pelo enunciado, definiremos a quantidade de ciclos de máquinas realizados através da análise da sequência lida.
+Iniciando, incluímos as bibliotecas que usaremos para a resolução: `<stdio.h>`, para leitura e impressão na tela de dados; `<string.h>`, para calcularmos o tamanho de vetor de caracteres.
 ``` c
 #include <stdio.h>
 #include <string.h>
@@ -30,7 +33,7 @@ Após a leitura de um caso de teste válido, lemos a quantidade de processos má
         ciclos_maquina = 0;
 ``` 
 
-Dessa forma, usamos `i` para iniciar um loop `for` e, `tam_rastro` para limita-lo ao tamanho do vetor. Dentro desse loop, abrimos uma estrutura condicional `if` para comparar o primeiro elemento do vetor ao valor de "R" - indicação de uma leitura. Caso a comparação seja verdadeira, aumentamos a contagem de `ciclos_maquina` em 1(o incio de um leitura é o inicio de um ciclo). Ademais, configuramos o valor de `sequencia_leituras` para 1, pois ao se ler um valor "R" abre-se a possibilidade de inicio de uma sequencia.
+Dessa forma, usamos `i` para iniciar um loop `for` e, `tam_rastro` para limita-lo ao tamanho do vetor. Dentro desse loop, abrimos uma estrutura condicional `if` para comparar o primeiro elemento do vetor ao valor de "R" - indicação de uma leitura. Caso a comparação seja verdadeira, aumentamos a contagem de `ciclos_maquina` em 1 (o início de uma leitura é o início de um ciclo). Ademais, configuramos o valor de `sequencia_leituras` para 1, pois, ao se ler um valor "R", abre-se a possibilidade de início de uma sequência.
 ``` c
         for (i=0; i <= tam_rastro; i++) {
             if (rastro_processamento[i] == 'R') {
@@ -39,8 +42,8 @@ Dessa forma, usamos `i` para iniciar um loop `for` e, `tam_rastro` para limita-l
                 i++;
 ``` 
 
- Portanto, para a verificar o tamanho da sequência de "R", aumentamos em 1 o valor de `i`(para acessar o próximo elemento do vetor), abrimos um loop `while` que confere se o elemento `i` do vetor é igual a "R", se for repetimos o passomos de incrementos das variáveis relativas à sequência de "R" e de `i`. Com esse loop obtemos valor final de `sequencia_leituras`, agora temos que saber quantos processos essa sequência demandas. Para tal, abrimos outro loop `while` que ficará ativo enquanto a sequência for maior que o número máximo de processos. Em seu interior, aumentamos em 1 o valor de `ciclos_maquina`, pois se a sequencia for maior que o numero de processos significa que outro ciclo teve que ser inciado, e subtraímos o valor de `processos` da variável `sequencia_leituras` para dar baixa nas leituras contabilizadas no ciclo. Sendo assim, finalizamos o primeiro `if`
-
+Portanto, para verificar o tamanho da sequência de "R", aumentamos em 1 o valor de `i` (para acessar o próximo elemento do vetor), abrimos um loop `while` que confere se o elemento `i` do vetor é igual a "R". Se for, repetimos os passos de incrementos das variáveis relativas à sequência de "R" e de `i`. Com esse loop, obtemos o valor final de `sequencia_leituras`. 
+ Agora, temos que saber quantos processos essa sequência demanda. Para tal, abrimos outro loop `while`, que ficará ativo enquanto a sequência for maior que o número máximo de processos. Em seu interior, aumentamos em 1 o valor de `ciclos_maquina`, pois, se a sequencia for maior que o numero de processos, significa que outro ciclo teve que ser inciado, e subtraímos o valor de `processos` da variável `sequencia_leituras` para dar baixa nas leituras contabilizadas no ciclo. Sendo assim, finalizamos o primeiro `if`.
 ``` c
                 while (rastro_processamento[i] == 'R') {
                     sequencia_leituras++;
@@ -53,7 +56,7 @@ Dessa forma, usamos `i` para iniciar um loop `for` e, `tam_rastro` para limita-l
             }
 ``` 
 
-Agora, ainda dentro do loop `for` abrimos um `if` para conferir se o elemento de vetor `i` sendo analisado é correspondente a "W". Se for, incrementamos em ' o valor de `ciclos_maquina`, pois cada gravação é correspondete a um ciclo.
+Agora, ainda dentro do loop `for`, abrimos um `if` para conferir se o elemento `i` do vetor sendo analisado é correspondente a "W". Se for, incrementamos em 1 o valor de `ciclos_maquina`, pois cada gravação é correspondente a um ciclo.
 ``` c
             if (rastro_processamento[i] == 'W') {
                 ciclos_maquina ++;
