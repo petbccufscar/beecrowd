@@ -16,7 +16,7 @@ Começamos com a declaração de variáveis:
 
 `n` indica o número de submissões do caso de teste, finalizando a execução do programa quando for 0.
 
-`identificador` `tempo` e `julgamento[10]` são relativos a submissão que está na entrada atual, para a linha `A 120 incorrect` temos que `identificador = A`, `tempo = 120` e `julgamento = incorrect`.
+`identificador`, `tempo` e `julgamento[10]` são relativos a submissão que está na entrada atual, para a linha `A 120 incorrect` temos que `identificador = A`, `tempo = 120` e `julgamento = incorrect`.
 
 `corretos` e `tempo_total` são nossas saídas, representando o numero de submissões corretas e o tempo total referente ao caso de teste.
 
@@ -55,7 +55,7 @@ O vetor `correct` funciona da seguinte forma, temos 26 posições, uma para cada
 
 Com os valores da entrada devidamente armazenados, verificamos se o conteúdo de julgamento é `correct` ou `incorrect` com a função `strcmp` que nos retorna 0 caso as strings sejam iguais e um número diferente de 0 em caso negativo. 
 
-No primeiro `if` verificamos se `julgamento == correct` e se `correct[(int(identifcador)-65)] também é 0, ou seja, para aquele `identificador` recebido, ainda não foi encontrada solução correta. No caso positivo desse `if` armazenamos o tempo gasto na solução correta ao vetor de corretos, na posição do identificador (identificador - 65). 
+No primeiro `if` verificamos se `julgamento == correct` e se `correct[(int(identifcador)-65)]` também é 0, ou seja, para aquele `identificador` recebido, ainda não foi encontrada solução correta. No caso positivo desse `if` armazenamos o tempo gasto na solução correta ao vetor de corretos, na posição do identificador (identificador - 65). 
 
 No segundo `if` verificamos se `julgamento == incorrect` e se ainda não foi encontrado a solução correta para aquele identificador. Em caso positivo desse `if` somamos 20  no vetor `incorrect` na posição do identificador (identificador - 65).
 
