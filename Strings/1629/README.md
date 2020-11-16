@@ -9,7 +9,7 @@ Em 2013 a Feira FACE compactou os dados de seus visitantes com um compactador li
 
 
 # Resolução: 
-Inicialmente, na função `main` declaramos uma varíavel `s` do tipo string, de tamanho máximo *1000*, e dois inteiros, `tamanho` e `casos`.
+Inicialmente, na função `main`, declaramos uma variável `s` do tipo string, de tamanho máximo *1000*, e dois inteiros, `tamanho` e `casos`.
 ``` c
     char s[1000];
     int tamanho, casos;
