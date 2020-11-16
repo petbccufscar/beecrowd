@@ -21,7 +21,7 @@ int main()
 			int zeros = 0;
 			for (i = 0; i < tamanho; i += 2)
 				zeros += (s[i] - '0');
-			for (int i = 1 ; i < tamanho; i += 2)
+			for (i = 1; i < tamanho; i += 2)
 				uns += (s[i] - '0');
 		
 			zeros = somaDigitos(zeros);
