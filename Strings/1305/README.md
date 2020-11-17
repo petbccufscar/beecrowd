@@ -8,7 +8,7 @@ Frequentemente, ao arredondar um número real para um inteiro nós o fazemos par
  
 O problema é sobre determinar se iremos arredondar um número para cima ou para baixo. Para isso, verificamos se a parte fracionária é maior do que o valor de corte e se for, arredondamos-o para cima. Caso contrário, arredondamos-o para baixo.
 
-Inicialmente, iremos incluir a biblioteca `<string.h>`, para utilizar as funções `atoi()`, que converte caracter para inteiro  e `atof()`, que converte caracter para double. Em seguida, iremos declarar dois vetores de caracteres `numero[10]` e `corte[7]`, indicando respectivamente o número (incluindo parte inteira e fracionária) e o valor de corte, uma variável do tipo inteiro `inteiro`, para armazenar somente a parte inteira do número e duas variáveis do tipo double, `fracionario` e `cutoff`, para armazenar somente a parte fracionária do número e o valor de corte, respectivamente.
+Inicialmente, iremos incluir a biblioteca `<string.h>`, para utilizar as funções `atoi()`, que converte caractere para inteiro  e `atof()`, que converte caractere para double. Em seguida, iremos declarar dois vetores de caracteres `numero[10]` e `corte[7]`, indicando respectivamente o número (incluindo parte inteira e fracionária) e o valor de corte, uma variável do tipo inteiro `inteiro`, para armazenar somente a parte inteira do número e duas variáveis do tipo double, `fracionario` e `cutoff`, para armazenar somente a parte fracionária do número e o valor de corte, respectivamente.
 
 ```c
 char numero[10];
@@ -20,11 +20,11 @@ double fracionario, cutoff;
 
 Depois, como o final da entrada é determinado por `EOF`, utlizamos um laço de repetição `while( scanf("%s %s", numero, corte) != EOF)`. Com isso, lemos a entrada enquanto ela for diferente de `EOF` e a cada repetição do laço:
 
-- convertemos `numero`, em caracter, para inteiro, utilizando `atoi()`;
+- convertemos `numero`, em caractere, para inteiro, utilizando `atoi()`;
 - obtemos a parte fracionaria de `numero`, subtraindo-o pela sua parte inteira;
-- convertemos `corte`, em caracter, para inteiro, utilizando `atof()`;
+- convertemos `corte`, em caractere, para inteiro, utilizando `atof()`;
 - verificamos se a parte fracionaria é maior que corte:
-	- se sim, arredondamos a parte inteira para cima e imprimimos-a.
+	- se sim, arredondamos a parte inteira para cima e a imprimimos.
 
 ```c
 while( scanf("%s %s", numero, corte) != EOF){
