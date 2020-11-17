@@ -2,13 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define true 1
-#define false 0
-
 int main (){
 
 	char numero[10];
-	char corte[6];
+	char corte[7];
 
 	int inteiro;
 	double fracionario, cutoff;
