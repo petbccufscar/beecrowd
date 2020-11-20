@@ -28,7 +28,7 @@ int main ()
 }
 ```
 
-É necessário fazer uma estrutura `while()` para cada caso teste. Após, declaramos uma variável do tipo caractere chamada `a[10]` e em seguida fazemos a leitura desta variável com o comando `scanf()`.
+É necessário fazer uma estrutura `while()` para cada caso teste. Após, declaramos uma variável do tipo caractere chamada `a[10]` e em seguida fazemos a leitura da palavra escrita, armazenando-a nesta variável com o comando `scanf()`.
 
 ```c
 while ( CasoTeste-- )
