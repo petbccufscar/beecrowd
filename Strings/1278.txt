@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
+#include <ctype.h> 
 
 
 int max(int a, int b){
@@ -14,10 +14,8 @@ void tratastring(char* frase) {
   int i, j=0;
   char aux[50];
   for (i=0;i<strlen(frase); i++) {
-    if(isspace(frase[0]) && i == 0){
-      continue;
-    }
-    else if(!isspace(frase[i]) || (frase[i] == '\n') || (isspace(frase[i]) && !isspace(frase[i-1]))) {
+    
+    if(!isspace(frase[i]) || (frase[i] == '\n') || (isspace(frase[i]) && !isspace(frase[i-1]))) {
         aux[j] = frase[i];
         j++;
        
