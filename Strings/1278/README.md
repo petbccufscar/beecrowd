@@ -32,7 +32,8 @@ No trecho do código a seguir, o programa faz um loop de 0 até `N`(utilizando `
 while (N!=0) {
     for (i=0; i<N; i++) {
       scanf(" %[^\n]", frase[i]); 
-      tratastring(frase[i]); ```
+      tratastring(frase[i]); 
+```
        
 
 Função `tratastring`:
