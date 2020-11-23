@@ -48,7 +48,8 @@ Vamos entender a condição do if:
 ``` c
 if(!isspace(frase[i]) || (frase[i] == '\n') || (isspace(frase[i]) && !isspace(frase[i-1]))) {
         aux[j] = frase[i];
-        j++; } ```
+        j++; } 
+```
 
  Lembrando que `||` significa "ou" e `&&` significa "e". Antes do primeiro || está sendo verificado se o caracter não é um espaço usando a função `isspace`, já explicada anteriormente. Em seguida, verifica se a frase tem algum `\n`, algo que sempre tem no final de todas as frases. Em seguida, verifica se o caracter é um espaço e se for, verifica se há uma letra antes dele. Dessa forma ele está verificando se o caracter é uma letra ou um espaço válido.
        
@@ -56,7 +57,8 @@ if(!isspace(frase[i]) || (frase[i] == '\n') || (isspace(frase[i]) && !isspace(fr
 
 ```c
 if(aux[strlen(aux)-1] == ' '){
-      aux[strlen(aux)-1] = aux[strlen(aux)]; ```
+      aux[strlen(aux)-1] = aux[strlen(aux)]; 
+```
 
 Para finalizar a função `tratastring`, nós colcamos tudo de `aux` na variável `frase` com a função strcpy da biblioteca `string.h`, que copia tudo da variável do segundo argumento para o primeiro.
 
@@ -71,7 +73,8 @@ Assim, `maior_frase` recebe o número de caracteres da maior frase (tudo isso ac
 ```c
 maior_frase = 0;
     for(i = 0; i < N; i++){
-      maior_frase = max(maior_frase, strlen(frase[i]));  ```
+      maior_frase = max(maior_frase, strlen(frase[i]));  
+```
 
 Após esse `for`, fazemos outro `for`, de `j` até `t` para justificarmos a frase para direita. Um espaço é printado antes das menores frases, até que essas fiquem do mesmo tamanho (somando espaços printados + caracteres válidos) da maior frase.
 
@@ -79,17 +82,16 @@ Após esse `for`, fazemos outro `for`, de `j` até `t` para justificarmos a fras
  for(i = 0; i < N; i++){
             t = maior_frase - strlen(frase[i]);
            for(j=0;j<t;j++){
-                printf(" ");```
+                printf(" ");
+```
 
 No final, quando `N` for diferente de zero a frase é printada para o monitor.
 
 ``` c
 if(N!=0){
-      printf("\n"); ```
+      printf("\n"); 
+```
 
-
-if(N!=0){
-      printf("\n"); ```
 
 
 
