@@ -45,7 +45,9 @@ while ( CasoTeste-- )
 
 Aqui, temos uma estrutura `if` e `else` que transforma as palavras: 'one', 'two' ou 'three', em seus respectivos números: '1', '2' ou '3'.
 
-Com o `if`, se a palavra tiver 5 letras, é mostrado o número 3 com o comando `printf()`; E com o `else`, ou seja, caso a palavra não tenha 5 letras, uma nova estrutura de decisão é feita.
+Com o `if`, se a palavra tiver 5 letras, é mostrado o número 3 com o comando `printf()`, pois, no caso 'três' em inglês é 'three' e contém 5 letras.
+
+Os outros casos possiveis, são 'um' ou 'dois', que em inglês são respectivamente, 'one' ou 'two', ambos com três letras, ou seja, com o `else`, caso a palavra não tenha 5 letras (não seja o número 3) uma nova estrutura de decisão é feita para decidir se é o número 1 ou o número 2.
 
 Dentro dessa estrutura else, temos uma nova estrutura `if` e `else`, é analisado que se a variável do tipo caractere `a[10]` recebe a palavra 'one' através da variável do tipo inteiro recém definida chamada `cnt`, e em caso afirmativo, é mostrado o número 1 com o comando `printf()`. E no caso contrário, ou seja, se `a[10]` não receber a palavra 'one', com o `else` é mostrado o número 2 com o comando `printf()`.
 
