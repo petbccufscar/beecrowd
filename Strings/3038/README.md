@@ -9,29 +9,28 @@ Vamos ajudar o Senhor Claus a traduzir essa carta?
 
 # Resolução:
 
-A ideia por trás da resolução deste exercício é apenas substituir os caracteres especiais por suas respectivas versões de caracteres do alfabeto. Para isso iniciamos a resolução deste exercício incluindo duas bibliotecas que serão utilizadas durante o processo `stdio.h` para usar funções de `input e output`, e a biblioteca `string.h` para utilizarmos funções que tratam strings.
+A ideia por trás da resolução deste exercício é apenas substituir os caracteres especiais por suas respectivas versões de caracteres do alfabeto. Para isso, iniciamos a resolução deste exercício incluindo duas bibliotecas que serão utilizadas durante o processo: `stdio.h`, para usar funções de `input` e `output`, e a biblioteca `string.h`, para utilizarmos funções que tratam de strings.
 
 ```c
 #include <stdio.h>
 #include <string.h>
 ```
 
-Iremos declarar também algumas variáveis, uma do tipo `int` para usarmos como auxiliar em nosso laço de repetição e uma do tipo vetor de caracteres, ou string, para armazenarmos as frases que serão passadas para serem descriptografadas
+Iremos declarar também algumas variáveis, uma do tipo `int` para usarmos como auxiliar em nosso laço de repetição e uma do tipo vetor de caracteres, ou string, para armazenarmos as frases que serão passadas para serem descriptografadas.
 
 ```c
 int i;
 char texto[300];
 ```
 
-Iremos utilizar um laço de repetição geral que ira ficar lendo e esperando por novas frases, o parâmetro `%[^\n]%*c` faz com que seja feita a leitura até que se encontre um `\n` indicando o fim de linha, ao encontrar atribuirmos isso à nossa variável `texto`, porem, colocamos o **~** antes de nossa função `~scanf()` pois com a função `scanf` ao ler algum dado nos retorna valor "0", ao negarmos isso fazemos com que nosso loop continue enquanto esteja lendo algo ou seja ainda há frases para serem tratadas, caso falso apenas saímos de nosso loop e encerramos.
-
+Iremos utilizar um laço de repetição geral que ficará lendo e esperando por novas frases. Sendo assim, o parâmetro `%[^\n]%*c` faz com que seja feita a leitura até que se encontre um `\n` indicando o fim de linha, ao encontrar atribuirmos isso à nossa variável `texto`, porém colocamos o **~** antes de nossa função `~scanf()`, pois como a função `scanf` ao ler algum dado nos retorna valor "0", ao negarmos isso fazemos com que nosso loop continue enquanto esteja lendo algo, ou seja, enquanto ainda há frases para serem tratadas, caso falso apenas saímos de nosso loop e encerramos.
 ```c
 while (~scanf("%[^\n]%*c", texto)){
     ...
 }
 ```
 
-dentro de nosso laço principal iremos percorrer o texto que foi lido, iterando por cada um de seus caracteres buscando por caracteres especiais para realizamos as devidas trocas, para isso realizamos um cadeia de `if` e `else` abordando todos os casos que devem ser tratados
+Dentro de nosso laço principal iremos percorrer o texto que foi lido, iterando por cada um de seus caracteres e buscando por caracteres especiais para realizarmos as devidas trocas. Logo, para isso realizamos um cadeia de `if` e `else` abordando todos os casos que devem ser tratados.
 
 ```c
 for (i = 0; i < strlen(texto); i++){
@@ -58,7 +57,7 @@ for (i = 0; i < strlen(texto); i++){
 printf("\n");
 ```
 
-É valido acentuar que há varias formas de se resolver esse problema, um exemplo é para cada caractere lido já realizamos a troca para seu devido caractere do alfabeto e já o imprimimos, evitando assim a realização de vários loops para realizar leitura e impressão, porém optei por essa forma de resolução para deixar mais simples a explicação da logica por trás.
+É válido acentuar que há várias formas de se resolver esse problema, um exemplo é para cada caractere lido já realizamos a troca para seu devido caractere do alfabeto e já o imprimirmos, evitando assim a realização de vários loops para realizar leitura e impressão, porém optei por essa forma de resolução para deixar mais simples a explicação da lógica por trás.
 
 
     
