@@ -7,7 +7,7 @@ Por exemplo, se em um grupo há só brasileiros, o idioma falado será o portugu
 
 Rafael as vezes fica confuso sobre qual idioma deveria ser falado em cada grupo de pessoas, e para isso pediu sua ajuda.
 
-##### Problema completo: [https://www.urionlinejudge.com.br/judge/pt/problems/view/1581]
+**Problema completo**: https://www.urionlinejudge.com.br/judge/pt/problems/view/1581
 
 # Resolução:
 De início, incluímos as bibliotecas que serão necessárias para a resolução do problema. Dessa forma, precisaremos manipular strings, receber do usuário e imprimir informações, para tal usaremos as bibliotecas `string.h` e `stdio.h`.
@@ -16,7 +16,7 @@ De início, incluímos as bibliotecas que serão necessárias para a resolução
 #include <string.h>
 ```
 
-Com as bibliotecas inclusas, iniciamos nossa função `main` com a declaração das variáveis: do tipo `int` usamos, `casos_testes` que receberá o quantidade de testes a serem realizados; `pessoas_grupo` que receberá o número de pessoas presente no grupo em teste; `idioma_igual` que será a variável de controle para receber a compareção dos idiomas, nela usamos o conceito de 1 para verdadeiro/igual e 0 para falso/diferente; `i` e `j` que serão usadas para loops. Além dessas, do tipo `char` usaremos dois vetores de 20 elementos, `idioma_atual` que receberá o idioma da pessoa em teste; `idioma_anterior` que armazenará o idioma passado em teste.
+Com as bibliotecas inclusas, iniciamos nossa função `main` com a declaração das variáveis: do tipo `int` usamos, `casos_testes` que receberá o quantidade de testes a serem realizados; `pessoas_grupo` que receberá o número de pessoas presente no grupo em teste; `idioma_igual` que será a variável de controle para receber a comparação dos idiomas, nela usamos o conceito de 1 para verdadeiro/igual e 0 para falso/diferente; `i` e `j` que serão usadas para loops. Além dessas, do tipo `char` usaremos dois vetores de 20 elementos, `idioma_atual` que receberá o idioma da pessoa em teste; `idioma_anterior` que armazenará o idioma passado em teste.
 ``` c
 int main () {
     int casos_testes, pessoas_grupo, idioma_igual, i, j;
@@ -45,7 +45,7 @@ Com os dados lidos, abrimos outro loop `for` com limite o número de pessoas, da
         }
 ```
 
-Finalizadas as comparações, faremos a avaliação da igualdade entre os idiomas. Sendo assim, abrimos uma estrutura condicional `if` com o uso da variável `idioma_igual` já com seu valor configurado previamente. Se os idiomas forem iguais imprimimos na tela o valor da váriavel `idioma_atual` que terá o valor do idioma unanimante predominante no grupo de pessoas. Caso forem diferentes, imprimimos a mensagem `"ingles\n"`. Assim encerramos o primeiro loop `for` e, para finalizar o programa, inserimos `return 0;`.
+Finalizadas as comparações, faremos a avaliação da igualdade entre os idiomas. Sendo assim, abrimos uma estrutura condicional `if` com o uso da variável `idioma_igual` já com seu valor configurado previamente. Se os idiomas forem iguais imprimimos na tela o valor da váriavel `idioma_atual` que terá o valor do idioma unanimemente predominante no grupo de pessoas. Caso forem diferentes, imprimimos a mensagem `"ingles\n"`. Assim encerramos o primeiro loop `for` e, para finalizar o programa, inserimos `return 0;`.
 ``` c
         if (idioma_igual) {
             printf("%s\n", idioma_atual);
