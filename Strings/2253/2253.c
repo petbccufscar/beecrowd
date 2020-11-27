@@ -27,22 +27,22 @@ int main()
                 ehInvalida = 1;
                 break;
             }
-            else if ((senha[i] < 48) || (senha[i] > 57 && senha[i] < 65) || senha[i] > 122 (senha[i] >= 91 && senha[i] < 97)) //pontuação e caracteres especiais
+            else if ((senha[i] < 48) || (senha[i] > 57 && senha[i] < 65) || senha[i] > 122 (senha[i] >= 91 && senha[i] < 97))
             {
                 ehInvalida = 1;
                 break;
             }
-            else if (senha[i] >= 91 && senha[i] < 97) //pontuação e caracteres especiais
+            else if (senha[i] >= 91 && senha[i] < 97)
             {
                 ehInvalida = 1;
                 break;
             }
 
-            if (senha[i] > 47 && senha[i] < 58) //numero
+            if (senha[i] > 47 && senha[i] < 58)
                 numero = 1;
-            else if (senha[i] > 64 && senha[i] < 91) // maiusculo
+            else if (senha[i] > 64 && senha[i] < 91)
                 maiuscula = 1;
-            else if (senha[i] > 96 && senha[i] < 123) // minuscula
+            else if (senha[i] > 96 && senha[i] < 123)
                 minuscula = 1;
         }
 
