@@ -44,10 +44,7 @@ int main() {
     } while (frase[0] != '0');
     i = 0;
     printf("\nThe biggest word: ");
-    while (palavra[i] >= 65 && palavra[i] <= 90 || palavra[i] >= 97 && palavra[i] <= 122) {
-        printf("%c", palavra[i]);
-        i++;
-    }
+    printf("%s", palavra);
     printf("\n");
     return 0;
 }
