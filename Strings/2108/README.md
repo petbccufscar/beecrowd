@@ -58,7 +58,7 @@ Aqui usamos a função `strlen` da biblioteca [string.h](http://linguagemc.com.b
       }
       printf("%d", lista_palavra[1] - lista_palavra[0]);
 ```
-Para corrigir o bug do uso da função strncpy, adiciona-se um caractere \0 na última posição do vetor palavra, indicando o término da string quando for utilizada a função printf(%s, palavra). Sabendo o comprimento da primeira palavra, mostramos esse valor na tela usando `printf`. Em seguida, fazemos um outro laço de repetição `for` para verificar o tamanho das outras palavras da `frase`:
+Para corrigir o bug do uso da função `strncpy`, adiciona-se um caractere `\0` na última posição do vetor `palavra`, indicando o término da string quando for utilizada a função `printf`. Sabendo o comprimento da primeira palavra, mostramos esse valor na tela usando `printf`. Em seguida, fazemos um outro laço de repetição `for` para verificar o tamanho das outras palavras da `frase`:
 ```c
       for(i = 2; i <= num_palavras; i++) {
         if (lista_palavra[i] - lista_palavra[i-1] - 1 >= maior) {
