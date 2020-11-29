@@ -47,7 +47,7 @@ Antes de descobrir quantas palavras contém `frase`, vamos verificar se ela é u
         }
       }
 ```
-Aqui usamos a função `strlen` da biblioteca [string.h](http://linguagemc.com.br/a-biblioteca-string-h/) para determinar o tamanho da string `frase`. Depois de verificar todos os caracteres de `frase`, vamos colocar o comprimento da frase como último elemento de `lista_palavras`. Para verificar o comprimento da palavra, subtraímos `lista_palavras[1]` por `lista_palavras[0]` e, se o resultado for maior que `maior`, substituímos o valor e copiamos a palavra na string `palavra` usando a função `strncpy` da biblioteca [string.h](http://linguagemc.com.br/a-biblioteca-string-h/):
+Aqui usamos a função `strlen` da biblioteca [string.h](http://linguagemc.com.br/a-biblioteca-string-h/) para determinar o tamanho da string `frase`. Depois de verificar todos os caracteres de `frase`, vamos colocar o comprimento da frase como último elemento de `lista_palavra`. Para verificar o comprimento da palavra, subtraímos `lista_palavra[1]` por `lista_palavra[0]` e, se o resultado for maior que `maior`, substituímos o valor e copiamos a palavra na string `palavra` usando a função `strncpy` da biblioteca [string.h](http://linguagemc.com.br/a-biblioteca-string-h/):
 ```c
       lista_palavra[num_palavras] = strlen(frase);
       
