@@ -36,7 +36,7 @@ int main(){
   int primeiro, num_palavras;
 ```
 
-Inicialmente utilizamos a função `scanf` para ler o primeiro valor da entrada, que, de acordo com o enunciado do problema, será um inteiro representando o número total de palavras que serão verificadas posteriormente. Assim, este valor é armazenador na variável `num_palavras`.
+Inicialmente utilizamos a função `scanf` para ler o primeiro valor da entrada, que, de acordo com o enunciado do problema, será um inteiro representando o número total de palavras que serão verificadas posteriormente. Assim, este valor é armazenado na variável `num_palavras`.
 
 Além disso, definimos um valor inicial **1** para a variável `primeiro`, indicando que haverá a primeira iteração do laço de repetição. Isso servirá para efetuarmos a formatação correta dos dados na saída, uma vez que precisamos colocar espaço antes de cada palavra que colocamos na saída de dados, com exceção da primeira.
 
