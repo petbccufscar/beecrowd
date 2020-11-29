@@ -77,10 +77,7 @@ Depois de ler todas as frases, `frase` será igual a 0 e o `do..while` é encerr
 ```c
   i = 0;
   printf("\nThe biggest word: ");
-  while (palavra[i] >= 65 && palavra[i] <= 90 || palavra[i] >= 97 && palavra[i] <= 122) {
-    printf("%c", palavra[i]);
-    i++;
-  }
+  printf("%s", palavra);
   printf("\n");
 ```
 Para imprimir cada caractere de `palavra`, usamos um `while` em que os caracteres da string serão mostrados na tela até `palavra[i]` não ser uma letra (A-Z ou a-z).
