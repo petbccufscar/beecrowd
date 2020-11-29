@@ -47,7 +47,7 @@ Além disso, definimos um valor inicial **1** para a variável `primeiro`, indic
 
 Para ler e analisar cada palavra na entrada utiliza-se um `while` que decrementa a variável `num_palavras` enquanto esta é maior que zero. Dentro deste laço utiliza-se o `scanf` com a string de leitura `"%s"` para ler cada palavra na entrada dos dados.
 
-Depois disso, verificamos se a variável `primeiro` tem o valor **0** indicando que não é a primeira repetição do laço e, assim, pode-se colocar um espaço na saída de dados. Caso `primeiro` tenha o valor **1**, mudamos seu valor para **0**, com a finalidade de evitar que o programa entre na condição anterior nas próximas iterações do laço.
+Depois disso, verificamos se a variável `primeiro` tem o valor **0** (`primeiro == 0`), indicando que não é a primeira repetição do laço e, assim, pode-se colocar um espaço na saída de dados. Caso `primeiro` tenha o valor **1**, mudamos seu valor para **0**, com a finalidade de evitar que o programa entre na condição anterior nas próximas iterações do laço.
 
 ```c
   while(num_palavras > 0){
