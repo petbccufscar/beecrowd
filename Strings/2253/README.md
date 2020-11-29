@@ -12,7 +12,7 @@ Rolien e Naej são os desenvolvedores de um grande portal de programação. Para
 
 A ideia deste exercício é fazer verificações, de acordo com as especificações das senhas, a fim de achar algo que não pertença aos requisitos do validador de senhas. 
 
-Primeiramente, vamos declarar a biblioteca `string.h` pois usaremos a função `gets` para poder ler a nossa entrada.
+Primeiramente, vamos declarar a biblioteca `string.h` pois usaremos a função `strlen` para obter o tamanho da entrada.
 
 ```c
     #include <string.h>
