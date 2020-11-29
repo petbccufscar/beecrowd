@@ -73,7 +73,7 @@ Sabendo o comprimento da primeira palavra, mostramos esse valor na tela usando `
 ```
 O processo para calcular o comprimento da palavra varia precisa de `- 1` para não incluir os espaços em branco que usamos como referência ao encontrar as palavras. Após cada iteração haverá um `printf` para mostrar o comprimento obtido na tela.
 
-Depois de ler todas as frases, `frase` será igual a 0 e o `do..while` é encerrado. Ao terminar a repetição, mostramos na tela a maior palavra encontrada. No entanto, a função `strncpy` possui alguns bugs que copiam caracteres nulos na variável destino (que no nosso caso é `palavra`). Para evitar esse problema, copiaremos apenas as letras contidas em `palavra`:
+Depois de ler todas as frases, `frase` será igual a 0 e o `do..while` é encerrado. Ao terminar a repetição, mostramos na tela a maior palavra encontrada. No entanto, a função `strncpy` que foi usada anteriormente possui alguns bugs que copiam caracteres nulos para a variável destino (que no nosso caso é `palavra`). Para evitar esse problema, colocamos na saída de dados apenas as letras contidas em `palavra`:
 ```c
   i = 0;
   printf("\nThe biggest word: ");
