@@ -34,6 +34,7 @@ int main() {
                 if (lista_palavra[i] - lista_palavra[i-1] - 1 >= maior) {
                     maior = lista_palavra[i] - lista_palavra[i-1] - 1;
                     strncpy(palavra, frase + lista_palavra[i-1]+1, maior);
+                    palavra[maior] = '\0';
                 }
                 printf("-%d", lista_palavra[i] - lista_palavra[i-1] - 1);
             }
