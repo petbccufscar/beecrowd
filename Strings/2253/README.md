@@ -52,7 +52,7 @@ Atribuímos todos os valores inteiros a 0 e guardamos o tamanho de `senha` em `t
     tam = strlen(senha);
 ```
 
-Usando um `for` percorremos cada caractere da nossa entrada, verificando se algum caractere não está de acordo com os requisitos pedidos; usamos o número ASCII de cada caractere para isso. Estas condicionais verificam respectivamente os seguintes coisas:
+Usando um `for` percorremos cada caractere da nossa entrada, verificando se algum caractere não está de acordo com os requisitos pedidos; usamos o [número ASCII](https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm) de cada caractere para isso. Estas condicionais verificam respectivamente os seguintes coisas:
 * Se o caractere é um espaço;
 * Se o tamanho da senha é menor que 6 ou maior que 32;
 * Se o caractere é de pontuação, acentuação ou espaço(caracteres especiais);
@@ -72,12 +72,12 @@ for (i = 0; i < tam; i++)
         ehInvalida = 1;
         break;
     }
-    else if ((senha[i] < 48) || (senha[i] > 57 && senha[i] < 65) || senha[i] > 122 ) //pontuação e caracteres especiais
+    else if ((senha[i] < 48) || (senha[i] > 57 && senha[i] < 65) || senha[i] > 122 )
     {
         ehInvalida = 1;
         break;
     }
-    else if (senha[i] >= 91 && senha[i] < 97) //pontuação e caracteres especiais
+    else if (senha[i] >= 91 && senha[i] < 97)
     {
         ehInvalida = 1;
         break;
@@ -88,11 +88,11 @@ for (i = 0; i < tam; i++)
 Esse conjunto de condicionais verifica, respectivamente se o caractere atual é um número, uma letra maiúscula ou uma letra minúscula. Se em qualquer caso for verdadeiro as váriáveis `numero`, `maiuscula` e `minuscula` recebe 1, indicando que existe pelo menos um número, letra maiúscula ou minúscula na `senha`.
 
 ```c
-if (senha[i] > 47 && senha[i] < 58) //numero
+if (senha[i] > 47 && senha[i] < 58)
     numero = 1;
-else if (senha[i] > 64 && senha[i] < 91) // maiusculo
+else if (senha[i] > 64 && senha[i] < 91)
     maiuscula = 1;
-else if (senha[i] > 96 && senha[i] < 123) // minuscula
+else if (senha[i] > 96 && senha[i] < 123)
     minuscula = 1;
 ```
 
@@ -106,6 +106,7 @@ else if (numero == 0 || (maiuscula == 0 || minuscula == 0))
 else
     printf("Senha valida.\n");
 ```
+##### Para aprender um pouco mais sobre a tabela ASCII: [Tabela ASCII](https://www.embarcados.com.br/tabela-ascii/)
  
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
