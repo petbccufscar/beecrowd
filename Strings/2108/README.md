@@ -57,7 +57,7 @@ Aqui usamos a função `strlen` da biblioteca [string.h](http://linguagemc.com.b
       }
       printf("%d", lista_palavra[1] - lista_palavra[0]);
 ```
-Sabendo o comprimento da primeira palavra, mostramos esse valor na tela usando `printf`. Em seguida fazemos um outro laço de repetição `for` para verificar o tamanho das outras palavras da `frase`:
+Sabendo o comprimento da primeira palavra, mostramos esse valor na tela usando `printf`. Em seguida, fazemos um outro laço de repetição `for` para verificar o tamanho das outras palavras da `frase`:
 ```c
       for(i = 2; i <= num_palavras; i++) {
         if (lista_palavra[i] - lista_palavra[i-1] - 1 >= maior) {
