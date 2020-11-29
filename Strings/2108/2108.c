@@ -43,9 +43,8 @@ int main() {
         }
         
     } while (frase[0] != '0');
-    i = 0;
-    printf("\nThe biggest word: ");
-    printf("%s", palavra);
-    printf("\n");
+ 
+    printf("\nThe biggest word: %s\n", palavra);
+ 
     return 0;
 }
