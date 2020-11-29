@@ -13,7 +13,7 @@ int main(){
 		contaVogais = 0;
 
 		for(i=0;i<strlen(vogais); i++){
-			for(j=0; j<srtlen(texto); j++){
+			for(j=0; j<strlen(texto); j++){
 				if(vogais[i] == texto[j])
 					contaVogais++;
 			}
