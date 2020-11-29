@@ -32,7 +32,7 @@ Feito isso, podemos fazer a leitura da frase:
 ```c
     scanf(" %101[^\n]", frase);
 ```
-`%101[^\n]` significa que a leitura da variável será feita até a presença de um `\n` ou até chegar a 101 caracteres. Com a `frase`, vamos igualar `lista_palavras[0]` a 0 e `num_palavras`:
+`%101[^\n]` significa que a leitura da variável será feita até a presença de um `\n` ou até chegar a 101 caracteres. Com a `frase` lida, vamos igualar `lista_palavra[0]` a 0 e `num_palavras` a 1:
 ```c
     lista_palavra[0] = 0;
     num_palavras = 1;
