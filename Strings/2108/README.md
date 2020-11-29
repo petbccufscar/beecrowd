@@ -37,7 +37,7 @@ Feito isso, podemos fazer a leitura da frase:
     lista_palavra[0] = 0;
     num_palavras = 1;
 ```
-Antes de descobrir quantas palavras contém `frase`, vamos verificar se ela é um caso de encerramento de programa (`frase[0] != '0'`). Se não for, criamos um laço de repetição `for` e, se `frase[i]` é um espaço branco, significa que encontramos mais uma palavra, então colocamos a posição encontrada no vetor `lista_palavras` e incrementamos `num_palavras`:
+Antes de descobrir quantas palavras contém `frase`, vamos verificar se ela é um caso de encerramento de programa (`frase[0] != '0'`). Se não for, criamos um laço de repetição `for` e, se `frase[i]` é um espaço branco, significa que encontramos mais uma palavra, então colocamos a posição encontrada no vetor `lista_palavra` e incrementamos `num_palavras`:
 ```c
     if (frase[0] != '0') {
       for(i=0;i<strlen(frase);i++) {
