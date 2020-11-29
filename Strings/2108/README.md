@@ -53,16 +53,18 @@ Aqui usamos a função `strlen` da biblioteca [string.h](http://linguagemc.com.b
       
       if (lista_palavra[1] - lista_palavra[0] >= maior) {
         maior = lista_palavra[1] - lista_palavra[0];
-        strncpy(palavra, frase + 0, maior);
+        strncpy(palavra, frase, maior);
+        palavra[maior] = '\0';
       }
       printf("%d", lista_palavra[1] - lista_palavra[0]);
 ```
-Sabendo o comprimento da primeira palavra, mostramos esse valor na tela usando `printf`. Em seguida, fazemos um outro laço de repetição `for` para verificar o tamanho das outras palavras da `frase`:
+Para corrigir o bug do uso da função strncpy, adiciona-se um caractere \0 na última posição do vetor palavra, indicando o término da string quando for utilizada a função printf(%s, palavra). Sabendo o comprimento da primeira palavra, mostramos esse valor na tela usando `printf`. Em seguida, fazemos um outro laço de repetição `for` para verificar o tamanho das outras palavras da `frase`:
 ```c
       for(i = 2; i <= num_palavras; i++) {
         if (lista_palavra[i] - lista_palavra[i-1] - 1 >= maior) {
           maior = lista_palavra[i] - lista_palavra[i-1] - 1;
           strncpy(palavra, frase + lista_palavra[i-1]+1, maior);
+          palavra[maior] = '\0';
         }
         printf("-%d", lista_palavra[i] - lista_palavra[i-1] - 1);
       }
@@ -73,14 +75,10 @@ Sabendo o comprimento da primeira palavra, mostramos esse valor na tela usando `
 ```
 O processo para calcular o comprimento da palavra varia precisa de `- 1` para não incluir os espaços em branco que usamos como referência ao encontrar as palavras. Após cada iteração haverá um `printf` para mostrar o comprimento obtido na tela.
 
-Depois de ler todas as frases, `frase` será igual a 0 e o `do..while` é encerrado. Ao terminar a repetição, mostramos na tela a maior palavra encontrada. No entanto, a função `strncpy` que foi usada anteriormente possui alguns bugs que copiam caracteres nulos para a variável destino (que no nosso caso é `palavra`). Para evitar esse problema, colocamos na saída de dados apenas as letras contidas em `palavra`:
+Depois de ler todas as frases, `frase` será igual a 0 e o `do..while` é encerrado. Ao terminar a repetição, mostramos na tela a maior palavra encontrada:
 ```c
-  i = 0;
-  printf("\nThe biggest word: ");
-  printf("%s", palavra);
-  printf("\n");
+  printf("\nThe biggest word: %s\n", palavra);
 ```
-Para imprimir cada caractere de `palavra`, usamos um `while` em que os caracteres da string serão mostrados na tela até `palavra[i]` não ser uma letra (A-Z ou a-z).
 
 ##### Para aprender um pouco mais sobre vetores: [Vetores](http://linguagemc.com.br/vetores-ou-arrays-em-linguagem-c/)
 ##### Para aprender um pouco mais sobre a estrutura do..while: [Do..while](http://linguagemc.com.br/comando-do-while/)
