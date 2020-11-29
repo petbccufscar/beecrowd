@@ -88,6 +88,7 @@ Para adequarmos a saída ao que é esperado pela correção do URI, efetua-se um
   return 0;
 }
 ```
+##### Para aprender um pouco mais sobre a biblioteca string.h: [string.h](http://linguagemc.com.br/a-biblioteca-string-h/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
