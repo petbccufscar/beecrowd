@@ -46,7 +46,7 @@ Dentro do loop, atualizamos a variável `tamanho` para o tamanho da palavra rece
 
 Assim, podemos fazer um loop `for` que terá `tamanho` iterações já que como pode ser percebido na saída, vemos que o número de linhas, é o mesmo que o tamanho da palavra.
 
-Em cada uma dessas linhas iremos printar `j` espaços, repare que a cada iteração do loop `for` externo, maior o tamanho de `j`, portanto, mais espaços serão exibidos.
+Em cada uma dessas linhas iremos printar `j` espaços, repare que a cada iteração do loop `for` externo, o tamanho de `j` é aumentado em 1 unidade, portanto, mais espaços serão exibidos.
 
 
 ```c
@@ -67,9 +67,9 @@ Em cada uma dessas linhas iremos printar `j` espaços, repare que a cada iteraç
 ```
 
 Agora com o ínicio da palavra já setado pela quantidade de espaços impressa, podemos imprimir a palavra, caractere a caractere. Portanto, criamos um loop de 0 a `tamanho - 1`, printando o caractere na posição `i` e um espaço em branco.
-ao fim do loop, printamos mais um caractere, sem o espaço, já que fizemos o loop até `tamanho-1`, ficou "faltando" uma letra, que é impressa sem o espaço adicional mas com o `\n`, para encerrar a linha atual.
+ao fim do loop, printamos mais um caractere, sem o espaço à direita, pois fizemos o loop até `tamanho-1`. Esta letra é impressa junto com um `\n`, para encerrar a linha atual.
 
-Com isso, podemos encerrar essa linha retirando um caractere da palavra, fazemos isso decrementando a variável `tamanho`, limitando o loop `for` que imprime os caracteres a um caractere a menos. 
+Com isso, podemos encerrar essa linha retirando um caractere da palavra, fazemos isso decrementando a variável `tamanho`. Ao diminuir a quantidade de iterações do loop `for`,  é impresso um caractere a menos. 
 
 Ao terminar de imprimir todas as linhas originando a pirâmide solicitada no problema, pulamos uma linha para começar o processo novamente para a próxima palavra.
 
