@@ -10,7 +10,7 @@ Sua tarefa neste problema será verificar se os painéis são verdadeiros, ou se
 
 # Resolução:
 
-O objetivo desse exercício é criar um programa que leia dois inteiros `a` e `b`, o primeiro representando a assinatura do artista e o segundo o painel, e verificar se o primeiro pertence ao segundo, ou seja, se a assinatura do artista pertence ao painel, tonando-o legítimo. Caso o painel for legítimo, temos que printar a instância em que estamos no momento e a frase `verdadeira` e, caso contrário, ainda printamos a instância em que estamos, mas com a frase `falsa`. O programa só termina quando `a` for igul a `0`.
+O objetivo desse exercício é criar um programa que leia dois inteiros `a` e `b`, o primeiro representando a assinatura do artista e o segundo o painel, e verificar se o primeiro pertence ao segundo, ou seja, se a assinatura do artista pertence ao painel, tonando-o legítimo. Caso o painel for legítimo, temos que printar a instância em que estamos no momento e a frase `verdadeira` e, caso contrário, ainda printamos a instância em que estamos, mas com a frase `falsa`. O programa só termina quando `a` for igual a `0`.
 
 Para este exercício vamos usar a biblioteca `stdbool.h` que permite manipular variáveis lógicas, como verdadeiro e falso. Também iremos utilizar a biblioteca `string.h`, que permite manipular strings.
 
