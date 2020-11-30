@@ -72,6 +72,7 @@ int contem_assinatura(char *a, char *b){
 ```
 
 ##### Para aprender um pouco mais sobre a biblioteca string.h: [<String.h>](http://linguagemc.com.br/a-biblioteca-string-h/)
+##### Para aprender um pouco mais sobre funções: [<Funções>] (http://linguagemc.com.br/funcoes-em-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
