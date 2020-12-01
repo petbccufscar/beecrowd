@@ -19,7 +19,7 @@ Logo após a declaração, será realizada a leitura desse nome.
 ``` c
     scanf("%s", nome);
 ```
-Após a leitura, iremos checar se seu nome foi lido como *'zelda'* por meio da função `temZelda`, caso não tenha sido, será exibido na tela a frase "Link Tranquilo", caso contrário a frase exibida será "Link Bolado".
+Após a leitura, iremos checar se seu nome foi lido como *'zelda'* por meio da função `temZelda`. Caso não tenha 'zelda' em seu nome será exibido na tela a frase "Link Tranquilo", caso contrário a frase exibida será "Link Bolado".
 ``` c
   	if (!temZelda(nome))
 		printf("Link Tranquilo\n");
