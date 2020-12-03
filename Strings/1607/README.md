@@ -33,7 +33,7 @@ int main()
 }
 ```
 
-É necessário fazer uma estrutura `while()` para cada caso teste. Após, declaramos duas variáveis do tipo caractere chamadas `stringA[10001]` e `stringB[10001]` e em seguida fazemos a leitura desta variável com o comando `scanf()`. Também são declaradas as variáveis `*p1` e `*p2` do tipo caractere que serão utilizadas na parte lógica do problema, e a variável `operacoes` do tipo inteiro, para contabilizar o número de operações realizadas, sendo que inicialmente é atribuido para a variável `operacoes` o valor 0.
+É necessário um loop `while()` para cada caso teste. Após, declaramos duas variáveis do tipo caractere chamadas `stringA[10001]` e `stringB[10001]` e em seguida fazemos a leitura desta variável com o comando `scanf()`. Também são declaradas as variáveis `*p1` e `*p2` do tipo `char` que serão utilizadas na parte lógica do problema, e a variável `operacoes` do tipo inteiro, para contabilizar o número de operações realizadas, sendo inicialmente atribuido para a variável `operacoes` o valor 0.
 
 ```c
 while (T) {
