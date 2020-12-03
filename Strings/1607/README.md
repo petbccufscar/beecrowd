@@ -16,7 +16,7 @@ Para a resolução deste problema utilizanos apenas biblioteca padrão `stdio.h`
 #include <stdio.h>
 ```
 
-Após informar a biblioteca, iniciamos o nosso algoritmo. Primeiramente, declaramos uma variável do tipo inteiro chamada `T`, pois é sugerido na entrada que a primeira linha terá um inteiro T (T ≤ 100) indicando o número de casos de teste. E em seguida fazemos a leitura do número de casos testes, armazenando nesta variável com o comando `scanf()`. Após, entramos na parte lógica do nosso código, que está explicada logo abaixo.
+Após informar a biblioteca, iniciamos o nosso algoritmo. Primeiramente, declaramos uma variável do tipo inteiro chamada `T`, pois é sugerido na entrada que a primeira linha terá um inteiro T (T ≤ 100) indicando o número de casos de teste. E em seguida fazemos a leitura do número de casos testes, armazenando nesta variável com o comando de leitura `scanf()`. Logo após, entramos na parte lógica do nosso código, que está explicada logo abaixo.
 
 ```c
 int main()
