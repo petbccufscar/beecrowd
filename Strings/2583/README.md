@@ -18,7 +18,7 @@ O problema consiste em exibir as coisas que Tausfo tem, em ordem alfabética, ao
 
 Uma lista encadeada com nó cabeça é uma estrutura de dados em que cada elemento, além dos dados que armazena, também possui um ponteiro de nó, onde se armazena o endereço do próximo nó, além de ter um nó struct inicial (`cabeça`). Note que o ponteiro do próximo nó, do último elemento da lista, aponta para `NULL`, justamente para indicar o término da lista. Utilizando estes ponteiros, é possivel manipular a lista.
 
-Para a resolução do problema, iremos importar a biblioteca `string.h`, para utilizarmos a função `strcmp()` e `strcpy()`, e a biblioteca `stdlib.h`, para utilizarmos a função `malloc()`. Logo após isso, declaramos o struct item, que irá compor nossa lista.
+Para a resolução do problema, iremos importar a biblioteca `string.h`, para utilizarmos a função `strcmp()` e `strcpy()`, e a biblioteca `stdlib.h`, para utilizarmos a função `malloc()`. Logo após isso, declaramos o struct `item`, que irá compor nossa lista.
 
 ```c
 struct item { 
@@ -49,13 +49,13 @@ int temItem(struct item *cabeca, char nomeItem[])
 }
 ```
 
-Para adicionar um item a nossa lista, utilizamos a função `adiciona()`, que recebe como parâmetros um ponteiro para o início de nossa lista, `struct item cabeca`, já que iremos modificá-la, e o item a ser adicionado, `nomeItem`. Como não precisamos adicionar um item em um local específico da lista, iremos adicioná-lo no final, como um apendice:
+Para adicionar um item a nossa lista, utilizamos a função `adiciona()`, que recebe como parâmetros um ponteiro para o início de nossa lista, `struct item cabeca`, já que iremos modificá-la, e o item a ser adicionado, `nomeItem`. Como não precisamos adicionar um item em um local específico da lista, iremos adicioná-lo no final, como um apêndice:
 - Alocamos a memória necessária do item a ser adicionado, utilizando `malloc()`;
 - Copiamos os dados do item a ser adicionado, para o elemento da lista (em nosso caso é o nome do item somente), utilizando `strcpy()`, pois é uma string; 
-- Atribuimos `NULL` ao ponteiro que indica o endereço do próximo elemento da lista, para indicar o final desta, pois o elemento será adicionado no final;
+- Atribuímos `NULL` ao ponteiro que indica o endereço do próximo elemento da lista, para indicar o final desta, pois o elemento será adicionado no final;
 - Criamos um elemento auxiliar (`struct item *aux`), que recebe o início da lista (`*cabeca`);
 - Percorremos a lista até o fim, utilizando um laço de repetição `while(aux->prox != NULL)` que a cada iteração avança um elemento, por meio de 
-`aux = aux->prox)`
+`aux = aux->prox`
 - Atribuímos ao endereço do elemento posterior ao antigo último elemento, que antes era `NULL`, nosso novo item, por meio de `aux->prox = novoItem`.
 
 ```c
@@ -82,7 +82,7 @@ Agora, para remover um item X da nossa lista, precisamos fazer o elemento que ap
     `cabeca -> 1 -> 3 -> NULL`
 
 Para isso, utilizamos a função `remover()`, que também recebe como parâmetros um ponteiro para o início de nossa lista, `struct item cabeca`, já que iremos modificá-la, e o item a ser removido, `nomeItem`:
-- Declaramos dois elementos, `*aux = *cabeca`, que será excluído, e  `*anterior = NULL`, que será o elemento anterior a `aux`;
+- Declaramos dois elementos, `*aux = *cabeca`, que será excluído, e `*anterior = NULL`, que será o elemento anterior a `aux`;
 - Percorremos a lista até o elemento cujo `nome` seja igual a `nomeItem`, no caso, o item a ser excluído, por meio de uma estrutura de repetição `while()` em que a cada iteração, `anterior = aux` e `aux = aux->prox`;
 - Atribuímos ao ponteiro `prox` do elemento predecessor ao elemento que irá ser excluído, o endereço do elemento posterior ao que será excluído, por meio de `anterior->prox = aux->prox`;
 - Desalocamos o espaço de memória do elemento excluído, utilizando `free(aux)`.
@@ -121,7 +121,7 @@ void imprime(struct item *cabeca)
 ```
 
 Para terminar nossas funções auxiliares, iremos implementar um bubblesort, responsável pela ordenação de nossa lista. Vale ressaltar que nosso algoritmo não troca os elementos de lugar, mas sim o conteúdo (nome) dos itens, por meio da função `troca()`, e que ele ignora o primeiro item da lista, pois é nosso nó cabeça, realizando `cabeca = cabeca->prox`.
-Fora estas duas especifidades, nosso algoritmo é igual aos dos livros: percorre a lista do início ao fim, verificando elementos dois a dois e trocando-os, caso necessário, dessa forma, "flutuando" o maior elemento ao fim da lista. O algoritmo para até que nenhuma troca tenha sido realizada na passagem anterior, indicando que a lista está ordenada.
+Fora estas duas especificidades, nosso algoritmo é igual aos dos livros: percorre a lista do início ao fim, verificando elementos dois a dois e trocando-os, caso necessário, dessa forma, "flutuando" o maior elemento ao fim da lista. O algoritmo para até que nenhuma troca tenha sido realizada na passagem anterior, indicando que a lista está ordenada.
 
 ```c
 void troca(struct item *a, struct item *b)
@@ -160,7 +160,7 @@ void bubbleSort(struct item *cabeca)
 ```
 
 
-**Com as preparações para utilizarmos a nossa estrutura de lista feitas, mudamos nosso escopo para a função main() agora.** Iremos declarar o nó cabeça de nossa lista, `struct item* cabeca`, e alocar a memória necessária para este, utilizando `malloc()`. Em seguida, de forma ilustrativa, para indicar que é o início de nossa lista, atribuímos "inicio" ao atributo `nome` de nosso item `cabeca`. Além disso, declaramos dois inteiros `numeroCasosTeste`, `numeroUtilizacoes` e dois vetores de caracteres `itemLido[100]`, que indica o item cuja ação irá agir, e `acao[10]`, que indica a ação sobreo item ( chirrin ou chirrion).
+**Com as preparações para utilizarmos a nossa estrutura de lista feitas, mudamos nosso escopo para a função main() agora.** Iremos declarar o nó cabeça de nossa lista, `struct item* cabeca`, e alocar a memória necessária para este, utilizando `malloc()`. Em seguida, de forma ilustrativa, para indicar que é o início de nossa lista, atribuímos "inicio" ao atributo `nome` de nosso item `cabeca`. Além disso, declaramos dois inteiros `numeroCasosTeste`, `numeroUtilizacoes` e dois vetores de caracteres `itemLido[100]`, que indica o item, e `acao[10]`, que indica a ação sobre o item ( chirrin ou chirrion).
 
 ```c
 struct item* cabeca ;
