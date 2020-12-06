@@ -8,7 +8,8 @@ Recentemente Sr. Miranda, um dos contadores da ACM, percebeu que a máquina apre
 
 # Resolução:
 
-Para esse problema, temos que identificar os caracteres (digitos) que precisamos retirar e para retirá-los recuamos a esquerda todos os dígitos a direita do dígito identificado, sobreescrevendo o dígito "problemático".
+Para esse problema, temos que identificar os caracteres (dígitos) que precisamos retirar e para retirá-los recuamos a esquerda todos os dígitos a direita do dígito identificado, sobreescrevendo o dígito "problemático".
+
 
 Na declaração de variáveis, temos `char digito` que receberá da entrada, o dígito que apresenta falha, `char valor[200]` que receberá também da entrada o valor íntegro, sem falhas, `int n` é o tamanho da string `valor`, `i, j` são auxiliares para iteração.
 
@@ -34,7 +35,8 @@ while(digito != '0'){
 
 Na primeira etapa do loop, atualizamos o valor de `n` com o tamanho da string `valor` através da função `strlen()` que retorna o tamanho da cadeia de caracteres, com isso, iniciamos um loop `for` que vai de 0 a `n`, percorrendo toda a string.
 
-Durante o loop, a cada caractere verificamos se ele é igual ao `digito` que apresenta falha, para podermos tratá-los e removê-lo da string. Assim que entrar nesse `if`, percorremos daquele ponto até o fim, recuando os digitos da direita, ou seja, `valor[j] = valor[j+1]`. Assim que chegamos ao último caractere, o loop `for` se encerra e trocamos o último digito para 0 e reduzimos o valor de `n` em 1 que se refere ao tamanho do vetor de caracteres `valor`.
+Durante o loop, a cada caractere verificamos se ele é igual ao `digito` que apresenta falha, para podermos tratá-los e removê-lo da string. Assim que entrar nesse `if`, percorremos daquele ponto até o fim, recuando os digitos da direita, ou seja, `valor[j] = valor[j+1]`. Assim que chegamos ao último caractere, o loop `for` se encerra e trocamos o último dígito para 0 e reduzimos o valor de `n` em 1, que refere-se ao tamanho do vetor de caracteres `valor`.
+
 
 Note que também decrementamos o contador `i` para que aquela posição (que foi substituida pelo dígito a direita, seja verificada novamente)
 
@@ -87,7 +89,8 @@ Fazemos isso com outro loop for, idêntico ao anterior, porém, com a verificaç
     }
 ```
 
-Após retirar os dígitos indesejáveis, fazemos uma última verificação para caso o vetor esteja vazio, ou seja, `n == 0`. Em caso positivo, substituimos o primeiro dígito por 0 e o segundo pelo indicador de fim de string `\0`. Isso é feito porque caso o `valor` seja 0000, todos serão considerados 0 a esquerda, enquanto apenas os 3 primeiros deveriam ser, portanto, mantemos um na string.
+Após retirar os dígitos indesejáveis, fazemos uma última verificação para caso o vetor esteja vazio, ou seja, `n == 0`. Em caso positivo, substituímos o primeiro dígito por 0 e o segundo pelo indicador de fim de string `\0`. Isso é feito porque caso o `valor` seja 0000, todos serão considerados 0 a esquerda, enquanto apenas os 3 primeiros deveriam ser considerados, portanto, mantemos um na string.
+
 
 E após todas essas verificações e tratamentos, podemos exibir a variável `valor` devidamente tratado como sugere a saída do problema.
 
