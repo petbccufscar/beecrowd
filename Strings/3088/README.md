@@ -35,7 +35,7 @@ Dentro dele iremos zerar o índice (`i`, pois a cada leitura iremos recomeçar a
         }
 ```
 
-Agora iremos passar caractere por caractere para identificar se existe espaço (`' '`), se o encontrar-mos verificamos se o caractere seguinte é `,` *ou* `.`, se for imprimimos o caractere seguinte ao espaco e depois incrementamos o `i`, caso nao seja `,` *ou* `.` imprimimos o espaço e seguimos; caso nao seja espaço imprimimos o caractere em analise e seguimos; ao final do `while` interno sempre incrementamos o `i`. 
+Agora iremos passar caractere por caractere para identificar se existe espaço (`' '`), se o encontrarmos verificamos se o caractere seguinte é `,` *ou* `.`, se for imprimimos o caractere seguinte ao espaço e depois incrementamos o `i`, caso não seja `,` *ou* `.`, imprimimos o espaço e seguimos; caso não seja espaço, imprimimos o caractere em análise e seguimos; ao final do `while` interno sempre incrementamos o `i`.
 
 ```c
     if (string[i] == ' ')
