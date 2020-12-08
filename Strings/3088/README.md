@@ -26,7 +26,7 @@ Utilizaremos um `while()` para passar por todos os casos de teste. Dentro dele u
     }
 ```
 
-Dentro dele iremos zerar o indice (`i`, pois a cada leitura iremos recomecar as comparacoes) e em seguida utilizaremos outro `while(string[i])` para identificar o fim da frase, ou seja, quando nao existir nada no `string[i]` sairemos do `while`.
+Dentro dele iremos zerar o índice (`i`, pois a cada leitura iremos recomeçar as comparações) e em seguida utilizaremos outro `while(string[i])` para identificar o fim da frase, ou seja, quando não existir nada no `string[i]`, sairemos do `while`.
 
 ```c
     while (string[i])
