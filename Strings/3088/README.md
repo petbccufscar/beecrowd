@@ -8,7 +8,7 @@ Escreva um programa que, dado um texto de entrada, remove todo espaço que é im
  
 # Resolução:
 
-O exercício consiste em ler casos de teste ate acabar o arquivo, e para cada caso de teste teremos que retirar os espaços à esquerda do ',' e '.'.
+O exercício consiste em ler casos de teste até acabar o arquivo e, para cada caso de teste, teremos que retirar os espaços à esquerda do ',' e '.'.
 
 Primeiro instanciamos as variáveis necessárias, sendo elas: um vetor do tipo `char` (onde armazenaremos a string lida) e um tipo `int` (que será nosso índice para imprimir cada `char`).
 
