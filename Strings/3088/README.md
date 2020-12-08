@@ -49,7 +49,7 @@ Agora iremos passar caractere por caractere para identificar se existe espaço (
     ++i;
 ```
 
-Para questao de desempenho tambem, utilizaremos o `putchar_unlocked`, pois ele é não bloqueante e nao utiliza buffs, logo, agilizando a impressao.
+Para questão de desempenho também, utilizaremos o `putchar_unlocked`, pois ele é não bloqueante e não utiliza buffs, agilizando a impressão.
 
 Por fim, ao final do `while` externo devemos imprimir um `\n`.
 
