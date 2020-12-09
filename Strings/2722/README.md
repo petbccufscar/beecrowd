@@ -13,7 +13,7 @@ Apenas um fato curioso: a primeira linha do nome misturado sempre terá um núme
 # Resolução:
 O exercício pede para desenvolver um programa que corrija os nomes que tiveram suas letras misturadas por Evergreen. 
 
-Para resolver esse problema, iremos utilizar a biblioteca `<string.h>` para usarmos a função `strlen()` que retorna o tamanho de uma string. 
+Para resolver esse problema, iremos utilizar a biblioteca `<string.h>`, para usarmos a função `strlen()`, que retorna o tamanho de uma string. 
 
 Como o nome está dividido em duas linhas (nome e sobrenome), a resolução se baseia em pegar dois caracteres do nome, seguidos por dois caracteres do sobrenome, seguidos por dois caracteres do nome e assim por diante até acabar os caracteres e armazenar isso em uma nova `string` que será o nome correto.
 
@@ -81,4 +81,3 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
-
