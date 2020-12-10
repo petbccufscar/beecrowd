@@ -15,9 +15,9 @@ O passeio que segue pelas transições (P,1A), (P,1A), (P,1B), (Q,2B) e termina 
  
 # Resolução:
 
-O exercício consiste em ler casos de teste ate acabar o arquivo, e para cada caso de teste imprimir qual a palavra em questão (seu número) e a soma de todos os caminhos (produto dos valores dos saltos).
+O exercício consiste em ler casos de teste, até acabar o arquivo, e, para cada caso de teste, imprimir qual a palavra em questão (seu número) e a soma de todos os caminhos (produto dos valores dos saltos).
 
-Primeiro instanciamos as variáveis necessárias, sendo elas: um vetor do tipo `char` (onde armazenaremos a string lida), tres do tipo `int` (`i` será nosso índice para ler cada `char`; `tam` armazena o tamanho da `string` lida; e `caso` armazena o atual caso de teste) e um `long long int` (para armazenar o produto `total`).
+Primeiro instanciamos as variáveis necessárias, sendo elas: um vetor do tipo `char` (onde armazenaremos a string lida), três do tipo `int` (`i` será nosso índice para ler cada `char`; `tam` armazena o tamanho da `string` lida; e `caso` armazena o atual caso de teste) e um `long long int` (para armazenar o produto `total`).
 
 ```c
     char palavra[61];
@@ -75,4 +75,3 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
-
