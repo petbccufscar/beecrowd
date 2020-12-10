@@ -40,7 +40,7 @@ Utilizaremos um `while()` para passar por todos os casos de teste. Dentro dele u
 
 ```
 
-Utilizaremos um `for (i = 0; i < tam; i++)` para analizar caractere por caractere. Como pode-se perceber, o produto so sera relevante quando chegar no estado `q`, que so pode ser alcançado se existir algum `b` na palavra e como depois de chegar ao estado  `q` todos os saltos tem valor 2 então podemos calcular o valor daquele caminho do `b` encontrado simplismente somando ao total o valor de 2 elevado ao numero de caracteres que faltam.
+Utilizaremos um `for (i = 0; i < tam; i++)` para analizar caractere por caractere. Como pode-se perceber, o produto só será relevante quando chegar no estado `q`, que só pode ser alcançado se existir algum `b` na palavra e como depois de chegar ao estado  `q` todos os saltos tem valor 2 então podemos calcular o valor daquele caminho do `b` encontrado simplismente somando ao total o valor de 2 elevado ao numero de caracteres que faltam.
 
 ```c
     for (i = 0; i < tam; i++)
