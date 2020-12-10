@@ -52,7 +52,7 @@ Utilizaremos um `for (i = 0; i < tam; i++)` para analizar caractere por caracter
         }
 ```
 
-Por fim, imprimimos o valor total daquela palavra e uma linha em branco (por isso utilizaremos 2 `\n`) e incrementamos o valor de caso. Lembrando que como estamos utilizando um `long long int` imprimimos utilizando `%lld`
+Por fim, imprimimos o valor total daquela palavra, uma linha em branco (por isso utilizaremos 2 `\n`) e incrementamos o valor de caso. Lembrando que como estamos utilizando um `long long int` imprimimos utilizando `%lld`
 
 ```c
     while (scanf("%s", palavra) != EOF)
