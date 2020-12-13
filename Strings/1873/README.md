@@ -76,7 +76,7 @@ for(i = 0; i < c; i++) {
 
 Na sequência é feita uma estrutura `if` para o empate, encadeada de vários `else if` na qual em cada uma delas é definida uma determinada condição a vitória.
 
-O `if` analiza através da váriavel `comp` se a escolha de Rajesh e Sheldon foram iguais, e em caso afirmativo, a frase exibida na tela é 'empate' através do comando `printf()`.
+O `if` analisa através da variável `comp` se a escolha de Rajesh e Sheldon foram iguais, e em caso afirmativo, a frase exibida na tela é 'empate' através do comando `printf()`.
 
 Caso o empate não ocorra, a estrutura encadeada `else if` analisa com o comando `strcmp()` juntamente com os operadores lógicos `AND (&&)` e `OR (||)` todos os possíveis resultado e diz qual foi a escolha vencedora, se Rajesh venceu a frase exibida na tela é 'rajesh' através do comando `printf()`, e se Sheldon venceu a frase exibida na tela é 'sheldon' através do comando `printf()`.
 
