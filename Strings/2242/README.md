@@ -16,7 +16,7 @@ Cláudia está muito atarefada com a análise estatística das risadas digitais 
 # Resolução:
 
 Para resolver esse problema, a lógica é a seguinte: lê-se uma risada, depois exclui-se as consoantes presentes nela e, por fim, verifica-se se a risada, composta apenas por vogais, restante quando lida na ordem natural e inversa é a mesma.
-Iniciando, declaramos as biblotecas de funções que usaremos: `<stdio.h>`, para leitura e impressão de informações, e `<stdlib.h>`, para comparações entre strings e leitura de comprimento da risada.
+Iniciando, declaramos as bibliotecas de funções que usaremos: `<stdio.h>`, para leitura e impressão de informações, e `<stdlib.h>`, para comparações entre strings e leitura de comprimento da risada.
 ``` c 
 #include <stdio.h>
 #include <stdlib.h>
@@ -72,4 +72,3 @@ Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em c
 [Facebook](https://www.facebook.com/petbcc/),
 [Instagram](https://www.instagram.com/petbcc.ufscar/)
 ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
-
