@@ -45,7 +45,7 @@ for (i = 0; senha[i]; i++){
                 possibilidades *= 2;   
 ```
 
-No final, o número de possibilidades é printado para a tela.
+No final, o número de possibilidades é impresso na tela.
 
 ``` c
  printf("%d\n", possibilidades);
