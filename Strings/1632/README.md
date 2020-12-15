@@ -35,7 +35,7 @@ for (j = 0; j < T; j++){
         scanf(" %s", senha);
         possibilidades = 1;
 ```
-Agora, fazemos um outro `for` dentro do `for` anterior. Esse, começa em zero e termina quando já tivermos percorrido todos os caracteres da variável `senha`, somando 1 na variável auxiliar `i` a cada loop. Dentro desse `for`, fazemos um `if` que funciona da seguinte forma: se a senha tiver algum caracter "especial", ou seja, se a senha tiver "a" ou "e" ou "i" ou "o" ou "s", a variável `possibilidades` é multiplicada por 3, senão é multiplicada por 2. Essa multiplicação ocorre porque, caso a senha possua um caracter especial, ele pode ser substituido por outros dois: ele mesmo maiúsculo ou um número: a por 4, e por 3, i por 1, o por 0, s por 5. Enquanto as demais letras não podem ser sustituídas por números. Lembrando que a função `tolower` transforma as letras maiúsculas em minúsculas para que a verificação seja mais rápida.
+Agora, fazemos um outro `for` dentro do `for` anterior. Esse, começa em zero e termina quando já tivermos percorrido todos os caracteres da variável `senha`, somando 1 na variável auxiliar `i` a cada loop. Dentro desse `for`, fazemos um `if` que funciona da seguinte forma: se a senha tiver algum caractere "especial", ou seja, se a senha tiver "a" ou "e" ou "i" ou "o" ou "s", a variável `possibilidades` é multiplicada por 3, senão é multiplicada por 2. Essa multiplicação ocorre porque, caso a senha possua um caractere especial, ele pode ser substituído por outros dois: ele mesmo maiúsculo ou um número: a por 4, e por 3, i por 1, o por 0, s por 5. Enquanto as demais letras não podem ser substituídas por números. Lembrando que a função `tolower` transforma as letras maiúsculas em minúsculas para que a verificação seja mais rápida.
 
 ``` c
 for (i = 0; senha[i]; i++){
@@ -51,4 +51,3 @@ No final, o número de possibilidades é printado para a tela.
  printf("%d\n", possibilidades);
 
 ```
-
