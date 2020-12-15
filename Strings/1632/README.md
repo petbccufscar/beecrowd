@@ -9,10 +9,10 @@ Para resolvermos o problema, iremos percorrer cada caracter e verificar se ele �
 Usamos a biblioteca `ctype.h` para podermos usar a função `tolower`que transfroma qualquer caracter em seu correspondente minúsculo.
 
 Declaração de variáveis:
-Começamos declarando as variáveis dentro da main (nesse exercício não foi precio criar procedimentos nem funções).
-possibilidades: do tipo int, conta o número de possibilidades para a senha;
-T: do tipo int indicando o número de casos de testes;
-i, j: do tipo int que serão auxiliares no loop;
+Começamos declarando as variáveis dentro da `main` (nesse exercício não foi preciso criar procedimentos nem funções).
+possibilidades: do tipo `int`, conta o número de possibilidades para a senha;
+T: do tipo `int` indicando o número de casos de testes;
+i, j: do tipo `int` que serão auxiliares no loop;
 senha: do tipo char, será a senha que o usuário irá digitar.
 
 ``` c
@@ -52,6 +52,5 @@ No final, o número de possibilidades é printado para a tela.
  printf("%d\n", possibilidades);
 
 ```
-
 
 
