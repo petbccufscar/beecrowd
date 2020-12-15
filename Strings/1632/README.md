@@ -17,10 +17,9 @@ senha: do tipo char, será a senha que o usuário irá digitar.
 
 ``` c
 int possibilidades;
-    int T;
-    int i, j;
-    char senha[20];
-```
+int T;
+int i, j;
+char senha[20];
 
 Logo após a declaração de variáveis, lemos o número de senhas que o usuário irá digitar:
 
@@ -52,5 +51,4 @@ No final, o número de possibilidades é printado para a tela.
  printf("%d\n", possibilidades);
 
 ```
-
 
