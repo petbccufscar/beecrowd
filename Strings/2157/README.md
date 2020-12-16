@@ -45,10 +45,10 @@ Ela é uma função que não retorna nenhum valor, por isso `void` no tipo de re
 }
 ```
 
-A condição para o `while` parar é `num` ser igual a zero, em seguida temos a atribuição do vetor `numSeparado` na posição `i`, o valor a ser recebido é o resto da divisão de `num` por 10, dessa forma é colocado o último dígito de `num` na primeira posição de `numSeparado`. Para manter atualizado `num` é atribuído a ele o quociente inteiro entre ele mesmo e 10, assim fazendo com que o valor que foi anteriomante colocado em `numSeparado` não se repita. Em seguida é somado em `tamVet` e `i` mais um. 
+A condição para o `while` parar é `num` ser igual a zero, em seguida temos a atribuição do vetor `numSeparado` na posição `i`, o valor a ser recebido é o resto da divisão de `num` por 10, dessa forma é colocado o último dígito de `num` na primeira posição de `numSeparado`. Para manter atualizado `num` é atribuído a ele o quociente inteiro entre ele mesmo e 10, assim fazendo com que o valor que foi anteriormente colocado em `numSeparado` não se repita. Em seguida é somado em `tamVet` e `i` mais um. 
 
 
-Para mostrar o veotr `numSeparado` foi feita uma função chamada `exibirVetor` que não possui retorno e entrada, sua declaração e de sua única variável esta a baixo:
+Para mostrar o vetor `numSeparado` foi feita uma função chamada `exibirVetor` que não possui retorno e entrada, sua declaração e de sua única variável esta a baixo:
 
 ```c
 void exibirVetor() {
@@ -102,9 +102,9 @@ A variável `numSeq` contem quantos números a sequência terá, pois subtraindo
 }
 ```
 
-O `while` vai até a quantidade `numSeq` menos um, dentro dele tem um `if` que compara se `ini` é menor ou igual a `fim`, se for verdade irá mostrar o valor de `ini` e em seguida somar mais um nele, caso não seja verdade o `else` esta chamando as funções `inverteNum` e `exibirVetor`, em seguida subtraimos um de `fim`, com esse condicional mostramos a parte crescente da sequência e depois a parte espelhada, e para atualizar o `i` somamos mais um a ele.
+O `while` vai até a quantidade `numSeq` menos um, dentro dele tem um `if` que compara se `ini` é menor ou igual a `fim`, se for verdade irá mostrar o valor de `ini` e em seguida somar mais um nele, caso não seja verdade o `else` esta chamando as funções `inverteNum` e `exibirVetor`, em seguida subtraímos um de `fim`, com esse condicional mostramos a parte crescente da sequência e depois a parte espelhada, e para atualizar o `i` somamos mais um a ele.
 
-Para completar o exercício, foi feito na `main` a declaração das variáveis `quantSeq` que írá armazenar quantas sequências serão recebidas, `inicio` que é o primeiro valor da sequência, `fim` que é o último número da sequência e `i` que é um controlador para o laço que teremos, a baixo esta o código do trecho descrito:
+Para completar o exercício, foi feito na `main` a declaração das variáveis `quantSeq` que irá armazenar quantas sequências serão recebidas, `inicio` que é o primeiro valor da sequência, `fim` que é o último número da sequência e `i` que é um controlador para o laço que teremos, a baixo esta o código do trecho descrito:
 
 ```c
 int main()
