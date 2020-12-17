@@ -39,7 +39,7 @@ Após informar as bibliotecas, iniciamos o nosso algoritmo. Primeiramente, decla
 
 Além destas, são declaradas as variáveis do tipo caractere `rajesh[15]` e `sheldon[15]` para representar a escolha de Rajesh e de Sheldon, respectivamente.
 
-E ainda são declaradas as váriáveis do tipo caractere `pedra[] = "pedra"`, `papel[] = "papel"`, `tesoura[] = "tesoura"`, `lagarto[] = "lagarto"`, `spock[] = "spock"` na qual em cada uma delas é atribuida uma palavra que servirá para posterior comparação no decorrer do problema.
+E ainda são declaradas as variáveis do tipo caractere `pedra[] = "pedra"`, `papel[] = "papel"`, `tesoura[] = "tesoura"`, `lagarto[] = "lagarto"`, `spock[] = "spock"` na qual em cada uma delas é atribuída uma palavra que servirá para posterior comparação no decorrer do problema.
 
 ```c
 int main() {
