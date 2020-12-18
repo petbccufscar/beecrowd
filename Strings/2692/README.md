@@ -4,7 +4,7 @@ E aí, preparado? Mais uma vez precisamos da sua ajuda! Depois de algumas trocas
 
 Observação: o teclado trocará todas as teclas do teclado, por isso todos os caracteres são aceitos.
 
-##### Problema completo: https://www.urionlinejudge.com.br/judge/pt/problems/view/2692
+**Problema completo**: https://www.urionlinejudge.com.br/judge/pt/problems/view/2692
 
 # Resolução:
 
