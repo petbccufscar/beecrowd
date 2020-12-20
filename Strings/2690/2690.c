@@ -26,22 +26,20 @@ char converte(char letra){
 	}
 }
 
-int main (){
-
+int main () {
 	int numSenhas;
 	int qtdLetrasTraduzidas, i;
 	char senha[500];
 	scanf("%d", &numSenhas);
 
-	while( numSenhas--){
-		
+	while (numSenhas--) {
 		scanf(" %[^\n]", senha);
 		qtdLetrasTraduzidas = 0;
 		i = 0;
-		while(senha[i] && qtdLetrasTraduzidas < 12){
-			if(isalpha(senha[i])){
-					printf("%d", converte(senha[i]));
-					qtdLetrasTraduzidas++;
+		while (senha[i] && qtdLetrasTraduzidas < 12) {
+			if(isalpha(senha[i])) {
+				printf("%d", converte(senha[i]));
+				qtdLetrasTraduzidas++;
 			}
 			i++;
 		}
@@ -49,5 +47,5 @@ int main (){
 		printf("\n");
 	}
 
-return 0;
+	return 0;
 }

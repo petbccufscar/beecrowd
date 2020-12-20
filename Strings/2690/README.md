@@ -7,14 +7,14 @@ Bom, o novo serviço de autenticação é seguro, sem bugs e dores de cabeça me
 
 Como podemos perceber para cada conjunto de letras teremos um numero especifico. Bole um programa maroto para fazer essa conversão das letras para os números, e como você não acessará as senhas dos alunos, faça um algoritmo para que o mesmo faça o processo sozinho usando seus proprios casos de teste.
  
-##### Link do problema: https://www.urionlinejudge.com.br/judge/pt/problems/view/2690
+**Problema Completo**: https://www.urionlinejudge.com.br/judge/pt/problems/view/2690
 
  
 # Resolução:
  
 
 Inicialmente, iremos incluir a biblioteca `<ctype.h>`, para utilizar as funções `isalpha()`, que verifica se um caractere é uma letra do alfabeto.
-Em seguida, globalmente, iremos declarar nossa função `converte(char)`, que recebe um caractere e retorna seu número correspondente, conforme a imagem no enunciado do problema indica, por meio da utilização de uma estrura `switch(letra)`. Note que optamos pela utilização de um `switch()` ao invés de estruturas condicionais `if-else`, pois não sabemos à priori quais casos são mais recorrentes e que com essa informação poderíamos utilizar `if-else` em ordem decrescente de recorrência, realizando o menor número de checagens, já que são feitas de forma sequencial(o último condicional necessita mais tempo para acessar que o primeiro). Por outro lado, no `switch()`, os `cases` possuem o mesmo tempo de acesso, já que é implementado por meio de uma lista hash.
+Em seguida, globalmente, iremos declarar nossa função `converte(char)`, que recebe um caractere e retorna seu número correspondente, conforme a imagem no enunciado do problema indica, por meio da utilização de uma estrutura `switch(letra)`. Note que optamos pela utilização de um `switch()` ao invés de estruturas condicionais `if-else`, pois não sabemos à priori quais casos são mais recorrentes e que com essa informação poderíamos utilizar `if-else` em ordem decrescente de recorrência, realizando o menor número de checagens, já que são feitas de forma sequencial(o último condicional necessita mais tempo para acessar que o primeiro). Por outro lado, no `switch()`, os `cases` possuem o mesmo tempo de acesso, já que é implementado por meio de uma lista hash.
 
 ```c
 char converte(char letra){
@@ -68,15 +68,14 @@ while( numSenhas--){
 		i = 0;
 		while(senha[i] && qtdLetrasTraduzidas < 12){
 			if(isalpha(senha[i])){
-					printf("%d", converte(senha[i]));
-					qtdLetrasTraduzidas++;
+				printf("%d", converte(senha[i]));
+				qtdLetrasTraduzidas++;
 			}
 			i++;
 		}
 		
 		printf("\n");
 	}
-```
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
