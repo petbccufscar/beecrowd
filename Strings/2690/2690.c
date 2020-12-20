@@ -39,12 +39,9 @@ int main (){
 		qtdLetrasTraduzidas = 0;
 		i = 0;
 		while(senha[i] && qtdLetrasTraduzidas < 12){
-			printf("%d", i);
 			if(isalpha(senha[i])){
-				if(qtdLetrasTraduzidas < 12){
 					printf("%d", converte(senha[i]));
 					qtdLetrasTraduzidas++;
-				}
 			}
 			i++;
 		}
