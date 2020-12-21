@@ -16,7 +16,7 @@ int k, i, distancia[5], menor;
 char x[100001], y[5][100001];
 ```
 
-Após declarar as variáveis, iremos realizar a leitura das entradas. Iniciamos lendo a string `x` e o inteiro `k`. Para realizar a leitura das próximas 5 linhas contendo a string `y`, vamos utilizar o `for` que irá de `i=0` a `i<5`, atribuindo a string lida ao indice `i` atual da variável `y`.
+Após declarar as variáveis, iremos realizar a leitura das entradas. Iniciamos lendo a string `x` e o inteiro `k`. Para realizar a leitura das próximas 5 linhas contendo a string `y`, vamos utilizar o `for` que irá de `i=0` a `i<5`, atribuindo a string lida ao índice `i` atual da variável `y`.
 
 ```c
 scanf("%s", x);
