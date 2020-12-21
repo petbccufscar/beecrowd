@@ -84,7 +84,7 @@ int calcula_menor(int *distancia){
 }
 ```
 
-**Para aprender um pouco mais sobre a estrutura de repetição for:** [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
+##### Para aprender um pouco mais sobre a estrutura de repetição for: [For](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
 
 Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
 [Facebook](https://www.facebook.com/petbcc/),
