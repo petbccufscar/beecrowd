@@ -20,7 +20,7 @@ O exercício pede para desembaralhar frases que são fornecidas na entrada de da
  A frase incorreta possui a primeira metade da frase correta começando do meio para a esquerda. Já a segunda metade da frase correta começa do fim da frase incorreta para o meio. Dessa maneira, por exemplo, se a frase correta for **PROGRAMAÇÃO É LEGAL**, a versão incorreta que recebemos na entrada é **ÇAMARGORPLAGEL É OÃ**.
 
 
-Inicialmente, incluímos as bliblitecas padrão, a biblioteca `string.h` e estabelecemos o tamanho máximo da entrada, que é igual a **100** caracteres segundo o enunciado. Para considerar os caracteres **\n** e **\0** que podem aparecer no fim de cada linha de entrada, definimos `TAM_MAX` como **102**.
+Inicialmente, incluímos as bibliotecas padrão, a biblioteca `string.h` e estabelecemos o tamanho máximo da entrada, que é igual a **100** caracteres segundo o enunciado. Para considerar os caracteres **\n** e **\0** que podem aparecer no fim de cada linha de entrada, definimos `TAM_MAX` como **102**.
 
 ```c
 #include <stdlib.h>
