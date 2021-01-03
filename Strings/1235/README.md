@@ -54,7 +54,7 @@ No início do laço usamos a função `fgets` que irá ler da entrada padrão de
     tam_linha = strlen(linha);
 ```
 
-Como depois vamos precisar percorrer a string no sentido "do fim para o meio", precisamos desconsiderar o caractere **\n** que fica no final da string, uma vez que ele não é considerado um caractere da frase. Para isso, usamos um `if` que irá verificar se o último caractere de `linha` é igual a **\n** e irá colocar o delimitador `\0` em seu lugar. Esse delimitador é um caractere padrão usado para índicar o fim de qualquer string na linguagem C.
+Como depois vamos precisar percorrer a string no sentido "do fim para o meio", precisamos desconsiderar o caractere **\n** que fica no final da string, uma vez que ele não é considerado um caractere da frase. Para isso, usamos um `if` que irá verificar se o último caractere de `linha` é igual a **\n** e irá colocar o delimitador `\0` em seu lugar. Esse delimitador é um caractere padrão usado para indicar o fim de qualquer string na linguagem C.
 
 
 ```c
