@@ -64,7 +64,7 @@ Como depois vamos precisar percorrer a string no sentido "do fim para o meio", p
     }
 ```
 
-Para começarmos a reorganização da linha que foi recebida, devemos percorrer o vetor `linha` do meio da linha para o início. Desse modo, utlizamos um for no qual existem dois contadores `i` e `j`. O contador `i` começa com o valor da posição da metade do tamanho do vetor menos 1, pois trata-se de um índice de um vetor. Já o contador `j` começa com o valor 0.
+Para começarmos a reorganização da linha que foi recebida, devemos percorrer o vetor `linha` do meio da linha para o início. Desse modo, utilizamos um for no qual existem dois contadores `i` e `j`. O contador `i` começa com o valor da posição da metade do tamanho do vetor menos 1, pois trata-se de um índice de um vetor. Já o contador `j` começa com o valor 0.
 
  Assim, decrementa-se o valor de `i` até que seja menor que 0, e incrementa-se o valor de `j` até que este fique com o valor `tam_linha/2 - 1`. Dentro do laço, utilizamos o contador `j` para `nova_linha` e `i` para `linha`, de forma a armazenar a primeira metade de `linha` de maneira correta em `nova_linha`.
 
