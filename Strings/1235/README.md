@@ -44,7 +44,7 @@ Posteriormente, o programa lê um inteiro na entrada, que representa o número d
   linha[0] = getchar();
 ```
 
-Aṕos essa leitura inicial, existe um laço `while`, no qual irá se decrementar a variável casos até que esta tenha valor 0. Dessa maneira, é possível definir uma quantidade de repetições eqivalente ao valor armazenado na variável `casos`, de modo a ler cada frase na entrada.
+Após essa leitura inicial, existe um laço `while`, no qual irá se decrementar a variável casos até que esta tenha valor 0. Dessa maneira, é possível definir uma quantidade de repetições equivalente ao valor armazenado na variável `casos`, de modo a ler cada frase na entrada.
 
 No início do laço usamos a função `fgets` que irá ler da entrada padrão de dados `stdin` e irá armazenar seu conteúdo no vetor linhas, definindo um tamanho máximo de leitura. Assim, a função irá ler um conjunto de caracteres até encontrar um **\n** ou até um tamanho máximo definido por `TAM_MAX`. Além disso, usamos a função `strlen` para contar o tamanho da string recebida e armazenamos isso em `tam_linhas`.
 
