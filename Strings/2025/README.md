@@ -17,7 +17,7 @@ Vamos usar quatro variáveis, em que três são do tipo `int` e uma é do tipo `
   int n, i, j;
   char frase[101];
 ```
-`n` representa quantos frases serão corrigidas. `i` e `j` são variáveis auxiliares para as estruturas `for` e `while` respectivamente. `frase` é uma string que representa a frase que vai ser analisada.
+`n` representa quantas frases serão corrigidas. `i` e `j` são variáveis auxiliares para as estruturas `for` e `while` respectivamente. `frase` é uma string que representa a frase que vai ser analisada.
 
 Precisamos saber quantos casos de teste vão ser realizados. Para isso, vamos usar um `scanf` para ler `n`:
 ```c
