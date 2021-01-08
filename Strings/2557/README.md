@@ -31,7 +31,7 @@ Na sequência, abre-se um loop `while` para leitura das equações que só se en
     futuras explicações */
 ```
 
-Dentro do loop, após a leitura da equação, defini-se seu comprimento e abri-se outro `while`, usando a váriavel `i` para contador de caracteres percorridos, com limite o último caractere da equação. Esse loop é único para cada equação e será resposável por acessar cada membro dela, sendo feita as manipulações necessáris. 
+Dentro do loop, após a leitura da equação, define-se seu comprimento e abre-se outro `while`, usando a váriavel `i`como contador de caracteres percorridos, usando como limite o último caractere da equação. Esse loop é único para cada equação e será resposável por acessar cada membro dela, fazendo as manipulações necessárias.
 ``` c
         tamanho =(strlen(equacao));
         while (i<tamanho) {
