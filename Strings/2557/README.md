@@ -17,7 +17,7 @@ Antes de mais nada, declara-se as bibliotecas de função que serão usadas. Nes
 #include <string.h>
 ```
 
-Agora, dentro da função `main`, declara-se as várias necessárias. Do tipo `char`: `equacao` que será o vetor responsável por armazenar a equação lida; `valores` que será a matriz bidimensional(uma dimenção para cada número da equação) responsável por armazenar os valoes numéricos da equação. Do tipo `int`: `soma` para definir qual operação será realizada; `lado_esquerdo1` e `lado_esquerdo2` que controlará em que lado(em relação ao sinal de igual) da equação os valores 1 e 2, respectivamente, estão; `valor1` e `valor2` para receber os valores da equação como número inteiros; `tamanho` que receberá a quantidade de caracteres da equação; `i`, `j` e `k` que serão contadores.
+Agora, dentro da função `main`, declara-se as váriaveis necessárias. Do tipo `char`: `equacao` que será o vetor responsável por armazenar a equação lida; `valores` que será a matriz bidimensional (uma dimensão para cada número da equação) responsável por armazenar os valoes numéricos da equação. Do tipo `int`: `soma` para definir qual operação será realizada; `lado_esquerdo1` e `lado_esquerdo2` que controlará em que lado da equação os valores 1 e 2 estão em relação ao sinal de igual, respectivamente; `valor1` e `valor2` para receber os valores da equação como número inteiros; `tamanho` que receberá a quantidade de caracteres da equação; `i`, `j` e `k` que serão contadores.
 ``` c
 int main() {
     char equacao[50]={'0'}, valores[2][10] = {{'0'}};
