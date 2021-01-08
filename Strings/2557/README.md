@@ -71,7 +71,11 @@ Avançando, usa-se a função `atoi`(resposável por transformar números de uma
         valor2 = atoi(valores[1]);
 ```
 
-Dessa forma, têm-se o necessário para imprimir o resultado, basta estipular cada condição e sua operação respectiva - para tal usa-se estruturas condicionais alinhadas. A primeira condição é: a operação é uma soma e ambos os números estão do lado esquerdo, logo soma-se os valores; a segunda: a operação é uma soma, mas um dos número não está do lado direito da equação, logo subtrai-se do segundo valor o primeiro valor; a terceira: a operação é uma subtração e ambos os valores estão do lado esquerdo da igualdade, logo subtrai-se do primeiro valor o segundo valor; a quarta condição: a operação é uma subtração e um dos valoes está do lado direito da igualdade, logo subtrai-se do primeiro valor o segundo valor. 
+Dessa forma, têm-se o necessário para imprimir o resultado, basta estipular cada condição e sua operação respectiva - para tal usa-se estruturas condicionais alinhadas.
+* A primeira condição é: a operação é uma soma e ambos os números estão do lado esquerdo, logo soma-se os valores;
+* A segunda: a operação é uma soma, mas um dos número não está do lado direito da equação, logo subtrai-se do segundo valor o primeiro valor;
+* A terceira: a operação é uma subtração e ambos os valores estão do lado esquerdo da igualdade, logo subtrai-se do primeiro valor o segundo valor; 
+* A quarta condição: a operação é uma subtração e um dos valores está do lado direito da igualdade, logo subtrai-se do primeiro valor o segundo valor.
 ``` c 
         if(soma == 1 && lado_esquerdo1==1 && lado_esquerdo2 == 1) {
             printf("%d\n", valor1 + valor2);
