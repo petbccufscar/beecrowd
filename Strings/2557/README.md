@@ -9,7 +9,7 @@ O enigma o intrigou bastante. Joãozinho logo começou a procurar por valores de
 
 # Resolução:
 
-Para resolver esse problema a lógica é a seguinte: deve ler uma equação, feito isso, percorre-se cada caractere dessa equação definindo-os, sendo que, os números e sinais serão armazenados. Em seguida, basta analisar qual operação deve ser feita e ver a posição de cada número em relação a equação, com isso obtém-se o necessário para realizar a conta e desvendar o enigma.
+Para resolver esse problema a lógica é a seguinte: deve ler uma equação, feito isso, percorre-se cada caractere dessa equação para que os números e sinais sejam armazenados. Em seguida, basta analisar qual operação deve ser feita e ver a posição de cada número em relação à equação. Com isso, obtém-se o necessário para realizar a conta e desvendar o enigma.
 Antes de mais nada, declara-se as bibliotecas de função que serão usadas. Neste caso: `<stdio.h>` para receber e imprimir dados; `<stdlib.h>` para usar-se a função `atoi`; `<string.h>` para usar-se as funções `strlen` e `memset`. 
 ``` c
 #include <stdio.h>
