@@ -66,7 +66,7 @@ if (!igualdades)
 	qtsPosicoesPossiveis++;
 ```
 
-Por fim, depois de percorrer a `string` `cifra` exibimos a quantidade de posições em que é possível encaixar a `crib`
+Por fim, depois de percorrer a string `cifra` exibimos a quantidade de posições em que é possível encaixar a `crib`
 ```c
 printf("%d\n", qtsPosicoesPossiveis);
 ``` 
