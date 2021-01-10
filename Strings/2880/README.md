@@ -28,7 +28,7 @@ int igualdades, limite, qtsPosicoesPossiveis;
 int i, j, k;
 ```
 
-Em seguida, recebemos `cifra` e `crib` com o comando `scanf` e iniciamos as variáveis: `i` em 0, para verificarmos as `strings` do começo; `qtsPosicoesPossiveis` em 0, pois ainda não verificamos as `strings` e `limite` com o tamanho de `cifra` menos o tamanho de `crib` com a função `strlen`.
+Em seguida, recebemos `cifra` e `crib` com o comando `scanf` e iniciamos as variáveis: `i` em 0, para verificarmos as strings do começo; `qtsPosicoesPossiveis` em 0, pois ainda não verificamos as strings e `limite` com o tamanho de `cifra` menos o tamanho de `crib` com a função `strlen`.
 ```c
 k = 0;
 igualdades = 0;
