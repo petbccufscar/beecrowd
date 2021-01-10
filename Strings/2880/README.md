@@ -8,7 +8,7 @@ Neste problema, dada uma mensagem cifrada e um crib, seu programa deve computar 
 
 # Resolução
 
-Para resolver este exercício, é necessário verificar se um crib poderia estar em uma mensagem cifrada. Para verificar isso, comparamos se uma letra se repete nas mesmas posições do crib e da mensagem. Caso não se repita, essa palavra (crib) pode estar contido na mensagem cifrada.    
+Para resolver este exercício, é necessário verificar se um crib poderia estar em uma mensagem cifrada. Para verificar isso, comparamos se uma letra se repete nas mesmas posições do crib e da mensagem. Caso não se repita, essa palavra (crib) pode estar contida na mensagem cifrada.    
 
 Iremos importar a biblioteca `string.h` que para utilizar a função `strlen` que retorna o tamanho de uma `string`.
 ```c
