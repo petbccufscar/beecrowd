@@ -48,7 +48,7 @@ while (k <= limite){
 	igualdades = 0;
 ```
 
-Depois, criamos outro `while` que com o comando `if-else`, irá comparar cada letra de `crib` e `cifra` até que `crib` acabe, ou que encontrar duas letras iguais. Nesse último caso, a `igualdade` recebe 1, assim a condição do `while`é desfeita e voltamos para o laço exterior.
+Depois, criamos outro `while` que com o comando `if-else`, irá comparar cada letra de `crib` e `cifra` até que `crib` acabe, ou que irá encontrar duas letras iguais. Nesse último caso, a `igualdade` recebe 1, assim a condição do `while`é desfeita e voltamos para o laço exterior.
 Incrementamos `k` em 1 e verificamos se `igualdade` é igual a 0, caso verdade também incrementamos `qtsPosicoesPossiveis` em 1.
 ```c
 while ( j < strlen(crib) && !igualdades){
