@@ -36,10 +36,7 @@ qtsPosicoesPossiveis = 0;
 limite = strlen(cifra) - strlen(crib);
 ```
 
-Criamos um laço de repetição `while`, que irá percorrer as duas `strings` até `crib` não encaixar em `cifra`. E iniciamos o restante das variáveis que serão alteradas em cada iteração do `while`. 
-`j = 0` para sempre começar da primeira letra de `crib`. 
-`i = k`, para comparar sempre a próxima letra de `cifra`.
-`igualdades = 0`, pois não encontramos nenhuma no começo de cada iteração.
+Criamos um laço de repetição `while`, que irá percorrer as duas strings até `crib` não encaixar em `cifra`. E iniciamos o restante das variáveis que serão alteradas em cada iteração do `while`: `j = 0` para sempre começar da primeira letra de `crib`; `i = k`, para comparar sempre a próxima letra de `cifra`; `igualdades = 0`, pois não encontramos nenhuma no começo de cada iteração.
 ```c
 while (k <= limite){
 
