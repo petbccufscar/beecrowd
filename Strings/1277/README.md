@@ -19,7 +19,7 @@ Primeiro, instanciamos as variáveis necessárias, sendo elas: três vetores do 
     scanf("%c", &c);
 ```
 
-Utilizaremos um `while(T > 0)` para passar por todos os casos de teste, sendo que sempre ao final do mesmo o T será decrementado. Dentro inicialmente iremos ler o `N` com `scanf` _e_ `nomes` e `freq` com `gets`, em sequência _'limpamos'_ a saída (marcando o índice 0 como o final utilizando o `\0`) e zeramos todas as variáveis de índice e soma.
+Utilizaremos um `while(T > 0)` para passar por todos os casos de teste, sendo que, sempre ao final do mesmo, `T` será decrementada. Dentro do loop, inicialmente, iremos ler o `N` com `scanf` e `nomes` e `freq` com `gets`, em sequência _'limpamos'_ a saída (marcando o índice 0 como o final utilizando o `\0`) e zeramos todas as variáveis de índice e soma.
 
 Após cada caso individual, marcamos o final da `saida` com o `\0` e imprimimos a respectiva saída.
 
