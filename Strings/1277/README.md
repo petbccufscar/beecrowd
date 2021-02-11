@@ -8,7 +8,7 @@ Os estudantes da tua universidade recentemente adquiriram o desagradável hábit
 
 O exercício consiste em ler um número específico de casos de teste e, para cada caso de teste, imprimir quais alunos não cumpriram o mínimo de presença.
 
-Primeiro instanciamos as variáveis necessárias, sendo elas: três vetores do tipo `char` (onde armazenaremos o `nome`, a `frequencia` e a `saida` do programa), 7 do tipo `int` (sendo `N` o número de estudantes; `T` o número de casos de teste; `p` para somar as presenças, `a` para somar as ausências; e `i`, `j` e `k` para serem índices dos vetores) e por fim um `char` (`c` para pegar o lixo que vira do`scanf`). Em seguida lemos o `T`.
+Primeiro, instanciamos as variáveis necessárias, sendo elas: três vetores do tipo `char` (onde armazenaremos o `nome`, a `frequencia` e a `saida` do programa), 7 do tipo `int` (sendo `N` o número de estudantes; `T` o número de casos de teste; `p` para somar as presenças, `a` para somar as ausências; e `i`, `j` e `k` para serem índices dos vetores) e por fim um `char` (`c` para pegar o lixo que virá do`scanf`). Em seguida, lemos o `T`.
 
 ```c
     int N, T;
