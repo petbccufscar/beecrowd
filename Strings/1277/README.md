@@ -45,7 +45,7 @@ Após cada caso individual, marcamos o final da `saida` com o `\0` e imprimimos 
     }
 ```
 
-O código do caso individual será um `do{} while()` que irá verificar todas as frequências até chegar no final do respectivo vetor (ou seja, `\0`). Dentro das chaves iremos contar as presenças e faltas utilizando `if` e `else` e feito isso para um aluno iremos verificar a sua frequência e decidir se seu nome irá estar na `saida` ou não. Ao final do `do` iremos incrementar `i` que será nosso índice de `freq`.
+O código do caso individual será um `do{} while()` que irá verificar todas as frequências até chegar no final do respectivo vetor (ou seja, `\0`). Dentro das chaves iremos contar as presenças e faltas utilizando `if` e `else if`, feito isso para um aluno, iremos verificar a sua frequência e decidir se seu nome irá estar na `saida` ou não. Ao final do `do` iremos incrementar `i` que será nosso índice de `freq`.
 
 ```c
     if (freq[i] == 'P')
