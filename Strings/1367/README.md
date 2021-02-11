@@ -4,7 +4,7 @@ Então, nós temos que admitir: precisamos da sua ajuda. Esse ano as coisas não
 
 Por favor, por favor, alguém nos ajude!
 
-###### Problema completo: [https://www.urionlinejudge.com.br/judge/pt/problems/view/1367](https://www.urionlinejudge.com.br/judge/pt/problems/view/1367)
+**Problema completo**: [https://www.urionlinejudge.com.br/judge/pt/problems/view/1367](https://www.urionlinejudge.com.br/judge/pt/problems/view/1367)
 
 # Resolução
 
