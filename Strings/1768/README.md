@@ -1,19 +1,14 @@
-# Problema
+# Problema: 
 
-O exercicío 1768 pede a elaboração de um algoritmo que construa árvores de natal utilizando asteriscos (*), o modo que elas serão construidas, é de cima para baixo, começando com um asterisco e aumentando em dois a proxima linha até que a última linha tenha n asteriscos, ao fim das folhas tem que desenhar o tronco da árvore que possui um asterisco e três na sequencia. A entrada do problema é n, que poderá ter várias entradas até que se encontre o valor `EOF`. Um exemplo de como deve ser a árvore, em que n é igual a nove:
+As crianças adoram desenhar árvores de natal e você desafiou algumas delas a desenharem árvores de diversos tamanhos com apenas com o caractere asterisco "*".
 
-```c
-    *
-   ***
-  *****
- *******
-*********
-    *
-   ***
-```
+A regra é simples. De baixo para cima, o tronco da árvore consiste de 3 asteriscos e depois 1. Em seguida vem o restante da árvore, com cada fileira de folhas iniciando no tamanho que você determinou e diminuindo de dois em dois, até chegar na copa da árvore que terá apenas um asterisco. Note que para isso dar certo, somente será permitido tamanhos ímpares para estas árvores.
+
+
+**Problema Completo**: https://www.urionlinejudge.com.br/judge/pt/problems/view/1768
 
 # Resolução
-
+O exercicío pede a elaboração de um algoritmo que construa árvores de natal utilizando asteriscos (*), o modo que elas serão construidas, é de cima para baixo, começando com um asterisco e aumentando em dois a proxima linha até que a última linha tenha n asteriscos, ao fim das folhas tem que desenhar o tronco da árvore que possui um asterisco e três na sequencia. A entrada do problema é n, que poderá ter várias entradas até que se encontre o valor `EOF`.
 Para começar o código, foi implementada a primira função que é a `repetirCar`, ela não possui retorno assim como as demais funções deste código, então é do tipo `void`, suas entradas são um inteiro (`int`) `n` e um caracter (`char`) `c`, seu objetivo é repetir `c`, `n` vezes e como pode ser observado na seguinte declação da mesma, é utilizado um `for` que vai de zero até `n` menos um.
 
 ```c
