@@ -10,7 +10,7 @@ Você está naturalmente interessado em escrever um programa que resolva esse pr
 
 
 # Resolução:
-O exercício em questão pede para encontrarmos a substring ou sub-palavra de maior tamanho possível que esteja presente em todas as palavra recebidas na entrada do programa.
+O exercício em questão pede para encontrarmos a substring ou sub-palavra de maior tamanho possível que esteja presente em todas as palavras recebidas na entrada do programa.
 
 Além das bibliotecas padrão da linguagem C, utilizamos também a biblioteca `string.h` que contém diversas funções auxiliares para lidar com strings.
 
