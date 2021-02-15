@@ -34,7 +34,7 @@ Inicialmente são definidas as variáveis que serão utilizadas posteriormente n
   char *linha;
   char ** linhas;
 ```
-Após isso, efetua-se a leitura do inteiro `n` através da função `scanf` e aloca-se dinamicamente um número de ponteiros igual a este inteiro que foi lido.
+Após isso, efetua-se a leitura do inteiro `n` através da função `scanf` e, usando a função `malloc`, aloca-se dinamicamente um número de ponteiros igual a este inteiro que foi lido.
 
 ```c
   scanf("%d", &n);
