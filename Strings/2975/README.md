@@ -23,7 +23,7 @@ Com len = 0 temos o comprimento atual, e o vetor lps na posição zero é zero p
 
 Em seguida, temos um loop para calcular o lps:
 
-Se for igual, incremento o comprimento e seto o lps[i];
+Se pat[i] == pat[len] incremento o comprimento e seto o lps[i];
 
 Se for diferente de zero, então volto para o lps anterior;
 
