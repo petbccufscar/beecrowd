@@ -75,7 +75,7 @@ Se j for o tamanho da string padrão, ocorrência encontrada.
 
 Com o j = lps[j - 1] vai para o índice maior prefixo que também é um sufixo, pois é invariante a pesquisa.
 
-Caso tenha dado errado, temos o else-if, no qual:
+Caso tenha dado errado, temos o else if, no qual:
 
 Usamos o if (j != 0) para se o índice for j != 0, tento o lps[j-1].
 
