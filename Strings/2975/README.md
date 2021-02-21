@@ -77,7 +77,7 @@ Com o j = lps[j - 1] vai para o índice maior prefixo que também é um sufixo, 
 
 Caso tenha dado errado, temos o else if, no qual:
 
-Usamos o if (j != 0) para se o índice for j != 0, tento o lps[j-1].
+Usamos o if (j != 0) para e o índice j for diferente de 0, tento o lps[j-1].
 
 Do contrário (caso else) apenas soma-se o texto, pois nesse índice já é impossível.
 
