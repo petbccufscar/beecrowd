@@ -19,7 +19,7 @@ Para a resolução deste problema, além da biblioteca padrão `stdio.h` (biblio
 
 Abaixo, o temos o vetor maior prefixo que também é um sufixo, isto é, o comprimento de str[0...k] que é igual a [n-k...n-1].
 
-Com len = 0 temos o comprimento atual, e lps[0] de zero é zero por definição.
+Com len = 0 temos o comprimento atual, e o vetor lps na posição zero é zero por definição.
 
 Em seguida, temos um loop para calcular o lps:
 
