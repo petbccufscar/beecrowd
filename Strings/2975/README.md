@@ -17,7 +17,7 @@ Para a resolução deste problema, além da biblioteca padrão `stdio.h` (biblio
 #define min(a, b) (a < b ? a : b)
 ```
 
-Abaixo, o temos o vetor maior prefixo que também é um sufixo, isto é, o comprimento de str[0...k] que é igual a [n-k...n-1].
+Abaixo, o temos algoritmo LPS (longest palindromic subsequence) para retornar o comprimento da subsequência palíndrômica mais longa em sequência.
 
 Com len = 0 temos o comprimento atual, e o vetor lps na posição zero é zero por definição.
 
