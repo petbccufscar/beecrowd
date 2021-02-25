@@ -17,17 +17,21 @@ Para a resolução deste problema, além da biblioteca padrão `stdio.h` (biblio
 #define min(a, b) (a < b ? a : b)
 ```
 
-Abaixo, o temos algoritmo LPS (longest palindromic subsequence) para retornar o comprimento da subsequência palíndrômica mais longa em sequência.
+Abaixo temos a função `computeLPSArray` que nos dá o comprimento da subsequência mais longa da sequência de caracteres `pat`.
 
-Com len = 0 temos o comprimento atual, e o vetor lps na posição zero é zero por definição.
+Definimos `len` como o comprimento da subsequência buscada, já que inicialmente ela não existe. Também definimos 0 no ínicio do vetor `lps`.
 
-Em seguida, temos um loop para calcular o lps:
-
-Se pat[i] == pat[len] incremento o comprimento e seto o lps[i];
-
-Se for diferente de zero, então volto para o lps anterior;
-
-Se o comprimento for zero, não há o que fazer e o lps atual é nulo.
+```c
+void computeLPSArray(char* pat, int M, int* lps) { 
+    
+    int len = 0; 
+  
+    lps[0] = 0;
+    /*
+    .
+    .
+    */
+}
 
 ```c
 void computeLPSArray(char* pat, int M, int* lps) { 
