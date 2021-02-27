@@ -19,19 +19,15 @@ Para a resolução deste problema, além da biblioteca padrão `stdio.h` (biblio
 
 Abaixo temos a função `computeLPSArray` que nos dá o comprimento da subsequência mais longa da sequência de caracteres `pat`.
 
-Definimos `len` como o comprimento da subsequência buscada, já que inicialmente ela não existe. Também definimos 0 no ínicio do vetor `lps`.
+Inicialmente definimos `len` como o comprimento da subsequência buscada, já que inicialmente ela não existe. Também definimos 0 no ínicio do vetor `lps`.
 
-```c
-void computeLPSArray(char* pat, int M, int* lps) { 
-    
-    int len = 0; 
-  
-    lps[0] = 0;
-    /*
-    .
-    .
-    */
-}
+Em seguida criamos um loop para calcular a longest palindromic subsequence, enquanto nosso contador for menor que M (tamanho de `pat`) fazemos ações de acordo com verificações.
+
+- Caso `pat[i] == pat[len]`, incremento o compriento e seto o `lps[i] = len`
+- Caso em que são diferentes e o valor de `len` já foi alterado, ou seja `len != 0`, então volta para o lps anterior, ou seja `len = lps[len - 1]`.
+- Caso em que são diferentes porém o valor de `len` ainda é 0, não há o que fazer e o lps atual é nulo, ou seja, `lps[i] = 0`.
+
+Dessa forma, nossa função ao final consegue calcular ABCDEFGHI.
 
 ```c
 void computeLPSArray(char* pat, int M, int* lps) { 
