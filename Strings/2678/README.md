@@ -17,7 +17,8 @@ Declaramos as seguintes variáveis: um caractere `c`, que receberá a entrada ca
     char *teclado = "22233344455566677778889999";
 ```
 
-Partimos para um loop `while` que lê a entrada até o `EOF` e armazena ná variável `c`.
+Partimos para um loop `while` que lê a entrada até o `EOF` e armazena na variável `c`.
+
 
 ```c
     while (scanf("%c", &c) != EOF){
