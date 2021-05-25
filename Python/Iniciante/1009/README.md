@@ -1,4 +1,4 @@
-```# [Problema URI 1009:](https://www.urionlinejudge.com.br/judge/pt/problems/view/1009)
+# [Problema URI 1009:](https://www.urionlinejudge.com.br/judge/pt/problems/view/1009)
 
 ---
 
