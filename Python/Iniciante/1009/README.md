@@ -1,6 +1,5 @@
 # [Problema URI 1009:](https://www.urionlinejudge.com.br/judge/pt/problems/view/1009)
 
----
 
 Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o total a receber no final do mês, com duas casas decimais.
 
@@ -8,7 +7,6 @@ Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total 
 
 # Resolução:
 
----
 
 Como descrito na introdução, o desafio é bastante simples, será necessário ler um nome, salário fixo e o valor total de vendas de um funcionário, e dar como saída o valor total recebido pelo o funcionário.
 
