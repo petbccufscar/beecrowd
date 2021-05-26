@@ -1,6 +1,3 @@
-#Resolução problema URI 1009 - Iniciante - Nível 2
-# Vitor de Almeida Recoaro - PET-BCC.
-# 24/05/2021
 
 nome = input()
 salario = float(input())
