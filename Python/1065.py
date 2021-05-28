@@ -2,7 +2,8 @@
 par = 0
 
 # 'for' para leitura dos argumentos
-for num in range(1, 5):
+for num in range(5):
+
     num = int(input())
     # Assim que o argumento é recebido, é comparado se
     # o resto da divisão por 2 é zero, assim, sendo par
