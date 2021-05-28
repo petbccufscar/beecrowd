@@ -22,3 +22,8 @@ for i in range(n):
 # Saída apresentando os valores
 print(f'{in_} in')
 print(f'{out} out')
+
+# Caso tenha alguma dúvida sobre este problema ou sobre a resolução, entre em contato com o PET-BCC pelo nosso
+# Facebook  - https://www.facebook.com/petbcc/
+# Instagram - https://www.instagram.com/petbcc.ufscar/
+# Ou nos mande um e-mail com o assunto "URI" para  petbcc.ufscar@gmail.com
