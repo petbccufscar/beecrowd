@@ -1,10 +1,13 @@
-# -*- coding: utf-8 -*-
+# Problema 1019 - URI - Iniciante - Nível 1
 
-segundos = int(input()) #Obtenção de dados apartir da função input, com o caster de inteiro.
+#Entrada de dados
+segundos = int(input())
 
 #Conversao de segundos para horas e minutos
 horas = segundos/3600 
-segundos = segundos%3600 #Uso do caracter '%' (resto), que calcula o resto da divisão entre segundos e 3600.
+segundos = segundos%3600 
 minutos = segundos/60
 segundos = segundos%60
+
+#Saída de dados
 print("%d:%d:%d"%(horas,minutos,segundos))
