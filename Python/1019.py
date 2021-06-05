@@ -4,9 +4,9 @@
 segundos = int(input())
 
 #Conversao de segundos para horas e minutos
-horas = segundos/3600 
+horas = int(segundos/3600) 
 segundos = segundos%3600 
-minutos = segundos/60
+minutos = int(segundos/60)
 segundos = segundos%60
 
 #Saída de dados
