@@ -16,4 +16,4 @@ elif(item==5):
     preco_total = 1.50*qtd_item
 
 #Saída de dados
-print("Total: R$ %.2f" %preco_total)
+print(f"Total: R$ {preco_total:.2f}")
