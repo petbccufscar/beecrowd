@@ -1,7 +1,7 @@
 # Problema 1038 - URI - Iniciante - Nível 1
 
-#Declaração de variáveis, para item e a quantidade do item que será comprado.
-entrada = input().split(' ') #Será feita uma lista com 2 espaços, sendo o primeiro qual tipo de item, e o segundo a quantidade deste.
+#Entrada de dados com a função map para dividir os valores de entrada pelo 'espaço'
+item, qtd_item = map(float, input().split(' ')) 
 
 #Distribuindo os valores de entrada em variáveis para melhor exemplificação.
 item = int(entrada[0])
@@ -19,4 +19,5 @@ elif(item==4):
 elif(item==5):
     preco_total = 1.50*qtd_item
 
-print("Total: R$ %.2f" %preco_total
+#Saída de dados
+print("Total: R$ %.2f" %preco_total)
