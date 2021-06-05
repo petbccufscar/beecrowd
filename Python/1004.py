@@ -1,3 +1,7 @@
-a = int(input()) # Leitura de dado inteiro
+# Problema 1004 - URI - Iniciante - Nível 1
+
+# Leitura de dado inteiro
+a = int(input()) 
 b = int(input())
-print("PROD =", a*b) # Impressão da frase necessário e resultado do produto
+ # Impressão da frase necessário e resultado do produto
+print(f'PROD = {a*b}')
