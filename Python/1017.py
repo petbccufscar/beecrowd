@@ -1,3 +1,4 @@
+# Problema 1017 - URI - Iniciante - Nível 1
 # lê as entradas e as armazena
 time = int(input())
 speed = int(input()) 
