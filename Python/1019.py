@@ -10,4 +10,4 @@ minutos = segundos/60
 segundos = segundos%60
 
 #Saída de dados
-print("%d:%d:%d"%(horas,minutos,segundos))
+print(f'{horas}:{minutos}:{segundos}')
