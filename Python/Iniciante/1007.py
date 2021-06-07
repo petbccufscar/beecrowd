@@ -6,5 +6,5 @@ B = int(input())
 C = int(input())
 D = int(input())
 
-#Imprime na tela o texto "DIFERENCA =" seguido do resultado pedido no exercício
+# Imprime na tela o texto "DIFERENCA =" seguido do resultado pedido no exercício
 print(f'DIFERENCA = {A * B - C * D}')
