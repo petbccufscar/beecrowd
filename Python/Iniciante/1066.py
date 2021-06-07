@@ -1,13 +1,13 @@
 # Problema 1066 - URI - Iniciante - Nível 1
 
-# Inicialização das variáveis com valor 0;
+# Inicialização das variáveis com valor 0
 par = 0
 impar = 0
 positivo = 0
 negativo = 0
 
 # 'for' para leitura dos argumentos
-for num in range(0, 5):
+for num in range(5):
     num = int(input())
     # Assim que o argumento é recebido, é comparado se
     # o resto da divisão por 2 é zero, assim, sendo par
