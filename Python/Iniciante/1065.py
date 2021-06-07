@@ -1,3 +1,5 @@
+# Problema 1065 - URI - Iniciante - Nível 1
+
 # Inicialização da variável 'par' com o valor 0
 par = 0
 
@@ -12,4 +14,4 @@ for num in range(5):
         par += 1
 
 # Imprime na tela a quantidade de pares com o texto "valores pares"
-print(par, "valores pares")
+print(f'{par} valores pares')

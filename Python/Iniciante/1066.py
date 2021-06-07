@@ -1,3 +1,5 @@
+# Problema 1066 - URI - Iniciante - Nível 1
+
 # Inicialização das variáveis com valor 0;
 par = 0
 impar = 0
@@ -24,7 +26,7 @@ for num in range(0, 5):
 
 
 # Imprime na tela a quantidade de cada com suas respectivas mensagens
-print(par, "valor(es) par(es)")
-print(impar, "valor(es) impar(es)")
-print(positivo, "valor(es) positivo(s)")
-print(negativo, "valor(es) negativo(s)")
+print(f'{par} valor(es) par(es)')
+print(f'{impar} valor(es) impar(es)')
+print(f'{positivo} valor(es) positivo(s)')
+print(f'{negativo} valor(es) negativo(s)')
