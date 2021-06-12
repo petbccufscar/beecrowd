@@ -5,7 +5,7 @@ numero_funcionario = int(input())
 horas_trabalhadas = int(input())
 valor_hora = float(input())
 
-#Cálculo do salário
+# Cálculo do salário
 salario = horas_trabalhadas * valor_hora
 
 # Imprimindo as saídas
