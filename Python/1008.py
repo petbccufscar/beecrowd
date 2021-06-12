@@ -1,6 +1,6 @@
  # Problema 1079 - URI - Iniciante - Nível 1
 
-#Leitura das variáveis
+# Leitura das variáveis
 numero_funcionario = int(input())
 horas_trabalhadas = int(input())
 valor_hora = float(input())
