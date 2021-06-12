@@ -8,6 +8,6 @@ valor_hora = float(input())
 #Cálculo do salário
 salario = horas_trabalhadas * valor_hora
 
-#Imprimindo as saídas
+# Imprimindo as saídas
 print(f'NUMBER = {numero_funcionario}')
 print(f'SALARY = U$ {salario:.2f}')
