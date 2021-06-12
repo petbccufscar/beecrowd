@@ -12,5 +12,5 @@ for i in range(n):
  #Cálculo da média ponderada
  media_ponderada = (a*2 + b*3 + c*5)/10
 
- #print da média ponderada
+ # Print da média ponderada
  print(f'{media_ponderada:.1f}')
