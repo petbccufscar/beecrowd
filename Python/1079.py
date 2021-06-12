@@ -6,7 +6,7 @@ n = int(input())
 #Loop que lerá 'n' vezes as notas dos alunos
 for i in range(n):
 
- #Leitura das três notas
+ # Leitura das três notas
  a, b, c = map(float, input().split(' '))
 
  # Cálculo da média ponderada
