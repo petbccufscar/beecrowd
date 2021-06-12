@@ -3,7 +3,7 @@
 #Leitura da variavel 'n' que será número de vezes que será calculada a média ponderada
 n = int(input())
 
-#Loop que lerá 'n' vezes as notas dos alunos
+# Loop que lerá 'n' vezes as notas dos alunos
 for i in range(n):
 
  # Leitura das três notas
