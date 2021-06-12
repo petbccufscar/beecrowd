@@ -9,7 +9,7 @@ for i in range(n):
  #Leitura das três notas
  a, b, c = map(float, input().split(' '))
 
- #Cálculo da média ponderada
+ # Cálculo da média ponderada
  media_ponderada = (a*2 + b*3 + c*5)/10
 
  # Print da média ponderada
