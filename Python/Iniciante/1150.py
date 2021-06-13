@@ -16,11 +16,11 @@ soma = X
 # 'i' começa em 1, por X ser sempre menor que Z.
 
 i = 1
-#Equanto a soma for menor que X.
+# Equanto a soma for menor que X.
 while(soma <= Z):
 
     soma += X+i
-    #Entrou no loop, incrementamos o contador 
+    # Entrou no loop, incrementamos o contador 
     i += 1
 
 # Por fim, imprimimos a variável i (número de iterações de soma)
