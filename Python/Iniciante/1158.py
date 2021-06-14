@@ -3,7 +3,7 @@
 # Lendo o valor de entrada inteiro
 entrada = int(input())
 # Loop dos testes
-for i in range(0, entrada):
+for i in range(entrada):
   # Lendo X e Y
   X, Y = map(int, input().split(" "))
   # Variável auxiliar e soma
