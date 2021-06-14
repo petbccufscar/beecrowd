@@ -1,6 +1,6 @@
 # Problema 1172 - URI - Iniciante - Nível 1
 
-# Definindo o vetor
+# Definindo a lista
 X = []
 # Lendo os valores do vetor
 for i in range(0, 10):
