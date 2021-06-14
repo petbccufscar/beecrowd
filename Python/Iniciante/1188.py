@@ -15,7 +15,7 @@ for _ in range(12):
         # Colocamos o valor na última linha da matriz
         m[-1].append(v)
 
-# Contados de valores únicos somados
+# Contador de valores únicos somados
 k = 0
 # Soma total
 soma = 0
@@ -23,7 +23,7 @@ soma = 0
 # Loop para soma
 for i in range(12):
     for j in range(12):
-        # Varificamos se o valor está na área indicada
+        # Verificamos se o valor está na área indicada
         if (11 - i) < j < i:
             # Incrementamos o contador e a soma total
             k += 1
