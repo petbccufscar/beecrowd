@@ -2,7 +2,7 @@
 
 # Lendo o valor inteiro
 entrada = int(input())
-# Váriavel auxiliar
+# Variável auxiliar
 i = 1
 # Loop para conferir divisores
 while i <= entrada:
