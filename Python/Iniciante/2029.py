@@ -9,7 +9,7 @@ altura = []
 index = 0
 
 # Processando os dados até o EOF
-while(input("Digite: ")!="4"):
+while(True):
     try:
         volume_produzido = float(input())
         diametro = float(input())
@@ -27,4 +27,4 @@ while(input("Digite: ")!="4"):
 
 # Saída de dados passando por todos os valores das listas altura e area
 for i in range(len(altura)):
-    print(f"ALTURA= {altura[i]:.2f}\nAREA = {area[i]:.2f}")
+    print(f"ALTURA = {altura[i]:.2f}\nAREA = {area[i]:.2f}")

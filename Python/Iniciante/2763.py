@@ -14,4 +14,4 @@ cpf_separado.pop(-3)
 
 # Apresentando a saída
 for i in cpf_separado:
-    print(f"{i}\n")
+    print(f"{i}")
