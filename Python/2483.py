@@ -1,4 +1,4 @@
-# Problema 2383 - URI - Iniciante - Nível 1
+# Problema 2483 - URI - Iniciante - Nível 1
 
 # Lendo o índice de felicidade
 felicidade = int(input())
