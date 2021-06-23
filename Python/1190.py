@@ -7,10 +7,9 @@ operacao = input()
 matriz = []
 for i in range(12):
   # Criando as demais dimensões
-  auxiliar = []
+  matriz.append([])
   for j in range(12):
-    auxiliar.append(float(input()))
-  matriz.append(auxiliar)
+    matriz[-1].append(float(input()))
 
 # Declarando a variável que armazenará o resultado
 resultado = 0
