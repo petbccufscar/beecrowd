@@ -17,7 +17,7 @@ resultado = 0
 # Realizando a soma dos elementos
 for i in range(12):
   for j in range(12):
-    if(i<j and i > 12 - j - 1):
+    if(i < j and i > 12 - j - 1):
       resultado += matriz[i][j]
 
 # Conferindo qual operação a ser realizada
