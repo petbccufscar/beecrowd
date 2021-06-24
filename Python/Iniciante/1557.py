@@ -1,6 +1,6 @@
 # Problema 1557 - URI - Iniciante - Nível 1
 
-# Usaremos a função log
+# Usaremos as funções log e ceil
 from math import log, ceil
 
 while True:
@@ -33,7 +33,7 @@ while True:
 			valor = 2**(i+j)
 			
 			# Printamos o valor, usando o número de casas previamente calculado
-			# o valor padrão de 'end' é '\n', por conta do alinhamento, vamos omiti-lo
+			# O valor padrão de 'end' é '\n', por conta do alinhamento, vamos omiti-lo
 			print(f'{margem}{valor:{casas}}', end='')
 			
 			# Como estamos printando a margem antes do número, apenas o primeiro não a possui
