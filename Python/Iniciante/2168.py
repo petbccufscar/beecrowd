@@ -1,8 +1,8 @@
 # Problema 2168 - URI - Iniciante - Nível 1
 
 # Função que recebe as posições dos blocos e a matriz de câmeras
-# Ela soma as câmeras dos quatros cantos dos blocos,
-#   se tiver mais que uma câmera, o local é seguro 
+# Ela soma as câmeras dos quatros cantos dos blocos
+# Se tiver mais que uma câmera, o local é seguro 
 def is_safe(x,y,m):
     sum = m[x][y] + m[x][y+1] +m[x+1][y] + m[x+1][y+1]
     return sum >= 2

@@ -11,7 +11,7 @@ for i in range(repeticoes):
     # calculo da fração
     soma = 1.0/(soma+6.0)
 
-# Acrescenta 3 a fração
+# Acrescenta 3 à fração
 soma += 3
 
 # Imprime o resultado

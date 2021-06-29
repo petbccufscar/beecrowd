@@ -11,7 +11,7 @@ for i in range(repeticoes):
     # calculo da fração
     soma = 1.0/(soma+2.0)
 
-# Acrescenta 1 a fração
+# Acrescenta 1 à fração
 soma += 1
 
 # Imprime o resultado
