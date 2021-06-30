@@ -6,7 +6,7 @@ C = int(input())
 for i in range(C):
     # Leitura da quantidade de termos do somatório
     termos = int(input())
-    # Se a quantidade total de termos do somatório for para, então o resultado
+    # Se a quantidade total de termos do somatório for par, então o resultado
     # será igual a 0
     if termos % 2 == 0:
         print('0')

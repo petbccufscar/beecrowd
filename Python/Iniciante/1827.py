@@ -2,7 +2,7 @@
 
 # Importando biblioteca sys
 import sys
-#Leitura dos tamanhos da matriz quadrada até o fim de arquivo
+# Leitura dos tamanhos da matriz quadrada até o fim de arquivo
 while tam := sys.stdin.readline():
     # Conversão do input de string para inteiro
     tam = int(tam)
