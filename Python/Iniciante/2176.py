@@ -15,7 +15,7 @@ for i in S:
 # Verifica se a quantidade de dígitos é par,
 # testando se é divisível por 2, ou não,
 # e em seguida imprimindo a mensagem
-if digitos%2 == 0:
+if digitos % 2 == 0:
     print(S + "0")
 else:
     print(S + "1")
