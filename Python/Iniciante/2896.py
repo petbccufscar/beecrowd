@@ -3,7 +3,7 @@ T = int(input())
 
 # Laço de repetição que irá executar o loop
 # 3 vezes, recebendo a quantidade de garrafas
-# compradas e quantidade de garrafas vazia
+# compradas e quantidade de garrafas vazias
 # para poder usufruir da promoção
 for i in range(T):
     N, K = [int(i) for i in input().split()]
