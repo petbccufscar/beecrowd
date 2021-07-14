@@ -13,4 +13,4 @@ for i in range(T):
     # somando-se o valor da quantidade de garrafas
     # que efetivamente ativam a promoção dividido pelo
     # número de garrafas necessárias para ganhar uma garrafa
-    print(int(N%K + (N - N%K)/K))
+    print(int(N % K + (N - N % K)/K))
