@@ -9,4 +9,4 @@ X, EXP = map(int, input().split(' '))
 # enquanto ambas não tiverem valor igual a 0
 while X != 0 and EXP != 0:
     print(X*EXP)
-    X, EXP = [int(i) for i in input().split()]
+    X, EXP = map(int, input().split(' '))
