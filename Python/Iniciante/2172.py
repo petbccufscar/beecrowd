@@ -1,7 +1,7 @@
 # Problema 2172 - URI - Iniciante - Nível 1
 # Inicializa as variáveis e atribui
 # os valores de X e EXP nessas variáveis
-X, EXP = [int(i) for i in input().split()]
+X, EXP = map(int, input().split(' '))
 
 # Executa a operação de imprimir o valor de
 # EXP multiplicado por X e atribui novos valores
