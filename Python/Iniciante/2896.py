@@ -1,5 +1,4 @@
 # Problema 2896 - URI - Iniciante - Nível 1
-# Problema 2896 - URI - Iniciante - Nível 1
 # Recebe a quantidade de casos teste
 T = int(input())
 
