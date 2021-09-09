@@ -11,7 +11,7 @@ while (numTeste != 0):
         zeros = 0
         uns = 0
 
-        # A lógica do programa se baseia que as números em posição pares são a quantidade de uns
+        # A lógica do programa se baseia que os números em posição pares são a quantidade de uns
         # no arquivo, já as unidades em posição impares são as quantidades de zeros, assim armazenando
         # em variáveis adequadas.
         for i in range(len(linha)):
