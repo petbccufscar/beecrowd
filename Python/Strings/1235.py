@@ -1,6 +1,6 @@
 # Problema 1235 - URI - Strings - Nível 3
 
-# Inicialmente, recebos o valor da quantidade de casos
+# Inicialmente, recebemos o valor da quantidade de casos
 casos = int(input())
 
 # Em cada caso:
