@@ -28,7 +28,8 @@ while True:
             # Adicionando o tamanho da palavra + espaço no contador
             caracteres += tam + 1
                 
-        # Imprimindo a quantidade de páginas utilizada
+        # Imprimindo a quantidade de páginas utilizada, usando a função "ceil(NUM)" para receber
+        # o teto de um número, sendo: o menor inteiro, maior do que "NUM".
         print(math.ceil(linhas / (l)))
             
 
