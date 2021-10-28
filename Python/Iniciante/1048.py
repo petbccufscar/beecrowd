@@ -1,0 +1,37 @@
+# Problema 1048 - URI - Iniciante - Nível 2
+
+# Recebe o valor na entrada padrão
+salario = float(input())
+
+# Inicializa as variáveis que serão usadas para imprimir os valores
+percentual = 0
+novoSalario = 0
+reajuste = 0
+
+# Verifica em qual intervalo o salário está e
+# faz as devidas atribuições às variáveis
+if salario <= 400:
+    percentual = 0.15
+    novoSalario = salario + salario*percentual
+    reajuste = salario*percentual
+elif salario <= 800:
+    percentual = 0.12
+    novoSalario = salario + salario*percentual
+    reajuste = salario*percentual
+elif salario <= 1200:
+    percentual = 0.10
+    novoSalario = salario + salario*percentual
+    reajuste = salario*percentual
+elif salario <= 2000:
+    percentual = 0.07
+    novoSalario = salario + salario*percentual
+    reajuste = salario*percentual
+else:
+    percentual = 0.04
+    novoSalario = salario + salario*percentual
+    reajuste = salario*percentual
+
+# Imprime os resultados obtidos com base no salário informado
+print("Novo salario: {:.2f}".format(novoSalario))
+print("Reajuste ganho: {:.2f}".format(reajuste))
+print("Em percentual: {:.0f} %".format(percentual*100))
