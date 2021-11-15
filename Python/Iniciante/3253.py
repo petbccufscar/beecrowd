@@ -1,4 +1,4 @@
-# Problema 3253 - URI - Iniciante - Nível 1
+# Problema 3253 - Beecrowd - Iniciante - Nível 1
 
 # Leitura do total de ruas
 nro_ruas = int(input())

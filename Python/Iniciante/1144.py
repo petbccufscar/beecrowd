@@ -1,4 +1,4 @@
-# Problema 1144 - URI - Iniciante - Nível 1
+# Problema 1144 - Beecrowd - Iniciante - Nível 1
 
 # Lê o valor fornecido pela entrada padrão
 valor = int(input())

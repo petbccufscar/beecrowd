@@ -1,4 +1,4 @@
-# Problema 3055 - URI - Iniciante - Nível 1
+# Problema 3055 - Beecrowd - Iniciante - Nível 1
 
 # Inicialmente, recebemos os valores da provaA e média
 provaA = int(input())

@@ -1,4 +1,4 @@
-# Problema 3161 - URI - Iniciante - Nível 1
+# Problema 3161 - Beecrowd - Iniciante - Nível 1
 
 # Ler quantidade de frutas e linhas da lista
 entrada = input().split()

@@ -1,4 +1,4 @@
-# Problema 1007 - URI - Iniciante - Nível 1
+# Problema 1007 - Beecrowd - Iniciante - Nível 1
 
 # Recebe os quatro valores e salva cada um em uma variável
 A = int(input())

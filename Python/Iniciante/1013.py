@@ -1,4 +1,4 @@
-# Problema 1013 - URI - Iniciante - Nível 3
+# Problema 1013 - Beecrowd - Iniciante - Nível 3
 
 # Vamos definir a função que retorna o maior valor
 def maior(a, b):

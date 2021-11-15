@@ -1,4 +1,4 @@
-# Problema 1222 - URI - Strings - Nível 6
+# Problema 1222 - Beecrowd - Strings - Nível 6
 
 import math  
 

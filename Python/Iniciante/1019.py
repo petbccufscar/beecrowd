@@ -1,4 +1,4 @@
-# Problema 1019 - URI - Iniciante - Nível 1
+# Problema 1019 - Beecrowd - Iniciante - Nível 1
 
 # Entrada de dados
 segundos = int(input())

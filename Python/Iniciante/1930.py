@@ -1,4 +1,4 @@
-# Problema 1930 - URI - Iniciante - Nível 1
+# Problema 1930 - Beecrowd - Iniciante - Nível 1
 
 # Leitura das quantidade de tomadas de todas as réguas disponíveis
 tomadas = list(map(int, input().split(' ')))

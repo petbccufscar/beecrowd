@@ -1,4 +1,4 @@
- # Problema 1079 - URI - Iniciante - Nível 1
+ # Problema 1079 - Beecrowd - Iniciante - Nível 1
 
 # Leitura da variavel 'n' que será número de vezes que será calculada a média ponderada
 n = int(input())

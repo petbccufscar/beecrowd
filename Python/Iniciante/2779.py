@@ -1,4 +1,4 @@
-# Problema 2779 - URI - Iniciante - Nível 1
+# Problema 2779 - Beecrowd - Iniciante - Nível 1
 
 # Entrada de dados, primeiro o número de figurinhas no álbum inteiro e segundo quantas figurinhas foram compradas
 total_fig = int(input())

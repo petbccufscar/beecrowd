@@ -1,4 +1,4 @@
-# Problema 3147 - URI - Iniciante - Nível 1
+# Problema 3147 - Beecrowd - Iniciante - Nível 1
 
 # Lendo as variáveis de entrada
 H,E,A,O,W,X= map(int, input().split(' '))

@@ -1,4 +1,4 @@
-# Problema 3173 - URI - Iniciante - Nível 1
+# Problema 3173 - Beecrowd - Iniciante - Nível 1
 
 # Bibliotecas para manipulação de datas
 from datetime import datetime

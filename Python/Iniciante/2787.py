@@ -1,4 +1,4 @@
-# Problema 2787 - URI - Iniciante - Nível 1
+# Problema 2787 - Beecrowd - Iniciante - Nível 1
 
 # Leitura das variáveis de entrada
 L = int(input())

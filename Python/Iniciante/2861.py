@@ -1,4 +1,4 @@
-# Problema 2861 - URI - Iniciante - Nível 1
+# Problema 2861 - Beecrowd - Iniciante - Nível 1
 
 # Lê quantas perguntas serão
 n = int(input())

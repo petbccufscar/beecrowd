@@ -1,4 +1,4 @@
-# Problema 1238 - URI - Strings - Nível 3
+# Problema 1238 - Beecrowd - Strings - Nível 3
 
 # Biblioteca importada para facilitar o loop em paralelo
 import itertools as it

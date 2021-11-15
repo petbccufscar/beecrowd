@@ -1,4 +1,4 @@
-# Problema 2235 - URI - Iniciante - Nível 1
+# Problema 2235 - Beecrowd - Iniciante - Nível 1
 
 # Leitura dos dados
 a, b, c = map(int, input().split(' '))

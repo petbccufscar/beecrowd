@@ -1,4 +1,4 @@
-# Problema 2168 - URI - Iniciante - Nível 1
+# Problema 2168 - Beecrowd - Iniciante - Nível 1
 
 # Função que recebe as posições dos blocos e a matriz de câmeras
 # Ela soma as câmeras dos quatros cantos dos blocos

@@ -1,4 +1,4 @@
-# Problema 2862 - URI - Iniciante - Nível 1
+# Problema 2862 - Beecrowd - Iniciante - Nível 1
 
 # Lê a quantidade de valores
 n = int(input())

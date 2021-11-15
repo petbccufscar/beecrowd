@@ -1,4 +1,4 @@
-# Problema 1099 - URI - Iniciante - Nível 1
+# Problema 1099 - Beecrowd - Iniciante - Nível 1
 
 # Leitura da variável 'n' (número de testes que serão feitos)
 n = int(input())

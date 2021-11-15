@@ -1,4 +1,4 @@
-# Problema 1038 - URI - Iniciante - Nível 1
+# Problema 1038 - Beecrowd - Iniciante - Nível 1
 
 # Entrada de dados com a função split e map para dividir os valores de entrada pelo 'espaço' e converte-los para float, respectivamente
 item, qtd_item = map(float, input().split(' ')) 

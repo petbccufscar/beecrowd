@@ -1,4 +1,4 @@
-# Problema 1010 - URI - Iniciante - Nível 3
+# Problema 1010 - Beecrowd - Iniciante - Nível 3
 
 # Como todos os valores estão na mesma linha
 # Lemos a linha com o 'input'

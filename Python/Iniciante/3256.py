@@ -1,4 +1,4 @@
-# Problema 3256 - URI - Iniciante - Nível 1
+# Problema 3256 - Beecrowd - Iniciante - Nível 1
 # Adaptado da solução original, disponível em https://nordic.icpc.io/ncpc2011/
 
 # Leitura da quantidade de soldados e quantidade de pares de inimigos

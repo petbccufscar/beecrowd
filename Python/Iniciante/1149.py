@@ -1,4 +1,4 @@
-# Problema 1149 - URI - Iniciante - Nível 1
+# Problema 1149 - Beecrowd - Iniciante - Nível 1
 
 # Inicializando as variáveis A, N, RESPOSTA
 A, N, resposta = 0, 0, 0

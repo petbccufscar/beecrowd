@@ -1,4 +1,4 @@
-# Problema 1581 - URI - Strings - Nível 2
+# Problema 1581 - Beecrowd - Strings - Nível 2
 
 # Entrada de número de casos de teste.
 numTest = int(input())

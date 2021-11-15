@@ -1,4 +1,4 @@
-# Problema 2543 - URI - Iniciante - Nível 1
+# Problema 2543 - Beecrowd - Iniciante - Nível 1
 
 # Usaremos a entrada padrão diretamente
 from sys import stdin

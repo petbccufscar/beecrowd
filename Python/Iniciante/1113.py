@@ -1,4 +1,4 @@
-# Problema 1113 - URI - Iniciante - Nível 1
+# Problema 1113 - Beecrowd - Iniciante - Nível 1
 
 # Inicializa x e y com valores diferentes
 x, y = 0, 1

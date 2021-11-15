@@ -1,4 +1,4 @@
-# Problema 1003 - URI - Iniciante - Nível 1
+# Problema 1003 - Beecrowd - Iniciante - Nível 1
 
 # Leitura dos valores
 A = int(input())

@@ -1,4 +1,4 @@
-# Problema 3047 - URI - Iniciante - Nível 1
+# Problema 3047 - Beecrowd - Iniciante - Nível 1
 
 # Inicialmente, recebemos os valores da Dona Mônica e dois filhos
 monica = int(input())

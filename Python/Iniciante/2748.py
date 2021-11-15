@@ -1,4 +1,4 @@
-# Problema 2748 - URI - Iniciante - Nível 1
+# Problema 2748 - Beecrowd - Iniciante - Nível 1
 
 # Simplesmente impressão de string formatada
 print("---------------------------------------")

@@ -1,4 +1,4 @@
-# Problema 1153 - URI - Iniciante - Nível 1
+# Problema 1153 - Beecrowd - Iniciante - Nível 1
 
 # Começamos recebendo o input necessários (já convertendo para int), N
 N = int(input())

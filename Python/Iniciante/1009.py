@@ -1,4 +1,4 @@
-# Problema 1009 - URI - Iniciante - Nível 2
+# Problema 1009 - Beecrowd - Iniciante - Nível 2
 
 # Entrada de dados
 # Uso do caster "float" na linha 4 e 5 para forçar a entrada seja float

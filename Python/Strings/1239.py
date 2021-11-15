@@ -1,4 +1,4 @@
-# Problema 1239 - URI - Strings - Nível 3
+# Problema 1239 - Beecrowd - Strings - Nível 3
 
 # Flags de Sinalização
 italico = False

@@ -1,4 +1,4 @@
-# Problema 1114 - URI - Iniciante - Nível 1
+# Problema 1114 - Beecrowd - Iniciante - Nível 1
 
 # Loop lendo a entrada até ser igual a senha
 while input() != "2002":

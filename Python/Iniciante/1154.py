@@ -1,4 +1,4 @@
-# Problema 1154 - URI - Iniciante - Nível 1
+# Problema 1154 - Beecrowd - Iniciante - Nível 1
 
 # Começamos lendo a primeira idade (já convertendo para float, já que a média pode ser ponto flutuante)
 idade = float(input())

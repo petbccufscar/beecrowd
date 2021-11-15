@@ -1,4 +1,4 @@
-# Problema 2006 - URI - Iniciante - Nível 1
+# Problema 2006 - Beecrowd - Iniciante - Nível 1
 
 # Entrada da numeração do chá correto
 n = int(input())

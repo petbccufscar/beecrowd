@@ -1,4 +1,4 @@
-# Problema 1117 - URI - Iniciante - Nível 1
+# Problema 1117 - Beecrowd - Iniciante - Nível 1
 # Laço que recebe nota1 na entrada e para apenas se o valor estiver no intervalo [0, 10]
 while (nota1 := float(input())) < 0 or nota1 > 10: print('nota invalida')
 # Laço que recebe nota2 na entrada e para apenas se o valor estiver no intervalo [0, 10]

@@ -1,4 +1,4 @@
-# Problema 1150 - URI - Iniciante - Nível 1
+# Problema 1150 - Beecrowd - Iniciante - Nível 1
 
 # Começamos recebendo os dois inputs necessários (já convertendo para int), X e Z
 X = int(input())

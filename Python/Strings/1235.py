@@ -1,4 +1,4 @@
-# Problema 1235 - URI - Strings - Nível 3
+# Problema 1235 - Beecrowd - Strings - Nível 3
 
 # Inicialmente, recebemos o valor da quantidade de casos
 casos = int(input())

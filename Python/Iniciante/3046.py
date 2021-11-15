@@ -1,4 +1,4 @@
-# Problema 3046 - URI - Iniciante - Nível 1
+# Problema 3046 - Beecrowd - Iniciante - Nível 1
 
 # Recebendo qual é o maior valor em um quadrado em uma peça
 n = int(input())

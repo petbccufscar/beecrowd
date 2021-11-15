@@ -1,4 +1,4 @@
-# Problema 1017 - URI - Iniciante - Nível 1
+# Problema 1017 - Beecrowd - Iniciante - Nível 1
 
 # Lê as entradas e as armazena
 time = int(input())

@@ -1,4 +1,4 @@
-# Problema 2029 - URI - Iniciante - Nível 1
+# Problema 2029 - Beecrowd - Iniciante - Nível 1
 
 # Declarando uma constante pi para cálculos, um vetor que armazenará os dados de área e altura para saída
 pi = 3.14

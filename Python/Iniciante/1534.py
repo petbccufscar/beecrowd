@@ -1,4 +1,4 @@
-# Problema 1534 - URI - Iniciante - Nível 1
+# Problema 1534 - Beecrowd - Iniciante - Nível 1
 
 # Loop responsável pelos casos de testes
 while True:

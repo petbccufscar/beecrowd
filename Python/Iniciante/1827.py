@@ -1,4 +1,4 @@
-# Problema 1827 - URI - Iniciante - Nível 1
+# Problema 1827 - Beecrowd - Iniciante - Nível 1
 
 # Importando biblioteca sys
 import sys

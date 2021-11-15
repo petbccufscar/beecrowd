@@ -1,4 +1,4 @@
-# Problema 1629 - URI - Strings - Nível 3
+# Problema 1629 - Beecrowd - Strings - Nível 3
 
 # Recebendo o número de casos teste, e apenas para quando o casos teste ser 0.
 numTeste = int(input())

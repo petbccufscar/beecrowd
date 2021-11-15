@@ -1,4 +1,4 @@
-# Problema 1011 - URI - Iniciante - Nível 2
+# Problema 1011 - Beecrowd - Iniciante - Nível 2
 
 # Primeiro lemos o raio
 r = float(input())

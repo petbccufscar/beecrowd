@@ -1,4 +1,4 @@
-# Problema 2750 - URI - Iniciante - Nível 1
+# Problema 2750 - Beecrowd - Iniciante - Nível 1
 
 # Impressão do cabeçalho da tabela
 print("---------------------------------------")

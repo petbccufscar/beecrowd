@@ -1,4 +1,4 @@
-# Problema 1066 - URI - Iniciante - Nível 1
+# Problema 1066 - Beecrowd - Iniciante - Nível 1
 
 # Inicialização das variáveis com valor 0
 par = 0

@@ -1,4 +1,4 @@
-# Problema 1070 - URI - Iniciante - Nível 1
+# Problema 1070 - Beecrowd - Iniciante - Nível 1
 
 # Leitura do valor de x
 x = int(input())

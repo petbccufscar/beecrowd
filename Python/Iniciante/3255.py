@@ -1,4 +1,4 @@
-# Problema 3255 - URI - Iniciante - Nível 1
+# Problema 3255 - Beecrowd - Iniciante - Nível 1
 # Adaptado da solução original, disponível em https://nordic.icpc.io/ncpc2011/
 
 # Vamos achar todos os primos até 10008

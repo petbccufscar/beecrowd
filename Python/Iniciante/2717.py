@@ -1,4 +1,4 @@
-# Problema 2717 - URI - Iniciante - Nível 1
+# Problema 2717 - Beecrowd - Iniciante - Nível 1
 
 # Leitura da quantidade de horas de trabalho que restam para produzir os dois itens
 faltam = int(input())

@@ -1,4 +1,4 @@
-# Problema 2747 - URI - Iniciante - Nível 1
+# Problema 2747 - Beecrowd - Iniciante - Nível 1
 
 # Utilização de variável e operações em strings de concatenação e repetição de
 # caracteres para montar facilmente as linhas solicitadas

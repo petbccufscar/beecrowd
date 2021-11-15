@@ -1,4 +1,4 @@
-# Problema 1035 - URI - Iniciante - Nível 2
+# Problema 1035 - Beecrowd - Iniciante - Nível 2
 
 # Vamos ler os valores como inteiros
 a, b, c, d = map(int, input().split())

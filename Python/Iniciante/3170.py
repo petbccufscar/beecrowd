@@ -1,4 +1,4 @@
-# Problema 3170 - URI - Iniciante - Nível 1
+# Problema 3170 - Beecrowd - Iniciante - Nível 1
 
 # Ler quantidade bolinhas e de galhos
 bolinhas_quantidade = int(input())

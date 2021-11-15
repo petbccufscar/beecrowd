@@ -1,4 +1,4 @@
-# Problema 2780 - URI - Iniciante - Nível 1
+# Problema 2780 - Beecrowd - Iniciante - Nível 1
 
 # Entrada de dados, sendo o valor da distância do robô para a cesta
 distancia = int(input())

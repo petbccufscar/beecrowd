@@ -1,4 +1,4 @@
-# Problema 1134 - URI - Iniciante - Nível 1
+# Problema 1134 - Beecrowd - Iniciante - Nível 1
 
 # Declaração de variáveis
 combustivel = 1

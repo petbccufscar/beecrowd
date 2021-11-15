@@ -1,4 +1,4 @@
-# Problema 1172 - URI - Iniciante - Nível 1
+# Problema 1172 - Beecrowd - Iniciante - Nível 1
 
 # Definindo a lista
 X = []

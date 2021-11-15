@@ -1,4 +1,4 @@
-# Problema 1173 - URI - Iniciante - Nível 1
+# Problema 1173 - Beecrowd - Iniciante - Nível 1
 
 # Leitura do valor inicial
 v = int(input())

@@ -1,4 +1,4 @@
-# Problema 2234 - URI - Iniciante - Nível 1
+# Problema 2234 - Beecrowd - Iniciante - Nível 1
 
 # Inicializa as variáveis a serem utilizadas
 # na resolução e atribui os valores nelas

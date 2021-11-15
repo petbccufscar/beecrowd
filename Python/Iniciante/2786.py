@@ -1,4 +1,4 @@
-# Problema 2786 - URI - Iniciante - Nível 1
+# Problema 2786 - Beecrowd - Iniciante - Nível 1
 
 # Leitura das variáveis de entrada
 largura = int(input())

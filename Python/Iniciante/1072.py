@@ -1,4 +1,4 @@
-# Problema 1072 - URI - Iniciante - Nível 1
+# Problema 1072 - Beecrowd - Iniciante - Nível 1
 
 # Leitura do valore de n
 n = int(input())

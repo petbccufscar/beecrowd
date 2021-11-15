@@ -1,4 +1,4 @@
-# Problema 2061 - URI - Iniciante - Nível 1
+# Problema 2061 - Beecrowd - Iniciante - Nível 1
 
 # Entrada de dados, primeiro o número de abas já abertas e o segundo o valor de ações feitas por Péricles
 n_abas,n_acoes = map(int,input().split(" "))

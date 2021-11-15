@@ -1,4 +1,4 @@
-# Problema 3157 - URI - Iniciante - Nível 1
+# Problema 3157 - Beecrowd - Iniciante - Nível 1
 
 # Lendo a falácia na entrada
 S = input()

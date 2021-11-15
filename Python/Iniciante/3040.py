@@ -1,4 +1,4 @@
-# Problema 3040 - URI - Iniciante - Nível 1
+# Problema 3040 - Beecrowd - Iniciante - Nível 1
 
 # Recebendo o número de casos de testes do problema.
 numTestes = int(input())

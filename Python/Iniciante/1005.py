@@ -1,4 +1,4 @@
-# Problema 1005 - URI - Iniciante - Nível 2
+# Problema 1005 - Beecrowd - Iniciante - Nível 2
 
 # Leitura dos valores de a e b
 a = float(input())

@@ -1,4 +1,4 @@
-# Problema 1006 - URI - Iniciante - Nível 2
+# Problema 1006 - Beecrowd - Iniciante - Nível 2
 
 
 # Recebemos os 3 valores de entrada, já utilizando a função float para convertê-los, já que em python todo input retorna uma string

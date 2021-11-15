@@ -1,4 +1,4 @@
-# Problema 2152 - URI - Iniciante - Nível 1
+# Problema 2152 - Beecrowd - Iniciante - Nível 1
 
 # Leitura da variável 'n' que indica quantas vezes será feito a leitura dos horários e o valor do sensor
 n = int(input())
