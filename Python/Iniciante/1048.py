@@ -12,24 +12,17 @@ reajuste = 0
 # faz as devidas atribuições às variáveis
 if salario <= 400:
     percentual = 0.15
-    novoSalario = salario + salario*percentual
-    reajuste = salario*percentual
 elif salario <= 800:
     percentual = 0.12
-    novoSalario = salario + salario*percentual
-    reajuste = salario*percentual
 elif salario <= 1200:
     percentual = 0.10
-    novoSalario = salario + salario*percentual
-    reajuste = salario*percentual
 elif salario <= 2000:
     percentual = 0.07
-    novoSalario = salario + salario*percentual
-    reajuste = salario*percentual
 else:
     percentual = 0.04
-    novoSalario = salario + salario*percentual
-    reajuste = salario*percentual
+
+novoSalario = salario + salario*percentual
+reajuste = salario*percentual
 
 # Imprime os resultados obtidos com base no salário informado
 print("Novo salario: {:.2f}".format(novoSalario))
