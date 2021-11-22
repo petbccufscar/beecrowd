@@ -16,12 +16,7 @@ cidades = {
 }
 
 # Itera sobre o dicionário em busca do ddd informado
-for i in cidades:
-    if i == ddd:
-        print(cidades[i])
-        # Indica que encontrou o ddd na lista
-        existe = True
-        break
-
-if not(existe):
+if ddd in cidades:
+    print(cidades[ddd])
+else:
     print("DDD nao cadastrado")
