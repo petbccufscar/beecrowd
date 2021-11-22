@@ -1,4 +1,4 @@
-# Problema 1037 - URI - Iniciante - Nível 3
+# Problema 1037 - Beecrowd - Iniciante - Nível 3
 
 # Recebe o valor
 valor = float(input())
