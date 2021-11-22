@@ -1,4 +1,4 @@
-# Problema 1272 - URI - Iniciante - Nível 3
+# Problema 1272 - Beecrowd - Iniciante - Nível 3
 
 # Quantidade de casos teste que serão
 # recebidos na entrada padrão
