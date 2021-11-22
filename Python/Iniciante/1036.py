@@ -4,7 +4,7 @@
 import math
 
 # Leitura dos valores
-A, B, C = [float(i) for i in input().split()]
+A, B, C = map(float, input().split())
 
 # Verifica se existe raiz real para essa equação
 if (pow(B, 2) - 4*A*C) > 0 and A != 0:
