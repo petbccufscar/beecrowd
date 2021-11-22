@@ -10,8 +10,8 @@ auxNumeros = list(numeros)
 numeros.sort()
 
 # Imprime a lista ordenada
-for i in range(len(numeros)):
-    print(numeros[i])
+for n in numeros:
+    print(n)
 
 # Imprime linha em branco
 print()
