@@ -1,4 +1,4 @@
-# Problema 1048 - URI - Iniciante - Nível 2
+# Problema 1048 - Beecrowd - Iniciante - Nível 2
 
 # Recebe o valor na entrada padrão
 salario = float(input())
