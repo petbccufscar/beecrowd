@@ -1,4 +1,4 @@
-# Problema 2708 - URI - Iniciante - Nível 1
+# Problema 2708 - Beecrowd - Iniciante - Nível 1
 
 # Inicialização das variáveis que representam a quantidade de turistas e jipes
 total_turistas = 0

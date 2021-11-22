@@ -1,4 +1,4 @@
-# Problema 1933 - URI - Iniciante - Nível 1
+# Problema 1933 - Beecrowd - Iniciante - Nível 1
 
 # Entrada dos valores A e B
 a, b = map(int, input().split(" "))

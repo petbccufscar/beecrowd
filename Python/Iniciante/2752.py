@@ -1,4 +1,4 @@
-# Problema 2752 - URI - Iniciante - Nível 1
+# Problema 2752 - Beecrowd - Iniciante - Nível 1
 
 # Variável definida pelo problema
 frase = "AMO FAZER EXERCICIO NO URI"

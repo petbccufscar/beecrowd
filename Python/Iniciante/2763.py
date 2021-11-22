@@ -1,4 +1,4 @@
-# Problema 2763 - URI - Iniciante - Nível 1
+# Problema 2763 - Beecrowd - Iniciante - Nível 1
 
 # Entrada de dados CPF no formato: XXX.YYY.ZZZ-DD
 cpf = input()

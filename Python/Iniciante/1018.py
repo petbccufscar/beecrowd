@@ -1,4 +1,4 @@
-# Problema 1018 - URI - Iniciante - Nível 4
+# Problema 1018 - Beecrowd - Iniciante - Nível 4
 
 # Vamos ler o valor e converter para inteiro
 valor = int(input())

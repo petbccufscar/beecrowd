@@ -1,4 +1,4 @@
-# Problema 1957 - URI - Iniciante - Nível 1
+# Problema 1957 - Beecrowd - Iniciante - Nível 1
 
 # Recebendo um número inteiro na base 10
 num = int(input())

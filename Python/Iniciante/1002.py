@@ -1,4 +1,4 @@
-# Problema 1002 - URI - Iniciante - Nível 1
+# Problema 1002 - Beecrowd - Iniciante - Nível 1
 
 # Lê o valor do raio pela entrada padrão
 r = float(input())

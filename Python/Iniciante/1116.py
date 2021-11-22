@@ -1,4 +1,4 @@
-# Problema 1116 - URI - Iniciante - Nível 1
+# Problema 1116 - Beecrowd - Iniciante - Nível 1
 # Recebendo número de divisões na entrada de dados
 N = int(input())
 

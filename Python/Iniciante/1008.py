@@ -1,4 +1,4 @@
- # Problema 1079 - URI - Iniciante - Nível 1
+ # Problema 1079 - Beecrowd - Iniciante - Nível 1
 
 # Leitura das variáveis
 numero_funcionario = int(input())

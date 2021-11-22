@@ -1,4 +1,4 @@
-# Problema 1255 - URI - String - Nível 3
+# Problema 1255 - Beecrowd - String - Nível 3
 from collections import defaultdict
 
 # Número de casos de teste

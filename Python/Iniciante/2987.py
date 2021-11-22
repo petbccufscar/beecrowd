@@ -1,4 +1,4 @@
-# Problema 2987 - URI - Iniciante - Nível 1
+# Problema 2987 - Beecrowd - Iniciante - Nível 1
 
 # Recebendo do usuário a entrada de uma letra maiúscula.
 letra = input()

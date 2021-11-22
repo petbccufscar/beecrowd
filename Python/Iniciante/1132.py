@@ -1,4 +1,4 @@
-# Problema 1132 - URI - Iniciante - Nível 1
+# Problema 1132 - Beecrowd - Iniciante - Nível 1
 
 # Entrada de dados
 num_1 = int(input())

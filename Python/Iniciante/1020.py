@@ -1,4 +1,4 @@
-# Problema 1020 - URI - Iniciante - Nível 2
+# Problema 1020 - Beecrowd - Iniciante - Nível 2
 
 # Vamos ler o número de dias e converter o valor para inteiro
 dias = int(input())

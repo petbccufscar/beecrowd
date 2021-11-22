@@ -1,4 +1,4 @@
-# Problema 2161 - URI - Iniciante - Nível 1
+# Problema 2161 - Beecrowd - Iniciante - Nível 1
 
 # Lê a entrada
 repeticoes = int(input())

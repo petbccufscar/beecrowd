@@ -1,4 +1,4 @@
-# Problema 1759 - URI - Iniciante - Nível 1
+# Problema 1759 - Beecrowd - Iniciante - Nível 1
 
 # Leitura do número de 'Ho'
 N = int(input())

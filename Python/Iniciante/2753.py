@@ -1,4 +1,4 @@
-# Problema 2753 - URI - Iniciante - Nível 1
+# Problema 2753 - Beecrowd - Iniciante - Nível 1
 
 # Mesmo que pedido, não iremos declarar 27 variáveis, iremos fazer apenas os prints da forma correta.
 

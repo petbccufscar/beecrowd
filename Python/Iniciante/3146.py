@@ -1,4 +1,4 @@
-# Problema 3146 - URI - Iniciante - Nível 1
+# Problema 3146 - Beecrowd - Iniciante - Nível 1
 
 # Leitura do Raio(R)
 R = float(input())

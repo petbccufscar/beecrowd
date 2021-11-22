@@ -1,4 +1,4 @@
-# Problema 1060 - URI - Iniciante - Nível 1
+# Problema 1060 - Beecrowd - Iniciante - Nível 1
 
 # Laço de repetição que lê números e os coloca em uma lista
 # Este for é feito em uma linha e é usado para formar listas

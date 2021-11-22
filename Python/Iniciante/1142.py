@@ -1,4 +1,4 @@
-# Problema 1142 - URI - Iniciante - Nível 1
+# Problema 1142 - Beecrowd - Iniciante - Nível 1
 
 # Declaração de variáveis
 aux = 1

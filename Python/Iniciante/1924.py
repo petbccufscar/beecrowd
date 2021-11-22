@@ -1,4 +1,4 @@
-# Problema 1924 - URI - Iniciante - Nível 1
+# Problema 1924 - Beecrowd - Iniciante - Nível 1
 
 # Leitura inicial da quantidade de linhas a serem lidas dentro do FOR
 

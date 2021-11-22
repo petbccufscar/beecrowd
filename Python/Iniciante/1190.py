@@ -1,4 +1,4 @@
-# Problema 1190 - URI - Iniciante - Nível 1
+# Problema 1190 - Beecrowd - Iniciante - Nível 1
 
 # Leitura da operação
 operacao = input()

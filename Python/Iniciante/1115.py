@@ -1,4 +1,4 @@
-# Problema 1115 - URI - Iniciante - Nível 1
+# Problema 1115 - Beecrowd - Iniciante - Nível 1
 
 while True:
     x, y = map(int, input().split(' '))

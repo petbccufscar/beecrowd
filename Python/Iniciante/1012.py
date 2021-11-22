@@ -1,4 +1,4 @@
-# Problema 1012 - URI - Iniciante - Nível 2
+# Problema 1012 - Beecrowd - Iniciante - Nível 2
 
 # Primeiro lemos os três valores
 a, b, c = map(float, input().split())

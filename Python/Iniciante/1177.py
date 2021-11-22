@@ -1,4 +1,4 @@
-# Problema 1177 - URI - Iniciante - Nível 1
+# Problema 1177 - Beecrowd - Iniciante - Nível 1
 
 # Leitura do valor de 't'
 t = int(input())

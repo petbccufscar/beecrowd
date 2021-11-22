@@ -1,4 +1,4 @@
-# Problema 1004 - URI - Iniciante - Nível 1
+# Problema 1004 - Beecrowd - Iniciante - Nível 1
 
 # Leitura dos dados como inteiros
 a = int(input()) 

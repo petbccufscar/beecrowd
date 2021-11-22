@@ -1,4 +1,4 @@
-#Problema 1305 - URI - String - Nível 3
+#Problema 1305 - Beecrowd - String - Nível 3
 
 import sys
 

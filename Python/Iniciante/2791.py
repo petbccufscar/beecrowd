@@ -1,4 +1,4 @@
- # Problema 2791 - URI - Iniciante - Nível 1
+ # Problema 2791 - Beecrowd - Iniciante - Nível 1
 
 # Leitura das variáveis
 c1,c2,c3,c4 = map(int, input().split(' '))

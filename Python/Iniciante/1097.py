@@ -1,4 +1,4 @@
-# Problema 1097 - URI - Iniciante - Nível 1
+# Problema 1097 - Beecrowd - Iniciante - Nível 1
 
 # Declaração das variáveis
 i=1

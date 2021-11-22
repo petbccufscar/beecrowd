@@ -1,4 +1,4 @@
-# Problema 3140 - URI - Iniciante - Nível 1
+# Problema 3140 - Beecrowd - Iniciante - Nível 1
 
 # Flag para sinalizar que o programa está lendo uma linha dentro das tags
 # <body> </body>, inicia-se com valor booleano False

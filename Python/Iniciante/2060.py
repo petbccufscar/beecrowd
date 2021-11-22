@@ -1,4 +1,4 @@
-# Problema 2060 - URI - Iniciante - Nível 1
+# Problema 2060 - Beecrowd - Iniciante - Nível 1
 
 # Entrada de dados, a primeira linha um número inteiro e a segunda é a lista
 qtd_numeros = int(input())

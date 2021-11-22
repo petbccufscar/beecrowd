@@ -1,4 +1,4 @@
-# Problema 2146 - URI - Iniciante - Nível 1
+# Problema 2146 - Beecrowd - Iniciante - Nível 1
 
 # Criando o loop para ler as variáveis até finalizar o arquivo(EOF)
 

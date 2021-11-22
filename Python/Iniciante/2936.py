@@ -1,4 +1,4 @@
-# Problema 2936 - URI - Iniciante - Nível 1
+# Problema 2936 - Beecrowd - Iniciante - Nível 1
 
 # Inicializa a quantidade de mandioca
 # com a quantidade já conhecida, a parte

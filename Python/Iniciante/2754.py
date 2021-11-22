@@ -1,4 +1,4 @@
-# Problema 2754 - URI - Iniciante - Nível 1
+# Problema 2754 - Beecrowd - Iniciante - Nível 1
 
 # Atribuindo os valores necessários para a resolução do problema
 num1 = 234.345

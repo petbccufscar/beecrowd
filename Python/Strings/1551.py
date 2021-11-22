@@ -1,4 +1,4 @@
-# Problema 1551 - URI - Strings - Nível 4
+# Problema 1551 - Beecrowd - Strings - Nível 4
 
 # Recebendo o número de frases que será testado
 # e recebendo cada frase pelo loop for.

@@ -1,4 +1,4 @@
-# Problema 2344 - URI - Iniciante - Nível 1
+# Problema 2344 - Beecrowd - Iniciante - Nível 1
 
 # Lendo a nota
 nota = int(input())

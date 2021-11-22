@@ -1,4 +1,4 @@
-# Problema 2950 - URI - Iniciante - Nível 1
+# Problema 2950 - Beecrowd - Iniciante - Nível 1
 
 # Inicializa as variáveis e atribui
 # os valores da distância entre os Palantír's

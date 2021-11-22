@@ -1,4 +1,4 @@
-# Problema 3252 - URI - Iniciante - Nível 1
+# Problema 3252 - Beecrowd - Iniciante - Nível 1
 
 # Leitura de 'k' e 'n'
 k, n = map(int, input().split())

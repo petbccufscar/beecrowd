@@ -1,4 +1,4 @@
-# Problema 1262 - URI - Iniciante - Nível 2
+# Problema 1262 - Beecrowd - Iniciante - Nível 2
 
 # Loop que executa enquanto o input não terminar em EOF
 while True:

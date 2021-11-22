@@ -1,4 +1,4 @@
-# Problema 3142 - URI - Iniciante - Nível 1
+# Problema 3142 - Beecrowd - Iniciante - Nível 1
 
 import sys
 

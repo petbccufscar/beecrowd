@@ -1,4 +1,4 @@
-# Problema 1234 - URI - Strings - Nível 3
+# Problema 1234 - Beecrowd - Strings - Nível 3
 
 while True:
     try:

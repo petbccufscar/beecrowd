@@ -1,4 +1,4 @@
-# Problema 1065 - URI - Iniciante - Nível 1
+# Problema 1065 - Beecrowd - Iniciante - Nível 1
 
 # Inicialização da variável 'par' com o valor 0
 par = 0

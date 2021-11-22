@@ -1,4 +1,4 @@
-# Problema 1131 - URI - Iniciante - Nível 1
+# Problema 1131 - Beecrowd - Iniciante - Nível 1
 # Inicialização de contadores de placar
 vitorias_gremio = 0
 vitorias_inter = 0

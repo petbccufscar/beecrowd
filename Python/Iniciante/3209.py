@@ -1,4 +1,4 @@
-# Problema 3209 - URI - Iniciante - Nível 1
+# Problema 3209 - Beecrowd - Iniciante - Nível 1
 
 # Leitura do número de testes
 n = int(input())

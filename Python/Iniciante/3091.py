@@ -1,4 +1,4 @@
-# Problema 3091 - URI - Iniciante - Nível 1
+# Problema 3091 - Beecrowd - Iniciante - Nível 1
 
 # Inicialmente, recebemos dois valores
 valorA = int(input())

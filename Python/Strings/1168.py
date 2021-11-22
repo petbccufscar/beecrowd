@@ -1,4 +1,4 @@
-# Problema 1168 - URI - Strings - Nível 3
+# Problema 1168 - Beecrowd - Strings - Nível 3
 
 # O custo de leds para cada um dos algarismos 0~9
 custo = [6,2,5,5,4,5,6,3,7,6]

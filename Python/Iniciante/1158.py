@@ -1,4 +1,4 @@
-# Problema 1158 - URI - Iniciante - Nível 1
+# Problema 1158 - Beecrowd - Iniciante - Nível 1
 
 # Lendo o valor de entrada inteiro
 entrada = int(input())

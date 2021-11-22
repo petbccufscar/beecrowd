@@ -1,4 +1,4 @@
-# Problema 2756 - URI - Iniciante - Nível 1
+# Problema 2756 - Beecrowd - Iniciante - Nível 1
 
 # Colocando em variáveis linha, cada print que será necessário
 linhaA = "       A"

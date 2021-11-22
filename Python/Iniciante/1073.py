@@ -1,4 +1,4 @@
-# Problema 1073 - URI - Iniciante - Nível 1
+# Problema 1073 - Beecrowd - Iniciante - Nível 1
 
 # Recebemos o valor de entrada, já utilizando a função int para convertê-lo, já que em python todo input retorna uma string
 N = int(input())

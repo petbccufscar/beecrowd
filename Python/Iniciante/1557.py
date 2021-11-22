@@ -1,4 +1,4 @@
-# Problema 1557 - URI - Iniciante - Nível 1
+# Problema 1557 - Beecrowd - Iniciante - Nível 1
 
 # Usaremos as funções log e ceil
 from math import log, ceil

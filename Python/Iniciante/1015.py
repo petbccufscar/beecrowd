@@ -1,4 +1,4 @@
-# Problema 1015 - URI - Iniciante - Nível 1
+# Problema 1015 - Beecrowd - Iniciante - Nível 1
 
 # Adicionando "math" para usar "sqrt"
 from math import sqrt

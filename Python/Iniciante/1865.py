@@ -1,4 +1,4 @@
-# Problema 1865 - URI - Iniciante - Nível 1
+# Problema 1865 - Beecrowd - Iniciante - Nível 1
 
 # Leitura do número de casos
 casos = int(input())

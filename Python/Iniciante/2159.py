@@ -1,4 +1,4 @@
-# Problema 2159 - URI - Iniciante - Nível 1
+# Problema 2159 - Beecrowd - Iniciante - Nível 1
 
 # Importando o pacote math para utilizar a função log(elemento, base)
 import math

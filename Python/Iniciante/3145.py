@@ -1,4 +1,4 @@
-# Problema 3145 - URI - Iniciante - Nível 1
+# Problema 3145 - Beecrowd - Iniciante - Nível 1
 
 # Leitura dos números N e X, convertendo-os para float através da função map
 N, X = map(float, input().split(' '))

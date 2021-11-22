@@ -1,4 +1,4 @@
-# Problema 1014 - URI - Iniciante - Nível 1
+# Problema 1014 - Beecrowd - Iniciante - Nível 1
 
 # Lendo o combustível consumido
 distancia = int(input()) 

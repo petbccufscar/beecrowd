@@ -1,4 +1,4 @@
-# Problema 1257 - URI - String - Nível 3
+# Problema 1257 - Beecrowd - String - Nível 3
 
 # Número de casos de teste
 n = int(input())

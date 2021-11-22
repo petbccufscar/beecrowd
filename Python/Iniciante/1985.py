@@ -1,4 +1,4 @@
-# Problema 1985 - URI - Iniciante - Nível 1
+# Problema 1985 - Beecrowd - Iniciante - Nível 1
 
 # Recebemos a entrada de quantos itens diferentes foram comprados.
 n = int(input())

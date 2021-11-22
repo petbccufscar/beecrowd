@@ -1,4 +1,4 @@
-# Problema 1120 - URI - Strings - Nível 5
+# Problema 1120 - Beecrowd - Strings - Nível 5
 
 # Inicializamos as variáveis, pois não existe Do While em python
 d = ''

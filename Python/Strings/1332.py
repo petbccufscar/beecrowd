@@ -1,4 +1,4 @@
-#Problema 1332 - URI - String - Nível 2
+#Problema 1332 - Beecrowd - String - Nível 2
 
 # Leitura do número de palavras
 num_palavras = int(input())

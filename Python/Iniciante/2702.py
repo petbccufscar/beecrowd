@@ -1,4 +1,4 @@
-# Problema 2702 - URI - Iniciante - Nível 1
+# Problema 2702 - Beecrowd - Iniciante - Nível 1
 
 # Leitura dos valores
 Ca, Ba, Pa = map(int, input().split(' '))
