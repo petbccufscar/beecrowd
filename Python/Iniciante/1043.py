@@ -4,10 +4,8 @@
 ladoA, ladoB, ladoC = map(float, input().split())
 
 # Verifica se é possível formar um triângulo com os valores informados
-if not(ladoA + ladoB <= ladoC) and\
-not(ladoA + ladoC <= ladoB) and\
-not(ladoB + ladoC <= ladoA):
-    print("Perimetro = {:.1f}".format(ladoA + ladoB + ladoC))
+if ladoA + ladoB > ladoC and ladoA + ladoC > ladoB and ladoB + ladoC > ladoA:
+    print(f"Perimetro = {(ladoA + ladoB + ladoC):.1f}")
 
 # Imprime a área do trapézio caso os lados não formem triângulo
 else:
