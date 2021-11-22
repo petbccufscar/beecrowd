@@ -4,13 +4,15 @@
 valor = float(input())
 
 # Verifica em qual intervalo o valor está e imprime na sáida padrão
-if valor >= 0 and valor <= 25:
-    print("Intervalo [0, 25]")
-elif valor > 25 and valor <= 50:
-    print("Intervalo (25, 50]")
-elif valor > 50 and valor <= 75:
+if 100 < valor:
+    print("Fora de intervalo")
+elif 75 < valor:
+    print("Intervalo (75,100]")
+elif 50 < valor:
     print("Intervalo (50,75]")
-elif valor > 75 and valor <= 100:
-    print("Intervalo (75, 100]")
+elif 25 < valor:
+    print("Intervalo (25,50]")
+elif 0 <= valor:
+    print("Intervalo [0,25]")
 else:
-    print("Fora do Intervalo")
+    print("Fora de intervalo")
