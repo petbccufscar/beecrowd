@@ -1,4 +1,4 @@
-# Problema 1043 - URI - Iniciante - Nível 2
+# Problema 1043 - Beecrowd - Iniciante - Nível 2
 
 # Recebe o módulo de cada lado
 ladoA, ladoB, ladoC = [float(i) for i in input().split()]
