@@ -1,4 +1,4 @@
-# Problema 1040 - URI - Iniciante - Nível 2
+# Problema 1040 - Beecrowd - Iniciante - Nível 2
 
 # Efetua a leitura dos números a serem ordenados
 numeros = list(map(int, input().split()))
