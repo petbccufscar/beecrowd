@@ -1,4 +1,4 @@
-# Problema 1273 - URI - Iniciante - Nível 3
+# Problema 1273 - Beecrowd - Iniciante - Nível 3
 
 # Quantidade de palavras na primeira iteração
 quantidadePalavras = int(input())
