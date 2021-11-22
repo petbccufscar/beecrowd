@@ -28,6 +28,6 @@ elif media >= 5:
         print("Aluno reprovado.")
 
     # Imprime a média final
-    print("Media final: {:.1f}".format(media))
+    print(f"Media final: {media:.1f}")
 else:
     print("Aluno reprovado.")
