@@ -1,4 +1,4 @@
-# Problema 1041 - URI - Iniciante - Nível 3
+# Problema 1041 - Beecrowd - Iniciante - Nível 3
 
 # Recebe as coordenadas do ponto
 x, y = [float(i) for i in input().split()]
