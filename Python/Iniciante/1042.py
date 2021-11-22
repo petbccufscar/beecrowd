@@ -17,5 +17,5 @@ for i in range(len(numeros)):
 print()
 
 # Imprime a lista antes da ordenação
-for i in range(len(auxNumeros)):
-    print(auxNumeros[i])
+for n in auxNumeros:
+    print(n)
