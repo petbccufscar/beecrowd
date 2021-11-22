@@ -12,8 +12,8 @@ for i in range(casosTeste):
     mensagemOculta = ""
 
     # Itera sobre cada palavra
-    for i in mensagem.split():
+    for palavra in mensagem.split():
         # Concatena com a inicial da palavra
-        mensagemOculta += i[0]
+        mensagemOculta += palavra[0]
 
     print(mensagemOculta)
