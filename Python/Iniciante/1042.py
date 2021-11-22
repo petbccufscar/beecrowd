@@ -1,7 +1,7 @@
 # Problema 1040 - URI - Iniciante - Nível 2
 
 # Efetua a leitura dos números a serem ordenados
-numeros = [int(i) for i in input().split()]
+numeros = list(map(int, input().split()))
 
 # Copia a lista não ordenada
 auxNumeros = list(numeros)
