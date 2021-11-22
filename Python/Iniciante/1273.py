@@ -3,7 +3,22 @@
 # Quantidade de palavras na primeira iteração
 quantidadePalavras = int(input())
 
-while quantidadePalavras != 0:
+# Flag necessário para printar as linhas entre os casos
+primeiro = True
+
+while True:
+    quantidadePalavras = int(input())
+
+    if quantidadePalavras == 0:
+        break
+
+    # Vamos printar a linha antes de cada caso, já que ela não está presente no fim
+    # O primeiro caso não tem nada antes
+    if primeiro:
+        primeiro = False
+    else:
+        print()
+
     # Palavras que serão justificadas
     palavras = []
 
@@ -12,15 +27,13 @@ while quantidadePalavras != 0:
 
     # Recebe as palavras na entrada padrão
     for i in range(quantidadePalavras):
-        palavras.append(input())
+        palavra = input()
+        
+        palavras.append(palavra)
 
         # Atualiza a quantidade de caracteres da maior palavra
-        if len(palavras[i]) > maiorPalavra:
-            maiorPalavra = len(palavras[i])
+        maiorPalavra = max(maiorPalavra, len(palavra))
 
-    for i in palavras:
+    for palavra in palavras:
         # Espaços necessários para justificar a palavra
-        espacos = " "*(maiorPalavra - len(i))
-        print(espacos + i)
-
-    quantidadePalavras = int(input())
+        print(palavra.rjust(maiorPalavra))
