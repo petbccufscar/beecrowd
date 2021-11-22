@@ -1,4 +1,4 @@
-# Problema 1021 - URI - Iniciante - Nível 6
+# Problema 1021 - Beecrowd - Iniciante - Nível 6
 
 # Recebe o valor na entrada padrão
 valor = float(input())
