@@ -3,9 +3,6 @@
 # Recebe o ddd
 ddd = int(input())
 
-# Estado inicial da existencia do ddd no dicionário
-existe = False
-
 # Declaração do dicionário com os ddd's e seus respectivos estados
 cidades = {
         61: "Brasilia",
