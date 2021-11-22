@@ -1,7 +1,7 @@
 # Problema 1040 - URI - Iniciante - Nível 5
 
 # Recebe os valores para as quatro notas
-nota1, nota2, nota3, nota4 = [float(i) for i in input().split()]
+nota1, nota2, nota3, nota4 = map(float, input().split())
 
 # Calcula a média ponderada
 media = (nota1*2 + nota2*3 + nota3*4 + nota4)/(2 + 3 + 4 + 1)
