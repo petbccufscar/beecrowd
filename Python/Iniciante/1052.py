@@ -1,4 +1,4 @@
-# Problema 1052 - URI - Iniciante - Nível 2
+# Problema 1052 - Beecrowd - Iniciante - Nível 2
 
 # Importa o módulo de calendário
 import calendar
