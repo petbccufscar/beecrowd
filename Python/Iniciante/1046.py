@@ -13,4 +13,4 @@ if inicio >= fim:
 # Se o jogo começou e terminou no mesmo dia, basta calcular a diferença
 # entre a hora da finalização e a hora de inicio.
 else:
-    print("O JOGO DUROU {:d} HORA(S)".format(fim - inicio))
+    print(f"O JOGO DUROU {(fim - inicio)} HORA(S)")
