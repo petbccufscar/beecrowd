@@ -3,43 +3,43 @@
 # Recebe o valor na entrada padrão
 valor = float(input())
 
+# Converte o valor para um número inteiro, simbolizando os centavos
+valor = int(valor*100)
+
 # Para cada cédula, calcula o resultado inteiro da divisão do valor
 # por aquela cédula, armazena o resultado dessa divisão, que é o número
 # de cédulas que é possível devolver sem ultrapassar o valor informado,
 # e, por fim, atualiza o novo valor para o que restou após trocar parte
 # do valor pela cédula que acabou de ser calculada
-nota100 = int(valor/100)
-valor -= nota100*100
-nota50 = int(valor/50)
-valor -= nota50*50
-nota20 = int(valor/20)
-valor -= nota20*20
-nota10 = int(valor/10)
-valor -= nota10*10
-nota5 = int(valor/5)
-valor -= nota5*5
-nota2 = int(valor/2)
-valor -= nota2*2
-
-# Converte os centavos para um número inteiro
-valor = int(valor*100)
+nota100 = valor//10000
+valor %= 10000
+nota50 = valor//5000
+valor %= 5000
+nota20 = valor//2000
+valor %= 2000
+nota10 = valor//1000
+valor %= 1000
+nota5 = valor//500
+valor %= 500
+nota2 = valor//200
+valor %= 200
 
 # Para cada moeda, calcula o resultado inteiro da divisão do valor
 # por aquela moeda, armazena o resultado dessa divisão, que é o número
 # de moedas que é possível devolver sem ultrapassar o valor informado,
 # e, por fim, atualiza o novo valor para o que restou após trocar parte
 # do valor pela moeda que acabou de ser calculada
-moeda100 = int(valor/100)
-valor -= moeda100*100
-moeda50 = int(valor/50)
-valor -= moeda50*50
-moeda25 = int(valor/25)
-valor -= moeda25*25
-moeda10 = int(valor/10)
-valor -= moeda10*10
-moeda5 = int(valor/5)
-valor -= moeda5*5
-moeda1 = int(valor)
+moeda100 = valor//100
+valor %= 100
+moeda50 = valor//50
+valor %= 50
+moeda25 = valor//25
+valor %= 25
+moeda10 = valor//10
+valor %= 10
+moeda5 = valor//5
+valor %= 5
+moeda1 = valor
 
 # Imprime os resultados obtidos
 
