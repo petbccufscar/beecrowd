@@ -8,7 +8,7 @@ inicio, fim = map(int, input().split())
 # início é igual a (24 - inicio), considerando as horas jogadas no dia seguinte
 # o tempo total é igual a (24 - inicio + fim).
 if inicio >= fim:
-    print("O JOGO DUROU {:d} HORA(S)".format(24 - inicio + fim))
+    print(f"O JOGO DUROU {(24 - inicio + fim)} HORA(S)")
 
 # Se o jogo começou e terminou no mesmo dia, basta calcular a diferença
 # entre a hora da finalização e a hora de inicio.
