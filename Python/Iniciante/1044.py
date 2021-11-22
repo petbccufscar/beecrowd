@@ -1,4 +1,4 @@
-# Problema 1044 - URI - Iniciante - Nível 2
+# Problema 1044 - Beeccrowd - Iniciante - Nível 2
 
 # Recebe os valores na entrada padrão
 valorA, valorB = [float(i) for i in input().split()]
