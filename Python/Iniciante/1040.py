@@ -5,7 +5,7 @@ nota1, nota2, nota3, nota4 = map(float, input().split())
 
 # Calcula a média ponderada
 media = (nota1*2 + nota2*3 + nota3*4 + nota4)/(2 + 3 + 4 + 1)
-print("Media: {:.1f}".format(media))
+print(f"Media: {media:.1f}")
 
 # Verifica se o aluno foi aprovado
 if media >= 7:
