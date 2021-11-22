@@ -1,4 +1,4 @@
-# Problema 1050 - URI - Iniciante - Nível 2
+# Problema 1050 - Beecrowd - Iniciante - Nível 2
 
 # Recebe o ddd
 ddd = int(input())
