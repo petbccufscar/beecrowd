@@ -1,4 +1,4 @@
-# Problema 1046 - URI - Iniciante - Nível 2
+# Problema 1046 - Beecrowd - Iniciante - Nível 2
 
 # Recebe a hora de inicio e a hora de finalização do jogo
 inicio, fim = [int(i) for i in input().split()]
