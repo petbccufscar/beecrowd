@@ -1,7 +1,7 @@
 # Problema 1043 - Beecrowd - Iniciante - Nível 2
 
 # Recebe o módulo de cada lado
-ladoA, ladoB, ladoC = [float(i) for i in input().split()]
+ladoA, ladoB, ladoC = map(float, input().split())
 
 # Verifica se é possível formar um triângulo com os valores informados
 if not(ladoA + ladoB <= ladoC) and\
