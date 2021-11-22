@@ -1,7 +1,7 @@
 # Problema 1046 - Beecrowd - Iniciante - Nível 2
 
 # Recebe a hora de inicio e a hora de finalização do jogo
-inicio, fim = [int(i) for i in input().split()]
+inicio, fim = map(int, input().split())
 
 # Se a hora de inicio for maior que a hora de finalização do jogo, então
 # o jogo terminou no dia seguinte ao início, logo: horas úteis no dia do
