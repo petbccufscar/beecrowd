@@ -1,4 +1,4 @@
-# Problema 1067 - URI - Iniciante - Nível 2
+# Problema 1067 - Beecrowd - Iniciante - Nível 2
 
 # Recebe o valor que será considerado para imprimir os ímpares.
 valor = int(input())
