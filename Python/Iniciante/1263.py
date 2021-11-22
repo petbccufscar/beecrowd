@@ -1,4 +1,4 @@
-# Problema 1263 - URI - Iniciante - Nível 3
+# Problema 1263 - Beecrowd - Iniciante - Nível 3
 
 # Executa o loop enquanto a entrada padrão não indicar EOF
 while True:
