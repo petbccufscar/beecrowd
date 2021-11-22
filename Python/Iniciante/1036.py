@@ -1,4 +1,4 @@
-# Problema 1036 - URI - Iniciante - Nível 3
+# Problema 1036 - Beecrowd - Iniciante - Nível 3
 
 # Importa o módulo com funções matemáticas básicas
 import math
