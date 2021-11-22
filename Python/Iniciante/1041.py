@@ -1,7 +1,7 @@
 # Problema 1041 - Beecrowd - Iniciante - Nível 3
 
 # Recebe as coordenadas do ponto
-x, y = [float(i) for i in input().split()]
+x, y = map(float, input().split())
 
 # Verifica em qual quadrante, ou eixo, o ponto está
 # e imprime o resultado na saída padrão
