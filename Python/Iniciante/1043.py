@@ -9,4 +9,4 @@ if ladoA + ladoB > ladoC and ladoA + ladoC > ladoB and ladoB + ladoC > ladoA:
 
 # Imprime a área do trapézio caso os lados não formem triângulo
 else:
-    print("Area = {:.1f}".format((ladoA + ladoB)*ladoC/2))
+    print(f"Area = {((ladoA + ladoB)*ladoC/2):.1f}")
