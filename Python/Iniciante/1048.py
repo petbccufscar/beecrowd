@@ -25,6 +25,6 @@ novoSalario = salario + salario*percentual
 reajuste = salario*percentual
 
 # Imprime os resultados obtidos com base no salário informado
-print("Novo salario: {:.2f}".format(novoSalario))
-print("Reajuste ganho: {:.2f}".format(reajuste))
-print("Em percentual: {:.0f} %".format(percentual*100))
+print(f"Novo salario: {novoSalario:.2f}")
+print(f"Reajuste ganho: {reajuste:.2f}")
+print(f"Em percentual: {(percentual*100):.0f} %")
