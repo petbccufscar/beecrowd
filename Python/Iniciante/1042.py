@@ -6,17 +6,8 @@ numeros = list(map(int, input().split()))
 # Copia a lista não ordenada
 auxNumeros = list(numeros)
 
-# Ordenação simples da lista de números
-# iterando pela lista para cada elemento na lista
-for i in range(len(numeros)):
-    for j in range(i, len(numeros)):
-        # Verifica se um elemento antecessor é maior que o sucessor
-        if numeros[i] > numeros[j]:
-            # Variável auxiliar para trocar os valores de posição
-            aux = numeros[i]
-
-            numeros[i] = numeros[j]
-            numeros[j] = aux
+# Ordena a lista
+numeros.sort()
 
 # Imprime a lista ordenada
 for i in range(len(numeros)):
