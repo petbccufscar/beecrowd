@@ -13,8 +13,8 @@ if (pow(B, 2) - 4*A*C) > 0 and A != 0:
     R2 = (-B - math.sqrt(pow(B, 2) - 4*A*C))/(2*A)
 
     # Imprime as raízes na saída padrão
-    print("R1 = {:.5f}".format(R1))
-    print("R2 = {:.5f}".format(R2))
+    print(f"R1 = {R1:.5f}")
+    print(f"R2 = {R2:.5f}")
 else:
     # Caso não exista raíz real
     print("Impossivel calcular")
