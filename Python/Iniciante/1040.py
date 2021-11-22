@@ -1,4 +1,4 @@
-# Problema 1040 - URI - Iniciante - Nível 5
+# Problema 1040 - Beecrowd - Iniciante - Nível 5
 
 # Recebe os valores para as quatro notas
 nota1, nota2, nota3, nota4 = map(float, input().split())
