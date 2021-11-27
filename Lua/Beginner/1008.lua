@@ -1,0 +1,5 @@
+numero = io.read('*n')
+horasTrabalhadas = io.read('*n')
+valorPorHora = io.read('*n')
+print(string.format('NUMBER = %d', numero))
+print(string.format('SALARY = U$ %.2f', horasTrabalhadas * valorPorHora))
