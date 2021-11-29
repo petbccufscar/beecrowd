@@ -1,15 +1,18 @@
 use std::io;
+use std::error::Error;
 
-fn main() {
-	let pi = 3.14159;
+const PI: f64 = 3.14159;
 
+fn main() -> Result<(), Box<dyn Error>> {
 	let stdin = io::stdin();
-
 	let mut buffer = String::new();
+	
+	stdin.read_line(&mut buffer)?;
+	let r: f64 = buffer.trim().parse()?;
 
-	stdin.read_line(&mut buffer).unwrap();
+	let a: f64 = r * r * PI;
 
-	let r: f64 = buffer.trim().parse().unwrap();
+	println!("A={:.4}", a);
 
-	println!("A={:.4}", r * r * pi);
+	Ok(())
 }

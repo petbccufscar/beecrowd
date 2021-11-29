@@ -6,18 +6,15 @@ fn main() -> Result<(), Box<dyn Error>> {
 	let mut buffer = String::new();
 
 	stdin.read_line(&mut buffer)?;
+	let distancia: i64 = buffer.trim().parse()?;
 
 	buffer.clear();
 	stdin.read_line(&mut buffer)?;
-	let salary: f64 = buffer.trim().parse()?;
-	
-	buffer.clear();
-	stdin.read_line(&mut buffer)?;
-	let bonus: f64 = buffer.trim().parse()?;
+	let combustivel: f64 = buffer.trim().parse()?;
 
-	let total: f64 = salary + bonus * 0.15;
+	let consumo: f64 = distancia as f64 / combustivel;
 
-	println!("TOTAL = R$ {:.2}", total);
+	println!("{:.3} km/l", consumo);
 
 	Ok(())
 }

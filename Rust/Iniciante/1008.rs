@@ -1,20 +1,25 @@
 use std::io;
+use std::error::Error;
 
-fn main() {
+fn main() -> Result<(), Box<dyn Error>> {
 	let stdin = io::stdin();
+	let mut buffer = String::new();
 
-	let mut number_buffer = String::new();
-	let mut hours_buffer = String::new();
-	let mut value_buffer = String::new();
+	stdin.read_line(&mut buffer)?;
+	let number: i64 = buffer.trim().parse()?;
+	
+	buffer.clear();
+	stdin.read_line(&mut buffer)?;
+	let hours: f64 = buffer.trim().parse()?;
+	
+	buffer.clear();
+	stdin.read_line(&mut buffer)?;
+	let value: f64 = buffer.trim().parse()?;
 
-	stdin.read_line(&mut number_buffer).unwrap();
-	stdin.read_line(&mut hours_buffer).unwrap();
-	stdin.read_line(&mut value_buffer).unwrap();
-
-	let number: i32 = number_buffer.trim().parse().unwrap();
-	let hours: f64 = hours_buffer.trim().parse().unwrap();
-	let value: f64 = value_buffer.trim().parse().unwrap();
+	let salary: f64 = hours * value;
 
 	println!("NUMBER = {}", number);
-	println!("SALARY = U$ {:.2}", hours * value);
+	println!("SALARY = U$ {:.2}", salary);
+
+	Ok(())
 }

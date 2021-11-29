@@ -1,20 +1,19 @@
 use std::io;
 use std::error::Error;
 
+const PI: f64 = 3.14159;
+
 fn main() -> Result<(), Box<dyn Error>> {
 	let stdin = io::stdin();
 	let mut buffer = String::new();
 
 	stdin.read_line(&mut buffer)?;
-	let a: i64 = buffer.trim().parse()?;
 
-	buffer.clear();
-	stdin.read_line(&mut buffer)?;
-	let b: i64 = buffer.trim().parse()?;
+	let r: i64 = buffer.trim().parse()?;
 
-	let x: i64 = a + b;
+	let volume: f64 = 4.0/3.0 * PI * r.pow(3) as f64;
 
-	println!("X = {}", x);
+	println!("VOLUME = {:.3}", volume);
 
 	Ok(())
 }

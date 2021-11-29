@@ -1,16 +1,20 @@
 use std::io;
+use std::error::Error;
 
-fn main() {
+fn main() -> Result<(), Box<dyn Error>> {
 	let stdin = io::stdin();
+	let mut buffer = String::new();
 
-	let mut a_buffer = String::new();
-	let mut b_buffer = String::new();
+	stdin.read_line(&mut buffer)?;
+	let a: f64 = buffer.trim().parse()?;
 
-	stdin.read_line(&mut a_buffer).unwrap();
-	stdin.read_line(&mut b_buffer).unwrap();
+	buffer.clear();
+	stdin.read_line(&mut buffer)?;
+	let b: f64 = buffer.trim().parse()?;
 
-	let a: f64 = a_buffer.trim().parse().unwrap();
-	let b: f64 = b_buffer.trim().parse().unwrap();
+	let media: f64 = (a * 3.5 + b * 7.5) / 11.0;
 
-	println!("MEDIA = {:.5}", (a * 3.5 + b * 7.5) / 11.0);
+	println!("MEDIA = {:.5}", media);
+
+	Ok(())
 }
