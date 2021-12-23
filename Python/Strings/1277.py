@@ -1,44 +1,32 @@
+# Problema 1277 - Beecrowd - Strings - Nível 6
+
 # Leitura de quantos casos serão feitos
 t = int(input())
 
 # Realiza T casos de teste
 for i in range(t):
+    # Quantos Nomes e Frequências serão lidas
+    n = int(input())
 
-	# Quantos Nomes e Frequências serão lidas
-	n = int(input())
+    # Lista de reprovados
+    reprovados = []
 
-	reprovados = []
+    # Lemos os nomes
+    nomes = input().split(' ')
 
-	nomes = input()
-	nomes = nomes.split()
+    # Lemos as frequências
+    frequencias = input().split(' ')
 
-	frequencia = input()
-	frequencia = frequencia.split()
-	
-	# Verifica quais são os caracteres de cada posição do vetor frequencia, contabilizando-os
-	for x in range(n):
-		p=0 
-		a=0
-		m=0
-		# Verifica o tamanho de cada string de presença/ausência 
-		tam=len(frequencia[x])
-	
-		# Em cada posição da string e presença/ausência, verifica qual é seu caractere
-		for y in range(tam):
-			if frequencia[x][y] == 'P':
-				p+=1
+    # Para cada aluno
+    for nome, frequencia in zip(nomes, frequencias):
+        # Contamos quantas presenças, faltas e atestados o aluno tem
+        p = frequencia.count('P')
+        a = frequencia.count('A')
+        m = frequencia.count('M')
 
-			elif frequencia[x][y] == 'A':
-				a+=1
-			
-			# Caracter igual à 'M'
-			else:
-				m+=1
+        # Cálculo da frequência, caso for inferir há 75% o aluno é adicionado à lista dos reprovados
+        if(p / (p + a) < 0.75):
+            reprovados.append(nome)
 
-		# Cálculo da frequência, caso for inferir há 75% o aluno pe adicionado a lista dos reprovados
-		if((p/(tam-m))<0.75):
-			reprovados.append(nomes[x])
-	
-	# Imprimindo os reprovados no formato pedido (separados por espaço) 
-	print(*reprovados)
-
+    # Imprimindo os reprovados
+    print(' '.join(reprovados))
