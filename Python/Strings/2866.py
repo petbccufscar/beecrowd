@@ -1,8 +1,4 @@
 # Problema 2866 - Beecrowd - Strings - Nível 2
-# POR PROBLEMA DO CRIADOR DO EXERCÍCIO, NO SITE HÁ ERRO DE
-# "Presentation Error" que indica que a resposta está correta,
-# mas mostrada de forma errada. Então o raciocínio está certo
-# para resolução do problema.
 
 # Receber o número de casos de testes.
 numTestes = int(input())
@@ -14,7 +10,7 @@ for i in range(numTestes):
 
     # Cada letra é testada, se caso seja minúscula, adiciona na saída
     for letra in entrada:
-        if letra.isupper() == False:
+        if letra.islower():
             saida += letra
 
     # Após testar a letra é necessário inverter a saída e apresentá-la
