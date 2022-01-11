@@ -1,31 +1,31 @@
 # Problema 1049 - Beecrowd - Iniciante - Nível 3
 
 # Vamos receber primeiro as três strings, antes de classificar
-stringA = input()
-stringB = input()
-stringC = input()
+filo = input()
+classe= input()
+alimentacao= input()
 
 # Agora, vamos classificar utilizando IF's aninhados:
-if stringA == 'vertebrado':
-    if stringB == 'ave':
-        if stringC == 'carnivoro':
+if filo == 'vertebrado':
+    if classe == 'ave':
+        if alimentacao == 'carnivoro':
             print('aguia')
-        elif stringC == 'onivoro':
+        elif alimentacao == 'onivoro':
             print('pomba')
-    elif stringB == 'mamifero':
-        if stringC == 'onivoro':
+    elif classe == 'mamifero':
+        if alimentacao == 'onivoro':
             print('homem')
-        elif stringC == 'herbivoro':
+        elif alimentacao == 'herbivoro':
             print('vaca')
 
-elif stringA == 'invertebrado':
-    if stringB == 'inseto':
-        if stringC == 'hematofago':
+elif filo == 'invertebrado':
+    if classe == 'inseto':
+        if alimentacao == 'hematofago':
             print('pulga')
-        elif stringC == 'herbivoro':
+        elif alimentacao == 'herbivoro':
             print('lagarta')
-    elif stringB == 'anelideo':
-        if stringC == 'hematofago':
+    elif classe == 'anelideo':
+        if alimentacao == 'hematofago':
             print('sanguessuga')
-        elif stringC == 'onivoro':
+        elif alimentacao == 'onivoro':
             print('minhoca')
