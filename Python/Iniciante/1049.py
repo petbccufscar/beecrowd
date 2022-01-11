@@ -2,8 +2,8 @@
 
 # Vamos receber primeiro as três strings, antes de classificar
 filo = input()
-classe= input()
-alimentacao= input()
+classe = input()
+alimentacao = input()
 
 # Agora, vamos classificar utilizando IF's aninhados:
 if filo == 'vertebrado':
