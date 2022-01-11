@@ -1,4 +1,4 @@
-# Problema 1098 - Beecrowd - Iniciante - Nível 3
+# Problema 1118 - Beecrowd - Iniciante - Nível 3
 
 # Criando um loop while, para verificar a opção de novo cálculo ou não.
 opcao = 1
