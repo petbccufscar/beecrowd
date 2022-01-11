@@ -17,7 +17,7 @@ while i <= 2:
         else:
             print(f"I={i} J={respostaJ}")
 
-    # A linguagem python possue um problema de precisão dos números decimais, 
+    # A linguagem python possui um problema de precisão dos números decimais, 
     # pois ao somar 0.2 no I, em algum momento a precisão irá somas 0.2000000001, assim
     # para não ocorrer nenhum problema no exercício faço operações de soma de inteiro e
     # depois tranformo em decimal da seguinte maneira: multiplicando por 10, somo 2, e divido por 10 novamente.
