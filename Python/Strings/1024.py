@@ -1,4 +1,4 @@
-# Problema 1237 - Beecrowd - Strings - Nível 5
+# Problema 1024 - Beecrowd - Strings - Nível 5
 
 # Entrada da quantidade de casos teste
 qtdTestes = int(input())
