@@ -11,7 +11,7 @@ for i in range(qtdTestes):
     # Primeira passada: Todas letras irão andar 2 casas para a direita na tabela ASCII.
     for letra in msg:
 
-        # A métodos ".isalpha()" verifica se o caractere é uma letra ou não.
+        # O método ".isalpha()" verifica se o caractere é uma letra ou não.
         if letra.isalpha():
 
             # A função "ord()" transforma um caractere em seu número ASCII, e a função "chr()".
