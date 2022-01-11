@@ -3,7 +3,7 @@
 # Laço para ler as várias entradas.
 while True:
     try:
-        # Recebendo as stringsde entrada.
+        # Recebendo as strings de entrada.
         string1 = input()
         string2 = input()
 
