@@ -12,9 +12,6 @@ for i in range(numTestes):
     if inic > fim:
         inic, fim = fim, inic
 
-    # Variável resultado guardará a sequência de números que é a resposta.
-    resultado = ""
-
     # "for" loop para ir varrendo os números de "inic" ao "fim" colocando
     # na variável resultado os números em questão, sendo o fim do range "fim + 1"
     # para que o número "fim" esteja na lista também.
