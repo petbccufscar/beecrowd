@@ -28,7 +28,7 @@ for i in range(numCasos):
     # E já apresenta o resultado do jogo.
     if armaSheldon == armaRajesh:
         print("empate")
-    elif armaGanhadora[armaRajesh].count(armaSheldon) == 0:
+    elif armaRajesh in armaGanhadora[armaSheldon]:
         print("sheldon")
     else:
         print("rajesh")
