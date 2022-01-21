@@ -1,4 +1,4 @@
-# Problema 1789 - Beecrowd - Iniciante - Nível 7
+# Problema 1837 - Beecrowd - Iniciante - Nível 7
 
 # Aqui, teremos que implementar o Algorítmo da Divisão,
 # ou 'Teorema da Divisão Euclidiana'
