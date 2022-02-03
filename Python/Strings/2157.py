@@ -10,12 +10,7 @@ for i in range(numTestes):
 
     # Ordenando os valores caso o inicio seja maior que o fim.
     if inic > fim:
-        aux = inic
-        inic = fim
-        fim = inic
-
-    # Variável resultado guardará a sequência de números que é a resposta.
-    resultado = ""
+        inic, fim = fim, inic
 
     # "for" loop para ir varrendo os números de "inic" ao "fim" colocando
     # na variável resultado os números em questão, sendo o fim do range "fim + 1"
