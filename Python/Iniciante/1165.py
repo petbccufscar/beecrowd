@@ -1,19 +1,21 @@
 # Problema 1165 - Beecrowd - Iniciante - Nível 2
 
-# Números de testes.
+# Entrada de número de testes.
 numTestes = int(input())
 
-# Loop para testar cada entrada do usuário.
+# Loop para receber os números para teste.
 for i in range(numTestes):
+
     num = int(input())
 
-    # Variável booleana para teste de número primo.
+    # Variável booleana para testar se é número primo.
     primo = True
 
-    # Testar de método bruto para número primo.
+    # Teste de método bruto para ver se um número é primo.
     for aux in range(2, num):
 
-        # Se ele foi dividido por qualquer número entre 2 e num - 1 então ele não é primo.
+        # Se ele for divido por qualquer número entre 2 e num - 1, então
+        # ele não é primo.
         if num % aux == 0:
             print(f"{num} nao eh primo")
             primo = False

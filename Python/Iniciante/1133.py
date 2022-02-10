@@ -1,14 +1,14 @@
-# Problema 1133 - Beecrowd - Iniciante - Nível 3
+# Problema 1135 - Beecrowd - Iniciante - Nível 3
 
-# Recebendo valores de entrada.
-num1 = int(input())
-num2 = int(input())
+# Entrada dos valores.
+x = int(input())
+y = int(input())
 
-# Verificando que num1 é menor que num2.
-if num1 > num2:
-    num1, num2 = num2, num1
+# Verificando o número maior.
+if x > y:
+    x, y = y, x
 
-# Loop for para varrer todos os valores entre num1 e num2.
-for i in range(num1 + 1, num2):
+# Loop para varrer todos os números entre x e y e saída esperada.
+for i in range(x + 1, y):
     if i % 5 == 2 or i % 5 == 3:
         print(i)
