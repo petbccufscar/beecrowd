@@ -7,25 +7,13 @@
 a, b = map(int, input().split(' '))
 
 # Como método de resolução, iremos encontrar um resto 'r'
-# inteiro, tal qual, o quociente 'q' seja inteiro.
-# Pois pelo teorema, eles são únicos.
-for r in range(abs(b)):
-    q = (a - r)/b
+# da divisão de 'a' pelo valor absoluto de 'b'.
+r = a % abs(b)
 
-    # Se o quociente 'q' for 0, já temos os dois valores únicos
-    # e para evitar uma tentativa de divisão por 0, separamos
-    # como um caso a parte.
-    if q == 0:
-        break
-
-    # De resto, só verificamos se o quociente 'q' é um inteiro e 
-    # divisivel pela soma do valor de 'a' mais o resto 'r'.
-    elif a > 0:
-        if (a + r) % q == 0:
-            break
-    elif a < 0:
-        if (a - r) % q == 0:
-            break
+# Tendo o resto em mãos, é possível achar o quociente pela
+# Teorema da Divisão Euclidiana dado por: a = b * q + r,
+# isolando o 'q', temos que:
+q = (a - r) / b
 
 # É impresso o quociente 'q' como um inteiro, pois durante
 # a divisão, ele assume o tipo 'float' e o resto 'r'.
