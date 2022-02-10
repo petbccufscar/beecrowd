@@ -1,7 +1,7 @@
 # Problema 1789 - Beecrowd - Iniciante - Nível 3
 
 # A condição de parada para o programa é EOF, logo
-# colocamos a condição dentro de um loop infinio.
+# colocamos a condição dentro de um loop infinito.
 while True:
     try:
         # Não necessitamos da primeira entrada, com a quantidade
