@@ -4,5 +4,6 @@
 a = int(input())
 b = int(input())
 
+a = b + a
 # E printar a soma
-print(f'X = {a + b}')
+print(f"X = {a + b}")
