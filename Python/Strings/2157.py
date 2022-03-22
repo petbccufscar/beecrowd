@@ -12,12 +12,8 @@ for i in range(numTestes):
     if inic > fim:
         inic, fim = fim, inic
 
-    # "for" loop para ir varrendo os números de "inic" ao "fim" colocando
-    # na variável resultado os números em questão, sendo o fim do range "fim + 1"
-    # para que o número "fim" esteja na lista também.
-    for num in range(inic, fim + 1):
-        resultado += str(num)
-
+# Conversão da lista, do "inic" até o "fim", para string
+    resultado = "".join(map(range(inic, fim + 1)))
     # Ao final do loop, o resultado terá os valores de "inic" ao "fim", mas
     # é necessário inverter a string e adicioná-la no resultado para criar
     # uma sequência espelho, assim usa-se uma propriedade de listas para inverter
