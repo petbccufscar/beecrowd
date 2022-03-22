@@ -9,7 +9,7 @@ novaFrase = ""
 # Verifica palavra por palavra
 for palavra in frase:
 
-    # Se a palavra for maior que tres e as duas primeiras letras estiverem 
+    # Se a palavra for maior que três e as duas primeiras letras estiverem 
     # repetidas, a palavra será reescrita corretamente
     if len(palavra) > 3 and palavra[:1] == palavra[2:3]:
         novaPalavra = palavra[2:]
