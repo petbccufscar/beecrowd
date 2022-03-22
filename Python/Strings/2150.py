@@ -3,8 +3,8 @@
 # Leitura até o fim do arquivo
 while True:
     try:
-        # Leitura do alfabeto alienígena
-        alfabeto = input()
+        # Leitura das vogais alienígenas
+        vogais = input()
 
         # Leitura da frase
         frase = input()
@@ -13,7 +13,7 @@ while True:
         total = 0
 
         # Contando as ocorrências 
-        for letra in alfabeto:
+        for letra in vogais:
             total += frase.count(letra)
 
         # Imprimindo o resultado
