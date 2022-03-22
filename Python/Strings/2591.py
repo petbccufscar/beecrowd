@@ -12,8 +12,8 @@ for i in range(n):
     ha = hamekame[0]
     ame = hamekame[1]
 
-    # A quantidade de 'a' é a quantidade de 'a' na variável 'ha' vezes
-    # a quantidade de 'a' na variável 'ame' 
+    # A quantidade de 'a' da finalização é a quantidade 
+    # de 'a' na variável 'ha' vezes a quantidade de 'a' na variável 'ame'.
     aaa = ha.count('a') * ame.count('a')
 
     # Em python podemos multiplicar uma string por um número
