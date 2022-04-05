@@ -14,10 +14,11 @@ soma = 0
 aux = 1
 
 # Cálculo da soma dos elementos acima da diagonal principal
-for i in range(0, 12):
-    for j in range(aux, 12):
-        if j > i:
-            soma += M[i][j]
+for i in range(11):
+    
+    # A função "sum()" soma todos os valores de um objeto iterável, então
+    # estamos passando a linha "i", começando do valor "aux" até o seu fim.
+    soma += sum(M[i][aux:])
     aux += 1
 
 # Aplicando a operação desejada
