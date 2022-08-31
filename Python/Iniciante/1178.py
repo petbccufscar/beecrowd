@@ -3,18 +3,18 @@
 #Leitura do valor de x
 x = float(input())
 
-#Declaraçao do vetor N
-N = []
+#Colocando o primeiro valor no vetor
+N = [x]
 
-#Criação de um loop que preencherá a matriz com os 100 elementos
-for i in range(100):
+#Mostrando o primeiro valor do vetor
+print(f"N[0] = {N[0]:.4f}") 
 
-    #Acréscimo do valor de x no final o vetor N
-    N.append(x)
+#Criação de um loop que preencherá o vetor com os 99 elementos restantes
+for i in range(1,100):
+
     #Divisão do valor de x por dois para que o próximo elementa de N receba metade do valor atual de x
     x = x/2
-
-#Criação de um loop para printar os elementos de N
-for i in range(100):
-    #uso do truncamento da quarta casa decimal 
-    print(f"N[{i}] = {N[i]:.4f}")
+    #Acréscimo do valor de x no final o vetor N
+    N.append(x)
+    #Printando os valores do vetor.
+    print(f"N[{i}] = {N[i]:.4f}") 

@@ -34,7 +34,7 @@ def media(matriz, coluna):
 #Leitura de C
 C = int(input())
 
-#leitura de T
+#Leitura de T
 T = input()
 
 #Declaração, criação e preenchimento da matriz
