@@ -4,44 +4,50 @@
 N = int(input())
 
 # Leitura da quantidade de carneiros por estrela e armazenando os valores separadamente em um lista
-carneiros = [int(x) for x in input().split()]
+carneiros = list(map(int, input().split()))
 
-# Contador de estrelas atacadas
-quantidade_estrelas_atacadas = 0
+# Inicializando variável responsável por decrementar o segundo roubo (volta) que seria realizado pelo ladrão
+# em estrelas que possuiam, inicialmente, somente 1 carneiro
+estrelas_com_um_carneiro = 0
 
-# Varíavel de controle que determina qual a próxima estrela a ser atacada pelo ladrão
-localizacao_ladrao = 0
+# Inicializando variáveis resultado
+total_carneiros = qtd_estrelas_atacadas = 0
 
-# Lista que determina quais estrelas foram atacadas. Todas iniciam com o valor False, já que não foram atacadas ainda
-estrelas_atacadas = [False] * N
+# Inicializando variável de controle responsável por indicar se uma estrela com quantidade par de carneiros foi encontrada
+primeira_qtd_par_encontrada = False
 
-# Loop responsável pela execução dos roubos do ladrão
-# O ladrão continua roubando carneiros até que não exista a próxima estrela a ser visitada
-while 0 <= localizacao_ladrao < N:
+# A estratégia consiste em percorrer as estrelas da esquerda para a direita até encontrar uma estrela que
+# possua uma quantidade de carneiros par, pois quando for encontrada uma estrela com essa característica
+# o ladrão NECESSARIAMENTE irá retornar todo o seu caminho percorrido, encerrando o percurso pela esquerda. 
+# Caso nenhuma das estrelas possua uma quantidade par de carneiros, o ladrão interromperá sua jornada pela direita
+for index, qtd_carneiros_estrela in enumerate(carneiros):
+    
+    # Realizando a soma total de carneiros
+    total_carneiros += qtd_carneiros_estrela
+    
+    if not primeira_qtd_par_encontrada:
+        
+        # Verificando se a quantidade de carneiros da estrela é par. Caso verdadeiro:
+        # - a quantidade de estrela atacadas é dada por index + 1 (pois o índice da lista inicia-se em 0)
+        # - subtrai-se a quantidade de carneiros roubados pelo ladrão do total de carneiros. Esse valor se dá
+        # pela fórmula (index * 2) + 1 - estrelas_com_um_carneiro. Em que (index * 2) + 1 representa a quantidade
+        # de carneiros roubados (ida + volta)
+        # - setando a variável de controle primeira_qtd_par_encontrada para True a fim de que o loop for realize 
+        # somente a soma dos carneiros
+        if qtd_carneiros_estrela % 2 == 0:
+            qtd_estrelas_atacadas = index + 1
+            total_carneiros -= (index * 2) + 1 - estrelas_com_um_carneiro
+            primeira_qtd_par_encontrada = True
+    
+        # Verificando se a estrela possui somente 1 carneiro. Caso verdadeiro:
+        # incrementa a variável estrelas_com_um_carneiro
+        if qtd_carneiros_estrela - 1 == 0:
+            estrelas_com_um_carneiro += 1
 
-    # Determinando se a quantidade de carneiros da estrela, inicialmente, é par, ou ímpar
-    qtd_carneiros_par = carneiros[localizacao_ladrao] % 2 == 0
+# Caso não seja encontrada uma estrela com quantidade de carneiros par, todas as estrelas são atacadas e o total
+# de carneiros é dado pela quantidade total de carneiros menos a quantidade de estrelas
+if not primeira_qtd_par_encontrada:
+    qtd_estrelas_atacadas = N
+    total_carneiros -= N
 
-    # Efetuando roubo do ladrão (somente quando a quantidade de carneiros é positiva)
-    if carneiros[localizacao_ladrao] > 0:
-        carneiros[localizacao_ladrao] -= 1
-
-        # Caso a estrela não tenha sido atacada, definir que a estrela foi atacada
-        # E incrementar a quantidade de estrelas atacadas
-        if estrelas_atacadas[localizacao_ladrao] == False:
-            estrelas_atacadas[localizacao_ladrao] = True
-            quantidade_estrelas_atacadas += 1
-
-    # Definindo o próxima estrela a ser atacada pelo ladrão
-    # Se for par, o ladrão vai para a estrela à esquerda
-    # Caso contrário, vai para a estrela à direita
-    if qtd_carneiros_par:
-        localizacao_ladrao -= 1
-    else:
-        localizacao_ladrao += 1
-
-# Após a saída do loop, podemos somar a quantidade de carneiros restantes
-total_carneiros_nao_roubados = sum(carneiros)
-
-# Imprimindo na tela a quantidade de estrela atacadas e o total de carneiros não roubados
-print(quantidade_estrelas_atacadas, total_carneiros_nao_roubados)
+print(qtd_estrelas_atacadas, total_carneiros)
