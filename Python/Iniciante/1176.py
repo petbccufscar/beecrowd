@@ -7,7 +7,7 @@ def fibonacci(x):
         fibos.append(fibos[i-1] + fibos[i-2])
     return fibos[x]
 
-#Leitura de T
+#Leitura do número "T", que representa o número testes para o programa.
 T = int(input())
  
 #Criaçao do loop que repetirá o processo T vezes
