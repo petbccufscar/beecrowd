@@ -18,7 +18,7 @@ def preencheMatriz(matriz):
             #Leitura dos dados de preenchimento da matriz
             matriz[i][j] = float(input())
     
-#declaração da funcao que soma uma coluna
+#Declaração da funcao que soma uma coluna
 def soma(matriz, coluna):
     total = 0
     for i in range(12):
