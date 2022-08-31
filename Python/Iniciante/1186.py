@@ -1,26 +1,20 @@
 # Problema 1186 - Beecrowd - Iniciante - Nível 3
 
 # Iniciamos a matriz, que será uma lista de listas, a soma 
-# se iniciará com 0 e recebmos a operação a ser realizade
-matriz = []
-soma = 0
+# se iniciará com 0 e recebemos a operação a ser realizada
+
 operacao = input()
 
-# Preenchemos a cada linha e depois, utilizamos 'append'
-# para inserir a linha na matriz
-for _ in range(12):
-    linha = []
-    for _ in range(12):
-        linha.append(float(input()))
-    matriz.append(linha)
+# Criando e preenchendo a matriz utilizando List Comprehension (Compreensão de Listas)
+matriz = [[float(input()) for _ in range(12)] for _ in range(12)]
+soma = 0
 
-# Percorremos a matriz, e quando a soma da linha com a coluna
-# for maior que 11, representa que o elemento está na 
-# diagonal inferior e então, é adicionado a variável SOMA
-for i in range(12):
-    for j in range(12):
-        if (i + j) > 11:
-            soma += matriz[i][j]
+# Percorremos somente os elementos da matriz que estão abaixo da 
+# diagonal secundária e então, adicionamos o valor correspondente
+# matriz[i][j] à variável SOMA
+for i in range(1, 12):
+    for j in range(11, 11 - i, -1):
+        soma += matriz[i][j]
 
 # De acordo com a operação, o resultado é exibido com apenas uma
 # casa decimal

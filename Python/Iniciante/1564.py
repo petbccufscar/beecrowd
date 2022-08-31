@@ -3,7 +3,7 @@
 # Temos um loop que só se encerra, caso a entrada lida seja EOF
 while True:
     try:
-        # Recebmos o número de reclamações ao governo
+        # Recebemos o número de reclamações ao governo
         reclamacoes = int(input())
 
         # Caso o número de reclamações seja 0 (zero)
