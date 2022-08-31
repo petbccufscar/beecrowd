@@ -2,7 +2,8 @@
 
 #Definição da função fibonacci
 def fibonacci(x):
-    fibos = [0, 1]#vetor iniciando com os valores de fib de 0 e 1
+    #Vetor iniciando com os valores de fib de 0 e 1
+    fibos = [0, 1]
     for i in range(2, x+1):
         fibos.append(fibos[i-1] + fibos[i-2])
     return fibos[x]
