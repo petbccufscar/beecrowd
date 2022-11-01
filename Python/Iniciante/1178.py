@@ -1,6 +1,6 @@
 #Problema 1178 - Beecrowd - Iniciante - Nível 2
 
-#Leitura do valor de x
+# Leitura do valor de x
 x = float(input())
 
 #Colocando o primeiro valor no vetor
