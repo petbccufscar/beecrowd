@@ -22,8 +22,9 @@ for i in range(n):
         # Enquanto no loop, definimos prox como os próximos 2 caracteres
         # Do iterador atual
         try:
-            prox = next(s_iters[iter_atual]) + next(s_iters[iter_atual])
-            resultado += prox # Adicionamos prox ao resultado
+            # Adicionamos os próximos dois caracteres ao resultado
+            resultado += next(s_iters[iter_atual])
+            resultado += next(s_iters[iter_atual])
             iter_atual = (iter_atual + 1) % 2 # E mudamos o iterador atual para a outra linha
         except:
             if (iter_atual == 1):
