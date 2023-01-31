@@ -1,5 +1,4 @@
 # Problema 2557 - Beecrowd - Strings - Nível 2
-from gettext import find
 from sys import stdin
 import re # Vamos usar regex para remover os números de dentro das strings que vamos receber
 
@@ -13,7 +12,7 @@ for linha in stdin:
     # Usamos r'\d+' que significa: "Encontre uma substring composta de um ou mais números"
     numeros = [int(x) for x in re.findall(r'\d+', linha)]
     # Se a string original tiver 'J', significa que temos que somar os dois números que extraimos
-    if linha.find('J') != -1:
+    if linha.rfind('J') != -1:
         print(numeros[0] + numeros[1])
     # Mas nos outros dois casos, 'R' e 'L", só precisamos pegar o número da direita (J) e subtrair o da esquerda 
     # que vai sempre estar na primeira posição numeros[0] (R ou L, a operação é a mesma)
