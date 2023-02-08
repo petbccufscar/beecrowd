@@ -6,8 +6,6 @@ conversao = {' ': ''}
 for i in range(10):
     conversao.update(dict.fromkeys(list(conjunto[i]), str(i)))
 
-print(conversao)
-
 # Loop de quantidade de senhas a serem trocadas
 for _ in range(int(input())):
     senha = ''
