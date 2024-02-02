@@ -1,9 +1,11 @@
 <img src="./docs/icon.png" align="right" />
 
 # Beecrowd PET-BCC
-> Exercícios resolvidos em C e em Python.
+> Exercícios do Beecrowd resolvidos em C e em Python.
 
-O Beecrowd é uma plataforma que oferece uma ampla variedade de exercícios de programação divididos em 8 categorias distintas. Este repositório é um projeto desenvolvido pelo grupo PET BCC com o objetivo de resolver todos os exercícios disponíveis na plataforma utilizando as linguagens de programação C e Python. Cada solução é acompanhada por um código bem documentado e uma explicação detalhada do processo de resolução.
+O [Beecrowd](www.beecrowd.com.br) é uma plataforma que oferece uma ampla variedade de exercícios de programação divididos em 8 categorias distintas. Este repositório é um projeto desenvolvido pelo grupo PET BCC com o objetivo de resolver todos os exercícios disponíveis na plataforma utilizando as linguagens de programação C e Python. Cada solução é acompanhada por um código bem documentado e uma explicação detalhada do processo de resolução.
+
+Atualmente, já são mais de **350 exercícios resolvidos** para ajudar você!
 
 ## Estrutura do Repositório
 
