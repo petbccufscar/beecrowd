@@ -6,7 +6,6 @@ Olá!
 
 Agradecemos por considerar contribuir com o projeto Beecrowd PET-BCC! Siga os passos abaixo para realizar sua contribuição:
 
-
 ## 1. Teste seu Código
 
 Certifique-se de que seu código é aceito pela plataforma Beecrowd, testando-o no problema correspondente.

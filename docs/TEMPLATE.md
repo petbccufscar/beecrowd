@@ -1,4 +1,4 @@
-<img src="icon.png" align="right" />
+<img src="https://raw.githubusercontent.com/petbccufscar/.github/main/profile/icon.png" align="right" />
 
 # [Número do Problema] - Título do Problema
 
@@ -33,8 +33,6 @@ Para trechos de explicação que referenciam variáveis, funções, bibliotecas 
 
 Para conceitos-chave da lógica do problema, inserir um link de explicação no texto, dando preferência para explicações em português.
 Exemplo: “(...) calcularemos a [área do triângulo](link)”
-
-
 
 ## Material Auxiliar
 Para conceitos base e anteriores ao problema, deixar links de explicação no final da resolução. Evitar conceitos que já sejam presumíveis para o nível do exercício, como declaração de variáveis em exercícios de nível médio/avançado.
