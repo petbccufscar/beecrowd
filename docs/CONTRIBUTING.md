@@ -1,4 +1,4 @@
-<img src="icon.png" align="right" />
+<img src="https://raw.githubusercontent.com/petbccufscar/.github/main/profile/icon.png" align="right" />
 
 # Contribuição para o Beecrowd PET-BCC
 
