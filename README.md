@@ -1,4 +1,4 @@
-<img src="./docs/icon.png" align="right" />
+<img src="https://raw.githubusercontent.com/petbccufscar/.github/main/profile/icon.png" align="right" />
 
 # Beecrowd PET-BCC
 > Exercícios do Beecrowd resolvidos em C e em Python.
