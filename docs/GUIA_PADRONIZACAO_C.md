@@ -29,7 +29,7 @@ Ao contribuir com soluções em C para o projeto Beecrowd PET-BCC, siga as diret
   Exemplo: Defina uma função para ordenação de listas fora da função main.
 
 ## Template de Resolução (README)
-Utilize o [Template de Resolução](/TEMPLATE.md) como ponto de partida para suas contribuições. Este arquivo contém uma estrutura básica para guiar a documentação de suas soluções.
+Utilize o [Template de Resolução](/docs/TEMPLATE.md) como ponto de partida para suas contribuições. Este arquivo contém uma estrutura básica para guiar a documentação de suas soluções.
 
 ## Contato
 
