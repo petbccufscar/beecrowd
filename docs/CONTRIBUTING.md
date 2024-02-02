@@ -1,3 +1,5 @@
+<img src="icon.png" align="right" />
+
 # Contribuição para o Beecrowd PET-BCC
 
 Olá!
