@@ -47,4 +47,4 @@ Se você tiver alguma dúvida, sugestão ou precisar de suporte, por favor, sint
 
 - **E-mail:** petbcc.ufscar@gmail.com
 
-Você também pode criar uma **Issue** no [GitHub](https://github.com/petbccufscar/ufscar-planner/issues) para relatar problemas, sugerir melhorias ou contribuir para o desenvolvimento do UFSCar Planner. Estamos sempre abertos para receber feedback e colaboração. Obrigado!
+Você também pode criar uma **Issue** no [GitHub](https://github.com/petbccufscar/ufscar-planner/issues) para relatar problemas, sugerir melhorias ou contribuir para o desenvolvimento do Beecrowd. Estamos sempre abertos para receber feedback e colaboração. Obrigado!
