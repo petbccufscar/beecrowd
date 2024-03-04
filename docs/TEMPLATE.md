@@ -1,16 +1,15 @@
-<img src="https://raw.githubusercontent.com/petbccufscar/.github/main/profile/icon.png" align="right" />
-
 # [Número do Problema] - Título do Problema
+<img src="https://raw.githubusercontent.com/petbccufscar/.github/main/profile/icon.png" align="right" />
 
 **Link do Problema:** [Nome do Problema](link_do_problema)
 
-## Enunciado do Problema
+### Enunciado do Problema
 
 Cópia da parte lógica do problema do site do Beecrowd, que descreve o problema em língua natural.
 
 Caso a entrada/saída seja vital na explicação do problema, pode-se citá-la como “conforme a entrada/saída exemplificada no exercício [exemplo da entrada/saída] (...)”. Caso contrário, deve ser omitida.
 
-## Resolução
+### Resolução
 
 A resolução deve começar com uma explicação resumida do enunciado do problema, caso a interpretação não seja objetiva, e da lógica de resolução. Exemplo: “O exercício pede para calcular se 3 retas formariam um triângulo, para resolvê-lo, deve-se criar ler os valores e calcular com a fórmula (...)”
 
@@ -34,7 +33,7 @@ Para trechos de explicação que referenciam variáveis, funções, bibliotecas 
 Para conceitos-chave da lógica do problema, inserir um link de explicação no texto, dando preferência para explicações em português.
 Exemplo: “(...) calcularemos a [área do triângulo](link)”
 
-## Material Auxiliar
+### Material Auxiliar
 Para conceitos base e anteriores ao problema, deixar links de explicação no final da resolução. Evitar conceitos que já sejam presumíveis para o nível do exercício, como declaração de variáveis em exercícios de nível médio/avançado.
 Exemplo: 
 
@@ -46,4 +45,4 @@ Se você tiver alguma dúvida, sugestão ou precisar de suporte, por favor, sint
 
 - **E-mail:** petbcc.ufscar@gmail.com
 
-Você também pode criar uma **Issue** no [GitHub](https://github.com/petbccufscar/ufscar-planner/issues) para relatar problemas, sugerir melhorias ou contribuir para o desenvolvimento do UFSCar Planner. Estamos sempre abertos para receber feedback e colaboração. Obrigado!
+Você também pode criar uma **Issue** no [GitHub](https://github.com/petbccufscar/beecrowd/issues) para relatar problemas, sugerir melhorias ou contribuir para o desenvolvimento do Beecrowd. Estamos sempre abertos para receber feedback e colaboração. Obrigado!
