@@ -1,9 +1,9 @@
+# Beecrowd PET-BCC
 <img src="https://raw.githubusercontent.com/petbccufscar/.github/main/profile/icon.png" align="right" />
 
-# Beecrowd PET-BCC
 > Exercícios do Beecrowd resolvidos em C e em Python.
 
-O [Beecrowd](www.beecrowd.com.br) é uma plataforma que oferece uma ampla variedade de exercícios de programação divididos em 8 categorias distintas. Este repositório é um projeto desenvolvido pelo grupo PET BCC com o objetivo de resolver todos os exercícios disponíveis na plataforma utilizando as linguagens de programação C e Python. Cada solução é acompanhada por um código bem documentado e uma explicação detalhada do processo de resolução.
+O [Beecrowd](https://beecrowd.com.br) é uma plataforma que oferece uma ampla variedade de exercícios de programação divididos em 8 categorias distintas. Este repositório é um projeto desenvolvido pelo grupo PET BCC com o objetivo de resolver todos os exercícios disponíveis na plataforma utilizando as linguagens de programação C e Python. Cada solução é acompanhada por um código bem documentado e uma explicação detalhada do processo de resolução.
 
 Atualmente, já são mais de **350 exercícios resolvidos** para ajudar você!
 
@@ -25,7 +25,7 @@ Atualmente, já são mais de **350 exercícios resolvidos** para ajudar você!
 Se você deseja contribuir para o projeto, siga os passos abaixo:
 
 1. Faça um fork do repositório para a sua conta do GitHub.
-2. Clone o fork para a sua máquina local: `git clone https://github.com/seu-usuario/Beecrowd-PET-BCC.git`
+2. Clone o fork para a sua máquina local: `git clone https://github.com/petbccufscar/Beecrowd-PET-BCC.git`
 3. Crie uma branch para a sua contribuição: `git checkout -b nome-da-sua-branch`
 4. Adicione as soluções dos exercícios seguindo o Guia de Padronização correspondente à linguagem.
 5. Commit suas alterações: `git commit -m "Adicionando solução para exercício XYZ"`
@@ -47,4 +47,4 @@ Se você tiver alguma dúvida, sugestão ou precisar de suporte, por favor, sint
 
 - **E-mail:** petbcc.ufscar@gmail.com
 
-Você também pode criar uma **Issue** no [GitHub](https://github.com/petbccufscar/ufscar-planner/issues) para relatar problemas, sugerir melhorias ou contribuir para o desenvolvimento do Beecrowd. Estamos sempre abertos para receber feedback e colaboração. Obrigado!
+Você também pode criar uma **Issue** no [GitHub](https://github.com/petbccufscar/beecrowd/issues) para relatar problemas, sugerir melhorias ou contribuir para o desenvolvimento do Beecrowd. Estamos sempre abertos para receber feedback e colaboração. Obrigado!
