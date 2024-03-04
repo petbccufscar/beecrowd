@@ -1,8 +1,9 @@
+# Guia de Padronização para C
 <img src="https://raw.githubusercontent.com/petbccufscar/.github/main/profile/icon.png" align="right" />
 
-# Guia de Padronização para C
+Bem vindo ao Guia de Padronização para C do Beecrowd do PET-BCC UFSCar. Esse guia foi criado com o intuito de ajudar você a contribuir com soluções em C para o projeto. Para contribuir com soluções em c para o projeto, siga as instruções desse guia:
 
-Ao contribuir com soluções em C para o projeto Beecrowd PET-BCC, siga as diretrizes de padronização abaixo:
+<br/>
 
 ## Declaração de Variáveis
 
@@ -37,4 +38,4 @@ Se você tiver alguma dúvida, sugestão ou precisar de suporte, por favor, sint
 
 - **E-mail:** petbcc.ufscar@gmail.com
 
-Você também pode criar uma **Issue** no [GitHub](https://github.com/petbccufscar/ufscar-planner/issues) para relatar problemas, sugerir melhorias ou contribuir para o desenvolvimento do UFSCar Planner. Estamos sempre abertos para receber feedback e colaboração. Obrigado!
+Você também pode criar uma **Issue** no [GitHub](https://github.com/petbccufscar/beecrowd/issues) para relatar problemas, sugerir melhorias ou contribuir para o desenvolvimento do Beecrowd. Estamos sempre abertos para receber feedback e colaboração. Obrigado!
