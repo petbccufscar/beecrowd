@@ -1,10 +1,10 @@
+# Contribuição para o Beecrowd PET-BCC
 <img src="https://raw.githubusercontent.com/petbccufscar/.github/main/profile/icon.png" align="right" />
 
-# Contribuição para o Beecrowd PET-BCC
 
-Olá!
+Obrigado por considerar contribuir com o projeto Beecrowd PET-BCC! A sua contribuição é fundamental para a continuação do projeto! Para ajudar você a contribuir de forma eficaz, criamos um guia rápido de "Como Contribuir?". Basta seguir os passos abaixo:
 
-Agradecemos por considerar contribuir com o projeto Beecrowd PET-BCC! Siga os passos abaixo para realizar sua contribuição:
+<br/>
 
 ## 1. Teste seu Código
 
@@ -18,7 +18,7 @@ Dentro das pastas "C" ou "Python", nomeie seu código de acordo com o número do
 
 Siga o guia de padronização específico para a linguagem escolhida. A explicação do código deve seguir o formato Markdown e incluir detalhes sobre a lógica de resolução. Como referência, consulte os exercícios já feitos disponíveis no repositório. Não se esqueça de incluir os links de contato do PET BCC conforme o guia e referências.
 
-- [Guia de Markdown]()
+- [Guia de Markdown](https://github.com/petbccufscar/pet-colab/blob/main/material-extra/GUIA_MARKDOWN.md)
 - [Guia de Padronização para C](GUIA_PADRONIZACAO_C.md)
 - [Guia de Padronização para Python](GUIA_PADRONIZACAO_PYTHON.md)
 
@@ -42,4 +42,4 @@ Se você tiver alguma dúvida, sugestão ou precisar de suporte, por favor, sint
 
 - **E-mail:** petbcc.ufscar@gmail.com
 
-Você também pode criar uma **Issue** no [GitHub](https://github.com/petbccufscar/ufscar-planner/issues) para relatar problemas, sugerir melhorias ou contribuir para o desenvolvimento do UFSCar Planner. Estamos sempre abertos para receber feedback e colaboração. Obrigado!
+Você também pode criar uma **Issue** no [GitHub](https://github.com/petbccufscar/beecrowd/issues) para relatar problemas, sugerir melhorias ou contribuir para o desenvolvimento do Beecrowd. Estamos sempre abertos para receber feedback e colaboração. Obrigado!
