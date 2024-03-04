@@ -1,5 +1,5 @@
-# Beecrowd PET-BCC
-![Finalizado](https://img.shields.io/badge/Finalizado-blue)
+# Beecrowd PET-BCC • ![Finalizado](https://img.shields.io/badge/Finalizado-blue)
+
 [![C](https://img.shields.io/badge/C-A8B9CC.svg?style=for-the-badge&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
 ![Python](https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python&logoColor=white)
 <img src="https://raw.githubusercontent.com/petbccufscar/.github/main/profile/icon.png" align="right" />
